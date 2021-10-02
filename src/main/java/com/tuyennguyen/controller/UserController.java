@@ -1,10 +1,13 @@
 package com.tuyennguyen.controller;
 
+import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
+import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,8 +19,15 @@ public class UserController {
     @Autowired
     private UserService service;
 
+    @Autowired
+    private ProductService productService;
+
     @RequestMapping(value = {"/", "trang-chu"})
-    public String findAll() {
+    public String findAll(Model model) {
+        List<Product> listProduct = productService.findAll();
+        model.addAttribute("listProduct", listProduct);
+        System.out.println(listProduct.size());
+
         return "home-page";
     }
 
@@ -27,8 +37,8 @@ public class UserController {
     }
 
     @PostMapping(value = "/save")
-    public User save(@RequestBody User user) {
-        return service.save(user);
+    public User save(@RequestBody User obj) {
+        return service.save(obj);
     }
 
     @GetMapping(value = "/delete/{id}")
