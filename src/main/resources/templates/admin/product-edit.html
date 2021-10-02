@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản Phẩm</title>
+
+    <link href="../webjars/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" th:field="*{product.name}">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" th:field="*{product.description}">
+        </div>
+
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" class="form-control" th:field="*{product.price}">
+        </div>
+
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="text" class="form-control" th:field="*{product.quantity}">
+        </div>
+
+        <div class="form-group">
+            <label>Visible</label>
+            <input type="text" class="form-control" th:field="*{product.visible}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Gửi</button>
+    </form>
+
+</body>
+</html>

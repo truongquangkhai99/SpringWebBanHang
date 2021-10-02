@@ -11,41 +11,37 @@
 <body>
 <button type="button" class="btn btn-primary">Primary</button>
     <div>
-        <table>
+        <table class="table">
             <thead>
-            <tr>
-                <th> Name </th>
-                <th> Giá </th>
-                <th> Số Lượng </th>
-                <th> Sửa </th>
-                <th> Xoá </th>
-            </tr>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Giá</th>
+                    <th scope="col">Số Lượng</th>
+                    <th scope="col">Sửa</th>
+                    <th scope="col">Xoá</th>
+                </tr>
             </thead>
             <tbody>
-            <tr th:if="${listProduct.empty}">
-                <td colspan="2"> No Books Available </td>
-            </tr>
-            <tr th:each="obj : ${listProduct}">
-                <td>
-                    <span th:text="${obj.name}"> Name </span>
-                </td>
+                <tr th:if="${listProduct.empty}" scope="row">
+                    <td colspan="6">No Books Available</td>
+                </tr>
+                <tr th:each="obj : ${listProduct}">
+                    <td scope="row">
+                        <span th:text="${obj.name}">Name</span>
+                    </td>
 
-                <td>
-                    <span th:text="${obj.description}"> Giá </span>
-                </td>
+                    <td>
+                        <span th:text="${obj.description}">Giá</span>
+                    </td>
 
-                <td>
-                    <span th:text="${obj.quantity}"> Số Lượng </span>
-                </td>
+                    <td>
+                        <span th:text="${obj.quantity}">Số Lượng</span>
+                    </td>
 
-                <td>
-                    Sửa
-                </td>
+                    <td><a th:href="@{product/edit/{id}(id=${obj.id})}">Sửa</a></td>
+                    <td><a>Xoá</a></td>
 
-                <td>
-                    Xoá
-                </td>
-            </tr>
+                </tr>
             </tbody>
         </table>
     </div>

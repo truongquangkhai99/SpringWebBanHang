@@ -27,9 +27,12 @@ public class ProductController {
         return FolderName.ADMIN.getValue() + "/product";
     }
 
-    @GetMapping(value = "/product/{id}")
-    public Optional<Product> findById(@PathVariable int id) {
-        return productService.findById(id);
+    @GetMapping(value = "/product/edit/{id}")
+    public String findById(@PathVariable int id, Model model) {
+        Optional<Product> obj = productService.findById(id);
+        model.addAttribute("product", obj);
+
+        return FolderName.ADMIN.getValue() + "/product-edit";
     }
 
     @PostMapping(value = "/product/save")
