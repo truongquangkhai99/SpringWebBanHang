@@ -26,7 +26,6 @@ public class UserController {
     public String findAll(Model model) {
         List<Product> listProduct = productService.findAll();
         model.addAttribute("listProduct", listProduct);
-        System.out.println(listProduct.size());
 
         return "home-page";
     }
