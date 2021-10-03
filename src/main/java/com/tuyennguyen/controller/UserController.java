@@ -4,7 +4,7 @@ import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.serivce.UserService;
-import com.tuyennguyen.util.Status;
+import com.tuyennguyen.util.StatusEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -45,11 +45,11 @@ public class UserController {
         Optional<User> user = service.findById(id);
 
         if (user.isEmpty()) {
-            return Status.NOT_EXIST.getValue();
+            return StatusEnum.NOT_EXIST.getValue();
         }
 
         service.deleteById(id);
-        return Status.SUCCESS.getValue();
+        return StatusEnum.SUCCESS.getValue();
     }
 	
 }

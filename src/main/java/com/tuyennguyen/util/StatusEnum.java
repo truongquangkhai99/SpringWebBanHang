@@ -1,13 +1,15 @@
 package com.tuyennguyen.util;
 
-public enum FolderName {
-    ADMIN(1, "admin"),
-    Client(2, "client");
+public enum StatusEnum {
+	
+    SUCCESS(1, "Success!"),
+    FAILURE(2, "Failure!"),
+    NOT_EXIST(3, "Not Exist!");
 
     private final int key;
     private final String value;
 
-    FolderName(int key, String value) {
+    StatusEnum(int key, String value) {
         this.key = key;
         this.value = value;
     }
@@ -15,9 +17,8 @@ public enum FolderName {
     public int getKey() {
         return key;
     }
-
     public String getValue() {
         return value;
     }
-
+	
 }
