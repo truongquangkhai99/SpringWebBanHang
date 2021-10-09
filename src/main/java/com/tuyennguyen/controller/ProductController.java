@@ -22,14 +22,14 @@ public class ProductController extends WebController {
     private static final String mainObject = "product";
 
     @Autowired
-    private ProductService productService;
+    private ProductService mainService;
 
     @GetMapping(value = "/" + mainObject)
     public String getList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(mainObject));
         setCommon(model);
 
-        List<Product> listProduct = productService.findAll();
+        List<Product> listProduct = mainService.findAll();
         model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listProduct);
 
         return UtilCon.toAdmin(mainObject);
@@ -46,7 +46,7 @@ public class ProductController extends WebController {
 
     @PostMapping(value = "/" + mainObject + "/save")
     public RedirectView save(@ModelAttribute(UtilCon.OBJ) Product product) {
-        productService.save(product);
+        mainService.save(product);
 
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl(UtilCon.toAdmin(mainObject));
@@ -58,7 +58,7 @@ public class ProductController extends WebController {
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
 
-        Optional<Product> obj = productService.findById(id);
+        Optional<Product> obj = mainService.findById(id);
         model.addAttribute(mainObject, obj);
 
         return UtilCon.toAdmin(mainObject + "-edit");
@@ -66,9 +66,9 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/" + mainObject + "/delete/{id}")
     public RedirectView delete(@PathVariable int id) {
-        Optional<Product> obj = productService.findById(id);
+        Optional<Product> obj = mainService.findById(id);
 
-        productService.deleteById(id);
+        mainService.deleteById(id);
 
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl(UtilCon.toAdmin(mainObject));

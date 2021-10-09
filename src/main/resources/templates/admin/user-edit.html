@@ -10,32 +10,27 @@
 <body>
 
     <div class="container">
-        <h3>Sửa Sản Phẩm</h3>
+        <h3>Sửa Người Dùng</h3>
 
         <form>
             <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" th:field="*{product.name}">
+                <label>Full Name</label>
+                <input type="text" class="form-control" th:field="*{user.fullName}">
             </div>
 
             <div class="form-group">
-                <label>Description</label>
-                <input type="text" class="form-control" th:field="*{product.description}">
+                <label>Email</label>
+                <input type="text" class="form-control" th:field="*{user.email}">
             </div>
 
             <div class="form-group">
-                <label>Price</label>
-                <input type="text" class="form-control" th:field="*{product.price}">
+                <label>Gender</label>
+                <input type="text" class="form-control" th:field="*{user.gender}">
             </div>
 
             <div class="form-group">
-                <label>Quantity</label>
-                <input type="text" class="form-control" th:field="*{product.quantity}">
-            </div>
-
-            <div class="form-group">
-                <label>Visible</label>
-                <input type="text" class="form-control" th:field="*{product.visible}">
+                <label>Address</label>
+                <input type="text" class="form-control" th:field="*{user.address}">
             </div>
 
             <button type="submit" class="btn btn-primary">Gửi</button>

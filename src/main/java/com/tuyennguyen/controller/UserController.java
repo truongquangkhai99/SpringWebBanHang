@@ -24,14 +24,14 @@ public class UserController extends WebController {
     private static final String mainObject = "user";
 
     @Autowired
-    private UserService userService;
+    private UserService mainService;
 
     @GetMapping(value = "/" + mainObject)
     public String getList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(mainObject));
         setCommon(model);
 
-        List<User> listUser = userService.findAll();
+        List<User> listUser = mainService.findAll();
         model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listUser);
 
         return UtilCon.toAdmin(mainObject);
@@ -42,13 +42,13 @@ public class UserController extends WebController {
         logger.debug("Go to the add screen: " + UtilCon.toAdmin(mainObject));
         setCommon(model);
 
-        model.addAttribute(UtilCon.OBJ, new Product());
+        model.addAttribute(UtilCon.OBJ, new User());
         return UtilCon.toAdmin(mainObject + "-them");
     }
 
     @PostMapping(value = "/" + mainObject + "/save")
     public RedirectView save(@ModelAttribute(UtilCon.OBJ) User obj) {
-        userService.save(obj);
+        mainService.save(obj);
 
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl(UtilCon.toAdmin(mainObject));
@@ -60,7 +60,7 @@ public class UserController extends WebController {
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
 
-        Optional<User> obj = userService.findById(id);
+        Optional<User> obj = mainService.findById(id);
         model.addAttribute(mainObject, obj);
 
         return UtilCon.toAdmin(mainObject + "-edit");
@@ -68,9 +68,9 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + mainObject + "/delete/{id}")
     public RedirectView delete(@PathVariable int id) {
-        Optional<User> obj = userService.findById(id);
+        Optional<User> obj = mainService.findById(id);
 
-        userService.deleteById(id);
+        mainService.deleteById(id);
 
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl(UtilCon.toAdmin(mainObject));
