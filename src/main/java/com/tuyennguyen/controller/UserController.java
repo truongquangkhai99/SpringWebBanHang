@@ -66,6 +66,16 @@ public class UserController extends WebController {
         return UtilCon.toAdmin(mainObject + "-edit");
     }
 
+    @PostMapping(value = "/" + mainObject + "/update")
+    public RedirectView update(@ModelAttribute(UtilCon.OBJ) User obj) {
+        mainService.save(obj);
+
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl(UtilCon.toAdmin(mainObject));
+
+        return redirectView;
+    }
+
     @GetMapping(value = "/" + mainObject + "/delete/{id}")
     public RedirectView delete(@PathVariable int id) {
         Optional<User> obj = mainService.findById(id);

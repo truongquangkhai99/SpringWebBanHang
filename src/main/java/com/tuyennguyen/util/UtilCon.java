@@ -12,6 +12,10 @@ public class UtilCon {
     public static final String BOOTSTRAP           = "webjars/bootstrap/4.1.1/css/bootstrap.min.css";
 
 
+    public static String toAdmin() {
+        return UtilCon.FOR_SL + UtilCon.ADMIN;
+    }
+
     public static String toAdmin(String category) {
         return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category;
     }

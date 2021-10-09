@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản Phẩm</title>
+
+    <link th:href="${bootstrapCss}" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <h3>Category</h3>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td scope="row">
+                        <a th:href="@{{host}/admin/user (host=${host})}">User</a>
+
+                        <br>
+                        <a th:href="@{{host}/admin/product (host=${host})}">Product</a>
+
+                        <br>
+                        <a th:href="@{{host}/admin/menu-dong (host=${host})}">Menu Động</a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
