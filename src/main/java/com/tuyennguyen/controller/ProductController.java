@@ -48,15 +48,22 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/product/them")
     public String them(Model model) {
+        logger.debug("Go to the add screen: " + UtilFun.toAdmin(PRODUCT));
         setCommon(model);
+
+        model.addAttribute(UtilCon.OBJ, new Product());
         return UtilFun.toAdmin(PRODUCT + "-them");
     }
 
     @PostMapping(value = "/product/save")
-    public Product save(@RequestBody Product obj) {
-        return productService.save(obj);
-    }
+    public RedirectView save(@ModelAttribute(UtilCon.OBJ) Product product) {
+        productService.save(product);
 
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl(UtilFun.toAdmin(PRODUCT));
+
+        return redirectView;
+    }
 
     @GetMapping(value = "/product/delete/{id}")
     public RedirectView delete(@PathVariable int id) {

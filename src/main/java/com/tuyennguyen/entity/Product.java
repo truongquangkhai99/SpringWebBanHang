@@ -16,10 +16,20 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(nullable = true)
     private String name;
+
+    @Column(nullable = true)
     private double price;
+
+    @Column(nullable = true)
     private String description;
+
+    @Column(nullable = true)
     private int quantity;
+
+    @Column(nullable = true)
     private int visible;
 
 }

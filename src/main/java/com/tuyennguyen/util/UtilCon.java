@@ -4,6 +4,7 @@ public interface UtilCon {
 
     public final String ADMIN               = "admin";
     public final String CLIENT              = "client";
+    public final String OBJ                 = "obj";
 
     public final String FOR_SL              = "/";
     public final String BAC_SL              = "\\";
