@@ -20,12 +20,12 @@ import java.util.Optional;
 public class ProductController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(ProductController.class);
-    private final String PRODUCT = "product";
+    private static final String PRODUCT = "product";
 
     @Autowired
     private ProductService productService;
 
-    @GetMapping(value = "/product")
+    @GetMapping(value = "/" + PRODUCT)
     public String getList(Model model) {
         logger.debug("Go to " + UtilFun.toAdmin(PRODUCT));
         setCommon(model);
@@ -36,17 +36,7 @@ public class ProductController extends WebController {
         return UtilFun.toAdmin(PRODUCT);
     }
 
-    @GetMapping(value = "/product/edit/{id}")
-    public String findById(@PathVariable int id, Model model) {
-        setCommon(model);
-
-        Optional<Product> obj = productService.findById(id);
-        model.addAttribute(PRODUCT, obj);
-
-        return UtilFun.toAdmin("product-edit");
-    }
-
-    @GetMapping(value = "/product/them")
+    @GetMapping(value = "/" + PRODUCT + "/them")
     public String them(Model model) {
         logger.debug("Go to the add screen: " + UtilFun.toAdmin(PRODUCT));
         setCommon(model);
@@ -55,7 +45,7 @@ public class ProductController extends WebController {
         return UtilFun.toAdmin(PRODUCT + "-them");
     }
 
-    @PostMapping(value = "/product/save")
+    @PostMapping(value = "/" + PRODUCT + "/save")
     public RedirectView save(@ModelAttribute(UtilCon.OBJ) Product product) {
         productService.save(product);
 
@@ -65,7 +55,17 @@ public class ProductController extends WebController {
         return redirectView;
     }
 
-    @GetMapping(value = "/product/delete/{id}")
+    @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
+    public String findById(@PathVariable int id, Model model) {
+        setCommon(model);
+
+        Optional<Product> obj = productService.findById(id);
+        model.addAttribute(PRODUCT, obj);
+
+        return UtilFun.toAdmin(PRODUCT + "-edit");
+    }
+
+    @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
     public RedirectView delete(@PathVariable int id) {
         Optional<Product> obj = productService.findById(id);
 
