@@ -28,8 +28,7 @@ public class ProductController extends WebController {
     @GetMapping(value = "/product")
     public String getList(Model model) {
         logger.debug("Go to " + UtilFun.toAdmin(PRODUCT));
-        setHost(model);
-        setBootstrap(model);
+        setCommon(model);
 
         List<Product> listProduct = productService.findAll();
         model.addAttribute("listProduct", listProduct);
@@ -39,7 +38,7 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/product/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
-        setBootstrap(model);
+        setCommon(model);
 
         Optional<Product> obj = productService.findById(id);
         model.addAttribute(PRODUCT, obj);
@@ -48,8 +47,9 @@ public class ProductController extends WebController {
     }
 
     @GetMapping(value = "/product/them")
-    public String them(@RequestBody Product obj) {
-        return PRODUCT + UtilCon.Dash + "them";
+    public String them(Model model) {
+        setCommon(model);
+        return UtilFun.toAdmin(PRODUCT + "-them");
     }
 
     @PostMapping(value = "/product/save")
