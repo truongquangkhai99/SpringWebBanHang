@@ -3,7 +3,6 @@ package com.tuyennguyen.controller;
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.UtilCon;
-import com.tuyennguyen.util.UtilFun;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,59 +19,59 @@ import java.util.Optional;
 public class ProductController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(ProductController.class);
-    private static final String PRODUCT = "product";
+    private static final String mainObject = "product";
 
     @Autowired
     private ProductService productService;
 
-    @GetMapping(value = "/" + PRODUCT)
+    @GetMapping(value = "/" + mainObject)
     public String getList(Model model) {
-        logger.debug("Go to " + UtilFun.toAdmin(PRODUCT));
+        logger.debug("Go to " + UtilCon.toAdmin(mainObject));
         setCommon(model);
 
         List<Product> listProduct = productService.findAll();
-        model.addAttribute("listProduct", listProduct);
+        model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listProduct);
 
-        return UtilFun.toAdmin(PRODUCT);
+        return UtilCon.toAdmin(mainObject);
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/them")
+    @GetMapping(value = "/" + mainObject + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilFun.toAdmin(PRODUCT));
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(mainObject));
         setCommon(model);
 
         model.addAttribute(UtilCon.OBJ, new Product());
-        return UtilFun.toAdmin(PRODUCT + "-them");
+        return UtilCon.toAdmin(mainObject + "-them");
     }
 
-    @PostMapping(value = "/" + PRODUCT + "/save")
+    @PostMapping(value = "/" + mainObject + "/save")
     public RedirectView save(@ModelAttribute(UtilCon.OBJ) Product product) {
         productService.save(product);
 
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilFun.toAdmin(PRODUCT));
+        redirectView.setUrl(UtilCon.toAdmin(mainObject));
 
         return redirectView;
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
+    @GetMapping(value = "/" + mainObject + "/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
 
         Optional<Product> obj = productService.findById(id);
-        model.addAttribute(PRODUCT, obj);
+        model.addAttribute(mainObject, obj);
 
-        return UtilFun.toAdmin(PRODUCT + "-edit");
+        return UtilCon.toAdmin(mainObject + "-edit");
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
+    @GetMapping(value = "/" + mainObject + "/delete/{id}")
     public RedirectView delete(@PathVariable int id) {
         Optional<Product> obj = productService.findById(id);
 
         productService.deleteById(id);
 
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilFun.toAdmin(PRODUCT));
+        redirectView.setUrl(UtilCon.toAdmin(mainObject));
 
         return redirectView;
     }

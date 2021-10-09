@@ -4,52 +4,78 @@ import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.serivce.UserService;
-import com.tuyennguyen.util.StatusEnum;
+import com.tuyennguyen.util.UtilCon;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
 import java.util.Optional;
 
 @Controller
-public class UserController {
+@RequestMapping("/admin")
+public class UserController extends WebController {
+
+    Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final String mainObject = "user";
 
     @Autowired
-    private UserService service;
+    private UserService userService;
 
-    @Autowired
-    private ProductService productService;
+    @GetMapping(value = "/" + mainObject)
+    public String getList(Model model) {
+        logger.debug("Go to " + UtilCon.toAdmin(mainObject));
+        setCommon(model);
 
-    @RequestMapping(value = {"/", "trang-chu"})
-    public String findAll(Model model) {
-        List<Product> listProduct = productService.findAll();
-        model.addAttribute("listProduct", listProduct);
+        List<User> listUser = userService.findAll();
+        model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listUser);
 
-        return "home-page";
+        return UtilCon.toAdmin(mainObject);
     }
 
-    @GetMapping(value = "/{id}")
-    public Optional<User> findById(@PathVariable int id) {
-        return service.findById(id);
+    @GetMapping(value = "/" + mainObject + "/them")
+    public String them(Model model) {
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(mainObject));
+        setCommon(model);
+
+        model.addAttribute(UtilCon.OBJ, new Product());
+        return UtilCon.toAdmin(mainObject + "-them");
     }
 
-    @PostMapping(value = "/save")
-    public User save(@RequestBody User obj) {
-        return service.save(obj);
+    @PostMapping(value = "/" + mainObject + "/save")
+    public RedirectView save(@ModelAttribute(UtilCon.OBJ) User obj) {
+        userService.save(obj);
+
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl(UtilCon.toAdmin(mainObject));
+
+        return redirectView;
     }
 
-    @GetMapping(value = "/delete/{id}")
-    public String delete(@PathVariable int id) {
-        Optional<User> user = service.findById(id);
+    @GetMapping(value = "/" + mainObject + "/edit/{id}")
+    public String findById(@PathVariable int id, Model model) {
+        setCommon(model);
 
-        if (user.isEmpty()) {
-            return StatusEnum.NOT_EXIST.getValue();
-        }
+        Optional<User> obj = userService.findById(id);
+        model.addAttribute(mainObject, obj);
 
-        service.deleteById(id);
-        return StatusEnum.SUCCESS.getValue();
+        return UtilCon.toAdmin(mainObject + "-edit");
     }
-	
+
+    @GetMapping(value = "/" + mainObject + "/delete/{id}")
+    public RedirectView delete(@PathVariable int id) {
+        Optional<User> obj = userService.findById(id);
+
+        userService.deleteById(id);
+
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl(UtilCon.toAdmin(mainObject));
+
+        return redirectView;
+    }
+
 }

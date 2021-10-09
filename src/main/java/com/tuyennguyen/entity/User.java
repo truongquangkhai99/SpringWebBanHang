@@ -16,9 +16,17 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(nullable = true)
     private String fullName;
+
+    @Column(nullable = true)
     private String email;
+
+    @Column(nullable = true)
     private String gender;
+
+    @Column(nullable = true)
     private String address;
 
 }

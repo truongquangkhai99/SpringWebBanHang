@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản Phẩm</title>
+
+    <link th:href="${bootstrapCss}" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container">
+        <h3>Người Dùng</h3>
+
+        <a type="button" th:href="@{{host}/admin/user/them (host=${host})}" class="btn btn-info">Thêm</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Sửa</th>
+                    <th scope="col">Xoá</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:if="${listUser.empty}" scope="row">
+                    <td colspan="6">No Books Available</td>
+                </tr>
+                <tr th:each="obj : ${listUser}">
+                    <td scope="row">
+                        <span th:text="${obj.fullName}">Full Name</span>
+                    </td>
+
+                    <td>
+                        <span th:text="${obj.email}">Email</span>
+                    </td>
+
+                    <td>
+                        <span th:text="${obj.gender}">Gender</span>
+                    </td>
+
+                    <td>
+                        <span th:text="${obj.address}">Address</span>
+                    </td>
+
+                    <td>
+                        <a th:href="@{/admin/user/edit/{id}(id=${obj.id})}">Sửa</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/admin/user/delete/{id}(id=${obj.id})}">Xoá</a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
