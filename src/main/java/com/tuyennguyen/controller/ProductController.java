@@ -4,6 +4,8 @@ import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.UtilCon;
 import com.tuyennguyen.util.UtilFun;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,6 +19,7 @@ import java.util.Optional;
 @RequestMapping("/admin")
 public class ProductController extends WebController {
 
+    Logger logger = LoggerFactory.getLogger(ProductController.class);
     private final String PRODUCT = "product";
 
     @Autowired
@@ -24,6 +27,7 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/product")
     public String getList(Model model) {
+        logger.debug("Go to " + UtilFun.toAdmin(PRODUCT));
         setHost(model);
         setBootstrap(model);
 

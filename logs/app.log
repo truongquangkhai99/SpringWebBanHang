@@ -1,0 +1,12 @@
+2021-10-09 07:48:08,145 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-10-09 07:48:08,145 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-10-09 07:48:08,167 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 15088 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-10-09 07:48:08,167 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-09 07:48:08,167 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-09 07:48:08,584 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.436 seconds (JVM running for 61.908)
+2021-10-09 07:48:10,171 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-10-09 07:48:10,171 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-10-09 07:48:10,192 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 15088 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-10-09 07:48:10,192 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-09 07:48:10,192 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-09 07:48:10,547 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.373 seconds (JVM running for 63.872)
