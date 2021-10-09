@@ -1,16 +1,20 @@
 package com.tuyennguyen.controller;
 
-import com.tuyennguyen.util.HostNameEnum;
-import com.tuyennguyen.util.UtilEnum;
+import com.tuyennguyen.util.HostNameConfig;
+import com.tuyennguyen.util.UtilCon;
 import org.springframework.ui.Model;
 
 public class WebController {
 
-    public void setModelBootstrapCss(Model model) {
+    public void setHost(Model model) {
+        model.addAttribute("host", HostNameConfig.LOCALHOST);
+    }
+
+    public void setBootstrap(Model model) {
         model.addAttribute("bootstrapCss",
-                HostNameEnum.LOCALHOST.getValue() +
-                        UtilEnum.FORWARD_SLASH.getValue() +
-                        HostNameEnum.BOOTSTRAP.getValue());
+                HostNameConfig.LOCALHOST +
+                        UtilCon.FOR_SL +
+                        UtilCon.BOOTSTRAP);
     }
 	
 }

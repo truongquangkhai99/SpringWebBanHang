@@ -1,8 +1,8 @@
 package com.tuyennguyen.util;
 
 public enum FolderNameEnum {
-    ADMIN(1, "admin"),
-    Client(2, "client");
+    folder1(1, "folder1"),
+    folder2(2, "folder2");
 
     private final int key;
     private final String value;

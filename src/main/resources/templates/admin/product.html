@@ -9,7 +9,8 @@
 </head>
 <body>
 
-    <div>
+    <div class="container">
+        <a type="button" th:href="@{{host}/admin/product/them (host=${host})}" class="btn btn-info">Thêm</a>
         <table class="table">
             <thead>
                 <tr>
@@ -37,8 +38,12 @@
                         <span th:text="${obj.quantity}">Số Lượng</span>
                     </td>
 
-                    <td><a th:href="@{product/edit/{id}(id=${obj.id})}">Sửa</a></td>
-                    <td><a>Xoá</a></td>
+                    <td>
+                        <a th:href="@{product/edit/{id}(id=${obj.id})}">Sửa</a>
+                    </td>
+                    <td>
+                        <a th:href="@{product/delete/{id}(id=${obj.id})}">Xoá</a>
+                    </td>
 
                 </tr>
             </tbody>

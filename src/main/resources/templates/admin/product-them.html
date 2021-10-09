@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sản Phẩm</title>
+    <title>Sản Phẩm Thêm</title>
 
     <link th:href="${bootstrapCss}" rel="stylesheet">
 
@@ -10,31 +10,31 @@
 <body>
 
     <div class="container">
-
+        <h3>Thêm sản phẩm</h3>
         <form>
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" th:field="*{product.name}">
+                <input type="text" class="form-control"">
             </div>
 
             <div class="form-group">
                 <label>Description</label>
-                <input type="text" class="form-control" th:field="*{product.description}">
+                <input type="text" class="form-control"">
             </div>
 
             <div class="form-group">
                 <label>Price</label>
-                <input type="text" class="form-control" th:field="*{product.price}">
+                <input type="text" class="form-control"">
             </div>
 
             <div class="form-group">
                 <label>Quantity</label>
-                <input type="text" class="form-control" th:field="*{product.quantity}">
+                <input type="text" class="form-control"">
             </div>
 
             <div class="form-group">
                 <label>Visible</label>
-                <input type="text" class="form-control" th:field="*{product.visible}">
+                <input type="text" class="form-control"">
             </div>
 
             <button type="submit" class="btn btn-primary">Gửi</button>
