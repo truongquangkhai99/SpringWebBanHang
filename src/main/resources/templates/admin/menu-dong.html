@@ -11,6 +11,8 @@
 
     <div class="container">
         <h3>Menu Động</h3>
+        <a type="button" th:href="@{{host}/admin/ (host=${host})}" class="btn btn-success">Admin</a>
+        <br>
 
         <a type="button" th:href="@{{host}/admin/menu-dong/them (host=${host})}" class="btn btn-info">Thêm</a>
         <table class="table">
@@ -19,6 +21,7 @@
                     <th scope="col">Menu Name</th>
                     <th scope="col">Url</th>
                     <th scope="col">Thứ Tự</th>
+                    <th scope="col">Is Parent</th>
                     <th scope="col">Parent Id</th>
                     <th scope="col">Description</th>
                     <th scope="col">Is Visible</th>
@@ -41,6 +44,10 @@
 
                     <td>
                         <span th:text="${obj.menuOrder}">Thứ Tự</span>
+                    </td>
+
+                    <td>
+                        <span th:text="${obj.isParent}">Is Parent</span>
                     </td>
 
                     <td>

@@ -27,6 +27,9 @@ public class MenuDong {
     private int menuOrder;
 
     @Column(nullable = true)
+    private int isParent;
+
+    @Column(nullable = true)
     private int parentId;
 
     @Column(nullable = true)
