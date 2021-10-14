@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Trang Chủ</title>
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css} "/>
 
 </head>
 <body>
-
+<img th:src="@{/banner.jpg}" class="img-fluid" />
     <header th:insert="client/header.html :: header"></header>
     <div th:insert="client/menu.html :: menu"></div>
     <div class="container">
@@ -70,5 +70,10 @@
     </div>
 
     <footer th:insert="client/footer.html :: footer"></footer>
+
+    <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
+
 </body>
 </html>

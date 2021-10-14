@@ -11,13 +11,15 @@ public class WebController {
         model.addAttribute("host", HostNameConfig.LOCALHOST);
     }
 
-    public void setBootstrap(Model model) {
-        model.addAttribute("bootstrapCss", HostNameConfig.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP);
+    public void setBootstrapAndJquery(Model model) {
+        model.addAttribute("bootstrapCss", HostNameConfig.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_CSS);
+        model.addAttribute("bootstrapJs", HostNameConfig.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
+        model.addAttribute("jquery", HostNameConfig.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
     }
 
     public void setCommon(Model model) {
         setHost(model);
-        setBootstrap(model);
+        setBootstrapAndJquery(model);
     }
 
 

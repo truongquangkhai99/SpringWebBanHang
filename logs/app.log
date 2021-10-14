@@ -5377,3 +5377,59 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [heade
 2021-10-14 09:49:39,105 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
 2021-10-14 09:49:39,323 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-8] Go to /client/home
 2021-10-14 09:49:39,549 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-9] Go to /client/home
+2021-10-14 11:05:13,380 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
+2021-10-14 11:05:51,378 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:06:45,495 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
+2021-10-14 11:08:08,582 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:08:25,277 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
+2021-10-14 11:08:27,171 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-6] Go to /client/home
+2021-10-14 11:09:08,865 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-2] Go to /client/home
+2021-10-14 11:09:41,904 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-5] Go to /client/home
+2021-10-14 11:09:46,530 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:14:41,136 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-10-14 11:14:41,136 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-10-14 11:14:41,167 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 3628 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-10-14 11:14:41,167 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-14 11:14:41,167 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-14 11:14:41,672 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.517 seconds (JVM running for 6715.296)
+2021-10-14 11:18:10,638 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-10-14 11:18:10,639 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-10-14 11:18:10,665 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 3628 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-10-14 11:18:10,665 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-14 11:18:10,665 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-14 11:18:11,049 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.407 seconds (JVM running for 6924.673)
+2021-10-14 11:18:11,087 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:20:07,667 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:20:09,194 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:20:10,900 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-3] Go to /client/home
+2021-10-14 11:20:11,731 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-6] Go to /client/home
+2021-10-14 11:20:12,667 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:20:13,317 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-5] Go to /client/home
+2021-10-14 11:20:24,487 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:20:34,975 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-3] Go to /client/home
+2021-10-14 11:20:38,382 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-9] Go to /client/home
+2021-10-14 11:21:42,049 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:21:42,816 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:21:44,092 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-5] Go to /client/home
+2021-10-14 11:22:22,587 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-3] Go to /client/home
+2021-10-14 11:23:09,698 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-2] Go to /client/home
+2021-10-14 11:23:17,224 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
+2021-10-14 11:23:24,592 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-8] Go to /client/home
+2021-10-14 11:24:59,743 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-9] Go to /client/home
+2021-10-14 11:25:12,431 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-2] Go to /client/home
+2021-10-14 11:25:13,941 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-7] Go to /client/home
+2021-10-14 11:25:27,390 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:25:28,500 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:25:42,456 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-6] Go to /client/home
+2021-10-14 11:29:44,518 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:30:50,431 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:31:01,864 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-9] Go to /client/home
+2021-10-14 11:31:03,096 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-5] Go to /client/home
+2021-10-14 11:31:10,528 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:32:17,757 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-3] Go to /client/home
+2021-10-14 11:32:18,609 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-9] Go to /client/home
+2021-10-14 11:32:27,612 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-6] Go to /client/home
+2021-10-14 11:33:16,720 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home
+2021-10-14 11:33:17,554 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-10] Go to /client/home
+2021-10-14 11:33:25,485 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-1] Go to /client/home
+2021-10-14 11:33:26,565 DEBUG com.tuyennguyen.controller.HomeController [http-nio-8080-exec-4] Go to /client/home

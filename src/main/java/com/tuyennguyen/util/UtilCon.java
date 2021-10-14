@@ -9,7 +9,9 @@ public class UtilCon {
     public static final String FOR_SL              = "/";
     public static final String BAC_SL              = "\\";
     public static final String Dash                = "-";
-    public static final String BOOTSTRAP           = "webjars/bootstrap/4.1.1/css/bootstrap.min.css";
+    public static final String BOOTSTRAP_CSS       = "webjars/bootstrap/4.1.1/css/bootstrap.min.css";
+    public static final String BOOTSTRAP_JS        = "webjars/bootstrap/4.1.1/js/bootstrap.js";
+    public static final String JQUERY              = "webjars/jquery/3.3.1-1/jquery.js";
 
 
     public static String toAdmin() {
