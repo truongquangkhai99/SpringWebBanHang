@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Sửa Sản Phẩm</title>
+    <link rel="Shortcut icon" th:href="@{/admin.png}">
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css} "/>
 
 </head>
 <body>
@@ -33,6 +34,16 @@
             </div>
 
             <div class="form-group">
+                <label>Menu Động</label>
+
+                <select class="form-control" name="menuDongId">
+                    <option class="text-secondary font-weight-bold" value="0">Chọn Menu</option>
+                    <option class="text-primary font-weight-bold" th:each="obj:${listMenuDongCha}" th:if="${obj.isVisible}" th:value="${obj.id}" th:text="${obj.menuName}">Menu Name - Active</option>
+                    <option class="text-secondary small" th:each="obj:${listMenuDongCha}" th:unless="${obj.isVisible}" th:value="${obj.id}" th:text="${obj.menuName}">Menu Name - Not active</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label>Quantity</label>
                 <input type="text" class="form-control" th:field="*{product.quantity}">
             </div>
@@ -46,6 +57,10 @@
         </form>
 
     </div>
+
+    <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
 
 </body>
 </html>

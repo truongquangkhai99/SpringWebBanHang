@@ -1,7 +1,6 @@
 package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Product;
-import com.tuyennguyen.entity.User;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
@@ -58,6 +57,7 @@ public class ProductController extends WebController {
     @GetMapping(value = "/" + mainObject + "/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
+        setListMenuDongCha(model, UtilCon.PARENT);
 
         Optional<Product> obj = mainService.findById(id);
         model.addAttribute(mainObject, obj);

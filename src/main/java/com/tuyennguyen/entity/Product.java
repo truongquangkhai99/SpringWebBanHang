@@ -3,6 +3,7 @@ package com.tuyennguyen.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 
@@ -31,5 +32,9 @@ public class Product {
 
     @Column(nullable = true)
     private int visible;
+
+    @ColumnDefault("0")
+    @Column(nullable = true)
+    private int menuDongId;
 
 }

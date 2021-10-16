@@ -13,6 +13,11 @@ public class UtilCon {
     public static final String BOOTSTRAP_JS        = "webjars/bootstrap/4.1.1/js/bootstrap.js";
     public static final String JQUERY              = "webjars/jquery/3.3.1-1/jquery.js";
 
+    public static final int PARENT                 = 1;
+    public static final int NOT_PARENT             = 0;
+    public static final int VISIBLE                = 1;
+    public static final int NOT_VISIBLE            = 0;
+
 
     public static String toAdmin() {
         return UtilCon.FOR_SL + UtilCon.ADMIN;

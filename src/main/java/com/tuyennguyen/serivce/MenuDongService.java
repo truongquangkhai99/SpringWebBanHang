@@ -18,6 +18,14 @@ public class MenuDongService {
         return repository.findAll();
     }
 
+    public List<MenuDong> findAllByIsParent(int isParent) {
+        return repository.findAllByIsParent(isParent);
+    }
+
+    public List<MenuDong> findAllByIsVisible(int isVisible) {
+        return repository.findAllByIsVisible(isVisible);
+    }
+
     public Optional<MenuDong> findById(int id) {
         return repository.findById(id);
     }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Thêm Sản Phẩm</title>
+    <link rel="Shortcut icon" th:href="@{/admin.png}">
 
     <link th:href="${bootstrapCss}" rel="stylesheet">
 
@@ -26,6 +27,19 @@
             <div class="form-group">
                 <label>Price</label>
                 <input type="text" th:field="*{price}" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Chọn Menu</label>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                    </div>
+                </div>
             </div>
 
             <div class="form-group">

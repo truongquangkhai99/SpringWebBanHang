@@ -21,6 +21,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Giá</th>
                     <th scope="col">Số Lượng</th>
+                    <th scope="col">Thuộc Menu</th>
                     <th scope="col">Sửa</th>
                     <th scope="col">Xoá</th>
                 </tr>
@@ -40,6 +41,10 @@
 
                     <td>
                         <span th:text="${obj.quantity}">Số Lượng</span>
+                    </td>
+
+                    <td>
+                        <span th:text="${obj.menuDongId}">Thuộc Menu</span>
                     </td>
 
                     <td>
