@@ -19,18 +19,26 @@
                         <a class="nav-link" th:href="@{{host}/ (host=${host})}">Trang Chủ</a>
                     </li>
 
-                    <li class="nav-item active" th:each="obj : ${listMenuDongIsVisible}">
-                        <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/{url} (host=${host}, url=${obj.url})}">Menu Name</a>
+                    <li th:each="obj:${listMenuDongIsVisible}" class="nav-item active" th:switch="${obj.isParent}">
+                        <span th:case="0">
+                            <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/{url} (host=${host}, url=${obj.url})}">
+                                Menu Name
+                            </a>
+                        </span>
+
+                        <span th:case="1">
+                            <a class="nav-link dropdown-toggle" th:text="${obj.menuName}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu Name
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                            </div>
+                        </span>
+
                     </li>
 
                     <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sản Phẩm
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                        </div>
                     </li>
 
                     <li class="nav-item active">

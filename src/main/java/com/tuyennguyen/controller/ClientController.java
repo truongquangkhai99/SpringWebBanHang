@@ -27,6 +27,7 @@ public class ClientController extends WebController {
         setCommon(model);
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
+        System.out.println(listMenuDongIsVisible);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
 
         return UtilCon.toClient(mainObject);
