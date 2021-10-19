@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: HP
+Build-Jdk: version 11.0.12
+Implementation-Title: SpringWebBanHang
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.tuyennguyen
+Main-Class: ${start-class}
+
