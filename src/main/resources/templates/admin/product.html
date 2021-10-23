@@ -30,7 +30,8 @@
                 <tr th:if="${listProduct.empty}" scope="row">
                     <td colspan="6">No Books Available</td>
                 </tr>
-                <tr th:each="obj : ${listProduct}">
+                
+                <tr th:each="obj:${listProduct}">
                     <td scope="row">
                         <span th:text="${obj.name}">Name</span>
                     </td>
@@ -48,10 +49,10 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/product/edit/{id}(id=${obj.id})}">Sửa</a>
+                        <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}">Sửa</a>
                     </td>
                     <td>
-                        <a th:href="@{/admin/product/delete/{id}(id=${obj.id})}">Xoá</a>
+                        <a th:href="@{/admin/product/delete/{productId}(id=${obj.productId})}">Xoá</a>
                     </td>
 
                 </tr>

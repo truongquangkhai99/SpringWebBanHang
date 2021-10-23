@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -15,7 +16,7 @@ public class MenuDong {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int menuDongId;
 
     @Column(nullable = true)
     private String menuName;
@@ -38,4 +39,6 @@ public class MenuDong {
     @Column(nullable = true)
     private int isVisible;
 
+//    @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="menuDong")
+//    private List<Product> products;
 }

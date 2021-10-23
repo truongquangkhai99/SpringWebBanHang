@@ -30,7 +30,8 @@
                 <tr th:if="${listUser.empty}" scope="row">
                     <td colspan="6">No Books Available</td>
                 </tr>
-                <tr th:each="obj : ${listUser}">
+
+                <tr th:each="obj:${listUser}">
                     <td scope="row">
                         <span th:text="${obj.fullName}">Full Name</span>
                     </td>
@@ -48,10 +49,10 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/user/edit/{id}(id=${obj.id})}">Sửa</a>
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}">Sửa</a>
                     </td>
                     <td>
-                        <a th:href="@{/admin/user/delete/{id}(id=${obj.id})}">Xoá</a>
+                        <a th:href="@{/admin/user/delete/{userId}(userId=${obj.userId})}">Xoá</a>
                     </td>
 
                 </tr>

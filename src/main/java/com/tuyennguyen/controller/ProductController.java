@@ -32,6 +32,9 @@ public class ProductController extends WebController {
         List<Product> listProduct = mainService.findAll();
         model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listProduct);
 
+        System.out.println("List Product");
+        System.out.println(listProduct);
+
         return UtilCon.toAdmin(mainObject);
     }
 

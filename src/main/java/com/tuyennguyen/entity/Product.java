@@ -1,9 +1,12 @@
 package com.tuyennguyen.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
@@ -16,7 +19,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int productId;
 
     @Column(nullable = true)
     private String name;
@@ -37,4 +40,7 @@ public class Product {
     @Column(nullable = true)
     private int menuDongId;
 
+//    @ManyToOne(fetch=FetchType.LAZY)
+//    @JoinColumn(name="id")
+//    private MenuDong menuDong;
 }

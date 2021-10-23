@@ -33,6 +33,8 @@ public class MenuDongController extends WebController {
 
         List<MenuDong> listMenuDong = mainService.findAll();
         model.addAttribute("listMenuDong", listMenuDong);
+        System.out.println("Menu động");
+        System.out.println(listMenuDong);
 
         return UtilCon.toAdmin(mainObject);
     }

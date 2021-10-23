@@ -34,6 +34,7 @@
                 <tr th:if="${listMenuDong.empty}" scope="row">
                     <td colspan="6">No Books Available</td>
                 </tr>
+
                 <tr th:each="obj : ${listMenuDong}">
                     <td scope="row">
                         <span th:text="${obj.menuName}">Menu Name</span>
@@ -76,13 +77,13 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/menu-dong/edit/{id}(id=${obj.id})}">
+                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}">
                             <i class="fas fa-edit"></i>
                         </a>
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/menu-dong/delete/{id}(id=${obj.id})}" class="text-danger">
+                        <a th:href="@{/admin/menu-dong/delete/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-danger">
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>
