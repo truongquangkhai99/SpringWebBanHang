@@ -14,20 +14,19 @@ public class AdminController extends WebController {
     Logger logger = LoggerFactory.getLogger(AdminController.class);
     private static final String mainObject = "admin";
 
+    @GetMapping(value = "/admin-login")
+    public String login(Model model) {
+        logger.debug("Go to " + UtilCon.toAdmin());
+        setCommon(model);
+
+        return UtilCon.toAdmin("admin-login");
+    }
     @GetMapping(value = "/admin")
     public String admin(Model model) {
-        System.out.println("he he");
         logger.debug("Go to " + UtilCon.toAdmin());
         setCommon(model);
 
         return UtilCon.toAdmin(mainObject);
-    }
-
-    @RequestMapping("/admin-login")
-    public RedirectView localRedirect() {
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl("http://localhost:8080/login");
-        return redirectView;
     }
 
 }

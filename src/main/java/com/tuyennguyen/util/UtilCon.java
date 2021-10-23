@@ -24,7 +24,11 @@ public class UtilCon {
     }
 
     public static String toAdmin(String category) {
-        return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category;
+        if (category.equals(UtilCon.ADMIN)) {
+            return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category;
+        } else {
+            return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category + UtilCon.FOR_SL + category;
+        }
     }
 
     public static String toClient(String toCategory) {
