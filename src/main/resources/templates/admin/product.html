@@ -30,7 +30,7 @@
                 <tr th:if="${listProduct.empty}" scope="row">
                     <td colspan="6">No Books Available</td>
                 </tr>
-                
+
                 <tr th:each="obj:${listProduct}">
                     <td scope="row">
                         <span th:text="${obj.name}">Name</span>
