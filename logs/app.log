@@ -2127,3 +2127,61 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/admi
 2021-10-24 01:23:23,416 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-9] Go to /admin
 2021-10-24 01:23:24,884 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to /admin/product/product
 2021-10-24 01:23:28,016 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:31:02,564 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-5] Go to /admin
+2021-10-24 01:31:05,294 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-8] Go to /admin
+2021-10-24 01:31:15,436 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-7] Go to /admin
+2021-10-24 01:31:16,646 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-2] Go to /admin
+2021-10-24 01:31:58,463 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-2] Go to /admin
+2021-10-24 01:32:01,189 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-1] Go to /admin
+2021-10-24 01:32:47,035 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:32:47,687 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-3] Go to /admin
+2021-10-24 01:33:06,253 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to /client/home
+2021-10-24 01:33:09,973 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-4] Go to /admin
+2021-10-24 01:33:13,255 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to /admin/user/user
+2021-10-24 01:33:14,335 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-1] Go to /admin
+2021-10-24 01:34:13,373 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to /admin/menu-dong/menu-dong
+2021-10-24 01:34:15,152 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-9] Go to /admin
+2021-10-24 01:43:00,377 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-8] Go to /admin
+2021-10-24 01:43:04,503 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-8] Go to /admin
+2021-10-24 01:43:27,469 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 01:43:29,966 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 01:43:30,378 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 01:43:31,617 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:44:49,760 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-2] Go to /admin
+2021-10-24 01:45:03,182 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:45:04,631 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:45:05,069 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 01:45:05,271 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-7] Go to /admin
+2021-10-24 01:50:10,585 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 14:28:11,282 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2021-10-24 14:28:11,284 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2021-10-24 14:28:11,443 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-10-24 14:28:11,443 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-10-24 14:28:11,705 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 14900 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-10-24 14:28:11,705 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-24 14:28:11,705 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-24 14:28:14,066 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.617 seconds (JVM running for 3.647)
+2021-10-24 14:29:20,507 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-5] Go to /admin
+2021-10-24 14:31:08,037 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 14:31:10,599 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-1] Go to /admin
+2021-10-24 14:32:05,234 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-3] Go to /admin
+2021-10-24 14:32:11,099 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-3] Go to /admin
+2021-10-24 14:32:21,428 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-2] Go to /admin
+2021-10-24 14:32:22,656 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-7] Go to /admin
+2021-10-24 14:32:23,435 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 14:32:35,141 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-6] Go to /admin
+2021-10-24 14:32:36,382 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 14:32:37,247 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-7] Go to /admin
+2021-10-24 14:32:37,907 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-8] Go to /admin
+2021-10-24 14:32:55,838 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-5] Go to /admin
+2021-10-24 14:32:57,627 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 14:33:41,337 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-3] Go to /admin
+2021-10-24 14:33:42,880 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-10] Go to /admin
+2021-10-24 14:33:44,021 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-8] Go to /admin
+2021-10-24 14:35:07,271 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-9] Go to /admin
+2021-10-24 14:35:11,948 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-9] Go to /admin
+2021-10-24 14:35:43,949 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to /admin/user/user
+2021-10-24 14:35:45,825 DEBUG com.tuyennguyen.controller.AdminController [http-nio-8080-exec-7] Go to /admin
+2021-10-24 14:36:48,969 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to /client/home
+2021-10-24 14:36:49,185 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-6] Go to /client/home
+2021-10-24 14:36:56,936 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-9] Go to /client/home
