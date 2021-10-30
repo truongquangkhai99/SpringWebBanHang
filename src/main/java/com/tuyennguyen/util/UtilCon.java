@@ -18,21 +18,46 @@ public class UtilCon {
     public static final int VISIBLE                = 1;
     public static final int NOT_VISIBLE            = 0;
 
-
     public static String toAdmin() {
-        return UtilCon.FOR_SL + UtilCon.ADMIN;
+        return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN;
     }
 
-    public static String toAdmin(String category) {
-        if (category.equals(UtilCon.ADMIN)) {
-            return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category;
+    public static String toAdmin(String htmlFileName) {
+        String folder = htmlFileName;
+        String path = getPathHtmlFileName(folder, htmlFileName, true);
+
+        return path;
+    }
+
+    public static String toAdmin(String folder, String htmlFileName) {
+        System.out.println(88);
+        String path = getPathHtmlFileName(folder, htmlFileName, true);
+        System.out.println(path);
+        return path;
+    }
+
+    public static String toClient(String htmlFileName) {
+        String folder = htmlFileName;
+        String path = getPathHtmlFileName(folder, htmlFileName, false);
+        return path;
+    }
+    public static String toClient(String folder, String htmlFileName) {
+        String path = getPathHtmlFileName(folder, htmlFileName, false);
+        return path;
+    }
+
+    private static String getPathHtmlFileName(String folder, String htmlFileName, boolean isAdmin) {
+        String path = "";
+        if (isAdmin == true) {
+            path += UtilCon.ADMIN;
         } else {
-            return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + category + UtilCon.FOR_SL + category;
+            path += UtilCon.CLIENT;
         }
-    }
 
-    public static String toClient(String toCategory) {
-        return UtilCon.FOR_SL + UtilCon.CLIENT + UtilCon.FOR_SL + toCategory;
+        path += UtilCon.FOR_SL + folder;
+        path += UtilCon.FOR_SL + htmlFileName;
+
+        return path;
     }
 
     public static String upperFirstLetter(String str) {

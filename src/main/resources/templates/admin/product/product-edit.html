@@ -13,7 +13,7 @@
     <div class="container">
         <h3>Sửa Sản Phẩm</h3>
 
-        <form th:action="@{/admin/product/update}" method="post">
+        <form th:action="@{{host}/admin/product/update (host=${host})}" method="post">
             <div class="form-group">
                 <label>Id</label>
                 <input type="text" class="form-control" th:field="*{product.productId}">

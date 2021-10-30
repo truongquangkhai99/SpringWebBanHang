@@ -2,6 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.serivce.ProductService;
+import com.tuyennguyen.util.HostName;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
@@ -32,9 +34,6 @@ public class ProductController extends WebController {
         List<Product> listProduct = mainService.findAll();
         model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listProduct);
 
-        System.out.println("List Product");
-        System.out.println(listProduct);
-
         return UtilCon.toAdmin(mainObject);
     }
 
@@ -44,17 +43,14 @@ public class ProductController extends WebController {
         setCommon(model);
 
         model.addAttribute(UtilCon.OBJ, new Product());
-        return UtilCon.toAdmin(mainObject + "-them");
+        return UtilCon.toAdmin(mainObject, mainObject + "-them");
     }
 
     @PostMapping(value = "/" + mainObject + "/save")
-    public RedirectView save(@ModelAttribute(UtilCon.OBJ) Product product) {
+    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product product) {
         mainService.save(product);
 
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
-
-        return redirectView;
+        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/product");
     }
 
     @GetMapping(value = "/" + mainObject + "/edit/{id}")
@@ -65,17 +61,14 @@ public class ProductController extends WebController {
         Optional<Product> obj = mainService.findById(id);
         model.addAttribute(mainObject, obj);
 
-        return UtilCon.toAdmin(mainObject + "-edit");
+        return UtilCon.toAdmin(mainObject, mainObject + "-edit");
     }
 
     @PostMapping(value = "/" + mainObject + "/update")
-    public RedirectView update(@ModelAttribute(mainObject) Product obj) {
+    public ModelAndView update(@ModelAttribute(mainObject) Product obj) {
         mainService.save(obj);
 
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
-
-        return redirectView;
+        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/product");
     }
 
     @GetMapping(value = "/" + mainObject + "/delete/{id}")
@@ -85,7 +78,7 @@ public class ProductController extends WebController {
         mainService.deleteById(id);
 
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
+        redirectView.setUrl(UtilCon.toAdmin(mainObject, mainObject));
 
         return redirectView;
     }
