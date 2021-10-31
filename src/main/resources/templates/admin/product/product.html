@@ -49,10 +49,15 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}">Sửa</a>
+                        <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="text-success">
+                            <i class="fas fa-pen"></i>
+                        </a>
                     </td>
+
                     <td>
-                        <a th:href="@{/admin/product/delete/{productId}(id=${obj.productId})}">Xoá</a>
+                        <a th:href="@{/admin/product/delete/{productId}(id=${obj.productId})}" class="text-danger">
+                            <i class="far fa-trash-alt"></i>
+                        </a>
                     </td>
 
                 </tr>

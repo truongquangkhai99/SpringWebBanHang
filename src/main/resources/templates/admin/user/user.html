@@ -49,10 +49,14 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}">Sửa</a>
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="text-success">
+                            <i class="fas fa-pen"></i>
+                        </a>
                     </td>
                     <td>
-                        <a th:href="@{/admin/user/delete/{userId}(userId=${obj.userId})}">Xoá</a>
+                        <a th:href="@{/admin/user/delete/{userId}(userId=${obj.userId})}" class="text-danger">
+                            <i class="far fa-trash-alt"></i>
+                        </a>
                     </td>
 
                 </tr>
