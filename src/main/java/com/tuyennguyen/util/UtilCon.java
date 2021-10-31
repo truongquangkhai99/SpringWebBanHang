@@ -5,6 +5,10 @@ public class UtilCon {
     public static final String ADMIN               = "admin";
     public static final String CLIENT              = "client";
     public static final String OBJ                 = "obj";
+    public static final String PAGE                = "page";
+    public static final String PRODUCT             = "product";
+    public static final String USER                = "user";
+    public static final String MENU_DONG           = "menu-dong";
 
     public static final String FOR_SL              = "/";
     public static final String BAC_SL              = "\\";

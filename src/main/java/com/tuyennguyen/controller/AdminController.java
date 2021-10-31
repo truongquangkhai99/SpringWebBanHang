@@ -1,7 +1,9 @@
 package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.entity.User;
 import com.tuyennguyen.serivce.ProductService;
+import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +20,9 @@ public class AdminController extends WebController {
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private UserService userService;
 
     Logger logger = LoggerFactory.getLogger(AdminController.class);
     private static final String mainObject = "admin";
@@ -37,6 +42,10 @@ public class AdminController extends WebController {
 
         List<Product> listProduct = productService.findAll();
         model.addAttribute("listProduct", listProduct);
+        model.addAttribute("page", "product");
+
+        List<User> listUser = userService.findAll();
+        model.addAttribute("listUser", listUser);
 
         return UtilCon.toAdmin();
     }

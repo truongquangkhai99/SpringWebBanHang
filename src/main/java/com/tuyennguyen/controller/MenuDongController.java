@@ -35,8 +35,9 @@ public class MenuDongController extends WebController {
 
         List<MenuDong> listMenuDong = mainService.findAll();
         model.addAttribute("listMenuDong", listMenuDong);
+        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG);
 
-        return UtilCon.toAdmin(mainObject);
+        return UtilCon.toAdmin();
     }
 
     @GetMapping(value = "/" + mainObject + "/them")

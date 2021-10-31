@@ -32,9 +32,10 @@ public class ProductController extends WebController {
         setCommon(model);
 
         List<Product> listProduct = mainService.findAll();
-        model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listProduct);
+        model.addAttribute("listProduct", listProduct);
+        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
-        return UtilCon.toAdmin(mainObject);
+        return UtilCon.toAdmin();
     }
 
     @GetMapping(value = "/" + mainObject + "/them")

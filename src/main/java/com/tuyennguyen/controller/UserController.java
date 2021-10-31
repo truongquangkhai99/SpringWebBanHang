@@ -34,9 +34,10 @@ public class UserController extends WebController {
         setCommon(model);
 
         List<User> listUser = mainService.findAll();
-        model.addAttribute("list" + UtilCon.upperFirstLetter(mainObject), listUser);
+        model.addAttribute("listUser", listUser);
+        model.addAttribute(UtilCon.PAGE, UtilCon.USER);
 
-        return UtilCon.toAdmin(mainObject);
+        return UtilCon.toAdmin();
     }
 
     @GetMapping(value = "/" + mainObject + "/them")

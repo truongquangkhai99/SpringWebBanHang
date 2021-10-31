@@ -9,40 +9,42 @@
         <ul class="list-unstyled components maBo0">
             <p>Dummy Heading</p>
 
-            <li class="active">
+            <li th:attr='class=${page == "home" ? "active" : ""}'>
                 <a href="#home" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                     <i class="fas fa-home"></i>
-                    Home
+                    <span>Home</span>
                 </a>
 
                 <ul class="collapse list-unstyled" id="home">
                     <li>
                         <a href="#">Home 1</a>
                     </li>
+
                     <li>
                         <a href="#">Home 2</a>
                     </li>
+
                     <li>
-                        <a href="#">Home 3</a>
+                        <a href="#" th:text="${page}">Home 3</a>
                     </li>
                 </ul>
             </li>
 
-            <li>
+            <li th:attr='class=${page == "product" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/product (host=${host})}">
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
                 </a>
             </li>
 
-            <li>
+            <li th:attr='class=${page == "user" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/user (host=${host})}">
                     <i class="fas fa-user"></i>
                     <span>User</span>
                 </a>
             </li>
 
-            <li>
+            <li th:attr='class=${page == "menu-dong" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/menu-dong (host=${host})}">
                     <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
                     <span>Menu Động</span>
@@ -61,6 +63,7 @@
             </li>
         </ul>
 
+        <!-- Logout -->
         <ul class="list-unstyled components paToBo0">
             <li>
                 <a th:href="@{{host}/logout (host=${host})}">
@@ -81,9 +84,10 @@
         </ul>
     </nav>
 
-    <!-- Page Content  -->
+    <!-- Page Content -->
     <div id="content">
 
+        <!-- Page ngang -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
@@ -115,8 +119,17 @@
             </div>
         </nav>
 
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div th:switch="${page}" th:case="product">
+            <div th:insert="admin/product/product.html::#product-list"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="user">
+            <div th:insert="admin/user/user.html::#user-list"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="menu-dong">
+            <div th:insert="admin/menu-dong/menu-dong.html::#menu-dong-list"></div>
+        </div>
+
     </div>
 </div>
