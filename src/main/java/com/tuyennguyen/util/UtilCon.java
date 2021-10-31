@@ -19,7 +19,7 @@ public class UtilCon {
     public static final int NOT_VISIBLE            = 0;
 
     public static String toAdmin() {
-        return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN;
+        return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN + ".html";
     }
 
     public static String toAdmin(String htmlFileName) {
