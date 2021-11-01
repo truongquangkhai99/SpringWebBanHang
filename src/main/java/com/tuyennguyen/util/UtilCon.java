@@ -7,8 +7,14 @@ public class UtilCon {
     public static final String OBJ                 = "obj";
     public static final String PAGE                = "page";
     public static final String PRODUCT             = "product";
+    public static final String PRODUCT_EDIT        = "product-edit";
+    public static final String PRODUCT_THEM        = "product-them";
     public static final String USER                = "user";
+    public static final String USER_EDIT           = "user-edit";
+    public static final String USER_THEM           = "user-them";
     public static final String MENU_DONG           = "menu-dong";
+    public static final String MENU_DONG_EDIT      = "menu-dong-edit";
+    public static final String MENU_DONG_THEM      = "menu-dong-them";
 
     public static final String FOR_SL              = "/";
     public static final String BAC_SL              = "\\";

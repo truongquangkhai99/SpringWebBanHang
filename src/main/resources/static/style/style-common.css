@@ -1,5 +1,7 @@
 /* CSS Common - Start */
 
+.icon-delete:hover {cursor: pointer;}
+
 .paTo0 {padding-top: 0px !important;}
 .paTo05 {padding-top: 5px !important;}
 .paTo10 {padding-top: 10px !important;}

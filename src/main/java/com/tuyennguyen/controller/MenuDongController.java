@@ -1,10 +1,8 @@
 package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
-import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.serivce.MenuDongService;
-import com.tuyennguyen.serivce.ProductService;
-import com.tuyennguyen.util.HostName;
+import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,14 +21,14 @@ import java.util.Optional;
 public class MenuDongController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(MenuDongController.class);
-    private static final String mainObject = "menu-dong";
+    private static final String MAIN_OBJECT = "menu-dong";
 
     @Autowired
     private MenuDongService mainService;
 
-    @GetMapping(value = "/" + mainObject)
+    @GetMapping(value = "/" + MAIN_OBJECT)
     public String getList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(mainObject));
+        logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
         List<MenuDong> listMenuDong = mainService.findAll();
@@ -40,49 +38,46 @@ public class MenuDongController extends WebController {
         return UtilCon.toAdmin();
     }
 
-    @GetMapping(value = "/" + mainObject + "/them")
+    @GetMapping(value = "/" + MAIN_OBJECT + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(mainObject, mainObject + "/them"));
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(MAIN_OBJECT, MAIN_OBJECT + "/them"));
         setCommon(model);
 
         model.addAttribute(UtilCon.OBJ, new MenuDong());
-        return UtilCon.toAdmin(mainObject, mainObject + "-them");
+        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
+        return UtilCon.toAdmin();
     }
 
-    @PostMapping(value = "/" + mainObject + "/save")
+    @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong menuDong) {
         mainService.save(menuDong);
 
-        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/menu-dong");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/menu-dong");
     }
 
-    @GetMapping(value = "/" + mainObject + "/edit/{id}")
+    @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
 
         Optional<MenuDong> obj = mainService.findById(id);
         model.addAttribute("menuDong", obj);
+        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_EDIT);
 
-        return UtilCon.toAdmin(mainObject, mainObject + "-edit");
+        return UtilCon.toAdmin();
     }
 
-    @PostMapping(value = "/" + mainObject + "/update")
-    public ModelAndView update(@ModelAttribute(mainObject) MenuDong obj) {
+    @PostMapping(value = "/" + MAIN_OBJECT + "/update")
+    public ModelAndView update(@ModelAttribute(MAIN_OBJECT) MenuDong obj) {
         mainService.save(obj);
 
-        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/menu-dong");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/menu-dong");
     }
 
-    @GetMapping(value = "/" + mainObject + "/delete/{id}")
-    public RedirectView delete(@PathVariable int id) {
-        Optional<MenuDong> obj = mainService.findById(id);
-
+    @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
+    public ModelAndView delete(@PathVariable int id) {
         mainService.deleteById(id);
 
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
-
-        return redirectView;
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 	
 }

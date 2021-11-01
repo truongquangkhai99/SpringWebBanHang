@@ -30,21 +30,21 @@
                 </ul>
             </li>
 
-            <li th:attr='class=${page == "product" ? "active" : ""}'>
+            <li th:attr='class=${page == "product" || page == "product-them" || page == "product-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/product (host=${host})}">
                     <i class="fab fa-product-hunt"></i>
                     <span>Product</span>
                 </a>
             </li>
 
-            <li th:attr='class=${page == "user" ? "active" : ""}'>
+            <li th:attr='class=${page == "user" || page == "user-them" || page == "user-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/user (host=${host})}">
                     <i class="fas fa-user"></i>
                     <span>User</span>
                 </a>
             </li>
 
-            <li th:attr='class=${page == "menu-dong" ? "active" : ""}'>
+            <li th:attr='class=${page == "menu-dong" || page == "menu-dong-them" || page == "menu-dong-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/menu-dong (host=${host})}">
                     <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
                     <span>Menu Động</span>
@@ -109,16 +109,43 @@
             </div>
         </nav>
 
+        <!-- Product -->
         <div th:switch="${page}" th:case="product">
             <div th:insert="admin/product/product.html::#product-list"></div>
         </div>
 
+        <div th:switch="${page}" th:case="product-them">
+            <div th:insert="admin/product/product-them.html::#product-them"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="product-edit">
+            <div th:insert="admin/product/product-edit.html::#product-edit"></div>
+        </div>
+
+        <!-- User -->
         <div th:switch="${page}" th:case="user">
             <div th:insert="admin/user/user.html::#user-list"></div>
         </div>
 
+        <div th:switch="${page}" th:case="user-them">
+            <div th:insert="admin/user/user-them.html::#user-them"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="user-edit">
+            <div th:insert="admin/user/user-edit.html::#user-edit"></div>
+        </div>
+
+        <!-- Menu Động -->
         <div th:switch="${page}" th:case="menu-dong">
             <div th:insert="admin/menu-dong/menu-dong.html::#menu-dong-list"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="menu-dong-them">
+            <div th:insert="admin/menu-dong/menu-dong-them.html::#menu-dong-them"></div>
+        </div>
+
+        <div th:switch="${page}" th:case="menu-dong-edit">
+            <div th:insert="admin/menu-dong/menu-dong-edit.html::#menu-dong-edit"></div>
         </div>
 
     </div>

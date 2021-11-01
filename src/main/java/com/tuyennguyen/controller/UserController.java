@@ -1,10 +1,8 @@
 package com.tuyennguyen.controller;
 
-import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
-import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.serivce.UserService;
-import com.tuyennguyen.util.HostName;
+import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,14 +21,14 @@ import java.util.Optional;
 public class UserController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(UserController.class);
-    private static final String mainObject = "user";
+    private static final String MAIN_OBJECT = "user";
 
     @Autowired
     private UserService mainService;
 
-    @GetMapping(value = "/" + mainObject)
+    @GetMapping(value = "/" + MAIN_OBJECT)
     public String getList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(mainObject));
+        logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
         List<User> listUser = mainService.findAll();
@@ -40,52 +38,49 @@ public class UserController extends WebController {
         return UtilCon.toAdmin();
     }
 
-    @GetMapping(value = "/" + mainObject + "/them")
+    @GetMapping(value = "/" + MAIN_OBJECT + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(mainObject));
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
         model.addAttribute(UtilCon.OBJ, new User());
-        return UtilCon.toAdmin(mainObject, mainObject + "-them");
+        model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
+        return UtilCon.toAdmin();
     }
 
-    @PostMapping(value = "/" + mainObject + "/save")
+    @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
         mainService.save(obj);
 
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
+        redirectView.setUrl(UtilCon.toAdmin(MAIN_OBJECT));
 
-        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/user");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/user");
     }
 
-    @GetMapping(value = "/" + mainObject + "/edit/{id}")
+    @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
 
         Optional<User> obj = mainService.findById(id);
-        model.addAttribute(mainObject, obj);
+        model.addAttribute(MAIN_OBJECT, obj);
+        model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
 
-        return UtilCon.toAdmin(mainObject, mainObject + "-edit");
+        return UtilCon.toAdmin();
     }
 
-    @PostMapping(value = "/" + mainObject + "/update")
+    @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
         mainService.save(obj);
 
-        return new ModelAndView("redirect:" + HostName.LOCALHOST + "/admin/user");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/user");
     }
 
-    @GetMapping(value = "/" + mainObject + "/delete/{id}")
-    public RedirectView delete(@PathVariable int id) {
-        Optional<User> obj = mainService.findById(id);
-
+    @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
+    public ModelAndView delete(@PathVariable int id) {
         mainService.deleteById(id);
 
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(mainObject));
-
-        return redirectView;
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 
 }
