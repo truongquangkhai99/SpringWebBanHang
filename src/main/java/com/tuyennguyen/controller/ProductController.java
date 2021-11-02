@@ -1,6 +1,8 @@
 package com.tuyennguyen.controller;
 
+import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
@@ -26,6 +28,9 @@ public class ProductController extends WebController {
     @Autowired
     private ProductService mainService;
 
+    @Autowired
+    private MenuDongService menuDongService;
+
     @GetMapping(value = "/" + MAIN_OBJECT)
     public String getList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
@@ -45,6 +50,10 @@ public class ProductController extends WebController {
 
         model.addAttribute(UtilCon.OBJ, new Product());
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
+
+        List<MenuDong> listMenuDong = menuDongService.findAll();
+        model.addAttribute("listMenuDong", listMenuDong);
+
         return UtilCon.toAdmin();
     }
 

@@ -21,10 +21,11 @@ public class ClientController extends WebController {
     @Autowired
     private MenuDongService mainService;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = {"/", "/home"})
     public String goHome(Model model) {
         logger.debug("Go to " + UtilCon.toClient("home"));
         setCommon(model);
+        System.out.println(UtilCon.toClient(mainObject));
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);

@@ -40,15 +40,13 @@ public class UtilCon {
     }
 
     public static String toAdmin(String folder, String htmlFileName) {
-        System.out.println(88);
         String path = getPathHtmlFileName(folder, htmlFileName, true);
         System.out.println(path);
         return path;
     }
 
     public static String toClient(String htmlFileName) {
-        String folder = htmlFileName;
-        String path = getPathHtmlFileName(folder, htmlFileName, false);
+        String path = "client/" + htmlFileName;
         return path;
     }
     public static String toClient(String folder, String htmlFileName) {
