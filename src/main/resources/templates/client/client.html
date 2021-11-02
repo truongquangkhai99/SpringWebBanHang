@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Trang Chủ</title>
+
     <link rel="Shortcut icon" th:href="@{/logo.png}">
+    <link th:href="@{/style/side-bar-left-and-modal-and-list-product.css}" rel="stylesheet" />
     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css} "/>
 
 </head>
@@ -12,6 +14,7 @@
     <header th:insert="client/header.html :: header"></header>
 
     <div th:insert="client/menu.html :: menu"></div>
+    <div th:insert="client/list-product.html :: listProduct"></div>
     <div th:insert="client/lien-he.html :: lienHe"></div>
 
     <footer th:insert="client/footer.html :: footer"></footer>

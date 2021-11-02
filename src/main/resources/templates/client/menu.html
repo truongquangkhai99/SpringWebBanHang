@@ -16,12 +16,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" th:href="@{{host}/ (host=${host})}">Trang Chủ</a>
+                        <a class="nav-link" th:href="@{{host}/home (host=${host})}">Trang Chủ</a>
                     </li>
 
                     <li th:each="obj:${listMenuDongIsVisible}" class="nav-item active" th:switch="${obj.isParent}">
                         <span th:case="0">
-                            <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/{url} (host=${host}, url=${obj.url})}">
+                            <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/san-pham/{url} (host=${host}, url=${obj.url})}">
                                 Menu Name
                             </a>
                         </span>

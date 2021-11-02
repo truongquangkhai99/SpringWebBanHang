@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Product")
+@Table(name = "TBL_Product")
 public class Product {
 
     @Id
@@ -39,6 +39,9 @@ public class Product {
     @ColumnDefault("0")
     @Column(nullable = true)
     private int menuDongId;
+
+    @Column(nullable = true)
+    private boolean favourite;
 
 //    @ManyToOne(fetch=FetchType.LAZY)
 //    @JoinColumn(name="id")

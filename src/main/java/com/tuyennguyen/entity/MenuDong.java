@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "MENU_DONG")
+@Table(name = "TBL_MENU_DONG")
 public class MenuDong {
 
     @Id
