@@ -10,48 +10,74 @@
 </head>
 <body>
 
-    <div id="product-edit">
-        <h3>Sửa Sản Phẩm</h3>
+    <div id="product-edit" class="col-md-6">
+        <h4>Sửa Sản Phẩm</h4>
 
         <form th:action="@{{host}/admin/product/update (host=${host})}" method="post">
-            <div class="form-group">
-                <label>Id</label>
-                <input type="text" class="form-control" th:field="*{product.productId}">
+            <div class="form-group row">
+                <label class="col-sm-4">Id</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.productId}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" class="form-control" th:field="*{product.name}">
+            <div class="form-group row">
+                <label class="col-sm-4">Name</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.name}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Description</label>
-                <input type="text" class="form-control" th:field="*{product.description}">
+            <div class="form-group row">
+                <label class="col-sm-4">Description</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.description}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Price</label>
-                <input type="text" class="form-control" th:field="*{product.price}">
+            <div class="form-group row">
+                <label class="col-sm-4">Price</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="${product.price}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Menu Động</label>
+            <div class="form-group row">
+                <label class="col-sm-4">Menu Động</label>
 
-                <select class="form-control" name="menuDongId">
-                    <option class="text-secondary font-weight-bold" value="0">Chọn Menu</option>
-                    <option class="text-primary font-weight-bold" th:each="obj:${listMenuDongCha}" th:if="${obj.isVisible}" th:value="${obj.id}" th:text="${obj.menuName}">Menu Name - Active</option>
-                    <option class="text-secondary small" th:each="obj:${listMenuDongCha}" th:unless="${obj.isVisible}" th:value="${obj.id}" th:text="${obj.menuName}">Menu Name - Not active</option>
-                </select>
+                <div class="col-sm-8">
+                    <select class="form-control form-control-sm" name="menuDongId">
+                        <option th:each="obj:${listMenuDong}" th:value="${obj.menuDongId}" th:text="${obj.menuName}">Menu Name</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Quantity</label>
-                <input type="text" class="form-control" th:field="*{product.quantity}">
+            <div class="form-group row">
+                <label class="col-sm-4">Image</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.image}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Visible</label>
-                <input type="text" class="form-control" th:field="*{product.visible}">
+            <div class="form-group row">
+                <label class="col-sm-4">Quantity</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.quantity}">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4">Visible</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.visible}">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Gửi</button>

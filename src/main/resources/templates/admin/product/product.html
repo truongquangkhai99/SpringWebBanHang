@@ -10,9 +10,14 @@
 <body>
 
     <div class="" id="product-list">
-        <h2>Sản Phẩm</h2>
+        <h4>
+            <span>Sản Phẩm</span>
 
-        <a type="button" th:href="@{{host}/admin/product/them (host=${host})}" class="btn btn-info">Thêm</a>
+            <a th:href="@{{host}/admin/product/them (host=${host})}">
+                <i class="fas fa-plus-circle foSi16 text-primary"></i>
+            </a>
+        </h4>
+
         <table class="table">
             <thead>
                 <tr>
@@ -20,6 +25,7 @@
                     <th scope="col">Giá</th>
                     <th scope="col">Số Lượng</th>
                     <th scope="col">Thuộc Menu</th>
+                    <th scope="col"></th>
                     <th scope="col">Sửa</th>
                     <th scope="col">Xoá</th>
                 </tr>
@@ -35,7 +41,7 @@
                     </td>
 
                     <td>
-                        <span th:text="${obj.description}">Giá</span>
+                        <span th:text="${obj.price}">Giá</span>
                     </td>
 
                     <td>
@@ -46,9 +52,13 @@
                         <span th:text="${obj.menuDongId}">Thuộc Menu</span>
                     </td>
 
+                    <td style="width: 10%">
+                        <span th:text="${obj.image}">Image</span>
+                    </td>
+
                     <td>
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="text-success">
-                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-pen text-primary"></i>
                         </a>
                     </td>
 

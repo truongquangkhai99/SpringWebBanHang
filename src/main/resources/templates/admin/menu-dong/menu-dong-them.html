@@ -9,43 +9,64 @@
 </head>
 <body>
 
-    <div id="menu-dong-them">
-        <h2>Thêm Menu Động</h2>
+    <div id="menu-dong-them" class="col-md-6">
+        <h4>Thêm Menu Động</h4>
 
         <form th:action="@{/admin/menu-dong/save}" method="post" th:object="${obj}">
-            <div class="form-group">
-                <label>Menu Name</label>
-                <input type="text" th:field="*{menuName}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Menu Name</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{menuName}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Url</label>
-                <input type="text" th:field="*{url}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Url</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{url}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Thứ Tự</label>
-                <input type="text" th:field="*{menuOrder}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Thứ Tự</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{menuOrder}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Is Parent</label>
-                <input type="text" th:field="*{isParent}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Is Parent</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{isParent}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Parent Id</label>
-                <input type="text" th:field="*{parentId}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Parent Id</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{parentId}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Description</label>
-                <input type="text" th:field="*{description}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Description</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{description}" class="form-control form-control-sm">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Is Visible</label>
-                <input type="text" th:field="*{isVisible}" class="form-control">
+            <div class="form-group row">
+                <label class="col-sm-4">Is Visible</label>
+
+                <div class="col-sm-8">
+                    <input type="text" th:field="*{isVisible}" class="form-control form-control-sm">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Thêm</button>

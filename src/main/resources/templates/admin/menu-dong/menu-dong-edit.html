@@ -9,48 +9,72 @@
 </head>
 <body>
 
-    <div id="menu-dong-edit">
-        <h3>Sửa Menu Động</h3>
+    <div id="menu-dong-edit" class="col-md-6">
+        <h4>Sửa Menu Động</h4>
 
         <form th:action="@{/admin/menu-dong/update}" method="post">
-            <div class="form-group">
-                <label>Id</label>
-                <input type="text" class="form-control" th:field="*{menuDong.menuDongId}">
+            <div class="form-group row">
+                <label class="col-sm-4">Id</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Menu Name</label>
-                <input type="text" class="form-control" th:field="*{menuDong.menuName}">
+            <div class="form-group row">
+                <label class="col-sm-4">Menu Name</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuName}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Url</label>
-                <input type="text" class="form-control" th:field="*{menuDong.url}">
+            <div class="form-group row">
+                <label class="col-sm-4">Url</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.url}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Thứ Tự</label>
-                <input type="text" class="form-control" th:field="*{menuDong.menuOrder}">
+            <div class="form-group row">
+                <label class="col-sm-4">Thứ Tự</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuOrder}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Is Parent</label>
-                <input type="text" class="form-control" th:field="*{menuDong.isParent}">
+            <div class="form-group row">
+                <label class="col-sm-4">Is Parent</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isParent}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Parent Id</label>
-                <input type="text" class="form-control" th:field="*{menuDong.parentId}">
+            <div class="form-group row">
+                <label class="col-sm-4">Parent Id</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.parentId}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Description</label>
-                <input type="text" class="form-control" th:field="*{menuDong.description}">
+            <div class="form-group row">
+                <label class="col-sm-4">Description</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.description}">
+                </div>
             </div>
 
-            <div class="form-group">
-                <label>Is Visible</label>
-                <input type="text" class="form-control" th:field="*{menuDong.isVisible}">
+            <div class="form-group row">
+                <label class="col-sm-4">Is Visible</label>
+
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isVisible}">
+                </div>
             </div>
 
             <button type="submit" class="btn btn-primary">Gửi</button>

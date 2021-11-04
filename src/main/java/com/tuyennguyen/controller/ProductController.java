@@ -51,8 +51,7 @@ public class ProductController extends WebController {
         model.addAttribute(UtilCon.OBJ, new Product());
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
 
-        List<MenuDong> listMenuDong = menuDongService.findAll();
-        model.addAttribute("listMenuDong", listMenuDong);
+        setListMenuDong(model);
 
         return UtilCon.toAdmin();
     }
@@ -73,11 +72,14 @@ public class ProductController extends WebController {
         model.addAttribute(MAIN_OBJECT, obj);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 
+        setListMenuDong(model);
+
         return UtilCon.toAdmin();
     }
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj) {
+        System.out.println("he 3");
         mainService.save(obj);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
@@ -88,6 +90,11 @@ public class ProductController extends WebController {
         mainService.deleteById(id);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+    }
+
+    public void setListMenuDong(Model model) {
+        List<MenuDong> listMenuDong = menuDongService.findAll();
+        model.addAttribute("listMenuDong", listMenuDong);
     }
 	
 }

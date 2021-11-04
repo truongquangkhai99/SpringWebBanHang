@@ -4,6 +4,10 @@
     <div class="row clearfix">
 
         <!-- Row 1 - Start-->
+        <div class="col-md-4" th:if="${listProduct.empty}">
+            <p>Không có dữ liệu</p>
+        </div>
+
         <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProduct}">
             <div class="card product_item">
                 <div class="body">
