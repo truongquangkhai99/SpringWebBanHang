@@ -25,8 +25,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Address</th>
-                    <th scope="col">Sửa</th>
-                    <th scope="col">Xoá</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -52,13 +51,11 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="text-success">
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="text-success maRi10">
                             <i class="fas fa-pen text-primary"></i>
                         </a>
-                    </td>
 
-                    <td>
-                        <a class="text-danger icon-delete" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
+                        <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>

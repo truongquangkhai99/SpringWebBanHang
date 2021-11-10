@@ -29,4 +29,7 @@ public class User {
     @Column(nullable = true)
     private String address;
 
+    @Column(nullable = true)
+    private String role;
+
 }

@@ -1,6 +1,6 @@
 package com.tuyennguyen.util;
 
-public enum StatusEnum {
+public enum EnumStatus {
 	
     SUCCESS(1, "Success!"),
     FAILURE(2, "Failure!"),
@@ -9,7 +9,7 @@ public enum StatusEnum {
     private final int key;
     private final String value;
 
-    StatusEnum(int key, String value) {
+    EnumStatus(int key, String value) {
         this.key = key;
         this.value = value;
     }

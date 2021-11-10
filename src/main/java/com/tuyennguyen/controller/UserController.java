@@ -1,7 +1,9 @@
 package com.tuyennguyen.controller;
 
+import com.tuyennguyen.entity.Role;
 import com.tuyennguyen.entity.User;
 import com.tuyennguyen.serivce.UserService;
+import com.tuyennguyen.util.EnumRole;
 import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,10 +41,25 @@ public class UserController extends WebController {
         return UtilCon.toAdmin();
     }
 
+    private List<Role> getListRole() {
+        Role role;
+
+        List<Role> listRole = new ArrayList<>();
+        role = new Role(EnumRole.ADMIN.getRoleId(), EnumRole.ADMIN.getRoleName());
+        listRole.add(role);
+        role = new Role(EnumRole.USER.getRoleId(), EnumRole.USER.getRoleName());
+        listRole.add(role);
+
+        return listRole;
+    }
+
     @GetMapping(value = "/" + MAIN_OBJECT + "/them")
     public String them(Model model) {
         logger.debug("Go to the add screen: " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
+
+        List<Role> listRole = getListRole();
+        model.addAttribute("listRole", listRole);
 
         model.addAttribute(UtilCon.OBJ, new User());
         model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
@@ -61,6 +79,9 @@ public class UserController extends WebController {
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
     public String findById(@PathVariable int id, Model model) {
         setCommon(model);
+
+        List<Role> listRole = getListRole();
+        model.addAttribute("listRole", listRole);
 
         Optional<User> obj = mainService.findById(id);
         model.addAttribute(MAIN_OBJECT, obj);

@@ -29,8 +29,7 @@
                     <th scope="col">Parent Id</th>
                     <th scope="col">Description</th>
                     <th scope="col" class="text-center">Is Visible</th>
-                    <th scope="col">Sửa</th>
-                    <th scope="col">Xoá</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -80,13 +79,11 @@
                     </td>
 
                     <td>
-                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success">
+                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success maRi10">
                             <i class="fas fa-pen text-primary"></i>
                         </a>
-                    </td>
 
-                    <td>
-                        <a class="text-danger icon-delete" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
+                        <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>

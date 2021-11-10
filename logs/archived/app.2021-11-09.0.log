@@ -1,0 +1,122 @@
+2021-11-09 22:16:01,218 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2021-11-09 22:16:01,234 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2021-11-09 22:16:01,380 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:16:01,381 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:16:01,775 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:16:01,775 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:16:01,790 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:16:04,644 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 3.258 seconds (JVM running for 5.165)
+2021-11-09 22:16:43,289 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to admin/user/user
+2021-11-09 22:18:37,322 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to admin/user/user
+2021-11-09 22:18:39,004 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to admin/user/user
+2021-11-09 22:19:43,506 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to admin/user/user
+2021-11-09 22:19:44,583 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to admin/user/user
+2021-11-09 22:19:47,952 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-11-09 22:20:08,841 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-11-09 22:20:09,736 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-11-09 22:20:13,942 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-11-09 22:20:45,686 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to admin/user/user
+2021-11-09 22:21:47,941 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to the add screen: admin/user/user
+2021-11-09 22:26:23,298 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:26:23,298 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:26:23,324 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:26:23,324 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:26:23,324 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:26:23,891 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.589 seconds (JVM running for 624.412)
+2021-11-09 22:37:32,114 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:37:32,983 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:37:32,983 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:37:33,044 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:37:33,045 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:37:33,045 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:37:33,718 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.732 seconds (JVM running for 1294.24)
+2021-11-09 22:37:34,172 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:37:35,268 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:37:35,268 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:37:35,294 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:37:35,294 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:37:35,294 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:37:35,766 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.494 seconds (JVM running for 1296.287)
+2021-11-09 22:37:41,360 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:39:01,262 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-11-09 22:39:02,604 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to the add screen: admin/product/product
+2021-11-09 22:39:03,067 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:39:03,067 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:39:03,101 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:39:03,102 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:39:03,102 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:39:03,597 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.523 seconds (JVM running for 1384.118)
+2021-11-09 22:39:05,142 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:39:05,142 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:39:05,173 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:39:05,173 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:39:05,173 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:39:05,751 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.606 seconds (JVM running for 1386.273)
+2021-11-09 22:39:24,242 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to admin/user/user
+2021-11-09 22:39:25,713 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to the add screen: admin/user/user
+2021-11-09 22:40:13,916 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to the add screen: admin/user/user
+2021-11-09 22:40:14,996 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:40:48,516 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to the add screen: admin/user/user
+2021-11-09 22:40:49,446 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to the add screen: admin/user/user
+2021-11-09 22:40:49,902 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:40:49,902 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:40:49,947 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:40:49,947 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:40:49,947 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:40:50,480 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.569 seconds (JVM running for 1491.001)
+2021-11-09 22:40:51,673 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:40:52,028 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:40:52,028 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:40:52,051 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:40:52,051 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:40:52,051 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:40:52,509 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.478 seconds (JVM running for 1493.031)
+2021-11-09 22:41:29,818 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:41:30,729 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to the add screen: admin/user/user
+2021-11-09 22:41:31,813 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to the add screen: admin/user/user
+2021-11-09 22:41:32,849 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:41:32,850 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:41:32,883 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:41:32,883 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:41:32,883 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:41:33,413 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.558 seconds (JVM running for 1533.935)
+2021-11-09 22:41:33,451 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:41:35,017 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:41:35,017 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:41:35,050 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:41:35,050 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:41:35,051 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:41:35,696 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.67 seconds (JVM running for 1536.217)
+2021-11-09 22:41:44,750 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to admin/user/user
+2021-11-09 22:42:34,017 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to the add screen: admin/user/user
+2021-11-09 22:42:36,569 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to admin/user/user
+2021-11-09 22:43:08,746 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to the add screen: admin/user/user
+2021-11-09 22:43:09,739 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to the add screen: admin/user/user
+2021-11-09 22:43:10,432 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to the add screen: admin/user/user
+2021-11-09 22:43:10,967 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:43:11,271 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:43:11,271 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:43:11,313 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:43:11,314 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:43:11,314 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:43:12,065 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.785 seconds (JVM running for 1632.586)
+2021-11-09 22:43:13,648 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-09 22:43:13,649 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-09 22:43:13,676 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13372 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-09 22:43:13,676 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-09 22:43:13,676 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 22:43:14,207 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.553 seconds (JVM running for 1634.728)
+2021-11-09 22:43:15,105 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to the add screen: admin/user/user
+2021-11-09 22:43:23,700 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to admin/user/user
+2021-11-09 22:44:51,921 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
+2021-11-09 22:44:52,991 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to admin/user/user
+2021-11-09 22:44:53,950 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to admin/user/user
+2021-11-09 22:44:54,823 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to admin/user/user
+2021-11-09 22:44:56,190 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to the add screen: admin/user/user
+2021-11-09 22:45:02,226 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to admin/user/user
+2021-11-09 22:46:15,672 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to admin/user/user
+2021-11-09 22:46:16,605 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to admin/user/user
+2021-11-09 22:46:18,035 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to the add screen: admin/user/user
+2021-11-09 22:46:23,332 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
+2021-11-09 22:46:31,674 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to the add screen: admin/user/user
+2021-11-09 22:46:36,899 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
