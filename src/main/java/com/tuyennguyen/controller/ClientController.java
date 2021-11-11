@@ -34,14 +34,13 @@ public class ClientController extends WebController {
     public String goHome(Model model) {
         logger.debug("Go to " + UtilCon.toClient("home"));
         setCommon(model);
-        System.out.println(UtilCon.toClient(mainObject));
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
 
         // get listProduct mặc định (yêu thích)
-//        List<Product> listProduct = productRepository.findProductsByMenuDongId(menuDongId);
-//        model.addAttribute("listProduct", listProduct);
+        List<Product> listProductFavo = productRepository.findProductsByFavourite(1);
+        model.addAttribute("listProductFavo", listProductFavo);
 
         return UtilCon.toClient(mainObject);
     }
@@ -59,7 +58,6 @@ public class ClientController extends WebController {
         // từ menuDongId, get tbl_product.*
         List<Product> listProduct = productRepository.findProductsByMenuDongId(menuDongId);
         model.addAttribute("listProduct", listProduct);
-        System.out.println(listProduct.size());
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);

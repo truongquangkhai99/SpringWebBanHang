@@ -4,6 +4,7 @@ import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
+import com.tuyennguyen.util.FileUploadUtil;
 import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
@@ -12,9 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -57,8 +59,13 @@ public class ProductController extends WebController {
     }
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
-    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product product) {
+    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product product, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        String imageName = imageFile.getOriginalFilename();
+
+        product.setImageName(imageName);
         mainService.save(product);
+
+        FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
     }
@@ -68,7 +75,7 @@ public class ProductController extends WebController {
         setCommon(model);
         setListMenuDongCha(model, UtilCon.PARENT);
 
-        Optional<Product> obj = mainService.findById(id);
+        Product obj = mainService.findById(id).get();
         model.addAttribute(MAIN_OBJECT, obj);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 
@@ -78,9 +85,12 @@ public class ProductController extends WebController {
     }
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
-    public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj) {
-        System.out.println("he 3");
+    public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        String imageName = imageFile.getOriginalFilename();
+        obj.setImageName(imageName);
         mainService.save(obj);
+
+        FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
     }

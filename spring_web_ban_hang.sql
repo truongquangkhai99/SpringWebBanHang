@@ -1,150 +1,54 @@
--- phpMyAdmin SQL Dump
--- version 4.7.9
--- https://www.phpmyadmin.net/
---
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 16, 2021 lúc 05:16 AM
--- Phiên bản máy phục vụ: 10.1.31-MariaDB
--- Phiên bản PHP: 7.1.15
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.1.31-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win32
+-- HeidiSQL Version:             11.3.0.6295
+-- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Cơ sở dữ liệu: `spring_web_ban_hang`
---
+-- Dumping data for table spring_web_ban_hang.tbl_menu_dong: ~5 rows (approximately)
+DELETE FROM `tbl_menu_dong`;
+/*!40000 ALTER TABLE `tbl_menu_dong` DISABLE KEYS */;
+INSERT INTO `tbl_menu_dong` (`menu_dong_id`, `description`, `is_parent`, `is_visible`, `menu_name`, `menu_order`, `parent_id`, `url`) VALUES
+	(1, 'Xe đẹp 2021', 0, 1, 'Ô Tô Kia Tự Động 1', 1, 0, 'o-to-kia-tu-dong-1'),
+	(4, 'Xe đẹp 2021', 0, 1, 'Ô Tô Kia Tự Động 2', 1, 0, 'o-to-kia-tu-dong-2'),
+	(5, 'Xe đẹp 2021', 0, 1, 'Ô Tô Kia Tự Động 3', 1, 0, 'o-to-kia-tu-dong-3'),
+	(6, 'Xe đẹp 2021', 0, 1, 'Ô Tô Kia Tự Động 4', 1, 0, 'o-to-kia-tu-dong-4'),
+	(7, 'Xe đẹp 2021', 0, 1, 'Ô Tô Kia Tự Động 5', 1, 0, 'o-to-kia-tu-dong-5');
+/*!40000 ALTER TABLE `tbl_menu_dong` ENABLE KEYS */;
 
--- --------------------------------------------------------
+-- Dumping data for table spring_web_ban_hang.tbl_product: ~5 rows (approximately)
+DELETE FROM `tbl_product`;
+/*!40000 ALTER TABLE `tbl_product` DISABLE KEYS */;
+INSERT INTO `tbl_product` (`product_id`, `description`, `menu_dong_id`, `name`, `price`, `quantity`, `visible`, `favourite`, `image_name`) VALUES
+	(1, 'Xe đẹp 2021', 0, 'Ô Tô Kia 4', 0, 2, 1, 1, 'under-the-sea.jpg'),
+	(5, 'Xe đẹp 2021', 0, 'Ô Tô Kia 4', 0, 2, 1, 1, 'under-the-sea.jpg'),
+	(6, 'Xe đẹp 2021', 1, 'Ô Tô Kia 4', 0, 2, 1, 0, 'under-the-sea.jpg'),
+	(10, 'Xe đẹp 2021', 7, 'Ô Tô Kia 5', 0, 0, 1, 1, 'under-the-sea.jpg'),
+	(11, 'Xe đẹp 2021', 7, 'Ô Tô Kia', 0, 20, 1, 1, 'under-the-sea.jpg'),
+	(33, 'Xe đẹp 2021', 1, 'Ô Tô Kia 9', 0, 0, 0, 0, 'pic5.jpg');
+/*!40000 ALTER TABLE `tbl_product` ENABLE KEYS */;
 
---
--- Cấu trúc bảng cho bảng `menu_dong`
---
+-- Dumping data for table spring_web_ban_hang.tbl_user: ~7 rows (approximately)
+DELETE FROM `tbl_user`;
+/*!40000 ALTER TABLE `tbl_user` DISABLE KEYS */;
+INSERT INTO `tbl_user` (`user_id`, `username`, `password`, `address`, `email`, `full_name`, `gender`, `role`) VALUES
+	(1, 'nguyenvantuyen6789', '123456', 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam', 'Admin'),
+	(2, 'nguyenvantuyen67891', '123456', 'Phú Đô', 'nguyenvantuyen67891@gmail.com', 'Tuyên Nguyễn 3', 'Nam', 'User'),
+	(3, NULL, NULL, 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam', NULL),
+	(4, NULL, NULL, 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam', NULL),
+	(5, NULL, NULL, 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam', 'Admin'),
+	(6, NULL, NULL, 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam', 'Admin'),
+	(7, NULL, NULL, 'Phú Đô', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nữ', 'Admin');
+/*!40000 ALTER TABLE `tbl_user` ENABLE KEYS */;
 
-CREATE TABLE `menu_dong` (
-  `id` int(11) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `is_visible` int(11) DEFAULT NULL,
-  `menu_name` varchar(255) DEFAULT NULL,
-  `menu_order` int(11) DEFAULT NULL,
-  `parent_id` int(11) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL,
-  `is_parent` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Đang đổ dữ liệu cho bảng `menu_dong`
---
-
-INSERT INTO `menu_dong` (`id`, `description`, `is_visible`, `menu_name`, `menu_order`, `parent_id`, `url`, `is_parent`) VALUES
-(1, '', 1, 'Ô Tô', 0, 0, 'o-to', 1),
-(2, '', 0, 'Ô Tô Kia Tự Động 3', 0, 0, 'o-to-kia-tu-dong-3', 1),
-(3, '', 1, 'Ô Tô Kia Tự Động 4', 0, 0, 'o-to-kia-tu-dong-4', 0);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `product`
---
-
-CREATE TABLE `product` (
-  `id` int(11) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `quantity` int(11) DEFAULT NULL,
-  `visible` int(11) DEFAULT NULL,
-  `menu_dong_id` int(11) DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Đang đổ dữ liệu cho bảng `product`
---
-
-INSERT INTO `product` (`id`, `description`, `name`, `price`, `quantity`, `visible`, `menu_dong_id`) VALUES
-(1, 'Xe đẹp 2021', 'Ô Tô Kia', 0, 0, 0, 1),
-(8, 'Xe đẹp 2022', 'Ô Tô Kia 2', 0, 0, 0, 0),
-(9, 'Xe đẹp 2022', 'Ô Tô Kia 3', 1, 0, 0, 0),
-(10, 'Xe đẹp 2022', 'Ô Tô Kia 4', 1, 2, 0, 0),
-(11, 'Xe đẹp 2022', 'Ô Tô Kia 5', 1, 3, 0, 0),
-(12, 'Xe đẹp 2022', 'Ô Tô Kia 6', 1, 4, 0, 0),
-(13, 'Xe đẹp 2022', 'Ô Tô Kia 7', 1, 5, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `user`
---
-
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `full_name` varchar(255) DEFAULT NULL,
-  `gender` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Đang đổ dữ liệu cho bảng `user`
---
-
-INSERT INTO `user` (`id`, `address`, `email`, `full_name`, `gender`) VALUES
-(1, 'Phú Đô, Nam Từ Liêm', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam'),
-(5, 'Phú Đô, Nam Từ Liêm', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam'),
-(8, 'Phú Đô, Nam Từ Liêm, Hà Nội', 'nguyenvantuyen6789@gmail.com', 'Tuyên Nguyễn', 'Nam');
-
---
--- Chỉ mục cho các bảng đã đổ
---
-
---
--- Chỉ mục cho bảng `menu_dong`
---
-ALTER TABLE `menu_dong`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT cho các bảng đã đổ
---
-
---
--- AUTO_INCREMENT cho bảng `menu_dong`
---
-ALTER TABLE `menu_dong`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT cho bảng `product`
---
-ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
---
--- AUTO_INCREMENT cho bảng `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-COMMIT;
-
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;

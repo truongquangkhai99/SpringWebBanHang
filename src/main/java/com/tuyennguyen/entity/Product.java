@@ -31,7 +31,7 @@ public class Product {
     private String description;
 
     @Column(nullable = true)
-    private String image;
+    private String imageName;
 
     @Column(nullable = true)
     private int quantity;
@@ -44,7 +44,7 @@ public class Product {
     private int menuDongId;
 
     @Column(nullable = true)
-    private boolean favourite;
+    private int favourite;
 
 //    @ManyToOne(fetch=FetchType.LAZY)
 //    @JoinColumn(name="id")

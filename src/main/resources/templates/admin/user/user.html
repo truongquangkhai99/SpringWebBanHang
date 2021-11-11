@@ -35,7 +35,9 @@
 
                 <tr th:each="obj:${listUser}">
                     <td scope="row">
-                        <span th:text="${obj.fullName}">Full Name</span>
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe600">
+                            <span th:text="${obj.fullName}">Full Name</span>
+                        </a>
                     </td>
 
                     <td>

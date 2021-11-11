@@ -19,6 +19,8 @@ public class UtilCon {
     public static final String FOR_SL              = "/";
     public static final String BAC_SL              = "\\";
     public static final String Dash                = "-";
+    public static final String PATH_TO_STATIC      = "src/main/resources/static";
+    public static final String IMAGE_FOLDER        = "image";
     public static final String BOOTSTRAP_CSS       = "webjars/bootstrap/4.1.1/css/bootstrap.min.css";
     public static final String BOOTSTRAP_JS        = "webjars/bootstrap/4.1.1/js/bootstrap.js";
     public static final String JQUERY              = "webjars/jquery/3.3.1-1/jquery.js";

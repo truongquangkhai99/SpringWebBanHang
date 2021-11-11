@@ -39,7 +39,9 @@
 
                 <tr th:each="obj : ${listMenuDong}">
                     <td scope="row">
-                        <span th:text="${obj.menuName}">Menu Name</span>
+                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe600">
+                            <span th:text="${obj.menuName}">Menu Name</span>
+                        </a>
                     </td>
 
                     <td>

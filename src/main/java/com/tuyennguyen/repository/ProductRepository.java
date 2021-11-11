@@ -11,4 +11,6 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     public List<Product> findProductsByMenuDongId(int menuDongId);
 
+    public List<Product> findProductsByFavourite(int favourite);
+
 }
