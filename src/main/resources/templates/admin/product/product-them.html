@@ -17,8 +17,14 @@
             <div class="form-group row">
                 <label class="col-sm-4">Name</label>
 
-                <div class="col-sm-8">
+                <div class="col-sm-7">
                     <input type="text" th:field="*{name}" class="form-control form-control-sm">
+                </div>
+                <div class="col-sm-1 pa0">
+                    <a th:href="@{/admin/product/updateFovorite/{productId}(productId=${obj.productId})}" class="text-success maRi10">
+                        <i class="far fa-star coGr cuPo" title="Sản phẩm yêu thích: no"></i>
+                        <i class="fas fa-star coRe cuPo" title="Sản phẩm yêu thích: yes"></i>
+                    </a>
                 </div>
             </div>
 

@@ -87,10 +87,16 @@ public class ProductController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         String imageName = imageFile.getOriginalFilename();
-        obj.setImageName(imageName);
+        if (!UtilCon.EMPTY.equals(imageName)) {
+            obj.setImageName(imageName);
+        }
+
         mainService.save(obj);
 
-        FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+        // if choose another image, the image is not empty and upload to server
+        if (!UtilCon.EMPTY.equals(imageName)) {
+            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+        }
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
     }

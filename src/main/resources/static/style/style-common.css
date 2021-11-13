@@ -1416,6 +1416,8 @@
 .ma98 {margin: 98px !important;}
 .ma99 {margin: 99px !important;}
 
+.foSi6 {font-size: 6px;}
+.foSi7 {font-size: 7px;}
 .foSi8 {font-size: 8px;}
 .foSi9 {font-size: 9px;}
 .foSi10 {font-size: 10px;}
@@ -1454,3 +1456,17 @@
 .foWe400 {font-weight: 400;}
 .foWe600 {font-weight: 600;}
 .foWeNo {font-weight: normal;}
+
+.wi10Pe {width: 10% !important;}
+.wi20Pe {width: 20% !important;}
+.wi30Pe {width: 30% !important;}
+.wi40Pe {width: 40% !important;}
+.wi50Pe {width: 50% !important;}
+.wi60Pe {width: 60% !important;}
+.wi70Pe {width: 70% !important;}
+.wi80Pe {width: 80% !important;}
+.wi90Pe {width: 90% !important;}
+.wi100Pe {width: 100% !important;}
+
+.coGr {color: #b2b2b2 !important;}
+.coRe {color: #ff1700 !important;}

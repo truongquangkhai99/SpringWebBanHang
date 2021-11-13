@@ -38,6 +38,7 @@
                     <td scope="row" class= "pa4 foSi13">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="foWe600">
                             <span th:text="${obj.name}">Name</span>
+                            <i class="far fa-star coRe foSi8" th:if="${obj.favourite > 0}" title="Sản phẩm yêu thích: yes"></i>
                         </a>
                     </td>
 

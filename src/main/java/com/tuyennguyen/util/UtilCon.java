@@ -5,6 +5,7 @@ public class UtilCon {
     public static final String ADMIN               = "admin";
     public static final String CLIENT              = "client";
     public static final String OBJ                 = "obj";
+    public static final String EMPTY               = "";
     public static final String PAGE                = "page";
     public static final String PRODUCT             = "product";
     public static final String PRODUCT_EDIT        = "product-edit";

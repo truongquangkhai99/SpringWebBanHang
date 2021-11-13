@@ -25,8 +25,42 @@
             <div class="form-group row">
                 <label class="col-sm-4">Name</label>
 
-                <div class="col-sm-8">
+                <div class="col-sm-7">
                     <input type="text" class="form-control form-control-sm" th:field="*{product.name}">
+                </div>
+                <div class="col-sm-1 pa0">
+                    <input type="hidden" th:field="*{product.favourite}" id="favourite">
+                    <i class="far fa-star coGr cuPo" id="favouriteIconNo" onclick="updateFavourite()" title="Sản phẩm yêu thích: no"></i>
+                    <i class="fas fa-star coRe cuPo" id="favouriteIconYes" onclick="updateFavourite()" title="Sản phẩm yêu thích: yes"></i>
+                    <script th:inline="javascript">
+                        let favouriteNo = 0;
+                        let favouriteYes = 1;
+
+                        let favourite = [[${product.favourite}]];
+                        setFavouriteDisplay(favourite);
+
+                        function updateFavourite() {
+                            if (favourite == favouriteNo) {
+                                favourite = favouriteYes;
+                                setFavouriteDisplay(favourite);
+                            } else if (favourite == favouriteYes) {
+                                favourite = favouriteNo;
+                                setFavouriteDisplay(favourite);
+                            }
+
+                            $("#favourite").val(favourite);
+                        }
+
+                        function setFavouriteDisplay(favourite) {
+                            if (favourite == favouriteNo) {
+                                $("#favouriteIconNo").css("display", "inline-block");
+                                $("#favouriteIconYes").css("display", "none");
+                            } else if (favourite == favouriteYes) {
+                                $("#favouriteIconNo").css("display", "none");
+                                $("#favouriteIconYes").css("display", "inline-block");
+                            }
+                        }
+                    </script>
                 </div>
             </div>
 
@@ -61,10 +95,12 @@
 
                 <div class="col-sm-8">
                     <div class="form-group row">
-                        <div class="col-sm-4">
-                            <img th:src="@{'/image/' + ${product.imageName}}" width="120">
+                        <div class="col-sm-4 paRi0">
+                            <img th:src="@{'/image/' + ${product.imageName}}" class="rounded wi100Pe">
                         </div>
+
                         <div class="col-sm-8">
+                            <input type="hidden" th:field="*{product.imageName}">
                             <input type="file" name="imageFile" class="form-control-file">
                         </div>
                     </div>
