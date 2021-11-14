@@ -5,18 +5,40 @@
     <title>Sản Phẩm</title>
 
     <link th:href="${bootstrapCss}" rel="stylesheet">
-
 </head>
 <body>
 
     <div class="" id="product-list">
-        <h4>
-            <span>Sản Phẩm</span>
+        <div class="form-group row">
+            <h4 class="col-sm-9">
+                <span class="maRi4">Sản Phẩm</span>
 
-            <a th:href="@{{host}/admin/product/them (host=${host})}">
-                <i class="fas fa-plus-circle foSi16 text-primary"></i>
-            </a>
-        </h4>
+                <a th:href="@{{host}/admin/product/them (host=${host})}">
+                    <i class="fas fa-plus-circle foSi16 text-primary"></i>
+                </a>
+            </h4>
+
+            <div class="col-sm-3">
+                <select class="form-control form-control-sm" id="filter">
+                    <option value="1" th:selected="${filter == 1}">Toàn bộ</option>
+                    <option value="2" th:selected="${filter == 2}">Yêu Thích</option>
+                    <option value="3" th:selected="${filter == 3}">Invisible</option>
+                </select>
+
+                <script th:inline="javascript">
+                    $(document).ready(function () {
+                        $('#filter').change(function() {
+                            let host = [[${host}]];
+                            var filterVal = $(this).find(":selected").val();
+                            window.location.href = host + "/admin/product/filter/" + filterVal;
+
+                        });
+
+                    });
+
+                </script>
+            </div>
+        </div>
 
         <table class="table">
             <thead>
@@ -34,7 +56,7 @@
                     <td colspan="6">No Books Available</td>
                 </tr>
 
-                <tr th:each="obj:${listProduct}">
+                <tr th:each="obj:${listProduct}" th:class="${obj.visible == 0} ? 'in-visible' : 'visible' ">
                     <td scope="row" class= "pa4 foSi13">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="foWe600">
                             <span th:text="${obj.name}">Name</span>

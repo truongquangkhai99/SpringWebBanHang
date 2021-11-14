@@ -29,7 +29,8 @@ public class UtilCon {
     public static final int PARENT                 = 1;
     public static final int NOT_PARENT             = 0;
     public static final int VISIBLE                = 1;
-    public static final int NOT_VISIBLE            = 0;
+    public static final int INVISIBLE              = 0;
+    public static final int FAVOURITE              = 1;
 
     public static String toAdmin() {
         return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN + ".html";

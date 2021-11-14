@@ -43,10 +43,7 @@ public class Product {
     @Column(nullable = true)
     private int menuDongId;
 
-    @Column(nullable = true)
+    @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
     private int favourite;
 
-//    @ManyToOne(fetch=FetchType.LAZY)
-//    @JoinColumn(name="id")
-//    private MenuDong menuDong;
 }

@@ -30,6 +30,7 @@
                 </div>
                 <div class="col-sm-1 pa0">
                     <input type="hidden" th:field="*{product.favourite}" id="favourite">
+
                     <i class="far fa-star coGr cuPo" id="favouriteIconNo" onclick="updateFavourite()" title="Sản phẩm yêu thích: no"></i>
                     <i class="fas fa-star coRe cuPo" id="favouriteIconYes" onclick="updateFavourite()" title="Sản phẩm yêu thích: yes"></i>
                     <script th:inline="javascript">
@@ -119,7 +120,41 @@
                 <label class="col-sm-4">Visible</label>
 
                 <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.visible}">
+                    <input type="hidden" th:field="*{product.visible}" id="visible">
+
+                    <i class="fas fa-eye-slash text-secondary cuPo foSi20" id="visibleIconNo" onclick="updateVisible()" title="hiển thị: no"></i>
+                    <i class="fas fa-eye text-success cuPo foSi20" id="visibleIconYes" onclick="updateVisible()" title="hiển thị: yes"></i>
+                    <script th:inline="javascript">
+                        let visible = [[${product.visible}]];
+                        console.log(visible);
+
+                        let visibleNo = 0;
+                        let visibleYes = 1;
+
+                        setVisibleDisplay(visible);
+
+                        function updateVisible() {
+                            if (visible == visibleNo) {
+                                visible = visibleYes;
+                                setVisibleDisplay(visible);
+                            } else if (visible == visibleYes) {
+                                visible = visibleNo;
+                                setVisibleDisplay(visible);
+                            }
+
+                            $("#visible").val(visible);
+                        }
+
+                        function setVisibleDisplay(visible) {
+                            if (visible == visibleNo) {
+                                $("#visibleIconNo").css("display", "inline-block");
+                                $("#visibleIconYes").css("display", "none");
+                            } else if (visible == visibleYes) {
+                                $("#visibleIconNo").css("display", "none");
+                                $("#visibleIconYes").css("display", "inline-block");
+                            }
+                        }
+                    </script>
                 </div>
             </div>
 

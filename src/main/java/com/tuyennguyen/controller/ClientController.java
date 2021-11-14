@@ -39,7 +39,7 @@ public class ClientController extends WebController {
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
 
         // get listProduct mặc định (yêu thích)
-        List<Product> listProductFavo = productRepository.findProductsByFavourite(1);
+        List<Product> listProductFavo = productRepository.findProductsByFavouriteAndVisible(1, 1);
         model.addAttribute("listProductFavo", listProductFavo);
 
         return UtilCon.toClient(mainObject);

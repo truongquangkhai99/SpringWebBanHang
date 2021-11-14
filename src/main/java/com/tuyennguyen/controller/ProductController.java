@@ -2,6 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.repository.ProductRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.FileUploadUtil;
@@ -18,7 +19,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/admin")
@@ -31,6 +31,9 @@ public class ProductController extends WebController {
     private ProductService mainService;
 
     @Autowired
+    private ProductRepository productRepo;
+
+    @Autowired
     private MenuDongService menuDongService;
 
     @GetMapping(value = "/" + MAIN_OBJECT)
@@ -38,8 +41,8 @@ public class ProductController extends WebController {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
-        List<Product> listProduct = mainService.findAll();
-        model.addAttribute("listProduct", listProduct);
+        int allItem = 1;
+        setListProduct(model, allItem);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
         return UtilCon.toAdmin();
@@ -108,9 +111,38 @@ public class ProductController extends WebController {
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 
+    @GetMapping(value = "/" + MAIN_OBJECT + "/filter/{filter}")
+    public String filter(@PathVariable int filter, Model model) {
+        setCommon(model);
+        
+        setListProduct(model, filter);
+
+        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
+
+        return UtilCon.toAdmin();
+    }
+
     public void setListMenuDong(Model model) {
         List<MenuDong> listMenuDong = menuDongService.findAll();
         model.addAttribute("listMenuDong", listMenuDong);
+    }
+
+    public void setListProduct(Model model, int filter) {
+        int allItem = 1;
+        int favourite = 2;
+        int invisible = 3;
+
+        if (filter == allItem) {
+            List<Product> listProduct = mainService.findAll();
+            model.addAttribute("listProduct", listProduct);
+        } else if (filter == favourite) {
+            List<Product> listProduct = productRepo.findProductsByFavourite(UtilCon.FAVOURITE);
+            model.addAttribute("listProduct", listProduct);
+        } else if (filter == invisible) {
+            List<Product> listProduct = productRepo.findProductsByVisible(UtilCon.INVISIBLE);
+            model.addAttribute("listProduct", listProduct);
+        }
+        model.addAttribute("filter", filter);
     }
 	
 }

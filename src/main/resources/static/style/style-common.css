@@ -1470,3 +1470,6 @@
 
 .coGr {color: #b2b2b2 !important;}
 .coRe {color: #ff1700 !important;}
+
+.in-visible td {color: #b2b2b2;}
+.in-visible td img {opacity: 60%;}
