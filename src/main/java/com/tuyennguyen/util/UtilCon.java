@@ -72,12 +72,8 @@ public class UtilCon {
         return path;
     }
 
-    public static String upperFirstLetter(String str) {
-        String firstLetter = str.substring(0, 1).toUpperCase();
-        String remainingLetters = str.substring(1, str.length());
-
-        str = firstLetter + remainingLetters;
-
-        return str;
+    public static String createLinkFromMenuName(String menuName) {
+        menuName = menuName.trim().replaceAll("\\s{2,}","-");
+        return menuName;
     }
 }

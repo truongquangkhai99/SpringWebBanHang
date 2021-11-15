@@ -38,21 +38,21 @@
                 </tr>
 
                 <tr th:each="obj : ${listMenuDong}">
-                    <td scope="row">
+                    <td class="pa4 foSi13" scope="row">
                         <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe600">
                             <span th:text="${obj.menuName}">Menu Name</span>
                         </a>
                     </td>
 
-                    <td>
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.url}">Url</span>
                     </td>
 
-                    <td>
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.menuOrder}">Thứ Tự</span>
                     </td>
 
-                    <td th:switch="${obj.isParent}">
+                    <td class="pa4 foSi13" th:switch="${obj.isParent}">
                         <span th:case="1">
                             <i class="fas fa-check text-success"></i>
                         </span>
@@ -62,15 +62,15 @@
                         </span>
                     </td>
 
-                    <td>
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.parentId}">Parent Id</span>
                     </td>
 
-                    <td>
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.description}">Description</span>
                     </td>
 
-                    <td th:switch="${obj.isVisible}" class="text-center">
+                    <td th:switch="${obj.isVisible}" class="pa4 foSi13 text-center">
                         <span th:case="1">
                             <i class="fas fa-eye text-success" data-toggle="tooltip" title="Hiển Thị"></i>
                         </span>
@@ -80,7 +80,7 @@
                         </span>
                     </td>
 
-                    <td>
+                    <td class="pa4 foSi13">
                         <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success maRi10">
                             <i class="fas fa-pen text-primary"></i>
                         </a>

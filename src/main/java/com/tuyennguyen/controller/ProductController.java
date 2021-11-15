@@ -64,11 +64,15 @@ public class ProductController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product product, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         String imageName = imageFile.getOriginalFilename();
+        if (!UtilCon.EMPTY.equals(imageName)) {
+            product.setImageName(imageName);
+        }
 
-        product.setImageName(imageName);
         mainService.save(product);
 
-        FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+        if (!UtilCon.EMPTY.equals(imageName)) {
+            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+        }
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
     }
@@ -114,7 +118,7 @@ public class ProductController extends WebController {
     @GetMapping(value = "/" + MAIN_OBJECT + "/filter/{filter}")
     public String filter(@PathVariable int filter, Model model) {
         setCommon(model);
-        
+
         setListProduct(model, filter);
 
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);

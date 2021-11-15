@@ -1473,3 +1473,15 @@
 
 .in-visible td {color: #b2b2b2;}
 .in-visible td img {opacity: 60%;}
+
+.boWi0 {border-width: 0 !important;}
+.boWi1 {border-width: 1px !important;}
+.boShNo {box-shadow: none !important;}
+
+.baCoTr {background-color: transparent !important;}
+.baCoWh {background-color: white !important;}
+.baCoRe {background-color: red !important;}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(0 0 0 / 0.02) !important;
+}

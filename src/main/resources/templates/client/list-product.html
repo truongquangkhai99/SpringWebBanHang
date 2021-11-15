@@ -1,42 +1,105 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 
-
 <div class="container" th:fragment="listProduct">
-    <div class="row clearfix">
 
-        <!-- Row 1 - Start-->
-        <div class="col-md-4" th:if="${listProductFavo.empty}">
-            <p>Không có dữ liệu</p>
-        </div>
+    <!-- sản phẩm yêu thích -->
+    <div role="tablist" class="boWi0 boShNo maBo8">
+        <div class="card boWi0 boShNo maBo0">
+            <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="heading-sp-y-t">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" class="baCoTr" style="color: #0056b3;" href="#sp-yeu-thich" aria-expanded="true" aria-controls="sp-yeu-thich">
+                        Sản phẩm yêu thích
+                    </a>
+                </h5>
+            </div>
+            <div id="sp-yeu-thich" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="heading-sp-y-t" data-parent="#accordion">
+                <div class="card-body paBo0">
 
-        <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductFavo}">
-            <div class="card product_item">
-                <div class="body">
-                    <div class="cp_img">
-                        <img th:src="'image/' + ${obj.imageName}" alt="Product" class="img-fluid">
-                        <div class="hover">
-                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
-                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                    <div class="row clearfix">
+                        <div class="col-md-4" th:if="${listProductFavo.empty}">
+                            <p>Không có dữ liệu</p>
                         </div>
-                    </div>
 
-                    <div class="product_details">
-                        <h5>
-                            <a href="ec-product-detail.html" th:text="${obj.name}">Name</a>
-                        </h5>
+                        <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductFavo}">
+                            <div class="card product_item">
+                                <div class="body">
+                                    <div class="cp_img">
+                                        <img th:src="'image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+                                        <div class="hover">
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
 
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price" th:text="${obj.price}">Price</li>
-                            <li class="new_price" th:text="${obj.price}">Price</li>
-                        </ul>
+                                    <div class="product_details">
+                                        <h5>
+                                            <a href="ec-product-detail.html" th:text="${obj.name}">Name</a>
+                                        </h5>
+
+                                        <ul class="product_price list-unstyled">
+                                            <li class="old_price" th:text="${obj.price}">Price</li>
+                                            <li class="new_price" th:text="${obj.price}">Price</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Row 1 - End-->
+    <!-- sản phẩm menu -->
+    <div role="tablist" class="boWi0 boShNo maBo8">
+        <div class="card boWi0 boShNo maBo0">
+            <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                    <a data-toggle="collapse" class="baCoTr" style="color: #0056b3;" href="#sp-menu" aria-expanded="true" aria-controls="sp-menu">
+                        Ô tô Toyota
+                    </a>
+                </h5>
+            </div>
+            <div id="sp-menu" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body paBo0">
 
+                    <div class="row clearfix">
+                        <div class="col-md-4" th:if="${listProductFavo.empty}">
+                            <p>Không có dữ liệu</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductFavo}">
+                            <div class="card product_item">
+                                <div class="body">
+                                    <div class="cp_img">
+                                        <img th:src="'image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+                                        <div class="hover">
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="product_details">
+                                        <h5>
+                                            <a href="ec-product-detail.html" th:text="${obj.name}">Name</a>
+                                        </h5>
+
+                                        <ul class="product_price list-unstyled">
+                                            <li class="old_price" th:text="${obj.price}">Price</li>
+                                            <li class="new_price" th:text="${obj.price}">Price</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

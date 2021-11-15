@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -57,30 +57,30 @@
                 </tr>
 
                 <tr th:each="obj:${listProduct}" th:class="${obj.visible == 0} ? 'in-visible' : 'visible' ">
-                    <td scope="row" class= "pa4 foSi13">
+                    <td class="pa4 foSi13" scope="row">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="foWe600">
                             <span th:text="${obj.name}">Name</span>
                             <i class="far fa-star coRe foSi8" th:if="${obj.favourite > 0}" title="Sản phẩm yêu thích: yes"></i>
                         </a>
                     </td>
 
-                    <td class= "pa4 foSi13">
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.price}">Giá</span>
                     </td>
 
-                    <td class= "pa4 foSi13">
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.quantity}">Số Lượng</span>
                     </td>
 
-                    <td class= "pa4 foSi13">
+                    <td class="pa4 foSi13">
                         <span th:text="${obj.menuDongId}">Thuộc Menu</span>
                     </td>
 
-                    <td style="width: 10%" class= "pa4 foSi13">
-                        <img th:src="@{'/image/' + ${obj.imageName}}" width="40" />
+                    <td style="width: 10%" class="pa4 foSi13">
+                        <img th:if="${obj.imageName != null}" th:src="@{'/image/' + ${obj.imageName}}" width="40" />
                     </td>
 
-                    <td class= "pa4 foSi13">
+                    <td class="pa4 foSi13">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="text-success maRi10">
                             <i class="fas fa-pen text-primary"></i>
                         </a>
