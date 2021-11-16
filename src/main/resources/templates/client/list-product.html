@@ -25,7 +25,7 @@
                             <div class="card product_item">
                                 <div class="body">
                                     <div class="cp_img">
-                                        <img th:src="'image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+                                        <img th:src="${host} + '/image/' + ${obj.imageName}" alt="Product" class="img-fluid">
                                         <div class="hover">
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-    <!-- sản phẩm menu -->
+    <!-- sản phẩm theo menu -->
     <div role="tablist" class="boWi0 boShNo maBo8">
         <div class="card boWi0 boShNo maBo0">
             <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="headingOne">
@@ -67,11 +67,9 @@
                 <div class="card-body paBo0">
 
                     <div class="row clearfix">
-                        <div class="col-md-4" th:if="${listProductFavo.empty}">
-                            <p>Không có dữ liệu</p>
-                        </div>
 
-                        <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductFavo}">
+
+                        <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductMenu}">
                             <div class="card product_item">
                                 <div class="body">
                                     <div class="cp_img">

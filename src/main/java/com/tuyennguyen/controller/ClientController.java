@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -25,10 +26,10 @@ public class ClientController extends WebController {
     private MenuDongService mainService;
 
     @Autowired
-    private MenuDongRepository menuDongRepository;
+    private MenuDongRepository menuDongRepo;
 
     @Autowired
-    private ProductRepository productRepository;
+    private ProductRepository productRepo;
 
     @GetMapping(value = {"/", "/home"})
     public String goHome(Model model) {
@@ -39,8 +40,10 @@ public class ClientController extends WebController {
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
 
         // get listProduct mặc định (yêu thích)
-        List<Product> listProductFavo = productRepository.findProductsByFavouriteAndVisible(1, 1);
-        model.addAttribute("listProductFavo", listProductFavo);
+        setListProductFavo(model);
+
+        // get list product theo menu
+        setListProductMenu(model, UtilCon.EMPTY);
 
         return UtilCon.toClient(mainObject);
     }
@@ -49,15 +52,12 @@ public class ClientController extends WebController {
     public String showProduct(@PathVariable("url") String url, Model model) {
         logger.debug("Go to " + UtilCon.toClient("pathProduct"));
         setCommon(model);
-        System.out.println(UtilCon.toClient(mainObject));
 
-        // từ url của menu, get menuDongId
-        int menuDongId = menuDongRepository.findMenuDongByUrl(url).getMenuDongId();
-        System.out.println(menuDongId);
+        // get listProduct mặc định (yêu thích)
+        setListProductFavo(model);
 
-        // từ menuDongId, get tbl_product.*
-        List<Product> listProduct = productRepository.findProductsByMenuDongId(menuDongId);
-        model.addAttribute("listProduct", listProduct);
+        // get list product theo menu
+        setListProductMenu(model, UtilCon.EMPTY);
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
@@ -75,5 +75,22 @@ public class ClientController extends WebController {
 
         return UtilCon.toClient("lien-he");
     }
-	
+
+    public void setListProductMenu(Model model, String url) {
+        if (UtilCon.EMPTY.equals(url)) {
+            model.addAttribute("listProductMenu", new ArrayList<>());
+        } else {
+            int menuDongId = menuDongRepo.findMenuDongByUrl(url).getMenuDongId();
+            List<Product> listProductMenu = productRepo.findProductsByMenuDongId(menuDongId);
+            model.addAttribute("listProductMenu", listProductMenu);
+            System.out.println(url);
+            System.out.println(listProductMenu.size());
+        }
+    }
+
+    // get listProduct mặc định (yêu thích)
+    public void setListProductFavo(Model model) {
+        List<Product> listProductFavo = productRepo.findProductsByFavouriteAndVisible(1, 1);
+        model.addAttribute("listProductFavo", listProductFavo);
+    }
 }
