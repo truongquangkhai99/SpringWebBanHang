@@ -64,6 +64,7 @@ public class ProductController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        obj = UtilCon.trimObject(obj);
         String PAGE = "";
         int count = productRepo.countProductByProductName(obj.getProductName());
         // if count > 0, not save more
@@ -85,7 +86,7 @@ public class ProductController extends WebController {
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
-    public String findById(@PathVariable int id, Model model) {
+    public String edit(@PathVariable int id, Model model) {
         setCommon(model);
         setListMenuDongCha(model, UtilCon.PARENT);
 
@@ -100,6 +101,8 @@ public class ProductController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        obj = UtilCon.trimObject(obj);
+
         String imageName = imageFile.getOriginalFilename();
         if (!UtilCon.EMPTY.equals(imageName)) {
             FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);

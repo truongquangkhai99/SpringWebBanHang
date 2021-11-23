@@ -72,6 +72,8 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
+        obj = UtilCon.trimObject(obj);
+
         String PAGE = "";
         int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
         System.out.println(count);
@@ -87,7 +89,7 @@ public class UserController extends WebController {
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
-    public String findById(@PathVariable int id, Model model) {
+    public String edit(@PathVariable int id, Model model) {
         setCommon(model);
 
         List<Role> listRole = getListRole();
@@ -102,6 +104,8 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
+        obj = UtilCon.trimObject(obj);
+
         String PAGE = "";
         mainService.save(obj);
 

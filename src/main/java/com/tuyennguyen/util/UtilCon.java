@@ -1,5 +1,9 @@
 package com.tuyennguyen.util;
 
+import com.tuyennguyen.entity.MenuDong;
+import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.entity.User;
+
 public class UtilCon {
 
     public static final String ADMIN               = "admin";
@@ -53,10 +57,6 @@ public class UtilCon {
         String path = "client/" + htmlFileName;
         return path;
     }
-    public static String toClient(String folder, String htmlFileName) {
-        String path = getPathHtmlFileName(folder, htmlFileName, false);
-        return path;
-    }
 
     private static String getPathHtmlFileName(String folder, String htmlFileName, boolean isAdmin) {
         String path = "";
@@ -75,5 +75,28 @@ public class UtilCon {
     public static String createLinkFromMenuName(String menuName) {
         menuName = menuName.trim().replaceAll("\\s{2,}","-");
         return menuName;
+    }
+
+    public static Product trimObject(Product obj) {
+        obj.setProductName(obj.getProductName().trim());
+        obj.setDescription(obj.getDescription().trim());
+
+        return obj;
+    }
+
+    public static User trimObject(User obj) {
+        obj.setUsername(obj.getUsername().trim());
+        obj.setPassword(obj.getPassword().trim());
+        obj.setFullName(obj.getFullName().trim());
+        obj.setRole(obj.getRole().trim());
+
+        return obj;
+    }
+
+    public static MenuDong trimObject(MenuDong obj) {
+        obj.setMenuName(obj.getMenuName().trim());
+        obj.setDescription(obj.getDescription().trim());
+
+        return obj;
     }
 }

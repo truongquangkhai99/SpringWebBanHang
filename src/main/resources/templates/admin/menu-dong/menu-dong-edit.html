@@ -13,13 +13,8 @@
         <h4>Sửa Menu Động</h4>
 
         <form th:action="@{/admin/menu-dong/update}" method="post">
-            <div class="form-group row">
-                <label class="col-sm-4">Id</label>
-
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
-                </div>
-            </div>
+            <!-- menu động id hidden -->
+            <input type="hidden" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
 
             <div class="form-group row">
                 <label class="col-sm-4">Menu Name</label>

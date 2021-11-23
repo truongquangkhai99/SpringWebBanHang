@@ -55,6 +55,8 @@ public class MenuDongController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
+        obj = UtilCon.trimObject(obj);
+
         String PAGE = "";
         int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
         System.out.println(count);
@@ -70,7 +72,7 @@ public class MenuDongController extends WebController {
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
-    public String findById(@PathVariable int id, Model model) {
+    public String edit(@PathVariable int id, Model model) {
         setCommon(model);
 
         Optional<MenuDong> obj = mainService.findById(id);
@@ -82,6 +84,8 @@ public class MenuDongController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) MenuDong obj) {
+        obj = UtilCon.trimObject(obj);
+
         mainService.save(obj);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/menu-dong");

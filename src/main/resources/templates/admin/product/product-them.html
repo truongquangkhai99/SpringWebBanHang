@@ -22,10 +22,39 @@
                            required>
                 </div>
                 <div class="col-sm-1 pa0">
-                    <a th:href="@{/admin/product/updateFovorite/{productId}(productId=${obj.productId})}" class="text-success maRi10">
-                        <i class="far fa-star coGr cuPo" title="Sản phẩm yêu thích: no"></i>
-                        <i class="fas fa-star coRe cuPo" title="Sản phẩm yêu thích: yes"></i>
-                    </a>
+                    <input type="hidden" th:field="*{favourite}" id="favourite">
+
+                    <i class="far fa-star coGr cuPo" id="favouriteIconNo" onclick="updateFavourite()" title="Sản phẩm yêu thích: no"></i>
+                    <i class="fas fa-star coRe cuPo" id="favouriteIconYes" onclick="updateFavourite()" title="Sản phẩm yêu thích: yes"></i>
+                    <script th:inline="javascript">
+                        let favouriteNo = 0;
+                        let favouriteYes = 1;
+
+                        let favourite = favouriteNo;
+                        setFavouriteDisplay(favourite);
+
+                        function updateFavourite() {
+                            if (favourite == favouriteNo) {
+                                favourite = favouriteYes;
+                                setFavouriteDisplay(favourite);
+                            } else if (favourite == favouriteYes) {
+                                favourite = favouriteNo;
+                                setFavouriteDisplay(favourite);
+                            }
+
+                            $("#favourite").val(favourite);
+                        }
+
+                        function setFavouriteDisplay(favourite) {
+                            if (favourite == favouriteNo) {
+                                $("#favouriteIconNo").css("display", "inline-block");
+                                $("#favouriteIconYes").css("display", "none");
+                            } else if (favourite == favouriteYes) {
+                                $("#favouriteIconNo").css("display", "none");
+                                $("#favouriteIconYes").css("display", "inline-block");
+                            }
+                        }
+                    </script>
                 </div>
             </div>
 
