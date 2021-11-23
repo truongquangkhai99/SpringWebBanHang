@@ -18,12 +18,12 @@
             </a>
         </h4>
 
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Full Name</th>
+                    <th scope="col">Username</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Gender</th>
                     <th scope="col">Address</th>
                     <th scope="col"></th>
                 </tr>
@@ -34,25 +34,25 @@
                 </tr>
 
                 <tr th:each="obj:${listUser}">
-                    <td class="pa4 foSi13" scope="row">
+                    <td class="paTo9 paBo9 foSi13" scope="row">
                         <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe600">
                             <span th:text="${obj.fullName}">Full Name</span>
                         </a>
                     </td>
 
-                    <td class="pa4 foSi13">
+                    <td class="paTo9 paBo9 foSi13">
+                        <span th:text="${obj.username}">Username</span>
+                    </td>
+
+                    <td class="paTo9 paBo9 foSi13">
                         <span th:text="${obj.email}">Email</span>
                     </td>
 
-                    <td class="pa4 foSi13">
-                        <span th:text="${obj.gender}">Gender</span>
-                    </td>
-
-                    <td class="pa4 foSi13">
+                    <td class="paTo9 paBo9 foSi13">
                         <span th:text="${obj.address}">Address</span>
                     </td>
 
-                    <td class="pa4 foSi13">
+                    <td class="paTo9 paBo9 foSi13">
                         <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="text-success maRi10">
                             <i class="fas fa-pen text-primary"></i>
                         </a>

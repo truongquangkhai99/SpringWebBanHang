@@ -1,0 +1,594 @@
+2021-11-17 06:19:58,898 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2021-11-17 06:19:58,919 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2021-11-17 06:19:59,122 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:19:59,123 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:19:59,642 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:19:59,643 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:19:59,643 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:20:04,305 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 5.176 seconds (JVM running for 7.731)
+2021-11-17 06:20:31,909 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to client/pathProduct
+2021-11-17 06:20:33,273 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-9] Go to admin/menu-dong/menu-dong
+2021-11-17 06:20:35,585 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-11-17 06:20:51,501 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-11-17 06:21:01,345 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:21:11,215 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:21:14,925 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-11-17 06:24:28,173 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:24:29,617 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:24:30,490 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:24:41,119 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:24:42,004 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-11-17 06:24:59,555 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-11-17 06:25:00,387 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:25:01,264 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-11-17 06:25:02,282 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-11-17 06:25:20,080 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to admin/user/user
+2021-11-17 06:25:41,780 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to admin/user/user
+2021-11-17 06:25:42,660 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to admin/user/user
+2021-11-17 06:25:43,604 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
+2021-11-17 06:25:50,734 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-11-17 06:25:52,295 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-11-17 06:25:54,952 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-11-17 06:25:59,065 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-11-17 06:26:00,136 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-11-17 06:26:43,014 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to admin/user/user
+2021-11-17 06:26:44,423 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:26:45,084 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to admin/user/user
+2021-11-17 06:26:46,086 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:26:47,309 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-11-17 06:26:48,060 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to admin/user/user
+2021-11-17 06:26:48,905 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:26:53,173 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:27:25,316 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to admin/user/user
+2021-11-17 06:27:27,084 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to admin/user/user
+2021-11-17 06:27:27,906 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to admin/user/user
+2021-11-17 06:27:28,562 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to admin/user/user
+2021-11-17 06:27:56,720 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:27:57,462 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to admin/user/user
+2021-11-17 06:27:59,113 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:28:00,434 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to admin/user/user
+2021-11-17 06:28:01,094 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to admin/user/user
+2021-11-17 06:28:01,496 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to admin/user/user
+2021-11-17 06:28:01,755 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to admin/user/user
+2021-11-17 06:28:01,977 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
+2021-11-17 06:28:31,645 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to admin/user/user
+2021-11-17 06:28:32,561 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to admin/user/user
+2021-11-17 06:28:33,312 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to admin/user/user
+2021-11-17 06:28:34,724 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to admin/user/user
+2021-11-17 06:28:40,406 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:28:42,820 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:28:49,328 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:28:53,598 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:28:56,030 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:30:12,408 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:30:13,110 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:30:13,498 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:30:29,757 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-11-17 06:30:31,543 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to the add screen: admin/product/product
+2021-11-17 06:31:39,858 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to admin/user/user
+2021-11-17 06:31:42,049 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to the add screen: admin/user/user
+2021-11-17 06:32:29,351 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to the add screen: admin/user/user
+2021-11-17 06:32:30,169 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-11-17 06:32:30,851 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to admin/user/user
+2021-11-17 06:32:32,411 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to the add screen: admin/user/user
+2021-11-17 06:32:35,239 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-11-17 06:32:36,152 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:32:37,297 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-9] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:38:25,485 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:38:25,485 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:38:25,523 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:38:25,524 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:38:25,524 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:38:26,043 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.553 seconds (JVM running for 1109.469)
+2021-11-17 06:38:27,577 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:38:27,577 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:38:27,599 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:38:27,599 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:38:27,599 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:38:27,995 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.414 seconds (JVM running for 1111.421)
+2021-11-17 06:38:30,282 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-11-17 06:38:31,845 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:38:32,791 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:38:33,539 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:39:04,682 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:39:27,880 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:39:42,924 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:44:38,430 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:44:39,089 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-11-17 06:44:39,465 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:44:40,612 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:44:41,974 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:44:44,055 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-11-17 06:45:14,311 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:45:23,545 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:47:21,778 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:47:22,490 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:47:23,048 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-11-17 06:47:28,409 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-8] Go to admin/menu-dong/menu-dong
+2021-11-17 06:47:32,281 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:12,520 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:13,340 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:14,131 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:14,859 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:21,988 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:22,750 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:23,478 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:30,248 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-9] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:53,563 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:54,402 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:49:55,130 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:05,425 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:06,061 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:06,771 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-9] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:18,757 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:19,420 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:20,059 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:28,410 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:29,077 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:29,991 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-11-17 06:50:30,723 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:51:09,833 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-11-17 06:51:23,001 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-11-17 06:51:39,503 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to the add screen: admin/menu-dong/menu-dong/them
+2021-11-17 06:51:50,112 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-11-17 06:52:21,682 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-11-17 06:56:22,396 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:56:22,396 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:56:22,434 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:56:22,434 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:56:22,434 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:56:23,058 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.656 seconds (JVM running for 2186.484)
+2021-11-17 06:57:04,484 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:57:04,484 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:57:04,513 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:57:04,513 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:57:04,513 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:57:04,851 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1054)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:360)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property getListProduct found for type Product!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:92)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 75 common frames omitted
+2021-11-17 06:57:44,050 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:57:44,050 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:57:44,075 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:57:44,076 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:57:44,076 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:57:44,458 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1054)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:360)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property getListProduct found for type Product!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:92)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 75 common frames omitted
+2021-11-17 06:57:45,893 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:57:45,894 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:57:45,920 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:57:45,921 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:57:45,921 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:57:46,314 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminController': Unsatisfied dependency expressed through field 'productService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productService': Unsatisfied dependency expressed through field 'repository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productRepository' defined in com.tuyennguyen.repository.ProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 39 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! Reason: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1054)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:265)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:360)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 49 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.tuyennguyen.repository.ProductRepository.getListProduct()! No property getListProduct found for type Product!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 71 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property getListProduct found for type Product!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:92)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 75 common frames omitted
+2021-11-17 06:58:01,020 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:58:01,020 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:58:01,044 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:58:01,044 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:58:01,044 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:58:01,518 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.494 seconds (JVM running for 2284.943)
+2021-11-17 06:58:17,714 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:58:17,714 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:58:17,742 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:58:17,742 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:58:17,742 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:58:18,224 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.505 seconds (JVM running for 2301.65)
+2021-11-17 06:58:39,631 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:58:39,631 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:58:39,650 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:58:39,650 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:58:39,650 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:58:40,028 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.394 seconds (JVM running for 2323.454)
+2021-11-17 06:59:00,978 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 06:59:00,978 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 06:59:00,999 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 06:59:00,999 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 06:59:00,999 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 06:59:01,468 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.487 seconds (JVM running for 2344.894)
+2021-11-17 07:01:20,102 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-11-17 07:01:20,102 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-11-17 07:01:20,150 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 5716 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-11-17 07:01:20,150 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-11-17 07:01:20,150 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-17 07:01:20,576 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: The [com.tuyennguyen.entity.Product] and [com.tuyennguyen.model.mapping.ProductMap] entities share the same JPA entity name: [Product] which is not allowed!
+2021-11-17 07:01:20,592 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.DuplicateMappingException: The [com.tuyennguyen.entity.Product] and [com.tuyennguyen.model.mapping.ProductMap] entities share the same JPA entity name: [Product] which is not allowed!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.DuplicateMappingException: The [com.tuyennguyen.entity.Product] and [com.tuyennguyen.model.mapping.ProductMap] entities share the same JPA entity name: [Product] which is not allowed!
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.addEntityBinding(InFlightMetadataCollectorImpl.java:314)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:826)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:248)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted

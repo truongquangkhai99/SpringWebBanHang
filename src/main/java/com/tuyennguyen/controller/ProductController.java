@@ -2,6 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.model.mapping.ProductMap;
 import com.tuyennguyen.repository.ProductRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
@@ -62,19 +63,25 @@ public class ProductController extends WebController {
     }
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
-    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product product, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
-        String imageName = imageFile.getOriginalFilename();
-        if (!UtilCon.EMPTY.equals(imageName)) {
-            product.setImageName(imageName);
+    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        String PAGE = "";
+        int count = productRepo.countProductByProductName(obj.getProductName());
+        // if count > 0, not save more
+        if (count > 0) {
+            PAGE = "product/them";
+        } else {
+            PAGE = "product";
+
+            String imageName = imageFile.getOriginalFilename();
+            if (!UtilCon.EMPTY.equals(imageName)) {
+                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                obj.setImageName(imageName);
+            }
+            mainService.save(obj);
         }
 
-        mainService.save(product);
 
-        if (!UtilCon.EMPTY.equals(imageName)) {
-            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
-        }
-
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
@@ -95,15 +102,11 @@ public class ProductController extends WebController {
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         String imageName = imageFile.getOriginalFilename();
         if (!UtilCon.EMPTY.equals(imageName)) {
+            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
             obj.setImageName(imageName);
         }
 
         mainService.save(obj);
-
-        // if choose another image, the image is not empty and upload to server
-        if (!UtilCon.EMPTY.equals(imageName)) {
-            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
-        }
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
     }
@@ -120,7 +123,6 @@ public class ProductController extends WebController {
         setCommon(model);
 
         setListProduct(model, filter);
-
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
         return UtilCon.toAdmin();

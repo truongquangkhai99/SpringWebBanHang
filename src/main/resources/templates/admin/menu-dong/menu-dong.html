@@ -1,150 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sản Phẩm</title>
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
-    <link th:rel="stylesheet" th:href="@{/webjars/font-awesome/5.15.4/css/all.css} "/>
+<div class="" id="menu-dong-list">
+    <script>
+        // chèn link delete với id từ menu tương ứng sang modal
+        function showModal(id) {
+            $(".btn-delete").attr("href", "/admin/menu-dong/delete/" + id);
+        }
+    </script>
+    <h4>
+        <span class="maRi4">Menu Động</span>
 
-</head>
-<body>
+        <a th:href="@{{host}/admin/menu-dong/them (host=${host})}">
+            <i class="fas fa-plus-circle foSi16 text-primary"></i>
+        </a>
+    </h4>
 
-    <div class="" id="menu-dong-list">
-        <h4>
-            <span class="maRi4">Menu Động</span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Menu Name</th>
+                <th scope="col">Url</th>
+                <th scope="col">Thứ Tự</th>
+                <th scope="col">Is Parent</th>
+                <th scope="col">Parent Id</th>
+                <th scope="col">Description</th>
+                <th scope="col" class="text-center">Is Visible</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:if="${listMenuDong.empty}" scope="row">
+                <td colspan="6">No Books Available</td>
+            </tr>
 
-            <a th:href="@{{host}/admin/menu-dong/them (host=${host})}">
-                <i class="fas fa-plus-circle foSi16 text-primary"></i>
-            </a>
-        </h4>
+            <tr th:each="obj : ${listMenuDong}">
+                <td class="paTo9 paBo9 foSi13" scope="row">
+                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe600">
+                        <span th:text="${obj.menuName}">Menu Name</span>
+                    </a>
+                </td>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Menu Name</th>
-                    <th scope="col">Url</th>
-                    <th scope="col">Thứ Tự</th>
-                    <th scope="col">Is Parent</th>
-                    <th scope="col">Parent Id</th>
-                    <th scope="col">Description</th>
-                    <th scope="col" class="text-center">Is Visible</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:if="${listMenuDong.empty}" scope="row">
-                    <td colspan="6">No Books Available</td>
-                </tr>
+                <td class="pa8 foSi13">
+                    <span th:text="${obj.url}">Url</span>
+                </td>
 
-                <tr th:each="obj : ${listMenuDong}">
-                    <td class="pa4 foSi13" scope="row">
-                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe600">
-                            <span th:text="${obj.menuName}">Menu Name</span>
-                        </a>
-                    </td>
+                <td class="pa8 foSi13">
+                    <span th:text="${obj.menuOrder}">Thứ Tự</span>
+                </td>
 
-                    <td class="pa4 foSi13">
-                        <span th:text="${obj.url}">Url</span>
-                    </td>
+                <td class="pa8 foSi13" th:switch="${obj.isParent}">
+                    <span th:case="1">
+                        <i class="fas fa-check text-success"></i>
+                    </span>
 
-                    <td class="pa4 foSi13">
-                        <span th:text="${obj.menuOrder}">Thứ Tự</span>
-                    </td>
+                    <span th:case="0">
+                        <i class="far fa-times-circle text-danger"></i>
+                    </span>
+                </td>
 
-                    <td class="pa4 foSi13" th:switch="${obj.isParent}">
-                        <span th:case="1">
-                            <i class="fas fa-check text-success"></i>
-                        </span>
+                <td class="pa8 foSi13">
+                    <span th:text="${obj.parentId}">Parent Id</span>
+                </td>
 
-                        <span th:case="0">
-                            <i class="far fa-times-circle text-danger"></i>
-                        </span>
-                    </td>
+                <td class="pa8 foSi13">
+                    <span th:text="${obj.description}">Description</span>
+                </td>
 
-                    <td class="pa4 foSi13">
-                        <span th:text="${obj.parentId}">Parent Id</span>
-                    </td>
+                <td th:switch="${obj.isVisible}" class="pa8 foSi13 text-center">
+                    <span th:case="1">
+                        <i class="fas fa-eye text-success" data-toggle="tooltip" title="Hiển Thị"></i>
+                    </span>
 
-                    <td class="pa4 foSi13">
-                        <span th:text="${obj.description}">Description</span>
-                    </td>
+                    <span th:case="0">
+                        <i class="far fa-eye-slash" data-toggle="tooltip" title="Ẩn"></i>
+                    </span>
+                </td>
 
-                    <td th:switch="${obj.isVisible}" class="pa4 foSi13 text-center">
-                        <span th:case="1">
-                            <i class="fas fa-eye text-success" data-toggle="tooltip" title="Hiển Thị"></i>
-                        </span>
+                <td class="pa8 foSi13">
+                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success maRi10">
+                        <i class="fas fa-pen text-primary"></i>
+                    </a>
 
-                        <span th:case="0">
-                            <i class="far fa-eye-slash" data-toggle="tooltip" title="Ẩn"></i>
-                        </span>
-                    </td>
+                    <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
+                        <i class="far fa-trash-alt"></i>
+                    </a>
+                </td>
 
-                    <td class="pa4 foSi13">
-                        <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success maRi10">
-                            <i class="fas fa-pen text-primary"></i>
-                        </a>
+            </tr>
+        </tbody>
+    </table>
 
-                        <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
-                            <i class="far fa-trash-alt"></i>
-                        </a>
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
-
-
-        <div class="container d-flex justify-content-center">
-            <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content border-0">
-                        <div class="modal-body p-0">
-                            <div class="card border-0 p-sm-3 p-2 justify-content-center">
-                                <div class="card-header pb-0 bg-white border-0 ">
-                                    <div class="row">
-                                        <div class="col ml-auto">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <p class="font-weight-bold mb-2">Xoá bản ghi</p>
-                                    <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
-                                </div>
-
-                                <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
-                                    <div class="row justify-content-end no-gutters">
-                                        <div class="col-auto">
-                                            <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <a class="btn btn-danger px-4 btn-delete">Delete</a>
-                                        </div>
-
+    <!-- modal - start -->
+    <div class="container d-flex justify-content-center">
+        <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body p-0">
+                        <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                            <div class="card-header pb-0 bg-white border-0 ">
+                                <div class="row">
+                                    <div class="col ml-auto">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"></span>
+                                        </button>
                                     </div>
                                 </div>
 
+                                <p class="font-weight-bold mb-2">Xoá bản ghi</p>
+                                <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
                             </div>
+
+                            <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                <div class="row justify-content-end no-gutters">
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a class="btn btn-danger px-4 btn-delete">Delete</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script>
-            $(document).ready(function() {
-
-            });
-            function showModal(id) {
-                console.log("show m");
-                console.log(id);
-                $(".btn-delete").attr("href", "/admin/menu-dong/delete/" + id);
-            }
-        </script>
     </div>
+    <!-- modal - end -->
 
-</body>
-</html>
+</div>

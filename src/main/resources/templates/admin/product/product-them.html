@@ -15,10 +15,11 @@
 
         <form th:action="@{/admin/product/save}" method="post" th:object="${obj}" enctype="multipart/form-data">
             <div class="form-group row">
-                <label class="col-sm-4">Name</label>
+                <label class="col-sm-4">Product Name</label>
 
                 <div class="col-sm-7">
-                    <input type="text" th:field="*{name}" class="form-control form-control-sm">
+                    <input type="text" th:field="*{productName}" class="form-control form-control-sm"
+                           required>
                 </div>
                 <div class="col-sm-1 pa0">
                     <a th:href="@{/admin/product/updateFovorite/{productId}(productId=${obj.productId})}" class="text-success maRi10">

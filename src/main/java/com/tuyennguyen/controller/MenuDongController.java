@@ -1,6 +1,7 @@
 package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
+import com.tuyennguyen.repository.MenuDongRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
@@ -26,6 +27,9 @@ public class MenuDongController extends WebController {
     @Autowired
     private MenuDongService mainService;
 
+    @Autowired
+    private MenuDongRepository menuDongRepo;
+
     @GetMapping(value = "/" + MAIN_OBJECT)
     public String getList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
@@ -50,10 +54,19 @@ public class MenuDongController extends WebController {
     }
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
-    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong menuDong) {
-        mainService.save(menuDong);
+    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
+        String PAGE = "";
+        int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
+        System.out.println(count);
+        // if count > 0, not save more
+        if (count > 0) {
+            PAGE = "menu-dong/them";
+        } else {
+            PAGE = "menu-dong";
+            mainService.save(obj);
+        }
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/menu-dong");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")

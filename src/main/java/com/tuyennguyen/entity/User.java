@@ -18,6 +18,12 @@ public class User {
     private int userId;
 
     @Column(nullable = true)
+    private String username;
+
+    @Column(nullable = true)
+    private String password;
+
+    @Column(nullable = true)
     private String fullName;
 
     @Column(nullable = true)

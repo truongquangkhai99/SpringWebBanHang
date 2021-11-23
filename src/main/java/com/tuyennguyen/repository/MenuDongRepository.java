@@ -11,6 +11,8 @@ public interface MenuDongRepository extends JpaRepository<MenuDong, Integer> {
 
     public List<MenuDong> findMenuDongByMenuName(String menuName);
 
+    public int countMenuDongByMenuName(String menuName);
+
     public MenuDong findMenuDongByUrl(String url);
 
     public List<MenuDong> findAllByIsParent(int isParent);

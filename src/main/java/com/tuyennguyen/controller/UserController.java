@@ -2,6 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Role;
 import com.tuyennguyen.entity.User;
+import com.tuyennguyen.repository.UserRepository;
 import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.EnumRole;
 import com.tuyennguyen.util.UtilHost;
@@ -28,6 +29,9 @@ public class UserController extends WebController {
 
     @Autowired
     private UserService mainService;
+
+    @Autowired
+    private UserRepository userRepo;
 
     @GetMapping(value = "/" + MAIN_OBJECT)
     public String getList(Model model) {
@@ -68,12 +72,18 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
-        mainService.save(obj);
+        String PAGE = "";
+        int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
+        System.out.println(count);
+        // if count > 0, not save more
+        if (count > 0) {
+            PAGE = "user/them";
+        } else {
+            PAGE = "user";
+            mainService.save(obj);
+        }
 
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(UtilCon.toAdmin(MAIN_OBJECT));
-
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/user");
+        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
@@ -92,6 +102,7 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
+        String PAGE = "";
         mainService.save(obj);
 
         return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/user");
