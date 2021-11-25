@@ -19,7 +19,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int productId;
+    private Integer productId;
 
     @Column(nullable = true)
     private String productName;
@@ -34,16 +34,16 @@ public class Product {
     private String imageName;
 
     @Column(nullable = true)
-    private int quantity;
+    private Integer quantity;
 
     @Column(nullable = true)
-    private int visible;
+    private Integer isVisible;
 
     @ColumnDefault("0")
     @Column(nullable = true)
-    private int menuDongId;
+    private Integer menuDongId;
 
     @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
-    private int favourite;
+    private Integer favourite;
 
 }

@@ -73,8 +73,9 @@ public class UtilCon {
     }
 
     public static String createLinkFromMenuName(String menuName) {
-        menuName = menuName.trim().replaceAll("\\s{2,}","-");
-        return menuName;
+        String menuLink = "";
+        menuLink = menuName.trim().replaceAll("\\s{1,}","-");
+        return menuLink;
     }
 
     public static Product trimObject(Product obj) {

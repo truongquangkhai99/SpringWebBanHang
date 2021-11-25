@@ -31,7 +31,7 @@ public class MenuDongController extends WebController {
     private MenuDongRepository menuDongRepo;
 
     @GetMapping(value = "/" + MAIN_OBJECT)
-    public String getList(Model model) {
+    public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
@@ -56,6 +56,8 @@ public class MenuDongController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
         obj = UtilCon.trimObject(obj);
+        String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
+        obj.setMenuLink(menuLink);
 
         String PAGE = "";
         int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
@@ -85,6 +87,8 @@ public class MenuDongController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) MenuDong obj) {
         obj = UtilCon.trimObject(obj);
+        String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
+        obj.setMenuLink(menuLink);
 
         mainService.save(obj);
 

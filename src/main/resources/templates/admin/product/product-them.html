@@ -24,34 +24,21 @@
                 <div class="col-sm-1 pa0">
                     <input type="hidden" th:field="*{favourite}" id="favourite">
 
-                    <i class="far fa-star coGr cuPo" id="favouriteIconNo" onclick="updateFavourite()" title="Sản phẩm yêu thích: no"></i>
-                    <i class="fas fa-star coRe cuPo" id="favouriteIconYes" onclick="updateFavourite()" title="Sản phẩm yêu thích: yes"></i>
+                    <i class="far fa-star coGr cuPo" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">
-                        let favouriteNo = 0;
-                        let favouriteYes = 1;
+                        function updateFavourite(e, data) {
+                            let className = event.target.className;
 
-                        let favourite = favouriteNo;
-                        setFavouriteDisplay(favourite);
+                            if (className.includes("coGr")) {
+                                $(e).removeClass("coGr");
+                                $(e).addClass("coRe");
 
-                        function updateFavourite() {
-                            if (favourite == favouriteNo) {
-                                favourite = favouriteYes;
-                                setFavouriteDisplay(favourite);
-                            } else if (favourite == favouriteYes) {
-                                favourite = favouriteNo;
-                                setFavouriteDisplay(favourite);
-                            }
+                                $("#" + data).val(1);
+                            } else if (className.includes("coRe")) {
+                                $(e).removeClass("coRe");
+                                $(e).addClass("coGr");
 
-                            $("#favourite").val(favourite);
-                        }
-
-                        function setFavouriteDisplay(favourite) {
-                            if (favourite == favouriteNo) {
-                                $("#favouriteIconNo").css("display", "inline-block");
-                                $("#favouriteIconYes").css("display", "none");
-                            } else if (favourite == favouriteYes) {
-                                $("#favouriteIconNo").css("display", "none");
-                                $("#favouriteIconYes").css("display", "inline-block");
+                                $("#" + data).val(0);
                             }
                         }
                     </script>
@@ -104,41 +91,30 @@
                 <label class="col-sm-4">Visible</label>
 
                 <div class="col-sm-8">
-                    <input type="hidden" th:field="*{visible}" id="visible">
 
-                    <i class="fas fa-eye-slash text-secondary cuPo maRi10 foSi20" id="visibleIconNo" onclick="updateVisible()" title="hiển thị: no"></i>
-                    <i class="fas fa-eye text-success cuPo foSi20" id="visibleIconYes" onclick="updateVisible()" title="hiển thị: yes"></i>
+                    <input type="hidden" th:field="*{isVisible}" id="isVisible">
 
+                    <i class="fas fa-eye-slash text-secondary cuPo maRi10 foSi20" onclick='updateIsVisible(this, "isVisible")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">
-                        let visible = 1;
-                        $("#visible").val(visible);
+                        function updateIsVisible(e, data) {
+                            let className = event.target.className;
 
-                        let visibleNo = 0;
-                        let visibleYes = 1;
+                            if (className.includes("text-secondary")) {
+                                $(e).removeClass("text-secondary");
+                                $(e).addClass("text-success");
 
-                        setVisibleDisplay(visible);
+                                $(e).removeClass("fas fa-eye-slash");
+                                $(e).addClass("fas fa-eye");
 
-                        function updateVisible() {
-                            console.log(1);
-                            if (visible == visibleNo) {
-                                visible = visibleYes;
-                                setVisibleDisplay(visible);
-                            } else if (visible == visibleYes) {
-                                visible = visibleNo;
-                                setVisibleDisplay(visible);
-                            }
+                                $("#" + data).val(1);
+                            } else if (className.includes("text-success")) {
+                                $(e).removeClass("text-success");
+                                $(e).addClass("text-secondary");
 
-                            $("#visible").val(visible);
-                        }
+                                $(e).removeClass("fas fa-eye");
+                                $(e).addClass("fas fa-eye-slash");
 
-                        function setVisibleDisplay(visible) {
-                            console.log(2);
-                            if (visible == visibleNo) {
-                                $("#visibleIconNo").css("display", "inline-block");
-                                $("#visibleIconYes").css("display", "none");
-                            } else if (visible == visibleYes) {
-                                $("#visibleIconNo").css("display", "none");
-                                $("#visibleIconYes").css("display", "inline-block");
+                                $("#" + data).val(0);
                             }
                         }
                     </script>

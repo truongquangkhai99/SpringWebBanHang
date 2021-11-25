@@ -13,26 +13,26 @@ import java.util.Optional;
 public class ProductService {
 
     @Autowired
-    private ProductRepository repository;
+    private ProductRepository productRepo;
 
     public List<ProductMap> getListProductShowProductList() {
-        return repository.getListProductShowProductList();
+        return productRepo.getListProductShowProductList();
     }
 
     public List<Product> findAll() {
-        return repository.findAll();
+        return productRepo.findAll();
     }
 
     public Optional<Product> findById(int id) {
-        return repository.findById(id);
+        return productRepo.findById(id);
     }
 
     public Product save(Product obj) {
-        return repository.save(obj);
+        return productRepo.save(obj);
     }
 
     public void deleteById(int id) {
-        repository.deleteById(id);
+        productRepo.deleteById(id);
     }
 
 }

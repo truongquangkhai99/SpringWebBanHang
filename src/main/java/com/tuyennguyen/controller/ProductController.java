@@ -38,7 +38,7 @@ public class ProductController extends WebController {
     private MenuDongService menuDongService;
 
     @GetMapping(value = "/" + MAIN_OBJECT)
-    public String getList(Model model) {
+    public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 
@@ -148,7 +148,7 @@ public class ProductController extends WebController {
             List<Product> listProduct = productRepo.findProductsByFavourite(UtilCon.FAVOURITE);
             model.addAttribute("listProduct", listProduct);
         } else if (filter == invisible) {
-            List<Product> listProduct = productRepo.findProductsByVisible(UtilCon.INVISIBLE);
+            List<Product> listProduct = productRepo.findProductsByIsVisible(UtilCon.INVISIBLE);
             model.addAttribute("listProduct", listProduct);
         }
         model.addAttribute("filter", filter);

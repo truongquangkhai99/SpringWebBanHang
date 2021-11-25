@@ -18,10 +18,10 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     public int countProductByProductName(String productName);
 
-    public List<Product> findProductsByFavouriteAndVisible(int favourite, int visible);
+    public List<Product> findProductsByFavouriteAndIsVisible(int favourite, int isVisible);
 
     public List<Product> findProductsByFavourite(int favourite);
 
-    public List<Product> findProductsByVisible(int visible);
+    public List<Product> findProductsByIsVisible(int isVisible);
 
 }

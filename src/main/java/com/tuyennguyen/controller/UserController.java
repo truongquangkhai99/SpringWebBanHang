@@ -34,7 +34,7 @@ public class UserController extends WebController {
     private UserRepository userRepo;
 
     @GetMapping(value = "/" + MAIN_OBJECT)
-    public String getList(Model model) {
+    public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
         setCommon(model);
 

@@ -13,7 +13,7 @@ public interface MenuDongRepository extends JpaRepository<MenuDong, Integer> {
 
     public int countMenuDongByMenuName(String menuName);
 
-    public MenuDong findMenuDongByUrl(String url);
+    public MenuDong findMenuDongByMenuLink(String menuLink);
 
     public List<MenuDong> findAllByIsParent(int isParent);
 

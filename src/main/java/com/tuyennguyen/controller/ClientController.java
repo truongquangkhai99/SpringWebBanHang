@@ -76,21 +76,21 @@ public class ClientController extends WebController {
         return UtilCon.toClient("lien-he");
     }
 
-    public void setListProductMenu(Model model, String url) {
-        if (UtilCon.EMPTY.equals(url)) {
+    public void setListProductMenu(Model model, String menuLink) {
+        if (UtilCon.EMPTY.equals(menuLink)) {
             model.addAttribute("listProductMenu", new ArrayList<>());
         } else {
-            int menuDongId = menuDongRepo.findMenuDongByUrl(url).getMenuDongId();
+            int menuDongId = menuDongRepo.findMenuDongByMenuLink(menuLink).getMenuDongId();
             List<Product> listProductMenu = productRepo.findProductsByMenuDongId(menuDongId);
             model.addAttribute("listProductMenu", listProductMenu);
-            System.out.println(url);
+            System.out.println(menuLink);
             System.out.println(listProductMenu.size());
         }
     }
 
     // get listProduct mặc định (yêu thích)
     public void setListProductFavo(Model model) {
-        List<Product> listProductFavo = productRepo.findProductsByFavouriteAndVisible(1, 1);
+        List<Product> listProductFavo = productRepo.findProductsByFavouriteAndIsVisible(1, 1);
         model.addAttribute("listProductFavo", listProductFavo);
     }
 }
