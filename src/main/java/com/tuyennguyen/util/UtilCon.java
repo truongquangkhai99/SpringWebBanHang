@@ -20,6 +20,7 @@ public class UtilCon {
     public static final String MENU_DONG           = "menu-dong";
     public static final String MENU_DONG_EDIT      = "menu-dong-edit";
     public static final String MENU_DONG_THEM      = "menu-dong-them";
+    public static final String REDICRECT           = "redirect:";
 
     public static final String FOR_SL              = "/";
     public static final String BAC_SL              = "\\";
@@ -87,7 +88,6 @@ public class UtilCon {
 
     public static User trimObject(User obj) {
         obj.setUsername(obj.getUsername().trim());
-        obj.setPassword(obj.getPassword().trim());
         obj.setFullName(obj.getFullName().trim());
         obj.setRole(obj.getRole().trim());
 

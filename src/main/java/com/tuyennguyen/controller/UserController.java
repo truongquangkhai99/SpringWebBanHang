@@ -72,11 +72,11 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
+
         obj = UtilCon.trimObject(obj);
 
         String PAGE = "";
         int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
-        System.out.println(count);
         // if count > 0, not save more
         if (count > 0) {
             PAGE = "user/them";
@@ -85,7 +85,7 @@ public class UserController extends WebController {
             mainService.save(obj);
         }
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
@@ -106,17 +106,25 @@ public class UserController extends WebController {
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
         obj = UtilCon.trimObject(obj);
 
-        String PAGE = "";
-        mainService.save(obj);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/user");
+        String PAGE = "";
+        int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
+        // if count > 0, not save more
+        if (count > 1) {
+            PAGE = "user/edit/" + obj.getUserId();
+        } else {
+            PAGE = "user";
+            mainService.save(obj);
+        }
+
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         mainService.deleteById(id);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 
 }

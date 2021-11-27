@@ -70,7 +70,7 @@ public class MenuDongController extends WebController {
             mainService.save(obj);
         }
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
@@ -92,14 +92,14 @@ public class MenuDongController extends WebController {
 
         mainService.save(obj);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/menu-dong");
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/menu-dong");
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         mainService.deleteById(id);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 	
 }

@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 
-<div class="container" th:fragment="listProduct">
+<div class="container" id="list-product">
 
     <!-- sản phẩm yêu thích -->
     <div role="tablist" class="boWi0 boShNo maBo8">
-        <div class="card boWi0 boShNo maBo0">
+        <div class="card boWi0 boShNo maBo0 paTo12">
             <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="heading-sp-y-t">
                 <h5 class="mb-0">
                     <a data-toggle="collapse" class="baCoTr" style="color: #0056b3;" href="#sp-yeu-thich" aria-expanded="true" aria-controls="sp-yeu-thich">
@@ -14,7 +14,7 @@
                 </h5>
             </div>
             <div id="sp-yeu-thich" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="heading-sp-y-t" data-parent="#accordion">
-                <div class="card-body paBo0">
+                <div class="card-body paTo12 paBo0">
 
                     <div class="row clearfix">
                         <div class="col-md-4" th:if="${listProductFavo.empty}">
@@ -26,6 +26,7 @@
                                 <div class="body">
                                     <div class="cp_img">
                                         <img th:src="${host} + '/image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+
                                         <div class="hover">
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
@@ -34,7 +35,7 @@
 
                                     <div class="product_details">
                                         <h5>
-                                            <a href="ec-product-detail.html" th:text="${obj.name}">Name</a>
+                                            <a href="ec-product-detail.html" th:text="${obj.productName}">Product Name</a>
                                         </h5>
 
                                         <ul class="product_price list-unstyled">
@@ -55,16 +56,16 @@
 
     <!-- sản phẩm theo menu -->
     <div role="tablist" class="boWi0 boShNo maBo8">
-        <div class="card boWi0 boShNo maBo0">
+        <div class="card boWi0 boShNo maBo0 paTo12">
             <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="headingOne">
                 <h5 class="mb-0">
                     <a data-toggle="collapse" class="baCoTr" style="color: #0056b3;" href="#sp-menu" aria-expanded="true" aria-controls="sp-menu">
-                        Ô tô Toyota
+                        <span th:text="${menuName}">Menu Name</span>
                     </a>
                 </h5>
             </div>
             <div id="sp-menu" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body paBo0">
+                <div class="card-body paTo12 paBo0">
 
                     <div class="row clearfix">
 
@@ -73,7 +74,8 @@
                             <div class="card product_item">
                                 <div class="body">
                                     <div class="cp_img">
-                                        <img th:src="'image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+                                        <img th:src="${host} + '/image/' + ${obj.imageName}" alt="Product" class="img-fluid">
+
                                         <div class="hover">
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-plus"></i></a>
                                             <a href="javascript:void(0);" class="btn btn-primary btn-sm waves-effect"><i class="zmdi zmdi-shopping-cart"></i></a>
@@ -82,7 +84,7 @@
 
                                     <div class="product_details">
                                         <h5>
-                                            <a href="ec-product-detail.html" th:text="${obj.name}">Name</a>
+                                            <a href="ec-product-detail.html" th:text="${obj.productName}">Product Name</a>
                                         </h5>
 
                                         <ul class="product_price list-unstyled">

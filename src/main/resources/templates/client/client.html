@@ -5,9 +5,10 @@
     <title>Trang Chủ</title>
 
     <link rel="Shortcut icon" th:href="@{/logo.png}">
-    <link th:href="@{/style/side-bar-left-and-modal-and-list-product.css}" rel="stylesheet" />
     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css} "/>
     <link th:href="@{/style/style-common.css}" rel="stylesheet" />
+    <link th:href="@{/style/side-bar-left-and-modal-and-list-product.css}" rel="stylesheet" />
+
     <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
 
     <script th:inline="javascript">
@@ -20,13 +21,13 @@
 </head>
 <body>
 
-    <header th:insert="client/header.html :: header"></header>
+    <header th:insert="client/header.html :: #header"></header>
+    <div th:insert="client/menu.html :: #menu"></div>
 
-    <div th:insert="client/menu.html :: menu"></div>
-    <div th:insert="client/list-product.html :: listProduct"></div>
-    <div th:insert="client/lien-he.html :: lienHe"></div>
+    <div th:insert="client/list-product.html :: #list-product"></div>
+    <div th:insert="client/lien-he.html :: #lien-he"></div>
 
-    <footer th:insert="client/footer.html :: footer"></footer>
+    <footer th:insert="client/footer.html :: #footer"></footer>
 
     <script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>

@@ -38,6 +38,7 @@ public class ClientController extends WebController {
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
+        System.out.println(listMenuDongIsVisible.size());
 
         // get listProduct mặc định (yêu thích)
         setListProductFavo(model);
@@ -48,8 +49,8 @@ public class ClientController extends WebController {
         return UtilCon.toClient(mainObject);
     }
 
-    @GetMapping(value = {"/san-pham/{url}"})
-    public String showProduct(@PathVariable("url") String url, Model model) {
+    @GetMapping(value = {"/san-pham/{menuLink}"})
+    public String showProduct(@PathVariable("menuLink") String menuLink, Model model) {
         logger.debug("Go to " + UtilCon.toClient("pathProduct"));
         setCommon(model);
 
@@ -57,7 +58,7 @@ public class ClientController extends WebController {
         setListProductFavo(model);
 
         // get list product theo menu
-        setListProductMenu(model, UtilCon.EMPTY);
+        setListProductMenu(model, menuLink);
 
         List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
         model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
@@ -80,11 +81,12 @@ public class ClientController extends WebController {
         if (UtilCon.EMPTY.equals(menuLink)) {
             model.addAttribute("listProductMenu", new ArrayList<>());
         } else {
-            int menuDongId = menuDongRepo.findMenuDongByMenuLink(menuLink).getMenuDongId();
+            MenuDong menuDong = menuDongRepo.findMenuDongByMenuLink(menuLink);
+            model.addAttribute("menuName", menuDong.getMenuName());
+
+            int menuDongId = menuDong.getMenuDongId();
             List<Product> listProductMenu = productRepo.findProductsByMenuDongId(menuDongId);
             model.addAttribute("listProductMenu", listProductMenu);
-            System.out.println(menuLink);
-            System.out.println(listProductMenu.size());
         }
     }
 

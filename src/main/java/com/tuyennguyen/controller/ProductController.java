@@ -82,7 +82,7 @@ public class ProductController extends WebController {
         }
 
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
@@ -111,14 +111,14 @@ public class ProductController extends WebController {
 
         mainService.save(obj);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/product");
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         mainService.deleteById(id);
 
-        return new ModelAndView("redirect:" + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
     }
 
     @GetMapping(value = "/" + MAIN_OBJECT + "/filter/{filter}")
