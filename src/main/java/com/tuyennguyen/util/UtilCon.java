@@ -4,6 +4,8 @@ import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
 
+import java.text.DecimalFormat;
+
 public class UtilCon {
 
     public static final String ADMIN               = "admin";
@@ -99,5 +101,12 @@ public class UtilCon {
         obj.setDescription(obj.getDescription().trim());
 
         return obj;
+    }
+
+    public static String formatMoney(String money) {
+        double amount = Double.parseDouble(money);
+        DecimalFormat formatter = new DecimalFormat("#,###");
+
+        return formatter.format(amount);
     }
 }

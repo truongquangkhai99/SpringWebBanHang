@@ -65,6 +65,8 @@ public class ProductController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         obj = UtilCon.trimObject(obj);
+        obj = setSaleButton(obj);
+
         String PAGE = "";
         int count = productRepo.countProductByProductName(obj.getProductName());
         // if count > 0, not save more
@@ -102,6 +104,7 @@ public class ProductController extends WebController {
     @PostMapping(value = "/" + MAIN_OBJECT + "/update")
     public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         obj = UtilCon.trimObject(obj);
+        obj = setSaleButton(obj);
 
         String imageName = imageFile.getOriginalFilename();
         if (!UtilCon.EMPTY.equals(imageName)) {
@@ -152,6 +155,44 @@ public class ProductController extends WebController {
             model.addAttribute("listProduct", listProduct);
         }
         model.addAttribute("filter", filter);
+    }
+
+    private Product setSaleButton(Product obj) {
+        // salePrice
+        String salePercent = obj.getSalePercent();
+        if (salePercent.contains("%")) {
+            salePercent = salePercent.replaceAll("%", "");
+        } else {
+            // do nothing
+        }
+
+        // price
+        String price = obj.getPrice().replaceAll("[.]", "");
+        // salePrice
+        String salePrice = obj.getSalePrice();
+        String giaConLai = price;
+
+        // format price, tính salePrice
+        if (!"".equals(price)) {
+            if ("".equals(salePercent) || Integer.parseInt(salePercent) == 0) {
+                // if salePercent = 0%
+                salePrice = price;
+            } else {
+                //if salePercent > 0%
+                salePrice = Long.parseLong(price) * Integer.parseInt(salePercent) / 100 + "";
+                giaConLai = String.valueOf(Long.parseLong(price) - Long.parseLong(salePrice));
+            }
+        } else {
+            // do nothing
+        }
+
+        // set % for salePercent
+        salePercent += "%";
+
+        obj.setSalePercent(salePercent);
+        obj.setSalePrice(UtilCon.formatMoney(salePrice));
+        obj.setGiaConLai(UtilCon.formatMoney(giaConLai));
+        return obj;
     }
 	
 }

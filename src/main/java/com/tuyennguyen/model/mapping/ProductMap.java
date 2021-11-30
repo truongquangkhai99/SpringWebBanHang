@@ -4,9 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.ColumnResult;
+import javax.persistence.SqlResultSetMapping;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@SqlResultSetMapping(
+        name="FridayEmployeeResult",
+        columns = {@ColumnResult(name="menuName")}
+)
 public class ProductMap {
 
 //    private int productId;

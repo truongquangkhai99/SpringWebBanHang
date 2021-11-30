@@ -25,7 +25,7 @@ public class Product {
     private String productName;
 
     @Column(nullable = true)
-    private double price;
+    private String price;
 
     @Column(nullable = true)
     private String description;
@@ -45,5 +45,17 @@ public class Product {
 
     @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
     private Integer favourite;
+
+    @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
+    private Integer sale;
+
+    @Column(nullable = true)
+    private String salePercent;
+
+    @Column(nullable = true)
+    private String salePrice;
+
+    @Column(nullable = true)
+    private String giaConLai;
 
 }
