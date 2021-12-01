@@ -33,13 +33,26 @@ public class UtilCon {
     public static final String BOOTSTRAP_JS        = "webjars/bootstrap/4.1.1/js/bootstrap.js";
     public static final String JQUERY              = "webjars/jquery/3.3.1-1/jquery.js";
 
+    // menu parent
     public static final int PARENT                 = 1;
+    // menu child
     public static final int NOT_PARENT             = 0;
     public static final int VISIBLE                = 1;
     public static final int INVISIBLE              = 0;
+
+    // product favourite
     public static final int FAVOURITE              = 1;
 
-    public static String toAdmin() {
+    // all item of product
+    public static final int ALL_ITEM = 1;
+
+    // favoutire item of product
+    public static final int FAVOURITE_ITEM = 2;
+
+    // invisible item of product
+    public static final int INVISIBLE_ITEM = 3;
+
+    public static String goAdmin() {
         return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN + ".html";
     }
 
@@ -108,5 +121,9 @@ public class UtilCon {
         DecimalFormat formatter = new DecimalFormat("#,###");
 
         return formatter.format(amount);
+    }
+
+    public static void print(String sql) {
+        System.out.println(sql.replaceAll("\\s{2,}"," "));
     }
 }

@@ -14,7 +14,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,41 +24,32 @@ import java.util.Optional;
 public class UserController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(UserController.class);
-    private static final String MAIN_OBJECT = "user";
+    private static final String USER = "user";
 
     @Autowired
-    private UserService mainService;
+    private UserService userService;
 
     @Autowired
     private UserRepository userRepo;
 
-    @GetMapping(value = "/" + MAIN_OBJECT)
+    @GetMapping(value = "/" + USER)
     public String showList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
+        logger.debug("Go to " + UtilCon.toAdmin(USER));
         setCommon(model);
 
-        List<User> listUser = mainService.findAll();
+        //set list
+        List<User> listUser = userService.findAll();
         model.addAttribute("listUser", listUser);
+        //set page
         model.addAttribute(UtilCon.PAGE, UtilCon.USER);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    private List<Role> getListRole() {
-        Role role;
-
-        List<Role> listRole = new ArrayList<>();
-        role = new Role(EnumRole.ADMIN.getRoleId(), EnumRole.ADMIN.getRoleName());
-        listRole.add(role);
-        role = new Role(EnumRole.USER.getRoleId(), EnumRole.USER.getRoleName());
-        listRole.add(role);
-
-        return listRole;
-    }
-
-    @GetMapping(value = "/" + MAIN_OBJECT + "/them")
+    @GetMapping(value = "/" + USER + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(MAIN_OBJECT));
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(USER));
+        // set host, bootstrap
         setCommon(model);
 
         List<Role> listRole = getListRole();
@@ -67,10 +57,10 @@ public class UserController extends WebController {
 
         model.addAttribute(UtilCon.OBJ, new User());
         model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    @PostMapping(value = "/" + MAIN_OBJECT + "/save")
+    @PostMapping(value = "/" + USER + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
 
         obj = UtilCon.trimObject(obj);
@@ -82,30 +72,30 @@ public class UserController extends WebController {
             PAGE = "user/them";
         } else {
             PAGE = "user";
-            mainService.save(obj);
+            userService.save(obj);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
+    @GetMapping(value = "/" + USER + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
+        // set host, bootstrap
         setCommon(model);
 
         List<Role> listRole = getListRole();
         model.addAttribute("listRole", listRole);
 
-        Optional<User> obj = mainService.findById(id);
-        model.addAttribute(MAIN_OBJECT, obj);
+        Optional<User> obj = userService.findById(id);
+        model.addAttribute(USER, obj);
         model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    @PostMapping(value = "/" + MAIN_OBJECT + "/update")
+    @PostMapping(value = "/" + USER + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
         obj = UtilCon.trimObject(obj);
-
 
         String PAGE = "";
         int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
@@ -114,17 +104,30 @@ public class UserController extends WebController {
             PAGE = "user/edit/" + obj.getUserId();
         } else {
             PAGE = "user";
-            mainService.save(obj);
+            userService.save(obj);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
+    @GetMapping(value = "/" + USER + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        mainService.deleteById(id);
+        userService.deleteById(id);
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + USER);
+    }
+
+    private List<Role> getListRole() {
+        Role role;
+
+        // set list role
+        List<Role> listRole = new ArrayList<>();
+        role = new Role(EnumRole.ADMIN.getRoleId(), EnumRole.ADMIN.getRoleName());
+        listRole.add(role);
+        role = new Role(EnumRole.USER.getRoleId(), EnumRole.USER.getRoleName());
+        listRole.add(role);
+
+        return listRole;
     }
 
 }
