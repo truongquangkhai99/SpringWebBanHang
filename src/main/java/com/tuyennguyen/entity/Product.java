@@ -1,6 +1,7 @@
 package com.tuyennguyen.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.tuyennguyen.model.mapping.ProductMap;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,19 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "TBL_Product")
+@SqlResultSetMapping(name = "listProductWithMenuName", classes = {
+    @ConstructorResult(targetClass = ProductMap.class, columns = {
+        @ColumnResult(name = "productId", type = Integer.class),
+        @ColumnResult(name = "isVisible", type = Integer.class),
+        @ColumnResult(name = "productName", type = String.class),
+        @ColumnResult(name = "favourite", type = Integer.class),
+        @ColumnResult(name = "price", type = String.class),
+        @ColumnResult(name = "quantity", type = Integer.class),
+        @ColumnResult(name = "sale", type = Integer.class),
+        @ColumnResult(name = "menuName", type = String.class),
+        @ColumnResult(name = "imageName", type = String.class),
+    })
+})
 public class Product {
 
     @Id

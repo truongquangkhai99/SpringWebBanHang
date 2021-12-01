@@ -29,7 +29,7 @@ public class AdminController extends WebController {
 
     @GetMapping(value = "/admin-login")
     public String login(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin());
+        logger.debug("Go to " + UtilCon.goAdmin());
         setCommon(model);
 
         return UtilCon.toAdmin("admin-login");
@@ -37,17 +37,18 @@ public class AdminController extends WebController {
 
     @GetMapping(value = "/admin")
     public String admin(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin());
+        logger.debug("Go to " + UtilCon.goAdmin());
         setCommon(model);
 
-        List<Product> listProduct = productService.findAll();
+//        List<Product> listProduct = productService.findAll();
+        List<Product> listProduct = null;
         model.addAttribute("listProduct", listProduct);
         model.addAttribute("page", "product");
 
         List<User> listUser = userService.findAll();
         model.addAttribute("listUser", listUser);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
 }

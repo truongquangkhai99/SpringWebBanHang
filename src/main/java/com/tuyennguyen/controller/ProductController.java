@@ -26,10 +26,11 @@ import java.util.List;
 public class ProductController extends WebController {
 
     Logger logger = LoggerFactory.getLogger(ProductController.class);
-    private static final String MAIN_OBJECT = "product";
+
+    private static final String PRODUCT = "product";
 
     @Autowired
-    private ProductService mainService;
+    private ProductService productService;
 
     @Autowired
     private ProductRepository productRepo;
@@ -37,21 +38,24 @@ public class ProductController extends WebController {
     @Autowired
     private MenuDongService menuDongService;
 
-    @GetMapping(value = "/" + MAIN_OBJECT)
+    @GetMapping(value = "/" + PRODUCT)
     public String showList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(MAIN_OBJECT));
+        logger.debug("Go to " + UtilCon.toAdmin(PRODUCT));
+        // set host, bootstrap
         setCommon(model);
 
-        int allItem = 1;
-        setListProduct(model, allItem);
+        //set list
+        setListProduct(model, UtilCon.ALL_ITEM);
+        //set page
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/them")
+    @GetMapping(value = "/" + PRODUCT + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(MAIN_OBJECT));
+        logger.debug("Go to the add screen: " + UtilCon.toAdmin(PRODUCT));
+        // set host, bootstrap
         setCommon(model);
 
         model.addAttribute(UtilCon.OBJ, new Product());
@@ -59,10 +63,10 @@ public class ProductController extends WebController {
 
         setListMenuDong(model);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    @PostMapping(value = "/" + MAIN_OBJECT + "/save")
+    @PostMapping(value = "/" + PRODUCT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         obj = UtilCon.trimObject(obj);
         obj = setSaleButton(obj);
@@ -80,29 +84,30 @@ public class ProductController extends WebController {
                 FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
                 obj.setImageName(imageName);
             }
-            mainService.save(obj);
+            productService.save(obj);
         }
 
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/edit/{id}")
+    @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
+        // set host, bootstrap
         setCommon(model);
         setListMenuDongCha(model, UtilCon.PARENT);
 
-        Product obj = mainService.findById(id).get();
-        model.addAttribute(MAIN_OBJECT, obj);
+        Product obj = productService.findById(id).get();
+        model.addAttribute(PRODUCT, obj);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 
         setListMenuDong(model);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
-    @PostMapping(value = "/" + MAIN_OBJECT + "/update")
-    public ModelAndView update(@ModelAttribute(MAIN_OBJECT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+    @PostMapping(value = "/" + PRODUCT + "/update")
+    public ModelAndView update(@ModelAttribute(PRODUCT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         obj = UtilCon.trimObject(obj);
         obj = setSaleButton(obj);
 
@@ -112,26 +117,27 @@ public class ProductController extends WebController {
             obj.setImageName(imageName);
         }
 
-        mainService.save(obj);
+        productService.save(obj);
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/delete/{id}")
+    @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        mainService.deleteById(id);
+        productService.deleteById(id);
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MAIN_OBJECT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PRODUCT);
     }
 
-    @GetMapping(value = "/" + MAIN_OBJECT + "/filter/{filter}")
+    @GetMapping(value = "/" + PRODUCT + "/filter/{filter}")
     public String filter(@PathVariable int filter, Model model) {
+        // set host, bootstrap
         setCommon(model);
 
         setListProduct(model, filter);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
-        return UtilCon.toAdmin();
+        return UtilCon.goAdmin();
     }
 
     public void setListMenuDong(Model model) {
@@ -139,21 +145,22 @@ public class ProductController extends WebController {
         model.addAttribute("listMenuDong", listMenuDong);
     }
 
-    public void setListProduct(Model model, int filter) {
-        int allItem = 1;
-        int favourite = 2;
-        int invisible = 3;
+    private void setListProduct(Model model, int filter) {
+        List<ProductMap> listProductMap = null;
 
-        if (filter == allItem) {
-            List<Product> listProduct = mainService.findAll();
-            model.addAttribute("listProduct", listProduct);
-        } else if (filter == favourite) {
-            List<Product> listProduct = productRepo.findProductsByFavourite(UtilCon.FAVOURITE);
-            model.addAttribute("listProduct", listProduct);
-        } else if (filter == invisible) {
-            List<Product> listProduct = productRepo.findProductsByIsVisible(UtilCon.INVISIBLE);
-            model.addAttribute("listProduct", listProduct);
+        // get listProductMap
+        if (filter == UtilCon.ALL_ITEM) {
+            // all item
+            listProductMap = productService.getListProductMap(UtilCon.ALL_ITEM);
+        } else if (filter == UtilCon.FAVOURITE_ITEM) {
+            // favourite item
+            listProductMap = productService.getListProductMap(UtilCon.FAVOURITE_ITEM);
+        } else if (filter == UtilCon.INVISIBLE_ITEM) {
+            // invisible item
+            listProductMap = productService.getListProductMap(UtilCon.INVISIBLE_ITEM);
         }
+
+        model.addAttribute("listProduct", listProductMap);
         model.addAttribute("filter", filter);
     }
 
