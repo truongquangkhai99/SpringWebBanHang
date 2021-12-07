@@ -37,6 +37,8 @@ public class MenuDongController extends WebController {
     @GetMapping(value = "/" + MENU_DONG)
     public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(MENU_DONG));
+        // backup db
+        UtilCon.backUpDb();
         // set host, bootstrap
         setCommon(model);
 
@@ -95,6 +97,8 @@ public class MenuDongController extends WebController {
 
     @PostMapping(value = "/" + MENU_DONG + "/update")
     public ModelAndView update(@ModelAttribute(MENU_DONG) MenuDong obj) {
+        System.out.println("obj.getMenuName()");
+        System.out.println(obj.getMenuName());
         obj = UtilCon.trimObject(obj);
         String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
         obj.setMenuLink(menuLink);

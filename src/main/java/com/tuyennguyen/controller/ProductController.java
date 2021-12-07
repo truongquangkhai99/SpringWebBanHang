@@ -41,11 +41,13 @@ public class ProductController extends WebController {
     @GetMapping(value = "/" + PRODUCT)
     public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(PRODUCT));
+        // backup db
+        UtilCon.backUpDb();
         // set host, bootstrap
         setCommon(model);
 
         //set list
-        setListProduct(model, UtilCon.ALL_ITEM);
+        setListProduct(model, UtilCon.VISIBLE_ITEM);
         //set page
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
@@ -129,12 +131,12 @@ public class ProductController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PRODUCT);
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/filter/{filter}")
-    public String filter(@PathVariable int filter, Model model) {
+    @GetMapping(value = "/" + PRODUCT + "/filter/{filterItem}")
+    public String filter(@PathVariable int filterItem, Model model) {
         // set host, bootstrap
         setCommon(model);
 
-        setListProduct(model, filter);
+        setListProduct(model, filterItem);
         model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
         return UtilCon.goAdmin();
@@ -145,33 +147,31 @@ public class ProductController extends WebController {
         model.addAttribute("listMenuDong", listMenuDong);
     }
 
-    private void setListProduct(Model model, int filter) {
+    private void setListProduct(Model model, final int FILTER_ITEM) {
         List<ProductMap> listProductMap = null;
 
         // get listProductMap
-        if (filter == UtilCon.ALL_ITEM) {
+        if (FILTER_ITEM == UtilCon.ALL_ITEM) {
             // all item
             listProductMap = productService.getListProductMap(UtilCon.ALL_ITEM);
-        } else if (filter == UtilCon.FAVOURITE_ITEM) {
+        } else if (FILTER_ITEM == UtilCon.FAVOURITE_ITEM) {
             // favourite item
             listProductMap = productService.getListProductMap(UtilCon.FAVOURITE_ITEM);
-        } else if (filter == UtilCon.INVISIBLE_ITEM) {
+        } else if (FILTER_ITEM == UtilCon.INVISIBLE_ITEM) {
             // invisible item
             listProductMap = productService.getListProductMap(UtilCon.INVISIBLE_ITEM);
+        } else if (FILTER_ITEM == UtilCon.VISIBLE_ITEM) {
+            // invisible item
+            listProductMap = productService.getListProductMap(UtilCon.VISIBLE_ITEM);
         }
 
         model.addAttribute("listProduct", listProductMap);
-        model.addAttribute("filter", filter);
+        model.addAttribute("FILTER_ITEM", FILTER_ITEM);
     }
 
     private Product setSaleButton(Product obj) {
         // salePrice
         String salePercent = obj.getSalePercent();
-        if (salePercent.contains("%")) {
-            salePercent = salePercent.replaceAll("%", "");
-        } else {
-            // do nothing
-        }
 
         // price
         String price = obj.getPrice().replaceAll("[.]", "");
@@ -194,7 +194,6 @@ public class ProductController extends WebController {
         }
 
         // set % for salePercent
-        salePercent += "%";
 
         obj.setSalePercent(salePercent);
         obj.setSalePrice(UtilCon.formatMoney(salePrice));

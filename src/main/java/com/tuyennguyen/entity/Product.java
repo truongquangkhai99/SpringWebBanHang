@@ -27,6 +27,7 @@ import javax.persistence.*;
         @ColumnResult(name = "sale", type = Integer.class),
         @ColumnResult(name = "menuName", type = String.class),
         @ColumnResult(name = "imageName", type = String.class),
+        @ColumnResult(name = "giaConLai", type = String.class),
     })
 })
 public class Product {

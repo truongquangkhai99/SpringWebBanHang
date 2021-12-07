@@ -5,8 +5,16 @@ import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class UtilCon {
+
+    public static final String DB_NAME             = "Spring_Web_Ban_Hang";
+    public static final String USERNAME            = "root";
+    public static final String PASS_WORD           = "";
+    public static final String BACKUP_FOLDER       = "\"D:\\Hoc Lap Trinh\\Spring\\SpringWebBanHang\\src\\main\\resources\\static\\backup_db\\\"";
 
     public static final String ADMIN               = "admin";
     public static final String CLIENT              = "client";
@@ -44,13 +52,13 @@ public class UtilCon {
     public static final int FAVOURITE              = 1;
 
     // all item of product
-    public static final int ALL_ITEM = 1;
-
+    public static final int ALL_ITEM               = 1;
     // favoutire item of product
-    public static final int FAVOURITE_ITEM = 2;
-
+    public static final int FAVOURITE_ITEM         = 2;
     // invisible item of product
-    public static final int INVISIBLE_ITEM = 3;
+    public static final int INVISIBLE_ITEM         = 3;
+    // invisible item of product
+    public static final int VISIBLE_ITEM           = 4;
 
     public static String goAdmin() {
         return UtilCon.FOR_SL + UtilCon.ADMIN + UtilCon.FOR_SL + UtilCon.ADMIN + ".html";
@@ -90,7 +98,9 @@ public class UtilCon {
 
     public static String createLinkFromMenuName(String menuName) {
         String menuLink = "";
-        menuLink = menuName.trim().replaceAll("\\s{1,}","-");
+        System.out.println(menuName);
+        menuLink = menuName.toLowerCase().trim().replaceAll("\\s{1,}","-");
+        System.out.println(menuLink);
         return menuLink;
     }
 
@@ -120,10 +130,32 @@ public class UtilCon {
         double amount = Double.parseDouble(money);
         DecimalFormat formatter = new DecimalFormat("#,###");
 
-        return formatter.format(amount);
+        return formatter.format(amount).replaceAll(",", ".");
     }
 
     public static void print(String sql) {
         System.out.println(sql.replaceAll("\\s{2,}"," "));
+    }
+
+    public static void backUpDb() {
+        Date currentDate = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        String sdfDate = sdf.format(currentDate);
+        String FILE_NAME = BACKUP_FOLDER + "BACKUP_" + sdfDate + ".sql";
+
+        String cmd = "";
+        if (EMPTY.equals(PASS_WORD)) {
+            cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + USERNAME + " --databases " + DB_NAME + " > " + FILE_NAME;
+        } else {
+            cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + USERNAME + " -p" + PASS_WORD + " --databases " + DB_NAME + " > " + FILE_NAME;
+        }
+
+        try {
+            String[] command = {"cmd", "/c", cmd};
+            Runtime.getRuntime().exec(command);
+            System.out.println("Backup Db Successful!");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

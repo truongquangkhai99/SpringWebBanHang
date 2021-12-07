@@ -22,7 +22,7 @@
                            required>
                 </div>
                 <div class="col-sm-1 pa0">
-                    <input type="hidden" th:field="*{favourite}" id="favourite">
+                    <input type="hidden" th:field="*{favourite}">
 
                     <i class="far fa-star coGr cuPo" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">
@@ -65,7 +65,7 @@
                 <label class="col-sm-4">Chọn Menu</label>
 
                 <div class="col-sm-8">
-                    <select class="form-control form-control-sm" id="menu" name="menuDongId">
+                    <select class="form-control form-control-sm" id="menuDongId" name="menuDongId">
                         <option th:each="obj:${listMenuDong}" th:value="${obj.menuDongId}" th:text="${obj.menuName}">Menu Name</option>
                     </select>
                 </div>
@@ -124,10 +124,10 @@
                 </div>
 
                 <div class="col-sm-2">
-                    <input type="text" class="form-control form-control-sm" th:field="*{salePercent}" id="salePercent">
+                    <input type="text" class="form-control form-control-sm" th:field="*{salePercent}">
                 </div>
                 <div class="col-sm-5">
-                    <input type="text" class="form-control form-control-sm" th:field="*{salePrice}" id="salePrice">
+                    <input type="text" class="form-control form-control-sm" th:field="*{salePrice}">
                 </div>
             </div>
 
@@ -136,7 +136,7 @@
 
                 <div class="col-sm-8">
 
-                    <input type="hidden" th:field="*{isVisible}" id="isVisible">
+                    <input type="hidden" th:field="*{isVisible}">
 
                     <i class="fas fa-eye-slash text-secondary cuPo maRi10 foSi20" onclick='updateIsVisible(this, "isVisible")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">

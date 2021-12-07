@@ -27,4 +27,6 @@ public class ProductMap {
 
     private String imageName;
 
+    private String giaConLai;
+
 }

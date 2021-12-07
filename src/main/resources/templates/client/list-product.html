@@ -39,8 +39,9 @@
                                         </h5>
 
                                         <ul class="product_price list-unstyled">
-                                            <li class="old_price" th:text="${obj.price + 'đ'}">Price</li>
-                                            <li class="new_price" th:text="${obj.price + 'đ'}">Price</li>
+                                            <li class="old_price" th:text="${obj.price + 'đ'}" th:if="${obj.sale == 1}">Price</li>
+                                            <li class="pri_price" th:text="${obj.price + 'đ'}" th:if="${obj.sale == 0}">Price</li>
+                                            <li class="new_price" th:text="${obj.giaConLai + 'đ'}" th:if="${obj.sale == 1}">Giá Còn Lại</li>
                                         </ul>
 
                                     </div>

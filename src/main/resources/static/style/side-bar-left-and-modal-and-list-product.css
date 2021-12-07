@@ -341,9 +341,19 @@ body{
     padding: 0 10px
 }
 
+.product_item .product_details .product_price .old_price {
+    text-decoration: line-through;
+    color: #585858;
+}
+
 .product_item .product_details .product_price .new_price {
     font-weight: 600;
-    color: #ff4136
+    color: #ff4136;
+}
+
+.product_item .product_details .product_price .pri_price {
+    font-weight: 600;
+    color: #202020;
 }
 
 .product_item_list table tr td {
@@ -578,3 +588,7 @@ a.nav-link {
     color: rgba(0,0,0,.9) !important;
 }
 /* Show List Product In Front End - End */
+
+.salePercent {position: absolute; width: 75%;}
+.symbol-percent {position: relative; left: 43px; top: 3px;}
+.price {width: 90px; display: inline-block;}

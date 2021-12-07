@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="col-sm-1 pa0">
-                    <input type="hidden" th:field="*{product.favourite}" id="favourite">
+                    <input type="hidden" th:field="*{product.favourite}">
 
                     <i class="far fa-star coGr cuPo" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">
@@ -59,8 +59,77 @@
             <div class="form-group row">
                 <label class="col-sm-4">Price</label>
 
-                <div class="col-sm-8">
+                <div class="col-sm-5 offset-sm-3">
                     <input type="text" class="form-control form-control-sm" th:field="${product.price}">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4">Sale</label>
+
+                <div class="col-sm-1">
+                    <input type="hidden" th:field="*{product.sale}">
+
+                    <i th:class="${product.sale == 0 ? 'fas fa-funnel-dollar text-secondary' : 'fas fa-funnel-dollar text-primary'} + ' cuPo foSi14'" onclick='updateSale(this, "sale")' title="hiển thị: no"></i>
+                    <script th:inline="javascript">
+                        function updateSale(e, idData) {
+                            let className = event.target.className;
+
+                            if (className.includes("text-secondary")) {
+                                $(e).removeClass("text-secondary");
+                                $(e).addClass("text-primary");
+
+                                $(e).removeClass("fas fa-funnel-dollar");
+                                $(e).addClass("fas fa-funnel-dollar");
+
+                                $("#salePercent").attr("type", "text");
+
+                                $("#" + idData).val(1);
+                            } else if (className.includes("text-primary")) {
+                                $(e).removeClass("text-primary");
+                                $(e).addClass("text-secondary");
+
+                                $(e).removeClass("fas fa-funnel-dollar");
+                                $(e).addClass("fas fa-funnel-dollar");
+
+                                $("#salePercent").attr("type", "hidden");
+
+                                $("#" + idData).val(0);
+                            }
+                        }
+                    </script>
+                </div>
+
+                <div class="col-sm-2">
+                    <input type="text" class="form-control form-control-sm salePercent" th:field="*{product.salePercent}">
+                    <label class="symbol-percent text-secondary cuTe" for="salePercent">%</label>
+                </div>
+                <div class="col-sm-5">
+                    <span class="paLeRi8 text-secondary foSi14" th:text="*{product.salePrice}" style="text-decoration: line-through;"></span>
+                    <script>
+                        $("#salePercent").keyup(function () {
+                            let price = $("#price").val();
+                            let salePercent = $("#salePercent").val();
+
+                            if (salePercent.includes("%")) {
+                                salePercent = salePercent.replace("%", "");
+                            } else {
+                                // do nothing
+                            }
+
+                            if (price != "" && salePercent != "") {
+
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4">Giá Còn Lại</label>
+
+                <div class="col-sm-5 offset-md-3">
+                    <input type="text" class="form-control form-control-sm" th:field="*{product.giaConLai}">
                 </div>
             </div>
 
@@ -100,54 +169,10 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-4">Sale</label>
-
-                <div class="col-sm-1">
-                    <input type="hidden" th:field="*{product.sale}" id="sale">
-
-                    <i th:class="${product.sale == 0 ? 'fas fa-funnel-dollar text-secondary' : 'fas fa-funnel-dollar text-primary'} + ' cuPo foSi20'" onclick='updateSale(this, "sale")' title="hiển thị: no"></i>
-                    <script th:inline="javascript">
-                        function updateSale(e, idData) {
-                            let className = event.target.className;
-
-                            if (className.includes("text-secondary")) {
-                                $(e).removeClass("text-secondary");
-                                $(e).addClass("text-primary");
-
-                                $(e).removeClass("fas fa-funnel-dollar");
-                                $(e).addClass("fas fa-funnel-dollar");
-
-                                $("#salePercent").attr("type", "text");
-
-                                $("#" + idData).val(1);
-                            } else if (className.includes("text-primary")) {
-                                $(e).removeClass("text-primary");
-                                $(e).addClass("text-secondary");
-
-                                $(e).removeClass("fas fa-funnel-dollar");
-                                $(e).addClass("fas fa-funnel-dollar");
-
-                                $("#salePercent").attr("type", "hidden");
-
-                                $("#" + idData).val(0);
-                            }
-                        }
-                    </script>
-                </div>
-
-                <div class="col-sm-2">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.salePercent}" id="salePercent">
-                </div>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.salePrice}" id="salePrice">
-                </div>
-            </div>
-
-            <div class="form-group row">
                 <label class="col-sm-4">Visible</label>
 
                 <div class="col-sm-8">
-                    <input type="hidden" th:field="*{product.isVisible}" id="isVisible">
+                    <input type="hidden" th:field="*{product.isVisible}">
 
                     <i th:class="${product.isVisible == 0 ? 'fas fa-eye-slash text-secondary' : 'fas fa-eye text-success'} + ' cuPo foSi20'" class="fas fa-eye-slash text-secondary" onclick='updateIsVisible(this, "isVisible")' title="hiển thị: no"></i>
                     <script th:inline="javascript">

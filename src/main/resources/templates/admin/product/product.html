@@ -19,20 +19,21 @@
             </h4>
 
             <div class="col-sm-3">
-                <select class="form-control form-control-sm" id="filter">
-                    <option value="1" th:selected="${filter == 1}">Toàn bộ</option>
-                    <option value="2" th:selected="${filter == 2}">
+                <select class="form-control form-control-sm" id="filter_item">
+                    <option value="1" th:selected="${FILTER_ITEM == 1}">Toàn bộ</option>
+                    <option value="2" th:selected="${FILTER_ITEM == 2}">
                         Yêu Thích
                     </option>
-                    <option value="3" th:selected="${filter == 3}">Invisible</option>
+                    <option value="3" th:selected="${FILTER_ITEM == 3}">Invisible</option>
+                    <option value="4" th:selected="${FILTER_ITEM == 4}">Visible</option>
                 </select>
 
                 <script th:inline="javascript">
                     $(document).ready(function () {
-                        $('#filter').change(function() {
+                        $('#filter_item').change(function() {
                             let host = [[${host}]];
-                            var filterVal = $(this).find(":selected").val();
-                            window.location.href = host + "/admin/product/filter/" + filterVal;
+                            var filterItem = $(this).find(":selected").val();
+                            window.location.href = host + "/admin/product/filter/" + filterItem;
 
                         });
 
@@ -59,7 +60,7 @@
                     <td colspan="6">No Books Available</td>
                 </tr>
 
-                <tr th:each="obj:${listProduct}" th:class="${obj.isVisible == 0} ? 'in-visible' : 'visible' ">
+                <tr th:each="obj:${listProduct}" th:class="${obj.isVisible == 1} ? 'visible' : 'in-visible' ">
                     <td class="pa4 foSi13" scope="row">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="foWe600">
                             <span th:text="${obj.productName}">Product Name</span>
@@ -68,7 +69,8 @@
                     </td>
 
                     <td class="pa4 foSi13">
-                        <span th:text="${obj.price}">Giá</span>
+                        <span th:text="${obj.price}" class="price" th:style="${obj.sale == 1 ? 'text-decoration: line-through; color: #585858' : ''}">Giá</span>
+                        <span th:text="${obj.giaConLai}" th:if="${obj.sale == 1}">Giá Còn Lại</span>
                     </td>
 
                     <td class="pa4 foSi13">

@@ -36,13 +36,14 @@ public class ProductService {
         sql += "    a.quantity              quantity                        , ";
         sql += "    a.sale                  sale                            , ";
         sql += "    b.menu_name             menuName                        , ";
-        sql += "    a.image_name            imageName                         ";
+        sql += "    a.image_name            imageName                       , ";
+        sql += "    a.gia_con_lai           giaConLai                         ";
         sql += "FROM                                                          ";
         sql += "    TBL_PRODUCT a JOIN      TBL_MENU_DONG b                   ";
         sql += "                   ON       a.menu_dong_id = b.menu_dong_id   ";
 
         if (type == UtilCon.ALL_ITEM) {
-
+            // do nothing
         } else if (type == UtilCon.FAVOURITE_ITEM) {
             sql += "WHERE                                                     ";
             sql += "    a.favourite     = 1                                   ";
@@ -50,6 +51,9 @@ public class ProductService {
         } else if (type == UtilCon.INVISIBLE_ITEM) {
             sql += "WHERE                                                     ";
             sql += "    a.is_visible    = 0                                   ";
+        } else if (type == UtilCon.VISIBLE_ITEM) {
+            sql += "WHERE                                                     ";
+            sql += "    a.is_visible    = 1                                   ";
         }
 
         System.out.println(sql.replaceAll("\\s{2,}"," "));

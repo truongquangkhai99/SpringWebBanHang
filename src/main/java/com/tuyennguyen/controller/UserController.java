@@ -35,6 +35,8 @@ public class UserController extends WebController {
     @GetMapping(value = "/" + USER)
     public String showList(Model model) {
         logger.debug("Go to " + UtilCon.toAdmin(USER));
+        // backup db
+        UtilCon.backUpDb();
         setCommon(model);
 
         //set list
