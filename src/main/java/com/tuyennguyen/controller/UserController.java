@@ -23,7 +23,7 @@ import java.util.Optional;
 @RequestMapping("/admin")
 public class UserController extends WebController {
 
-    Logger logger = LoggerFactory.getLogger(UserController.class);
+    Logger log = LoggerFactory.getLogger(UserController.class);
     private static final String USER = "user";
 
     @Autowired
@@ -34,47 +34,66 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + USER)
     public String showList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(USER));
-        // backup db
-        UtilCon.backUpDb();
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toAdmin(USER));
 
-        //set list
-        List<User> listUser = userService.findAll();
-        model.addAttribute("listUser", listUser);
-        //set page
-        model.addAttribute(UtilCon.PAGE, UtilCon.USER);
+        try {
+            // backup db
+            UtilCon.backUpDb();
+            setCommon(model);
+
+            //set list
+            List<User> listUser = userService.findAll();
+            model.addAttribute("listUser", listUser);
+            //set page
+            model.addAttribute(UtilCon.PAGE, UtilCon.USER);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @GetMapping(value = "/" + USER + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(USER));
-        // set host, bootstrap
-        setCommon(model);
+        // log info
+        log.debug("Go to the add screen: " + UtilCon.toAdmin(USER));
 
-        List<Role> listRole = getListRole();
-        model.addAttribute("listRole", listRole);
+        try {
+            // set host, bootstrap
+            setCommon(model);
 
-        model.addAttribute(UtilCon.OBJ, new User());
-        model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
+            List<Role> listRole = getListRole();
+            model.addAttribute("listRole", listRole);
+
+            model.addAttribute(UtilCon.OBJ, new User());
+            model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
+
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + USER + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
-
-        obj = UtilCon.trimObject(obj);
-
         String PAGE = "";
-        int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
-        // if count > 0, not save more
-        if (count > 0) {
-            PAGE = "user/them";
-        } else {
-            PAGE = "user";
-            userService.save(obj);
+
+        try {
+            obj = UtilCon.trimObject(obj);
+
+            int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
+            // if count > 0, not save more
+            if (count > 0) {
+                PAGE = "user/them";
+            } else {
+                PAGE = "user";
+                userService.save(obj);
+            }
+
+        } catch (Exception e) {
+            log.error("", e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -82,31 +101,41 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + USER + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
-        // set host, bootstrap
-        setCommon(model);
+        try {
+            // set host, bootstrap
+            setCommon(model);
 
-        List<Role> listRole = getListRole();
-        model.addAttribute("listRole", listRole);
+            List<Role> listRole = getListRole();
+            model.addAttribute("listRole", listRole);
 
-        Optional<User> obj = userService.findById(id);
-        model.addAttribute(USER, obj);
-        model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
+            Optional<User> obj = userService.findById(id);
+            model.addAttribute(USER, obj);
+            model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + USER + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
-        obj = UtilCon.trimObject(obj);
-
         String PAGE = "";
-        int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
-        // if count > 0, not save more
-        if (count > 1) {
-            PAGE = "user/edit/" + obj.getUserId();
-        } else {
-            PAGE = "user";
-            userService.save(obj);
+
+        try {
+            obj = UtilCon.trimObject(obj);
+
+            int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
+            // if count > 0, not save more
+            if (count > 1) {
+                PAGE = "user/edit/" + obj.getUserId();
+            } else {
+                PAGE = "user";
+                userService.save(obj);
+            }
+        } catch (Exception e) {
+            log.error("", e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -114,7 +143,11 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + USER + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        userService.deleteById(id);
+        try {
+            userService.deleteById(id);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + USER);
     }

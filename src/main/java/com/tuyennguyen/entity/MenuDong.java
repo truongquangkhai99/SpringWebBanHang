@@ -18,16 +18,16 @@ public class MenuDong {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer menuDongId;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String menuName;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String menuLink;
 
     @Column(nullable = true)
     private Integer menuOrder;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private Integer isParent;
 
     @Column(nullable = true)
@@ -36,7 +36,7 @@ public class MenuDong {
     @Column(nullable = true)
     private String description;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private Integer isVisible;
 
 //    @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="menuDong")

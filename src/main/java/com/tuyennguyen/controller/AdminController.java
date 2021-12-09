@@ -24,29 +24,41 @@ public class AdminController extends WebController {
     @Autowired
     private UserService userService;
 
-    Logger logger = LoggerFactory.getLogger(AdminController.class);
+    Logger log = LoggerFactory.getLogger(AdminController.class);
     private static final String mainObject = "admin";
 
     @GetMapping(value = "/admin-login")
     public String login(Model model) {
-        logger.debug("Go to " + UtilCon.goAdmin());
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.goAdmin());
+
+        try {
+            setCommon(model);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.toAdmin("admin-login");
     }
 
     @GetMapping(value = "/admin")
     public String admin(Model model) {
-        logger.debug("Go to " + UtilCon.goAdmin());
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.goAdmin());
 
-//        List<Product> listProduct = productService.findAll();
-        List<Product> listProduct = null;
-        model.addAttribute("listProduct", listProduct);
-        model.addAttribute("page", "product");
+        try {
+            setCommon(model);
 
-        List<User> listUser = userService.findAll();
-        model.addAttribute("listUser", listUser);
+    //        List<Product> listProduct = productService.findAll();
+            List<Product> listProduct = null;
+            model.addAttribute("listProduct", listProduct);
+            model.addAttribute("page", "product");
+
+            List<User> listUser = userService.findAll();
+            model.addAttribute("listUser", listUser);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }

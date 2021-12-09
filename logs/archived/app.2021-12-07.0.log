@@ -1,0 +1,1091 @@
+2021-12-07 18:54:50,665 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2021-12-07 18:54:50,688 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2021-12-07 18:54:50,865 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:54:50,867 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:54:51,405 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:54:51,405 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:54:51,405 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:54:55,189 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 4.317 seconds (JVM running for 6.969)
+2021-12-07 18:55:23,799 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 18:56:11,510 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:56:11,510 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:56:11,557 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:56:11,557 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:56:11,557 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:56:12,303 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.788 seconds (JVM running for 84.083)
+2021-12-07 18:56:13,878 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:56:13,878 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:56:13,911 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:56:13,911 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:56:13,911 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:56:14,493 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.612 seconds (JVM running for 86.274)
+2021-12-07 18:56:58,026 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:56:58,026 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:56:58,060 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:56:58,060 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:56:58,060 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:56:58,701 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.67 seconds (JVM running for 130.481)
+2021-12-07 18:57:00,258 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:57:00,258 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:57:00,285 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:57:00,285 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:57:00,285 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:57:01,193 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.931 seconds (JVM running for 132.973)
+2021-12-07 18:58:43,927 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:58:43,927 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:58:43,960 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:58:43,960 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:58:43,960 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:58:44,578 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.645 seconds (JVM running for 236.357)
+2021-12-07 18:58:46,149 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:58:46,149 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:58:46,183 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:58:46,183 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:58:46,183 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:58:46,728 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.573 seconds (JVM running for 238.507)
+2021-12-07 18:59:22,082 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:59:22,082 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:59:22,114 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:59:22,114 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:59:22,115 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:59:22,645 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.556 seconds (JVM running for 274.424)
+2021-12-07 18:59:24,216 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 18:59:24,216 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 18:59:24,235 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 18:59:24,235 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 18:59:24,235 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 18:59:24,666 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.447 seconds (JVM running for 276.446)
+2021-12-07 19:01:55,310 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:01:58,402 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:01:58,402 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:01:58,441 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:01:58,441 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:01:58,441 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:01:59,649 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.241 seconds (JVM running for 431.428)
+2021-12-07 19:02:01,208 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:02:01,208 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:02:01,228 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:02:01,228 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:02:01,228 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:02:01,719 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.507 seconds (JVM running for 433.498)
+2021-12-07 19:02:03,688 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:02:40,571 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:02:40,571 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:02:40,599 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:02:40,599 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:02:40,599 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:02:41,004 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.429 seconds (JVM running for 472.783)
+2021-12-07 19:02:51,141 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:02:59,197 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:03:12,346 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:03:46,868 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:03:49,136 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:03:49,992 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 19:03:50,865 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:04:06,472 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:04:09,469 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:04:09,470 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:04:09,500 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:04:09,500 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:04:09,500 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:04:10,060 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.586 seconds (JVM running for 561.84)
+2021-12-07 19:04:10,449 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:04:11,626 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:04:11,626 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:04:11,647 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:04:11,647 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:04:11,647 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:04:12,081 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.451 seconds (JVM running for 563.861)
+2021-12-07 19:05:13,900 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:05:13,901 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:05:13,941 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:05:13,941 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:05:13,941 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:05:14,508 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.598 seconds (JVM running for 626.288)
+2021-12-07 19:05:14,640 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:05:16,107 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:05:16,107 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:05:16,137 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:05:16,137 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:05:16,137 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:05:16,700 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.588 seconds (JVM running for 628.48)
+2021-12-07 19:05:17,234 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:06:47,109 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:07:15,392 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:07:15,392 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:07:15,422 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:07:15,422 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:07:15,422 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:07:15,925 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.526 seconds (JVM running for 747.704)
+2021-12-07 19:07:49,122 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:07:50,499 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:07:55,187 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 19:07:57,235 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:08:12,610 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:08:15,707 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:08:15,961 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:08:15,961 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:08:16,033 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:08:16,034 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:08:16,035 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:08:16,729 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.762 seconds (JVM running for 808.508)
+2021-12-07 19:08:17,666 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 19:08:18,281 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:08:18,281 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:08:18,304 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:08:18,304 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:08:18,304 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:08:18,798 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.513 seconds (JVM running for 810.578)
+2021-12-07 19:08:24,397 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:10:08,027 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:10:08,027 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:10:08,057 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:10:08,057 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:10:08,057 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:10:08,604 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.571 seconds (JVM running for 920.383)
+2021-12-07 19:10:18,763 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:12:50,067 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 19:12:51,876 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:12:53,255 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:12:53,255 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:12:53,278 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:12:53,279 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:12:53,279 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:12:53,760 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.5 seconds (JVM running for 1085.54)
+2021-12-07 19:12:53,817 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:12:56,232 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:13:11,294 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 19:14:11,643 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:14:15,052 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:14:15,052 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:14:15,076 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:14:15,077 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:14:15,077 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:14:15,561 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.505 seconds (JVM running for 1167.341)
+2021-12-07 19:14:15,637 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:14:17,144 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:14:17,144 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:14:17,163 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:14:17,163 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:14:17,163 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:14:17,589 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.441 seconds (JVM running for 1169.369)
+2021-12-07 19:14:17,634 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:14:30,450 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:14:38,265 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 19:15:11,640 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:15:14,218 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:15:15,246 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:15:15,246 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:15:15,272 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:15:15,272 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:15:15,272 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:15:15,813 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.563 seconds (JVM running for 1227.593)
+2021-12-07 19:15:16,313 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:15:17,390 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:15:17,390 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:15:17,412 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:15:17,412 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:15:17,412 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:15:17,947 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.553 seconds (JVM running for 1229.727)
+2021-12-07 19:15:18,762 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:15:36,042 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:17:27,978 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:17:29,672 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:17:30,139 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:17:30,139 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:17:30,169 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:17:30,169 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:17:30,169 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:17:30,700 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.555 seconds (JVM running for 1362.48)
+2021-12-07 19:17:31,509 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:17:32,269 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:17:32,269 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:17:32,293 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:17:32,293 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:17:32,293 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:17:32,792 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.518 seconds (JVM running for 1364.572)
+2021-12-07 19:17:40,497 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:17:49,580 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:17:55,075 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:17:57,934 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:18:38,990 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:18:42,450 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:18:42,450 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:18:42,487 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:18:42,487 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:18:42,487 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:18:43,023 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.567 seconds (JVM running for 1434.802)
+2021-12-07 19:18:47,131 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:18:56,761 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:19:09,092 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 19:20:46,528 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:20:47,530 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:20:49,313 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:20:50,418 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:22:15,400 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:22:16,368 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:22:17,208 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:22:52,720 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:22:54,410 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:23:20,639 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:23:21,517 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:23:23,069 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:25:14,274 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:25:16,244 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:26:06,955 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:26:08,447 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:26:10,511 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:26:58,938 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:27:07,784 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:31:57,593 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:31:59,676 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:32:00,865 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:32:00,865 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:32:00,897 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:32:00,897 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:32:00,897 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:32:01,498 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.627 seconds (JVM running for 2233.278)
+2021-12-07 19:32:03,083 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:32:03,083 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:32:03,103 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:32:03,103 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:32:03,103 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:32:03,578 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.491 seconds (JVM running for 2235.357)
+2021-12-07 19:32:04,055 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:32:25,489 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 19:32:26,638 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:32:29,606 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:32:36,626 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:32:37,870 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:33:34,631 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:33:36,288 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:33:37,767 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:34:24,751 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 19:34:26,411 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:34:27,006 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:34:27,006 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:34:27,037 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:34:27,037 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:34:27,037 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:34:27,555 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productService in com.tuyennguyen.controller.AdminController required a bean of type 'com.tuyennguyen.serivce.ProductService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.tuyennguyen.serivce.ProductService' in your configuration.
+
+2021-12-07 19:34:28,996 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:34:28,997 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:34:29,027 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:34:29,027 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:34:29,027 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:34:29,553 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.549 seconds (JVM running for 2381.333)
+2021-12-07 19:34:29,635 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:34:30,020 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:34:34,823 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:35:44,830 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "20%"] with root cause
+java.lang.NumberFormatException: For input string: "20%"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.tuyennguyen.controller.ProductController.setSaleButton(ProductController.java:184)
+	at com.tuyennguyen.controller.ProductController.update(ProductController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 19:35:53,292 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-5] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "20%"] with root cause
+java.lang.NumberFormatException: For input string: "20%"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.tuyennguyen.controller.ProductController.setSaleButton(ProductController.java:184)
+	at com.tuyennguyen.controller.ProductController.update(ProductController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 19:36:20,417 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-9] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "20%"] with root cause
+java.lang.NumberFormatException: For input string: "20%"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.tuyennguyen.controller.ProductController.setSaleButton(ProductController.java:184)
+	at com.tuyennguyen.controller.ProductController.update(ProductController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 19:36:53,169 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "20%"] with root cause
+java.lang.NumberFormatException: For input string: "20%"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.tuyennguyen.controller.ProductController.setSaleButton(ProductController.java:184)
+	at com.tuyennguyen.controller.ProductController.update(ProductController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 19:36:57,310 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "20%"] with root cause
+java.lang.NumberFormatException: For input string: "20%"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at com.tuyennguyen.controller.ProductController.setSaleButton(ProductController.java:184)
+	at com.tuyennguyen.controller.ProductController.update(ProductController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 19:37:33,986 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:37:40,403 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 19:37:47,303 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 19:37:56,168 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:38:01,418 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:38:07,990 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:38:13,504 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 19:38:18,186 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:38:22,442 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:38:29,869 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 19:38:33,627 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:38:36,957 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:38:46,356 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:39:02,563 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:39:57,858 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:40:14,036 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 19:40:15,045 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to admin/product/product
+2021-12-07 19:40:16,332 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 19:40:17,148 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:40:17,149 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:40:17,182 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:40:17,183 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:40:17,183 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:40:17,775 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.62 seconds (JVM running for 2729.554)
+2021-12-07 19:40:17,899 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 19:40:19,353 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 19:40:19,353 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 19:40:19,376 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 19:40:19,376 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 19:40:19,376 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 19:40:19,903 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.545 seconds (JVM running for 2731.682)
+2021-12-07 19:40:29,187 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 19:40:40,784 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 19:40:44,514 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 20:51:04,618 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-10] Go to admin/product/product
+2021-12-07 20:51:07,047 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 20:51:07,476 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 20:51:07,477 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 20:51:07,525 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 20:51:07,525 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 20:51:07,525 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 20:51:08,206 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.724 seconds (JVM running for 6979.985)
+2021-12-07 20:51:09,494 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 20:51:09,802 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 20:51:09,802 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 20:51:09,832 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 20:51:09,833 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 20:51:09,833 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 20:51:10,389 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.582 seconds (JVM running for 6982.169)
+2021-12-07 20:51:10,742 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 20:51:12,174 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 20:51:17,445 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 20:52:03,330 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 20:52:06,477 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 20:52:07,146 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 20:52:07,146 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 20:52:07,168 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 20:52:07,168 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 20:52:07,168 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 20:52:07,686 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.536 seconds (JVM running for 7039.465)
+2021-12-07 20:52:15,708 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 20:52:21,584 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 20:56:39,160 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 20:56:40,870 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to admin/product/product
+2021-12-07 20:57:00,071 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 20:57:58,915 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 20:58:33,324 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 20:58:35,139 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 21:00:03,068 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:00:04,629 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-9] Go to client/pathProduct
+2021-12-07 21:00:07,255 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-8] Go to client/pathProduct
+2021-12-07 21:01:23,947 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:01:25,787 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 21:01:45,332 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:01:47,825 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:02:31,614 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to client/pathProduct
+2021-12-07 21:02:33,268 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-2] Go to client/pathProduct
+2021-12-07 21:03:20,381 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-3] Go to client/pathProduct
+2021-12-07 21:03:47,767 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:03:50,869 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:04:39,531 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-6] Go to client/pathProduct
+2021-12-07 21:04:41,028 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:05:03,130 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:05:05,996 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-2] Go to client/pathProduct
+2021-12-07 21:06:04,811 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-6] Go to client/pathProduct
+2021-12-07 21:06:08,003 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:06:18,566 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 21:06:22,800 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:06:39,754 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:06:43,152 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:06:46,610 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-8] Go to client/pathProduct
+2021-12-07 21:06:54,138 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to admin/product/product
+2021-12-07 21:07:03,645 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-12-07 21:07:25,568 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-12-07 21:07:30,099 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:07:32,471 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:07:37,004 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 21:07:42,663 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to admin/product/product
+2021-12-07 21:07:48,274 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 21:07:57,058 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:03,222 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:05,493 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 21:08:12,572 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-3] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:23,844 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:25,579 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 21:08:30,463 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to admin/product/product
+2021-12-07 21:08:34,663 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:08:34,667 ERROR org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.tuyennguyen.controller.ClientController.setListProductMenu(ClientController.java:85)
+	at com.tuyennguyen.controller.ClientController.showProduct(ClientController.java:61)
+	at jdk.internal.reflect.GeneratedMethodAccessor665.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:237)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:223)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-12-07 21:08:37,000 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:08:41,099 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-4] Go to client/pathProduct
+2021-12-07 21:08:46,793 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:52,516 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-12-07 21:08:54,814 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:08:56,597 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:08:58,597 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-3] Go to client/pathProduct
+2021-12-07 21:08:59,938 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-6] Go to client/pathProduct
+2021-12-07 21:09:00,889 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to client/pathProduct
+2021-12-07 21:09:02,335 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-9] Go to client/pathProduct
+2021-12-07 21:09:03,376 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:09:04,409 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct
+2021-12-07 21:09:07,739 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to client/home
+2021-12-07 21:09:08,820 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-7] Go to client/pathProduct
+2021-12-07 21:09:16,950 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-12-07 21:10:30,877 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-12-07 21:10:33,429 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-12-07 21:10:33,746 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 21:10:33,746 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 21:10:33,777 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 21:10:33,778 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 21:10:33,778 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 21:10:34,294 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.544 seconds (JVM running for 8146.074)
+2021-12-07 21:10:35,546 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-2] Go to admin/menu-dong/menu-dong
+2021-12-07 21:10:43,564 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-12-07 21:11:45,977 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-12-07 21:11:48,044 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-12-07 21:11:50,083 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 21:11:50,083 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 21:11:50,125 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 21:11:50,126 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 21:11:50,126 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 21:11:50,754 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.663 seconds (JVM running for 8222.534)
+2021-12-07 21:11:51,134 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-12-07 21:11:58,382 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-9] Go to admin/menu-dong/menu-dong
+2021-12-07 21:12:54,576 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to admin/menu-dong/menu-dong
+2021-12-07 21:12:56,746 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-12-07 21:12:57,014 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 21:12:57,014 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 21:12:57,043 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 21:12:57,043 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 21:12:57,043 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 21:12:57,610 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.59 seconds (JVM running for 8289.389)
+2021-12-07 21:12:58,668 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-12-07 21:12:59,210 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2021-12-07 21:12:59,210 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2021-12-07 21:12:59,242 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 4528 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
+2021-12-07 21:12:59,242 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-12-07 21:12:59,242 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-12-07 21:12:59,697 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 0.48 seconds (JVM running for 8291.477)
+2021-12-07 21:13:05,042 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to admin/menu-dong/menu-dong
+2021-12-07 21:13:06,833 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-12-07 21:13:09,293 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to admin/menu-dong/menu-dong
+2021-12-07 21:13:15,737 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-9] Go to client/pathProduct
+2021-12-07 21:13:17,875 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-2] Go to client/pathProduct
+2021-12-07 21:13:19,061 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-5] Go to client/pathProduct
+2021-12-07 21:13:43,560 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-4] Go to admin/menu-dong/menu-dong
+2021-12-07 21:13:47,884 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to admin/product/product
+2021-12-07 21:14:01,481 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 21:14:06,932 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-2] Go to client/pathProduct
+2021-12-07 21:14:16,977 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-10] Go to admin/menu-dong/menu-dong
+2021-12-07 21:14:34,046 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to admin/menu-dong/menu-dong
+2021-12-07 21:14:36,659 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-9] Go to client/pathProduct
+2021-12-07 21:14:39,422 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct
+2021-12-07 21:14:44,174 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to admin/product/product
+2021-12-07 21:14:51,235 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to admin/product/product
+2021-12-07 21:14:57,032 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to admin/product/product
+2021-12-07 21:14:58,859 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-10] Go to client/pathProduct

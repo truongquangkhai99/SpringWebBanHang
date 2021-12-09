@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 public class ClientController extends WebController {
 
-    Logger logger = LoggerFactory.getLogger(ClientController.class);
+    Logger log = LoggerFactory.getLogger(ClientController.class);
     private static final String mainObject = "client";
 
     @Autowired
@@ -33,46 +33,64 @@ public class ClientController extends WebController {
 
     @GetMapping(value = {"/", "/home"})
     public String goHome(Model model) {
-        logger.debug("Go to " + UtilCon.toClient("home"));
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toClient("home"));
+        
+        try {
+            setCommon(model);
 
-        List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
-        model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
-        System.out.println(listMenuDongIsVisible.size());
+            List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
+            model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
+            System.out.println(listMenuDongIsVisible.size());
 
-        // get listProduct mặc định (yêu thích)
-        setListProductFavo(model);
+            // get listProduct mặc định (yêu thích)
+            setListProductFavo(model);
 
-        // get list product theo menu
-        setListProductMenu(model, UtilCon.EMPTY);
+            // get list product theo menu
+            setListProductMenu(model, UtilCon.EMPTY);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.toClient(mainObject);
     }
 
     @GetMapping(value = {"/san-pham/{menuLink}"})
     public String showProduct(@PathVariable("menuLink") String menuLink, Model model) {
-        logger.debug("Go to " + UtilCon.toClient("pathProduct"));
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toClient("pathProduct"));
 
-        // get listProduct mặc định (yêu thích)
-        setListProductFavo(model);
+        try {
+            setCommon(model);
 
-        // get list product theo menu
-        setListProductMenu(model, menuLink);
+            // get listProduct mặc định (yêu thích)
+            setListProductFavo(model);
 
-        List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
-        model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
+            // get list product theo menu
+            setListProductMenu(model, menuLink);
+
+            List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
+            model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.toClient(mainObject);
     }
 
     @GetMapping(value = "/lien-he")
     public String goLienHe(Model model) {
-        logger.debug("Go to " + UtilCon.toClient("lien-he"));
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toClient("lien-he"));
 
-        List<MenuDong> listMenuDong = mainService.findAll();
-        model.addAttribute("listMenuDong", listMenuDong);
+        try {
+            setCommon(model);
+
+            List<MenuDong> listMenuDong = mainService.findAll();
+            model.addAttribute("listMenuDong", listMenuDong);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.toClient("lien-he");
     }

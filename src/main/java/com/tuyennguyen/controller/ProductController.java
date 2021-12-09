@@ -25,7 +25,7 @@ import java.util.List;
 @RequestMapping("/admin")
 public class ProductController extends WebController {
 
-    Logger logger = LoggerFactory.getLogger(ProductController.class);
+    Logger log = LoggerFactory.getLogger(ProductController.class);
 
     private static final String PRODUCT = "product";
 
@@ -40,104 +40,139 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/" + PRODUCT)
     public String showList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(PRODUCT));
-        // backup db
-        UtilCon.backUpDb();
-        // set host, bootstrap
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toAdmin(PRODUCT));
 
-        //set list
-        setListProduct(model, UtilCon.VISIBLE_ITEM);
-        //set page
-        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
+        try {
+            // backup db
+            UtilCon.backUpDb();
+            // set host, bootstrap
+            setCommon(model);
+
+            //set list
+            setListProduct(model, UtilCon.VISIBLE_ITEM);
+            //set page
+            model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @GetMapping(value = "/" + PRODUCT + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(PRODUCT));
-        // set host, bootstrap
-        setCommon(model);
+        // log info
+        log.debug("Go to the add screen: " + UtilCon.toAdmin(PRODUCT));
 
-        model.addAttribute(UtilCon.OBJ, new Product());
-        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
+        try {
+            // set host, bootstrap
+            setCommon(model);
 
-        setListMenuDong(model);
+            model.addAttribute(UtilCon.OBJ, new Product());
+            model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
+
+            setListMenuDong(model);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + PRODUCT + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
-        obj = UtilCon.trimObject(obj);
-        obj = setSaleButton(obj);
-
         String PAGE = "";
-        int count = productRepo.countProductByProductName(obj.getProductName());
-        // if count > 0, not save more
-        if (count > 0) {
-            PAGE = "product/them";
-        } else {
-            PAGE = "product";
 
-            String imageName = imageFile.getOriginalFilename();
-            if (!UtilCon.EMPTY.equals(imageName)) {
-                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
-                obj.setImageName(imageName);
+        try {
+            obj = UtilCon.trimObject(obj);
+            obj = setSaleButton(obj);
+
+            int count = productRepo.countProductByProductName(obj.getProductName());
+            // if count > 0, not save more
+            if (count > 0) {
+                PAGE = "product/them";
+            } else {
+                PAGE = "product";
+
+                String imageName = imageFile.getOriginalFilename();
+                if (!UtilCon.EMPTY.equals(imageName)) {
+                    FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                    obj.setImageName(imageName);
+                }
+                productService.save(obj);
             }
-            productService.save(obj);
+        } catch (Exception e) {
+            log.error("", e);
         }
-
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
-        // set host, bootstrap
-        setCommon(model);
-        setListMenuDongCha(model, UtilCon.PARENT);
+        try {
+            // set host, bootstrap
+            setCommon(model);
+            setListMenuDongCha(model, UtilCon.PARENT);
 
-        Product obj = productService.findById(id).get();
-        model.addAttribute(PRODUCT, obj);
-        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
+            Product obj = productService.findById(id).get();
+            model.addAttribute(PRODUCT, obj);
+            model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 
-        setListMenuDong(model);
+            setListMenuDong(model);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + PRODUCT + "/update")
     public ModelAndView update(@ModelAttribute(PRODUCT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
-        obj = UtilCon.trimObject(obj);
-        obj = setSaleButton(obj);
+        try {
+            obj = UtilCon.trimObject(obj);
+            obj = setSaleButton(obj);
 
-        String imageName = imageFile.getOriginalFilename();
-        if (!UtilCon.EMPTY.equals(imageName)) {
-            FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
-            obj.setImageName(imageName);
+            String imageName = imageFile.getOriginalFilename();
+            if (!UtilCon.EMPTY.equals(imageName)) {
+                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                obj.setImageName(imageName);
+            }
+
+            productService.save(obj);
+
+        } catch (Exception e) {
+            log.error("", e);
         }
-
-        productService.save(obj);
-
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
     }
 
     @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        productService.deleteById(id);
+        try {
+            productService.deleteById(id);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PRODUCT);
     }
 
     @GetMapping(value = "/" + PRODUCT + "/filter/{filterItem}")
     public String filter(@PathVariable int filterItem, Model model) {
-        // set host, bootstrap
-        setCommon(model);
+        try {
+            // set host, bootstrap
+            setCommon(model);
 
-        setListProduct(model, filterItem);
-        model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
+            setListProduct(model, filterItem);
+            model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }

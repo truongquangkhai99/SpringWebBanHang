@@ -36,7 +36,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer productId;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String productName;
 
     @Column(nullable = true)
@@ -51,17 +51,17 @@ public class Product {
     @Column(nullable = true)
     private Integer quantity;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private Integer isVisible;
 
     @ColumnDefault("0")
     @Column(nullable = true)
     private Integer menuDongId;
 
-    @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
+    @Column(nullable = false, columnDefinition = "INT(11) UNSIGNED")
     private Integer favourite;
 
-    @Column(nullable = true, columnDefinition = "INT(11) UNSIGNED")
+    @Column(nullable = false, columnDefinition = "INT(11) UNSIGNED")
     private Integer sale;
 
     @Column(nullable = true)

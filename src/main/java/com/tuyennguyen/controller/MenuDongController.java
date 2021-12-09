@@ -19,7 +19,7 @@ import java.util.Optional;
 @RequestMapping("/admin")
 public class MenuDongController extends WebController {
 
-    Logger logger = LoggerFactory.getLogger(MenuDongController.class);
+    Logger log = LoggerFactory.getLogger(MenuDongController.class);
 
     private static final String MENU_DONG = "menu-dong";
 
@@ -36,48 +36,64 @@ public class MenuDongController extends WebController {
 
     @GetMapping(value = "/" + MENU_DONG)
     public String showList(Model model) {
-        logger.debug("Go to " + UtilCon.toAdmin(MENU_DONG));
-        // backup db
-        UtilCon.backUpDb();
-        // set host, bootstrap
-        setCommon(model);
+        // log info
+        log.debug("Go to " + UtilCon.toAdmin(MENU_DONG));
 
+        try {
+            // backup db
+            UtilCon.backUpDb();
+            // set host, bootstrap
+            setCommon(model);
+            //set list
+            setListMenuDong(model);
 
-        //set list
-        setListMenuDong(model);
-
-        //set page
-        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG);
+            //set page
+            model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @GetMapping(value = "/" + MENU_DONG + "/them")
     public String them(Model model) {
-        logger.debug("Go to the add screen: " + UtilCon.toAdmin(MENU_DONG, MENU_DONG + "/them"));
-        // set host, bootstrap
-        setCommon(model);
+        // log info
+        log.debug("Go to the add screen: " + UtilCon.toAdmin(MENU_DONG, MENU_DONG + "/them"));
 
-        model.addAttribute(UtilCon.OBJ, new MenuDong());
-        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
+        try {
+            // set host, bootstrap
+            setCommon(model);
+
+            model.addAttribute(UtilCon.OBJ, new MenuDong());
+            model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
+        } catch (Exception e) {
+            log.error("", e);
+        }
+
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + MENU_DONG + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
-        obj = UtilCon.trimObject(obj);
-        String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
-        obj.setMenuLink(menuLink);
-
         String PAGE = "";
-        int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
-        System.out.println(count);
-        // if count > 0, not save more
-        if (count > 0) {
-            PAGE = "menu-dong/them";
-        } else {
-            PAGE = "menu-dong";
-            menuDongService.save(obj);
+
+        try {
+            obj = UtilCon.trimObject(obj);
+            String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
+            obj.setMenuLink(menuLink);
+
+            int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
+            System.out.println(count);
+            // if count > 0, not save more
+            if (count > 0) {
+                PAGE = "menu-dong/them";
+            } else {
+                PAGE = "menu-dong";
+                menuDongService.save(obj);
+            }
+        } catch (Exception e) {
+            log.error("", e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -85,32 +101,45 @@ public class MenuDongController extends WebController {
 
     @GetMapping(value = "/" + MENU_DONG + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
-        // set host, bootstrap
-        setCommon(model);
+        try {
+            // set host, bootstrap
+            setCommon(model);
 
-        Optional<MenuDong> obj = menuDongService.findById(id);
-        model.addAttribute("menuDong", obj);
-        model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_EDIT);
+            Optional<MenuDong> obj = menuDongService.findById(id);
+            model.addAttribute("menuDong", obj);
+            model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_EDIT);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return UtilCon.goAdmin();
     }
 
     @PostMapping(value = "/" + MENU_DONG + "/update")
     public ModelAndView update(@ModelAttribute(MENU_DONG) MenuDong obj) {
-        System.out.println("obj.getMenuName()");
-        System.out.println(obj.getMenuName());
-        obj = UtilCon.trimObject(obj);
-        String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
-        obj.setMenuLink(menuLink);
+        try {
+            obj = UtilCon.trimObject(obj);
+            String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
+            obj.setMenuLink(menuLink);
 
-        menuDongService.save(obj);
+            menuDongService.save(obj);
+
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/menu-dong");
     }
 
     @GetMapping(value = "/" + MENU_DONG + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
-        menuDongService.deleteById(id);
+
+        try {
+            menuDongService.deleteById(id);
+        } catch (Exception e) {
+            log.error("", e);
+        }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MENU_DONG);
     }

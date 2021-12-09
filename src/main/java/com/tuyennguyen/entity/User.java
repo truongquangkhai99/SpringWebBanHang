@@ -17,19 +17,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String username;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String password;
 
     @Column(nullable = true)
     private String fullName;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String email;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String gender;
 
     @Column(nullable = true)
