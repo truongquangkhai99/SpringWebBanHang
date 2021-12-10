@@ -53,11 +53,11 @@
                     </td>
 
                     <td class="paTo9 paBo9 foSi13">
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class=" icon-fun maRi10">
+                        <a class=" icon-action maRi10" th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}">
                             <i class="fas fa-edit"></i>
                         </a>
 
-                        <a class="icon-fun cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
+                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>
@@ -93,7 +93,7 @@
                                         </div>
 
                                         <div class="col-auto">
-                                            <a class="btn btn-danger px-4 btn-delete">Delete</a>
+                                            <a class="btn btn-danger paToBo5 btn-delete">Delete</a>
                                         </div>
 
                                     </div>

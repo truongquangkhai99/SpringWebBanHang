@@ -5,6 +5,16 @@
     <title>Sản Phẩm</title>
 
     <link th:href="${bootstrapCss}" rel="stylesheet">
+
+    <script type="javascript">
+        $(document).ready(function() {
+
+        });
+
+        function showModal(id) {
+            $(".btn-delete").attr("href", "/admin/product/delete/" + id);
+        }
+    </script>
 </head>
 <body>
 
@@ -90,11 +100,11 @@
                     </td>
 
                     <td class="pa4 foSi13">
-                        <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="icon-fun maRi10">
+                        <a class="icon-action maRi10" th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}">
                             <i class="fas fa-edit"></i>
                         </a>
 
-                        <a class="icon-fun cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.productId})|'>
+                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/product/delete/" + ${obj.productId})|'>
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>
@@ -103,55 +113,6 @@
             </tbody>
         </table>
 
-        <div class="container d-flex justify-content-center">
-            <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content border-0">
-                        <div class="modal-body p-0">
-                            <div class="card border-0 p-sm-3 p-2 justify-content-center">
-                                <div class="card-header pb-0 bg-white border-0 ">
-                                    <div class="row">
-                                        <div class="col ml-auto">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <p class="font-weight-bold mb-2">Xoá bản ghi</p>
-                                    <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
-                                </div>
-
-                                <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
-                                    <div class="row justify-content-end no-gutters">
-                                        <div class="col-auto">
-                                            <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <a class="btn btn-danger px-4 btn-delete">Delete</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            $(document).ready(function() {
-
-            });
-            function showModal(id) {
-                console.log("show m");
-                console.log(id);
-                $(".btn-delete").attr("href", "/admin/product/delete/" + id);
-            }
-        </script>
     </div>
 
 </body>

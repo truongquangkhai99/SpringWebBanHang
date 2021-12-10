@@ -21,9 +21,11 @@
 <body>
 
     <div th:insert="admin/side-bar/side-bar-left.html::#side-bar-left"></div>
+    <div th:insert="admin/common/modal-delete.html::#modal-delete-imported"></div>
 
     <script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -31,6 +33,11 @@
                 $('#sidebar').toggleClass('active');
             });
         });
+
+        // show modal delete
+        function showModal(pathId) {
+            $(".btn-delete").attr("href", pathId);
+        }
     </script>
 
 </body>

@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 public class UtilCon {
 
@@ -140,8 +139,12 @@ public class UtilCon {
 
     public static void logData(Logger log, Exception e) {
         log.error("", e);
+        System.out.println("");
+        System.out.println("====");
         System.out.println(e.getClass());
         System.out.println(e.getMessage());
+        System.out.println("====");
+        System.out.println("");
     }
 
     public static void backUpDb() {
@@ -160,7 +163,6 @@ public class UtilCon {
         try {
             String[] command = {"cmd", "/c", cmd};
             Runtime.getRuntime().exec(command);
-            System.out.println("Backup Db Successful!");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

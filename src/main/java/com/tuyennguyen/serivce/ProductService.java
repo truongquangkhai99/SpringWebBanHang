@@ -56,11 +56,10 @@ public class ProductService {
             sql += "    a.is_visible    = 1                                   ";
         }
 
-        System.out.println(sql.replaceAll("\\s{2,}"," "));
         Query sqlQuery = entityManager.createNativeQuery(sql, "listProductWithMenuName");
 
         List<ProductMap> listProductMap = sqlQuery.getResultList();
-        System.out.println(listProductMap.size());
+
         return listProductMap;
     }
 

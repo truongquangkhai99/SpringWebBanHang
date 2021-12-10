@@ -1,11 +1,6 @@
 
+
 <div class="" id="menu-dong-list">
-    <script>
-        // chèn link delete với id từ menu tương ứng sang modal
-        function showModal(id) {
-            $(".btn-delete").attr("href", "/admin/menu-dong/delete/" + id);
-        }
-    </script>
     <h4>
         <span class="maRi4">Menu Động</span>
 
@@ -66,11 +61,11 @@
                 </td>
 
                 <td class="pa8 foSi13">
-                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="icon-fun maRi10">
+                    <a class="icon-action maRi10" th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}">
                         <i class="fas fa-edit"></i>
                     </a>
 
-                    <a class="icon-fun cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
+                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/menu-dong/delete/" + ${obj.menuDongId})|'>
                         <i class="far fa-trash-alt"></i>
                     </a>
                 </td>
@@ -79,45 +74,5 @@
         </tbody>
     </table>
 
-    <!-- modal - start -->
-    <div class="container d-flex justify-content-center">
-        <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body p-0">
-                        <div class="card border-0 p-sm-3 p-2 justify-content-center">
-                            <div class="card-header pb-0 bg-white border-0 ">
-                                <div class="row">
-                                    <div class="col ml-auto">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <p class="font-weight-bold mb-2">Xoá bản ghi</p>
-                                <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
-                            </div>
-
-                            <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
-                                <div class="row justify-content-end no-gutters">
-                                    <div class="col-auto">
-                                        <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
-                                    </div>
-
-                                    <div class="col-auto">
-                                        <a class="btn btn-danger px-4 btn-delete">Delete</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal - end -->
-
 </div>
+

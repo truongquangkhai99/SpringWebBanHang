@@ -1,13 +1,10 @@
 package com.tuyennguyen.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.tuyennguyen.model.mapping.ProductMap;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 
@@ -58,10 +55,10 @@ public class Product {
     @Column(nullable = true)
     private Integer menuDongId;
 
-    @Column(nullable = false, columnDefinition = "INT(11) UNSIGNED")
+    @Column(nullable = false, columnDefinition = "TINYINT(1) UNSIGNED")
     private Integer favourite;
 
-    @Column(nullable = false, columnDefinition = "INT(11) UNSIGNED")
+    @Column(nullable = false, columnDefinition = "TINYINT(1) UNSIGNED")
     private Integer sale;
 
     @Column(nullable = true)
