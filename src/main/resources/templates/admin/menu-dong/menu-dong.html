@@ -1,13 +1,15 @@
 
 
 <div class="" id="menu-dong-list">
-    <h4>
-        <span class="maRi4">Menu Động</span>
+    <div class="form-group row">
+        <h4 class="col-sm-9">
+            <span class="maRi4">Menu Động</span>
 
-        <a th:href="@{{host}/admin/menu-dong/them (host=${host})}">
-            <i class="fas fa-plus-circle foSi16 text-primary"></i>
-        </a>
-    </h4>
+            <a th:href="@{{host}/admin/menu-dong/them (host=${host})}">
+                <i class="fas fa-plus-circle foSi16 text-primary"></i>
+            </a>
+        </h4>
+    </div>
 
     <table class="table table-striped">
         <thead>
@@ -16,7 +18,6 @@
                 <th scope="col">Thứ Tự</th>
                 <th scope="col">Is Parent</th>
                 <th scope="col">Parent Id</th>
-                <th scope="col">Description</th>
                 <th scope="col">Màu Sắc</th>
                 <th scope="col"></th>
             </tr>
@@ -49,10 +50,6 @@
 
                 <td class="pa8 foSi13">
                     <span th:text="${obj.parentId}">Parent Id</span>
-                </td>
-
-                <td class="pa8 foSi13">
-                    <span th:text="${obj.description}">Description</span>
                 </td>
 
                 <td class="pa8 foSi13">

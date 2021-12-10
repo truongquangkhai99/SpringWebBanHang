@@ -205,34 +205,32 @@ public class ProductController extends WebController {
     }
 
     private Product setSaleButton(Product obj) {
-        // salePrice
-        String salePercent = obj.getSalePercent();
-
-        // price
+        // get price
         String price = obj.getPrice().replaceAll("[.]", "");
-        // salePrice
+        // get sale percent
+        String salePercent = obj.getSalePercent();
+        // get sale price
         String salePrice = obj.getSalePrice();
         String giaConLai = price;
 
         // format price, tính salePrice
         if (!"".equals(price)) {
-            if ("".equals(salePercent) || Integer.parseInt(salePercent) == 0) {
+            if ("".equals(salePercent)) {
                 // if salePercent = 0%
                 salePrice = price;
             } else {
                 //if salePercent > 0%
                 salePrice = Long.parseLong(price) * Integer.parseInt(salePercent) / 100 + "";
                 giaConLai = String.valueOf(Long.parseLong(price) - Long.parseLong(salePrice));
+
+                // set sale price
+                obj.setSalePrice(UtilCon.formatMoney(salePrice));
+                obj.setGiaConLai(UtilCon.formatMoney(giaConLai));
             }
         } else {
             // do nothing
         }
 
-        // set % for salePercent
-
-        obj.setSalePercent(salePercent);
-        obj.setSalePrice(UtilCon.formatMoney(salePrice));
-        obj.setGiaConLai(UtilCon.formatMoney(giaConLai));
         return obj;
     }
 	

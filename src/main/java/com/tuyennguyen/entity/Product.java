@@ -49,17 +49,16 @@ public class Product {
     private Integer quantity;
 
     @Column(nullable = false)
-    private Integer isVisible;
+    private Integer isVisible = 1;
 
-    @ColumnDefault("0")
     @Column(nullable = true)
     private Integer menuDongId;
 
     @Column(nullable = false, columnDefinition = "TINYINT(1) UNSIGNED")
-    private Integer favourite;
+    private Integer favourite = 0;
 
     @Column(nullable = false, columnDefinition = "TINYINT(1) UNSIGNED")
-    private Integer sale;
+    private Integer sale = 0;
 
     @Column(nullable = true)
     private String salePercent;

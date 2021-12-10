@@ -71,7 +71,7 @@
                 </tr>
 
                 <tr th:each="obj:${listProduct}" th:class="${obj.isVisible == 1} ? 'visible' : 'in-visible' ">
-                    <td class="pa4 foSi13" scope="row">
+                    <td class="paTo9 paBo9 foSi13" scope="row">
                         <a th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" class="foWe500">
                             <span th:text="${obj.productName}">Product Name</span>
                             <i class="far fa-star coRe foSi8" th:if="${obj.favourite > 0}" title="Sản phẩm yêu thích: yes"></i>
