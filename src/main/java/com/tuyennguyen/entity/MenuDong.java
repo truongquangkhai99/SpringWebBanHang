@@ -24,20 +24,23 @@ public class MenuDong {
     @Column(nullable = false)
     private String menuLink;
 
-    @Column(nullable = true)
-    private Integer menuOrder;
+    @Column(nullable = false)
+    private Integer menuOrder = 0;
 
     @Column(nullable = false)
-    private Integer isParent;
+    private Integer isParent = 0;
 
     @Column(nullable = true)
-    private Integer parentId;
+    private Integer parentId = 0;
 
     @Column(nullable = true)
     private String description;
 
     @Column(nullable = false)
-    private Integer isVisible;
+    private Integer isVisible = 1;
+
+    @Column(nullable = true)
+    private String color;
 
 //    @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="menuDong")
 //    private List<Product> products;

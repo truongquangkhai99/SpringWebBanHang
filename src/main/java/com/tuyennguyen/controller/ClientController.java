@@ -49,7 +49,7 @@ public class ClientController extends WebController {
             // get list product theo menu
             setListProductMenu(model, UtilCon.EMPTY);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.toClient(mainObject);
@@ -72,7 +72,7 @@ public class ClientController extends WebController {
             List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
             model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.toClient(mainObject);
@@ -89,7 +89,7 @@ public class ClientController extends WebController {
             List<MenuDong> listMenuDong = mainService.findAll();
             model.addAttribute("listMenuDong", listMenuDong);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.toClient("lien-he");

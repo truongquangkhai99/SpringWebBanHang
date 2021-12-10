@@ -22,6 +22,7 @@
                 <th scope="col">Is Parent</th>
                 <th scope="col">Parent Id</th>
                 <th scope="col">Description</th>
+                <th scope="col">Màu Sắc</th>
                 <th scope="col"></th>
             </tr>
         </thead>
@@ -32,7 +33,7 @@
 
             <tr th:each="obj : ${listMenuDong}" th:class="${obj.isVisible == 0} ? 'in-visible' : 'visible' ">
                 <td class="paTo9 paBo9 foSi13" scope="row">
-                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe600">
+                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="foWe500">
                         <span th:text="${obj.menuName}">Menu Name</span>
                     </a>
                 </td>
@@ -60,11 +61,16 @@
                 </td>
 
                 <td class="pa8 foSi13">
-                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="text-success maRi10">
-                        <i class="fas fa-pen text-primary"></i>
+                    <span class="div-square wi10 he10 boRa8" th:style="${'background:' + obj.color}"></span>
+                    <span th:text="${obj.color}">Mã Màu</span>
+                </td>
+
+                <td class="pa8 foSi13">
+                    <a th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" class="icon-fun maRi10">
+                        <i class="fas fa-edit"></i>
                     </a>
 
-                    <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
+                    <a class="icon-fun cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.menuDongId})|'>
                         <i class="far fa-trash-alt"></i>
                     </a>
                 </td>

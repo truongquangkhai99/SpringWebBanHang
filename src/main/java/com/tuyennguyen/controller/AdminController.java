@@ -35,7 +35,7 @@ public class AdminController extends WebController {
         try {
             setCommon(model);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.toAdmin("admin-login");
@@ -57,7 +57,7 @@ public class AdminController extends WebController {
             List<User> listUser = userService.findAll();
             model.addAttribute("listUser", listUser);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();

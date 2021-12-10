@@ -3,6 +3,7 @@ package com.tuyennguyen.util;
 import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
+import org.slf4j.Logger;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -135,6 +136,12 @@ public class UtilCon {
 
     public static void print(String sql) {
         System.out.println(sql.replaceAll("\\s{2,}"," "));
+    }
+
+    public static void logData(Logger log, Exception e) {
+        log.error("", e);
+        System.out.println(e.getClass());
+        System.out.println(e.getMessage());
     }
 
     public static void backUpDb() {

@@ -16,6 +16,7 @@
             <!-- menu động id hidden -->
             <input type="hidden" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
 
+            <!-- Menu name -->
             <div class="form-group row">
                 <label class="col-sm-4">Menu Name</label>
 
@@ -25,6 +26,7 @@
                 </div>
             </div>
 
+            <!-- Menu link -->
             <div class="form-group row">
                 <label class="col-sm-4">Menu Link</label>
 
@@ -33,6 +35,7 @@
                 </div>
             </div>
 
+            <!-- Thứ tự -->
             <div class="form-group row">
                 <label class="col-sm-4">Thứ Tự</label>
 
@@ -41,6 +44,7 @@
                 </div>
             </div>
 
+            <!-- Is parent -->
             <div class="form-group row">
                 <label class="col-sm-4">Is Parent</label>
 
@@ -49,6 +53,7 @@
                 </div>
             </div>
 
+            <!-- Parent id -->
             <div class="form-group row">
                 <label class="col-sm-4">Parent Id</label>
 
@@ -57,6 +62,7 @@
                 </div>
             </div>
 
+            <!-- Description -->
             <div class="form-group row">
                 <label class="col-sm-4">Description</label>
 
@@ -65,11 +71,23 @@
                 </div>
             </div>
 
+            <!-- Is visible -->
             <div class="form-group row">
                 <label class="col-sm-4">Is Visible</label>
 
                 <div class="col-sm-8">
                     <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isVisible}">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4">Màu Sắc</label>
+
+                <div class="col-sm-1">
+                    <span class="div-square wi10 he10 boRa8" th:style="'background-color:' + @{${menuDong.color}}"></span>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.color}">
                 </div>
             </div>
 

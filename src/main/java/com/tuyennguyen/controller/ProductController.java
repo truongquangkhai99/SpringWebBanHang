@@ -54,7 +54,7 @@ public class ProductController extends WebController {
             //set page
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -74,7 +74,7 @@ public class ProductController extends WebController {
 
             setListMenuDong(model);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -103,7 +103,7 @@ public class ProductController extends WebController {
                 productService.save(obj);
             }
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -123,7 +123,7 @@ public class ProductController extends WebController {
             setListMenuDong(model);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -144,7 +144,7 @@ public class ProductController extends WebController {
             productService.save(obj);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
     }
@@ -155,7 +155,7 @@ public class ProductController extends WebController {
             productService.deleteById(id);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PRODUCT);
@@ -171,7 +171,7 @@ public class ProductController extends WebController {
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();

@@ -35,7 +35,7 @@
 
                 <tr th:each="obj:${listUser}">
                     <td class="paTo9 paBo9 foSi13" scope="row">
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe600">
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe500">
                             <span th:text="${obj.fullName}">Full Name</span>
                         </a>
                     </td>
@@ -53,11 +53,11 @@
                     </td>
 
                     <td class="paTo9 paBo9 foSi13">
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="text-success maRi10">
-                            <i class="fas fa-pen text-primary"></i>
+                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class=" icon-fun maRi10">
+                            <i class="fas fa-edit"></i>
                         </a>
 
-                        <a class="text-danger cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
+                        <a class="icon-fun cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>

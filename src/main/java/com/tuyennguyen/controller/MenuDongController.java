@@ -13,8 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Optional;
-
 @Controller
 @RequestMapping("/admin")
 public class MenuDongController extends WebController {
@@ -50,7 +48,7 @@ public class MenuDongController extends WebController {
             //set page
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -68,7 +66,7 @@ public class MenuDongController extends WebController {
             model.addAttribute(UtilCon.OBJ, new MenuDong());
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -84,7 +82,6 @@ public class MenuDongController extends WebController {
             obj.setMenuLink(menuLink);
 
             int count = menuDongRepo.countMenuDongByMenuName(obj.getMenuName());
-            System.out.println(count);
             // if count > 0, not save more
             if (count > 0) {
                 PAGE = "menu-dong/them";
@@ -93,7 +90,7 @@ public class MenuDongController extends WebController {
                 menuDongService.save(obj);
             }
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -105,12 +102,12 @@ public class MenuDongController extends WebController {
             // set host, bootstrap
             setCommon(model);
 
-            Optional<MenuDong> obj = menuDongService.findById(id);
+            MenuDong obj = menuDongService.findById(id).get();
             model.addAttribute("menuDong", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_EDIT);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -126,7 +123,7 @@ public class MenuDongController extends WebController {
             menuDongService.save(obj);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/menu-dong");
@@ -138,7 +135,7 @@ public class MenuDongController extends WebController {
         try {
             menuDongService.deleteById(id);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MENU_DONG);

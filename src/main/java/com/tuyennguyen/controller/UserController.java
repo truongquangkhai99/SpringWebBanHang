@@ -17,7 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/admin")
@@ -48,7 +47,7 @@ public class UserController extends WebController {
             //set page
             model.addAttribute(UtilCon.PAGE, UtilCon.USER);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -70,7 +69,7 @@ public class UserController extends WebController {
             model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -93,7 +92,7 @@ public class UserController extends WebController {
             }
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -108,12 +107,12 @@ public class UserController extends WebController {
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);
 
-            Optional<User> obj = userService.findById(id);
+            User obj = userService.findById(id).get();
             model.addAttribute(USER, obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
 
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return UtilCon.goAdmin();
@@ -135,7 +134,7 @@ public class UserController extends WebController {
                 userService.save(obj);
             }
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
@@ -146,7 +145,7 @@ public class UserController extends WebController {
         try {
             userService.deleteById(id);
         } catch (Exception e) {
-            log.error("", e);
+            UtilCon.logData(log, e);
         }
 
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + USER);
