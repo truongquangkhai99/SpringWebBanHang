@@ -45,8 +45,8 @@ public class Product {
     @Column(nullable = true)
     private String imageName;
 
-    @Column(nullable = true)
-    private Integer quantity;
+    @Column(nullable = false, columnDefinition = "SMALLINT UNSIGNED")
+    private Integer quantity = 0;
 
     @Column(nullable = false)
     private Integer isVisible = 1;

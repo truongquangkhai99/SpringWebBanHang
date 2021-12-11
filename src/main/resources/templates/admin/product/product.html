@@ -59,7 +59,7 @@
                     <th scope="col">Product Name</th>
                     <th scope="col">Giá</th>
                     <th scope="col">Số Lượng</th>
-                    <th scope="col">Giảm Giá</th>
+                    <th scope="col">Sale</th>
                     <th scope="col">Thuộc Menu</th>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -88,7 +88,8 @@
                     </td>
 
                     <td class="pa4 foSi13">
-                        <span th:text="${obj.sale}">Giảm Giá</span>
+                        <i class="maTo10 fas fa-dollar-sign text-primary" th:if="${obj.sale == 1}"></i>
+                        <i class="maTo10 fas fa-dollar-sign text-secondary" th:if="${obj.sale == 0}"></i>
                     </td>
 
                     <td class="pa4 foSi13">
@@ -100,11 +101,11 @@
                     </td>
 
                     <td class="pa4 foSi13">
-                        <a class="icon-action maRi10" th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}">
+                        <a class="icon-action maRi10" th:href="@{/admin/product/edit/{productId}(productId=${obj.productId})}" title="edit">
                             <i class="fas fa-edit"></i>
                         </a>
 
-                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/product/delete/" + ${obj.productId})|'>
+                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/product/delete/" + ${obj.productId})|' title="delete">
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>

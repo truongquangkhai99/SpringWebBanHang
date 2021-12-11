@@ -58,11 +58,11 @@
                 </td>
 
                 <td class="pa8 foSi13">
-                    <a class="icon-action maRi10" th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}">
+                    <a class="icon-action maRi10" th:href="@{/admin/menu-dong/edit/{menuDongId}(menuDongId=${obj.menuDongId})}" title="edit">
                         <i class="fas fa-edit"></i>
                     </a>
 
-                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/menu-dong/delete/" + ${obj.menuDongId})|'>
+                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/menu-dong/delete/" + ${obj.menuDongId})|' title="delete">
                         <i class="far fa-trash-alt"></i>
                     </a>
                 </td>

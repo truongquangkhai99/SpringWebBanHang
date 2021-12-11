@@ -19,15 +19,12 @@
             <div class="form-group row">
                 <label class="col-sm-4">Product Name</label>
 
-                <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm"th:field="*{product.productName}"
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm poAb wi91Pe" th:field="*{product.productName}"
                            required>
-                </div>
 
-                <div class="col-sm-1 pa0">
                     <input type="hidden" th:field="*{product.favourite}">
-
-                    <i class="far fa-star coGr cuPo" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
+                    <i class="far fa-star coGr cuPo poRe le260 to3" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                     <script th:inline="javascript">
                         function updateFavourite(e, data) {
                             let className = event.target.className;
@@ -59,77 +56,70 @@
             <div class="form-group row">
                 <label class="col-sm-4">Price</label>
 
-                <div class="col-sm-5 offset-sm-3">
-                    <input type="text" class="form-control form-control-sm" th:field="${product.price}">
+                <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm text-right" th:field="${product.price}"
+                            onkeyup="calculateSale(this)">
                 </div>
             </div>
 
             <div class="form-group row">
+                <!-- sale -->
                 <label class="col-sm-4">Sale</label>
-
                 <div class="col-sm-1">
                     <input type="hidden" th:field="*{product.sale}">
-
-                    <i th:class="${product.sale == 0 ? 'fas fa-funnel-dollar text-secondary' : 'fas fa-funnel-dollar text-primary'} + ' cuPo foSi14'" onclick='updateSale(this, "sale")' title="hiển thị: no"></i>
+                    <i th:class="${product.sale == 0 ? 'text-secondary' : 'text-primary'} + ' fas fa-dollar-sign cuPo foSi14'" onclick='toggleSale(this, "sale")' title="hiển thị: no"></i>
                     <script th:inline="javascript">
-                        function updateSale(e, idData) {
+                        function toggleSale(e, idData) {
+
                             let className = event.target.className;
+                            let arrTogCla = ["text-secondary", "text-primary"];
+                            let arrTogEle = ["#salePercent", "#symbolPercent", "#salePrice", "#giaConLai"];
 
-                            if (className.includes("text-secondary")) {
-                                $(e).removeClass("text-secondary");
-                                $(e).addClass("text-primary");
+                            // toggle display none
+                            togEle(arrTogEle);
 
-                                $(e).removeClass("fas fa-funnel-dollar");
-                                $(e).addClass("fas fa-funnel-dollar");
-
-                                $("#salePercent").attr("type", "text");
+                            if (className.includes(arrTogCla[0])) {
+                                console.log(7);
+                                $(e).removeClass(arrTogCla[0]);
+                                $(e).addClass(arrTogCla[1]);
 
                                 $("#" + idData).val(1);
-                            } else if (className.includes("text-primary")) {
-                                $(e).removeClass("text-primary");
-                                $(e).addClass("text-secondary");
-
-                                $(e).removeClass("fas fa-funnel-dollar");
-                                $(e).addClass("fas fa-funnel-dollar");
-
-                                $("#salePercent").attr("type", "hidden");
+                            } else if (className.includes(arrTogCla[1])) {
+                                console.log(8);
+                                $(e).removeClass(arrTogCla[1]);
+                                $(e).addClass(arrTogCla[0]);
 
                                 $("#" + idData).val(0);
+                            }
+                        }
+
+                        // toggle sale
+                        function togEle(arr) {
+                            for (let i = 0; i < arr.length; i++) {
+                                $(arr[i]).toggleClass("diNo");
                             }
                         }
                     </script>
                 </div>
 
                 <div class="col-sm-2">
-                    <input type="text" class="form-control form-control-sm salePercent" th:field="*{product.salePercent}">
-                    <label class="symbol-percent text-secondary cuTe" for="salePercent">%</label>
+                    <!-- Sale percent -->
+                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm poAb wi75Pe'"
+                           onkeyup="calculateSale(this)" th:field="*{product.salePercent}" pattern="^([0-9]|\d\d|100)$">
+                    <!-- Symbol percent -->
+                    <label th:class="${product.sale == 1 ? '' : 'diNo'} + ' symbol-percent text-secondary cuTe'" id="symbolPercent" for="salePercent">%</label>
                 </div>
                 <div class="col-sm-5">
-                    <span class="paLeRi8 text-secondary foSi14" th:text="*{product.salePrice}" style="text-decoration: line-through;"></span>
-                    <script>
-                        $("#salePercent").keyup(function () {
-                            let price = $("#price").val();
-                            let salePercent = $("#salePercent").val();
-
-                            if (salePercent.includes("%")) {
-                                salePercent = salePercent.replace("%", "");
-                            } else {
-                                // do nothing
-                            }
-
-                            if (price != "" && salePercent != "") {
-
-                            }
-                        });
-                    </script>
+                    <!-- Sale price -->
+                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-secondary foSi14 text-right'" th:field="${product.salePrice}" readonly style="text-decoration: line-through;">
                 </div>
             </div>
 
             <div class="form-group row">
                 <label class="col-sm-4">Giá Còn Lại</label>
 
-                <div class="col-sm-5 offset-md-3">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.giaConLai}">
+                <div class="col-sm-8">
+                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-right foWe500 text-primary'" readonly th:field="*{product.giaConLai}">
                 </div>
             </div>
 

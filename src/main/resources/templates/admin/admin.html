@@ -38,6 +38,22 @@
         function showModal(pathId) {
             $(".btn-delete").attr("href", pathId);
         }
+
+        function calculateSale(e) {
+            // get data
+            let price = $("#price").val();
+            let salePercent = $("#salePercent").val();
+            let salePrice = 0;
+            let giaConLai = 0;
+
+            // calculate
+            salePrice = price * salePercent/100;
+            giaConLai = price - salePrice;
+
+            // set data
+            $("#salePrice").val(salePrice);
+            $("#giaConLai").val(giaConLai);
+        }
     </script>
 
 </body>

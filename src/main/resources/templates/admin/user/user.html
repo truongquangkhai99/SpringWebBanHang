@@ -55,11 +55,11 @@
                     </td>
 
                     <td class="paTo9 paBo9 foSi13">
-                        <a class=" icon-action maRi10" th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}">
+                        <a class=" icon-action maRi10" th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" title="edit">
                             <i class="fas fa-edit"></i>
                         </a>
 
-                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|'>
+                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|' title="delete">
                             <i class="far fa-trash-alt"></i>
                         </a>
                     </td>
