@@ -34,7 +34,7 @@ public class UserController extends WebController {
     @GetMapping(value = "/" + USER)
     public String showList(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toAdmin(USER));
+        log.debug("Go to: /admin/user");
 
         try {
             // backup db
@@ -56,7 +56,7 @@ public class UserController extends WebController {
     @GetMapping(value = "/" + USER + "/them")
     public String them(Model model) {
         // log info
-        log.debug("Go to the add screen: " + UtilCon.toAdmin(USER));
+        log.debug("Go to: /admin/user/them");
 
         try {
             // set host, bootstrap
@@ -77,6 +77,9 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + USER + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
+        // log info
+        log.debug("Go to: /admin/user/save/" + obj.getUserId());
+
         String PAGE = "";
 
         try {
@@ -100,6 +103,9 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + USER + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
+        // log info
+        log.debug("Go to: /admin/user/edit/" + id);
+
         try {
             // set host, bootstrap
             setCommon(model);
@@ -120,6 +126,9 @@ public class UserController extends WebController {
 
     @PostMapping(value = "/" + USER + "/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
+        // log info
+        log.debug("Go to: /admin/user/update/" + obj.getUserId());
+
         String PAGE = "";
 
         try {
@@ -142,6 +151,9 @@ public class UserController extends WebController {
 
     @GetMapping(value = "/" + USER + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
+        // log info
+        log.debug("Go to: /admin/user/delelte/" + id);
+
         try {
             userService.deleteById(id);
         } catch (Exception e) {

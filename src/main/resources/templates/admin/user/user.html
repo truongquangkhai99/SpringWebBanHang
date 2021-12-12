@@ -1,122 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sản Phẩm</title>
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
+<!-- list user -->
+<div class="" id="user-list">
+    <div class="form-group row">
+        <h4 class="col-sm-9">
+            <span class="maRi4">Người Dùng</span>
 
-</head>
-<body>
+            <a th:href="@{{host}/admin/user/them (host=${host})}">
+                <i class="fas fa-plus-circle foSi16 text-primary"></i>
+            </a>
+        </h4>
+    </div>
 
-    <div class="" id="user-list">
-        <div class="form-group row">
-            <h4 class="col-sm-9">
-                <span class="maRi4">Người Dùng</span>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Full Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Address</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:if="${listUser.empty}" scope="row">
+                <td colspan="6">No Books Available</td>
+            </tr>
 
-                <a th:href="@{{host}/admin/user/them (host=${host})}">
-                    <i class="fas fa-plus-circle foSi16 text-primary"></i>
-                </a>
-            </h4>
-        </div>
+            <tr th:each="obj:${listUser}">
+                <td class="paTo9 paBo9 foSi13" scope="row">
+                    <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe500">
+                        <span th:text="${obj.fullName}">Full Name</span>
+                    </a>
+                </td>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Full Name</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Address</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:if="${listUser.empty}" scope="row">
-                    <td colspan="6">No Books Available</td>
-                </tr>
+                <td class="paTo9 paBo9 foSi13">
+                    <span th:text="${obj.username}">Username</span>
+                </td>
 
-                <tr th:each="obj:${listUser}">
-                    <td class="paTo9 paBo9 foSi13" scope="row">
-                        <a th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" class="foWe500">
-                            <span th:text="${obj.fullName}">Full Name</span>
-                        </a>
-                    </td>
+                <td class="paTo9 paBo9 foSi13">
+                    <span th:text="${obj.email}">Email</span>
+                </td>
 
-                    <td class="paTo9 paBo9 foSi13">
-                        <span th:text="${obj.username}">Username</span>
-                    </td>
+                <td class="paTo9 paBo9 foSi13">
+                    <span th:text="${obj.address}">Address</span>
+                </td>
 
-                    <td class="paTo9 paBo9 foSi13">
-                        <span th:text="${obj.email}">Email</span>
-                    </td>
+                <td class="paTo9 paBo9 foSi13">
+                    <a class=" icon-action maRi10" th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" title="edit">
+                        <i class="fas fa-edit"></i>
+                    </a>
 
-                    <td class="paTo9 paBo9 foSi13">
-                        <span th:text="${obj.address}">Address</span>
-                    </td>
+                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|' title="delete">
+                        <i class="far fa-trash-alt"></i>
+                    </a>
+                </td>
 
-                    <td class="paTo9 paBo9 foSi13">
-                        <a class=" icon-action maRi10" th:href="@{/admin/user/edit/{userId}(userId=${obj.userId})}" title="edit">
-                            <i class="fas fa-edit"></i>
-                        </a>
-
-                        <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|' title="delete">
-                            <i class="far fa-trash-alt"></i>
-                        </a>
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
+            </tr>
+        </tbody>
+    </table>
 
 
-        <div class="container d-flex justify-content-center">
-            <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content border-0">
-                        <div class="modal-body p-0">
-                            <div class="card border-0 p-sm-3 p-2 justify-content-center">
-                                <div class="card-header pb-0 bg-white border-0 ">
-                                    <div class="row">
-                                        <div class="col ml-auto">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <p class="font-weight-bold mb-2">Xoá bản ghi</p>
-                                    <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
-                                </div>
-
-                                <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
-                                    <div class="row justify-content-end no-gutters">
-                                        <div class="col-auto">
-                                            <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <a class="btn btn-danger paToBo5 btn-delete">Delete</a>
-                                        </div>
-
+    <div class="container d-flex justify-content-center">
+        <div id="delete-data-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content border-0">
+                    <div class="modal-body p-0">
+                        <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                            <div class="card-header pb-0 bg-white border-0 ">
+                                <div class="row">
+                                    <div class="col ml-auto">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"></span>
+                                        </button>
                                     </div>
                                 </div>
 
+                                <p class="font-weight-bold mb-2">Xoá bản ghi</p>
+                                <p class="text-muted ">Bạn có chắc chắn muốn xoá?</p>
                             </div>
+
+                            <div class="card-body px-sm-4 mb-2 pt-1 pb-0">
+                                <div class="row justify-content-end no-gutters">
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-light text-muted" data-dismiss="modal">Cancel</button>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a class="btn btn-danger paToBo5 btn-delete">Delete</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <script>
-            $(document).ready(function() {
-
-            });
-            function showModal(id) {
-                $(".btn-delete").attr("href", "/admin/user/delete/" + id);
-            }
-        </script>
     </div>
 
-</body>
-</html>
+    <script>
+        $(document).ready(function() {
+
+        });
+        function showModal(id) {
+            $(".btn-delete").attr("href", "/admin/user/delete/" + id);
+        }
+    </script>
+</div>

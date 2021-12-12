@@ -41,7 +41,7 @@ public class ProductController extends WebController {
     @GetMapping(value = "/" + PRODUCT)
     public String showList(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toAdmin(PRODUCT));
+        log.debug("Go to: /admin/product");
 
         try {
             // backup db
@@ -63,7 +63,7 @@ public class ProductController extends WebController {
     @GetMapping(value = "/" + PRODUCT + "/them")
     public String them(Model model) {
         // log info
-        log.debug("Go to the add screen: " + UtilCon.toAdmin(PRODUCT));
+        log.debug("Go to: /admin/product/them");
 
         try {
             // set host, bootstrap
@@ -81,7 +81,11 @@ public class ProductController extends WebController {
     }
 
     @PostMapping(value = "/" + PRODUCT + "/save")
-    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+    public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj,
+                             @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+        // log info
+        log.debug("Go to: /admin/product/save" + obj.getProductId());
+
         String PAGE = "";
 
         try {
@@ -111,6 +115,9 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
+        // log info
+        log.debug("Go to: /admin/product/edit/" + id);
+
         try {
             // set host, bootstrap
             setCommon(model);
@@ -130,7 +137,12 @@ public class ProductController extends WebController {
     }
 
     @PostMapping(value = "/" + PRODUCT + "/update")
-    public ModelAndView update(@ModelAttribute(PRODUCT) Product obj, @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+    public ModelAndView update(@ModelAttribute(PRODUCT) Product obj,
+                               @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
+
+        // log info
+        log.debug("Go to: /admin/product/update/" + obj.getProductId());
+
         try {
             obj = UtilCon.trimObject(obj);
             obj = setSaleButton(obj);
@@ -151,6 +163,9 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
+        // log info
+        log.debug("Go to: /admin/product/delete/" + id);
+
         try {
             productService.deleteById(id);
 
@@ -163,6 +178,9 @@ public class ProductController extends WebController {
 
     @GetMapping(value = "/" + PRODUCT + "/filter/{filterItem}")
     public String filter(@PathVariable int filterItem, Model model) {
+        // log info
+        log.debug("Go to: /admin/product/filter/" + filterItem);
+
         try {
             // set host, bootstrap
             setCommon(model);
@@ -230,6 +248,9 @@ public class ProductController extends WebController {
         } else {
             // do nothing
         }
+
+        // format money price
+        obj.setPrice(UtilCon.formatMoney(price));
 
         return obj;
     }

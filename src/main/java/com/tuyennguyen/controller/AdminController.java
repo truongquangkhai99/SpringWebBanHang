@@ -13,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class AdminController extends WebController {
@@ -30,7 +29,7 @@ public class AdminController extends WebController {
     @GetMapping(value = "/admin-login")
     public String login(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.goAdmin());
+        log.debug("Go to: /admin-login");
 
         try {
             setCommon(model);
@@ -44,7 +43,7 @@ public class AdminController extends WebController {
     @GetMapping(value = "/admin")
     public String admin(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.goAdmin());
+        log.debug("Go to: /admin");
 
         try {
             setCommon(model);

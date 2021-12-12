@@ -1,87 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Thêm Người Dùng</title>
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
+<!-- user thêm -->
+<div id="user-them" class="col-md-6">
+    <h4>Thêm Người Dùng</h4>
 
-</head>
-<body>
+    <form th:action="@{/admin/user/save}" method="post" th:object="${obj}">
+        <div class="form-group row">
+            <label class="col-sm-4">Full Name</label>
 
-    <div id="user-them" class="col-md-6">
-        <h4>Thêm Người Dùng</h4>
-
-        <form th:action="@{/admin/user/save}" method="post" th:object="${obj}">
-            <div class="form-group row">
-                <label class="col-sm-4">Full Name</label>
-
-                <div class="col-sm-8">
-                    <input type="text" th:field="*{fullName}" class="form-control form-control-sm"
-                           required>
-                </div>
+            <div class="col-sm-8">
+                <input type="text" th:field="*{fullName}" class="form-control form-control-sm"
+                       required>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Username</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Username</label>
 
-                <div class="col-sm-8">
-                    <input type="text" th:field="*{username}" class="form-control form-control-sm"
-                           required>
-                </div>
+            <div class="col-sm-8">
+                <input type="text" th:field="*{username}" class="form-control form-control-sm"
+                       required>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Password</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Password</label>
 
-                <div class="col-sm-8">
-                    <input type="text" th:field="*{password}" class="form-control form-control-sm"
-                           required>
-                </div>
+            <div class="col-sm-8">
+                <input type="text" th:field="*{password}" class="form-control form-control-sm"
+                       required>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Email</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Email</label>
 
-                <div class="col-sm-8">
-                    <input type="text" th:field="*{email}" class="form-control form-control-sm"
-                           required>
-                </div>
+            <div class="col-sm-8">
+                <input type="text" th:field="*{email}" class="form-control form-control-sm"
+                       required>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Gender</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Gender</label>
 
-                <div class="col-sm-8">
-                    <select class="form-control form-control-sm" name="gender">
-                        <option value="Nam">Nam</option>
-                        <option value="Nữ">Nữ</option>
-                    </select>
-                </div>
+            <div class="col-sm-8">
+                <select class="form-control form-control-sm" name="gender">
+                    <option value="Nam">Nam</option>
+                    <option value="Nữ">Nữ</option>
+                </select>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Address</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Address</label>
 
-                <div class="col-sm-8">
-                    <input type="text" th:field="*{address}" class="form-control form-control-sm">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" th:field="*{address}" class="form-control form-control-sm">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Role</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Role</label>
 
-                <div class="col-sm-8">
-                    <select class="form-control form-control-sm" name="role">
-                        <option th:each="obj:${listRole}" th:value="${obj.roleName}" th:text="${obj.roleName}">Role Name</option>
-                    </select>
-                </div>
+            <div class="col-sm-8">
+                <select class="form-control form-control-sm" name="role">
+                    <option th:each="obj:${listRole}" th:value="${obj.roleName}" th:text="${obj.roleName}">Role Name</option>
+                </select>
             </div>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Thêm</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Thêm</button>
+    </form>
 
-    </div>
-
-</body>
-</html>
+</div>

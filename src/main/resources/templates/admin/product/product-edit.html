@@ -1,204 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sửa Sản Phẩm</title>
-    <link rel="Shortcut icon" th:href="@{/admin.png}">
 
-    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css} "/>
 
-</head>
-<body>
+<!-- product edit -->
+<div id="product-edit" class="col-md-6">
+    <h4>Sửa Sản Phẩm</h4>
 
-    <div id="product-edit" class="col-md-6">
-        <h4>Sửa Sản Phẩm</h4>
+    <form th:action="@{{host}/admin/product/update (host=${host})}" method="post" enctype="multipart/form-data">
+        <input type="hidden" class="form-control form-control-sm" th:field="*{product.productId}">
 
-        <form th:action="@{{host}/admin/product/update (host=${host})}" method="post" enctype="multipart/form-data">
-            <input type="hidden" class="form-control form-control-sm" th:field="*{product.productId}">
+        <div class="form-group row">
+            <label class="col-sm-4">Product Name</label>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Product Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm poAb wi91Pe" th:field="*{product.productName}"
+                       required>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm poAb wi91Pe" th:field="*{product.productName}"
-                           required>
+                <input type="hidden" th:field="*{product.favourite}">
+                <i class="far fa-star coGr cuPo poRe le260 to3" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
+                <script th:inline="javascript">
+                    function updateFavourite(e, data) {
+                        let className = event.target.className;
 
-                    <input type="hidden" th:field="*{product.favourite}">
-                    <i class="far fa-star coGr cuPo poRe le260 to3" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
-                    <script th:inline="javascript">
-                        function updateFavourite(e, data) {
-                            let className = event.target.className;
+                        if (className.includes("coGr")) {
+                            $(e).removeClass("coGr");
+                            $(e).addClass("coRe");
 
-                            if (className.includes("coGr")) {
-                                $(e).removeClass("coGr");
-                                $(e).addClass("coRe");
+                            $("#" + data).val(1);
+                        } else if (className.includes("coRe")) {
+                            $(e).removeClass("coRe");
+                            $(e).addClass("coGr");
 
-                                $("#" + data).val(1);
-                            } else if (className.includes("coRe")) {
-                                $(e).removeClass("coRe");
-                                $(e).addClass("coGr");
-
-                                $("#" + data).val(0);
-                            }
+                            $("#" + data).val(0);
                         }
-                    </script>
-                </div>
+                    }
+                </script>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Description</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Description</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.description}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{product.description}">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Price</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Price</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm text-right" th:field="${product.price}"
-                            onkeyup="calculateSale(this)">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm text-right" th:field="${product.price}"
+                        onkeyup="calculateSale(this)">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <!-- sale -->
-                <label class="col-sm-4">Sale</label>
-                <div class="col-sm-1">
-                    <input type="hidden" th:field="*{product.sale}">
-                    <i th:class="${product.sale == 0 ? 'text-secondary' : 'text-primary'} + ' fas fa-dollar-sign cuPo foSi14'" onclick='toggleSale(this, "sale")' title="hiển thị: no"></i>
-                    <script th:inline="javascript">
-                        function toggleSale(e, idData) {
+        <div class="form-group row">
+            <!-- sale -->
+            <label class="col-sm-4">Sale</label>
+            <div class="col-sm-1">
+                <input type="hidden" th:field="*{product.sale}">
+                <i th:class="${product.sale == 0 ? 'text-secondary' : 'text-primary'} + ' fas fa-dollar-sign cuPo foSi14'" onclick='toggleSale(this, "sale")' title="hiển thị: no"></i>
+                <script th:inline="javascript">
+                    function toggleSale(e, idData) {
 
-                            let className = event.target.className;
-                            let arrTogCla = ["text-secondary", "text-primary"];
-                            let arrTogEle = ["#salePercent", "#symbolPercent", "#salePrice", "#giaConLai"];
+                        let className = event.target.className;
+                        let arrTogCla = ["text-secondary", "text-primary"];
+                        let arrTogEle = ["#salePercent", "#symbolPercent", "#salePrice", "#giaConLai"];
 
-                            // toggle display none
-                            togEle(arrTogEle);
+                        // toggle display none
+                        togEle(arrTogEle);
 
-                            if (className.includes(arrTogCla[0])) {
-                                console.log(7);
-                                $(e).removeClass(arrTogCla[0]);
-                                $(e).addClass(arrTogCla[1]);
+                        if (className.includes(arrTogCla[0])) {
+                            console.log(7);
+                            $(e).removeClass(arrTogCla[0]);
+                            $(e).addClass(arrTogCla[1]);
 
-                                $("#" + idData).val(1);
-                            } else if (className.includes(arrTogCla[1])) {
-                                console.log(8);
-                                $(e).removeClass(arrTogCla[1]);
-                                $(e).addClass(arrTogCla[0]);
+                            $("#" + idData).val(1);
+                        } else if (className.includes(arrTogCla[1])) {
+                            console.log(8);
+                            $(e).removeClass(arrTogCla[1]);
+                            $(e).addClass(arrTogCla[0]);
 
-                                $("#" + idData).val(0);
-                            }
+                            $("#" + idData).val(0);
                         }
+                    }
 
-                        // toggle sale
-                        function togEle(arr) {
-                            for (let i = 0; i < arr.length; i++) {
-                                $(arr[i]).toggleClass("diNo");
-                            }
+                    // toggle sale
+                    function togEle(arr) {
+                        for (let i = 0; i < arr.length; i++) {
+                            $(arr[i]).toggleClass("diNo");
                         }
-                    </script>
-                </div>
-
-                <div class="col-sm-2">
-                    <!-- Sale percent -->
-                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm poAb wi75Pe'"
-                           onkeyup="calculateSale(this)" th:field="*{product.salePercent}" pattern="^([0-9]|\d\d|100)$">
-                    <!-- Symbol percent -->
-                    <label th:class="${product.sale == 1 ? '' : 'diNo'} + ' symbol-percent text-secondary cuTe'" id="symbolPercent" for="salePercent">%</label>
-                </div>
-                <div class="col-sm-5">
-                    <!-- Sale price -->
-                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-secondary foSi14 text-right'" th:field="${product.salePrice}" readonly style="text-decoration: line-through;">
-                </div>
+                    }
+                </script>
             </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Giá Còn Lại</label>
-
-                <div class="col-sm-8">
-                    <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-right foWe500 text-primary'" readonly th:field="*{product.giaConLai}">
-                </div>
+            <div class="col-sm-2">
+                <!-- Sale percent -->
+                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm poAb wi75Pe'"
+                       onkeyup="calculateSale(this)" th:field="*{product.salePercent}" pattern="^([0-9]|\d\d|100)$">
+                <!-- Symbol percent -->
+                <label th:class="${product.sale == 1 ? '' : 'diNo'} + ' symbol-percent text-secondary cuTe'" id="symbolPercent" for="salePercent">%</label>
             </div>
-
-            <div class="form-group row">
-                <label class="col-sm-4">Menu Động</label>
-
-                <div class="col-sm-8">
-                    <select class="form-control form-control-sm" name="menuDongId">
-                        <option th:each="obj:${listMenuDong}" th:value="${obj.menuDongId}" th:text="${obj.menuName}">Menu Name</option>
-                    </select>
-                </div>
+            <div class="col-sm-5">
+                <!-- Sale price -->
+                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-secondary foSi14 text-right'" th:field="${product.salePrice}" readonly style="text-decoration: line-through;">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4"></label>
+        <div class="form-group row">
+            <label class="col-sm-4">Giá Còn Lại</label>
 
-                <div class="col-sm-8">
-                    <div class="form-group row">
-                        <div class="col-sm-4 paRi0">
-                            <img th:src="@{'/image/' + ${product.imageName}}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
-                        </div>
+            <div class="col-sm-8">
+                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-right foWe500 text-primary'" readonly th:field="*{product.giaConLai}">
+            </div>
+        </div>
 
-                        <div class="col-sm-8">
-                            <input type="hidden" th:field="*{product.imageName}">
-                            <input type="file" name="imageFile" class="form-control-file">
-                        </div>
+        <div class="form-group row">
+            <label class="col-sm-4">Menu Động</label>
+
+            <div class="col-sm-8">
+                <select class="form-control form-control-sm" name="menuDongId">
+                    <option th:each="obj:${listMenuDong}" th:value="${obj.menuDongId}" th:text="${obj.menuName}">Menu Name</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4"></label>
+
+            <div class="col-sm-8">
+                <div class="form-group row">
+                    <div class="col-sm-4 paRi0">
+                        <img th:src="@{'/image/' + ${product.imageName}}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
+                    </div>
+
+                    <div class="col-sm-8">
+                        <input type="hidden" th:field="*{product.imageName}">
+                        <input type="file" name="imageFile" class="form-control-file">
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Quantity</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Quantity</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{product.quantity}">
-                </div>
+            <div class="col-sm-8">
+                <input type="number" class="form-control form-control-sm" th:field="*{product.quantity}">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Visible</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Visible</label>
 
-                <div class="col-sm-8">
-                    <input type="hidden" th:field="*{product.isVisible}">
+            <div class="col-sm-8">
+                <input type="hidden" th:field="*{product.isVisible}">
 
-                    <i th:class="${product.isVisible == 0 ? 'fas fa-eye-slash text-secondary' : 'fas fa-eye text-success'} + ' cuPo foSi20'" class="fas fa-eye-slash text-secondary" onclick='updateIsVisible(this, "isVisible")' title="hiển thị: no"></i>
-                    <script th:inline="javascript">
-                        function updateIsVisible(e, idData) {
-                            let className = event.target.className;
+                <i th:class="${product.isVisible == 0 ? 'fas fa-eye-slash text-secondary' : 'fas fa-eye text-success'} + ' cuPo foSi20'" class="fas fa-eye-slash text-secondary" onclick='updateIsVisible(this, "isVisible")' title="hiển thị: no"></i>
+                <script th:inline="javascript">
+                    function updateIsVisible(e, idData) {
+                        let className = event.target.className;
 
-                            if (className.includes("text-secondary")) {
-                                $(e).removeClass("text-secondary");
-                                $(e).addClass("text-success");
+                        if (className.includes("text-secondary")) {
+                            $(e).removeClass("text-secondary");
+                            $(e).addClass("text-success");
 
-                                $(e).removeClass("fas fa-eye-slash");
-                                $(e).addClass("fas fa-eye");
+                            $(e).removeClass("fas fa-eye-slash");
+                            $(e).addClass("fas fa-eye");
 
-                                $("#" + idData).val(1);
-                            } else if (className.includes("text-success")) {
-                                $(e).removeClass("text-success");
-                                $(e).addClass("text-secondary");
+                            $("#" + idData).val(1);
+                        } else if (className.includes("text-success")) {
+                            $(e).removeClass("text-success");
+                            $(e).addClass("text-secondary");
 
-                                $(e).removeClass("fas fa-eye");
-                                $(e).addClass("fas fa-eye-slash");
+                            $(e).removeClass("fas fa-eye");
+                            $(e).addClass("fas fa-eye-slash");
 
-                                $("#" + idData).val(0);
-                            }
+                            $("#" + idData).val(0);
                         }
-                    </script>
-                </div>
+                    }
+                </script>
             </div>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Gửi</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Gửi</button>
+    </form>
 
-    </div>
+</div>
 
-    <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
-    <script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
-
-</body>
-</html>
+<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>

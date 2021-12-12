@@ -1,100 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sửa Menu Động</title>
 
-    <link th:href="${bootstrapCss}" rel="stylesheet">
+<!-- menu động edit -->
+<div id="menu-dong-edit" class="col-md-6">
+    <h4>Sửa Menu Động</h4>
 
-</head>
-<body>
+    <form th:action="@{/admin/menu-dong/update}" method="post">
+        <!-- menu động id hidden -->
+        <input type="hidden" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
 
-    <div id="menu-dong-edit" class="col-md-6">
-        <h4>Sửa Menu Động</h4>
+        <!-- Menu name -->
+        <div class="form-group row">
+            <label class="col-sm-4">Menu Name</label>
 
-        <form th:action="@{/admin/menu-dong/update}" method="post">
-            <!-- menu động id hidden -->
-            <input type="hidden" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
-
-            <!-- Menu name -->
-            <div class="form-group row">
-                <label class="col-sm-4">Menu Name</label>
-
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuName}"
-                           required>
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuName}"
+                       required>
             </div>
+        </div>
 
-            <!-- Menu link -->
-            <div class="form-group row">
-                <label class="col-sm-4">Menu Link</label>
+        <!-- Menu link -->
+        <div class="form-group row">
+            <label class="col-sm-4">Menu Link</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuLink}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuLink}">
             </div>
+        </div>
 
-            <!-- Thứ tự -->
-            <div class="form-group row">
-                <label class="col-sm-4">Thứ Tự</label>
+        <!-- Thứ tự -->
+        <div class="form-group row">
+            <label class="col-sm-4">Thứ Tự</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuOrder}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuOrder}">
             </div>
+        </div>
 
-            <!-- Is parent -->
-            <div class="form-group row">
-                <label class="col-sm-4">Is Parent</label>
+        <!-- Is parent -->
+        <div class="form-group row">
+            <label class="col-sm-4">Is Parent</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isParent}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isParent}">
             </div>
+        </div>
 
-            <!-- Parent id -->
-            <div class="form-group row">
-                <label class="col-sm-4">Parent Id</label>
+        <!-- Parent id -->
+        <div class="form-group row">
+            <label class="col-sm-4">Parent Id</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.parentId}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.parentId}">
             </div>
+        </div>
 
-            <!-- Description -->
-            <div class="form-group row">
-                <label class="col-sm-4">Description</label>
+        <!-- Description -->
+        <div class="form-group row">
+            <label class="col-sm-4">Description</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.description}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.description}">
             </div>
+        </div>
 
-            <!-- Is visible -->
-            <div class="form-group row">
-                <label class="col-sm-4">Is Visible</label>
+        <!-- Is visible -->
+        <div class="form-group row">
+            <label class="col-sm-4">Is Visible</label>
 
-                <div class="col-sm-8">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isVisible}">
-                </div>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isVisible}">
             </div>
+        </div>
 
-            <div class="form-group row">
-                <label class="col-sm-4">Màu Sắc</label>
+        <div class="form-group row">
+            <label class="col-sm-4">Màu Sắc</label>
 
-                <div class="col-sm-1">
-                    <span class="div-square wi10 he10 boRa8" th:style="'background-color:' + @{${menuDong.color}}"></span>
-                </div>
-                <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" th:field="*{menuDong.color}">
-                </div>
+            <div class="col-sm-1">
+                <span class="div-square wi10 he10 boRa8" th:style="'background-color:' + @{${menuDong.color}}"></span>
             </div>
+            <div class="col-sm-7">
+                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.color}">
+            </div>
+        </div>
 
-            <button type="submit" class="btn btn-primary">Gửi</button>
-        </form>
+        <button type="submit" class="btn btn-primary">Gửi</button>
+    </form>
 
-    </div>
-
-</body>
-</html>
+</div>

@@ -35,7 +35,7 @@ public class MenuDongController extends WebController {
     @GetMapping(value = "/" + MENU_DONG)
     public String showList(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toAdmin(MENU_DONG));
+        log.debug("Go to: /admin/menu-dong");
 
         try {
             // backup db
@@ -57,7 +57,7 @@ public class MenuDongController extends WebController {
     @GetMapping(value = "/" + MENU_DONG + "/them")
     public String them(Model model) {
         // log info
-        log.debug("Go to the add screen: " + UtilCon.toAdmin(MENU_DONG, MENU_DONG + "/them"));
+        log.debug("Go to: /admin/menu-dong/them");
 
         try {
             // set host, bootstrap
@@ -74,6 +74,9 @@ public class MenuDongController extends WebController {
 
     @PostMapping(value = "/" + MENU_DONG + "/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
+        // log info
+        log.debug("Go to: /admin/menu-dong/save/" + obj.getMenuDongId());
+
         String PAGE = "";
 
         try {
@@ -98,6 +101,9 @@ public class MenuDongController extends WebController {
 
     @GetMapping(value = "/" + MENU_DONG + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
+        // log info
+        log.debug("Go to: /admin/menu-dong/edit/" + id);
+
         try {
             // set host, bootstrap
             setCommon(model);
@@ -115,6 +121,9 @@ public class MenuDongController extends WebController {
 
     @PostMapping(value = "/" + MENU_DONG + "/update")
     public ModelAndView update(@ModelAttribute(MENU_DONG) MenuDong obj) {
+        // log info
+        log.debug("Go to: /admin/menu-dong/update/" + obj.getMenuDongId());
+
         try {
             obj = UtilCon.trimObject(obj);
             String menuLink = UtilCon.createLinkFromMenuName(obj.getMenuName());
@@ -131,6 +140,8 @@ public class MenuDongController extends WebController {
 
     @GetMapping(value = "/" + MENU_DONG + "/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
+        // log info
+        log.debug("Go to: /admin/menu-dong/delete/" + id);
 
         try {
             menuDongService.deleteById(id);

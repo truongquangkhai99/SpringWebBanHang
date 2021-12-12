@@ -34,7 +34,7 @@ public class ClientController extends WebController {
     @GetMapping(value = {"/", "/home"})
     public String goHome(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toClient("home"));
+        log.debug("Go to: /, /home");
         
         try {
             setCommon(model);
@@ -58,7 +58,7 @@ public class ClientController extends WebController {
     @GetMapping(value = {"/san-pham/{menuLink}"})
     public String showProduct(@PathVariable("menuLink") String menuLink, Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toClient("pathProduct"));
+        log.debug("Go to: /san-pham/" + menuLink);
 
         try {
             setCommon(model);
@@ -81,7 +81,7 @@ public class ClientController extends WebController {
     @GetMapping(value = "/lien-he")
     public String goLienHe(Model model) {
         // log info
-        log.debug("Go to " + UtilCon.toClient("lien-he"));
+        log.debug("Go to: /lien-he");
 
         try {
             setCommon(model);
