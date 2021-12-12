@@ -15,7 +15,7 @@
                        required>
 
                 <input type="hidden" th:field="*{product.favourite}">
-                <i class="far fa-star coGr cuPo poRe le260 to3" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
+                <i th:class="${product.favourite == 0 ? 'coGr' : 'coRe'} + ' far fa-star cuPo poRe le260 to3'" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                 <script th:inline="javascript">
                     function updateFavourite(e, data) {
                         let className = event.target.className;
@@ -49,7 +49,7 @@
 
             <div class="col-sm-8">
                 <input type="text" class="form-control form-control-sm text-right" th:field="${product.price}"
-                        onkeyup="calculateSale(this)">
+                        onkeyup="calculateSale(this)" required>
             </div>
         </div>
 
@@ -130,7 +130,8 @@
             <div class="col-sm-8">
                 <div class="form-group row">
                     <div class="col-sm-4 paRi0">
-                        <img th:src="@{'/image/' + ${product.imageName}}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
+                        <img th:src="@{'/image/' + ${product.imageName}}" th:if="${product.imageName != null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
+                        <img th:src="@{'/image/img_not_available.png'}" th:if="${product.imageName == null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
                     </div>
 
                     <div class="col-sm-8">
@@ -187,6 +188,3 @@
 
 </div>
 
-<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
-<script th:src="@{/webjars/popper.js/1.14.1/umd/popper.min.js}"></script>
-<script th:src="@{/webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>

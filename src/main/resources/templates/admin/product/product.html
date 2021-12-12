@@ -40,13 +40,14 @@
             <tr>
                 <th scope="col">Product Name</th>
                 <th scope="col">Giá</th>
-                <th scope="col">Số Lượng</th>
-                <th scope="col">Sale</th>
+                <th scope="col" class="text-center">Số Lượng</th>
+                <th scope="col" class="text-center">Sale</th>
                 <th scope="col">Thuộc Menu</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
             </tr>
         </thead>
+
         <tbody>
             <tr th:if="${listProduct.empty}" scope="row">
                 <td colspan="6">No Books Available</td>
@@ -65,11 +66,11 @@
                     <span th:text="${obj.giaConLai}" th:if="${obj.sale == 1}">Giá Còn Lại</span>
                 </td>
 
-                <td class="pa4 foSi13">
+                <td class="pa4 foSi13 text-center">
                     <span th:text="${obj.quantity}">Số Lượng</span>
                 </td>
 
-                <td class="pa4 foSi13">
+                <td class="pa4 foSi13 text-center">
                     <i class="maTo10 fas fa-dollar-sign text-primary" th:if="${obj.sale == 1}"></i>
                     <i class="maTo10 fas fa-dollar-sign text-secondary" th:if="${obj.sale == 0}"></i>
                 </td>

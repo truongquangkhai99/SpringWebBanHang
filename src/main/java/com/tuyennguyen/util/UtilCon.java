@@ -30,6 +30,7 @@ public class UtilCon {
     public static final String MENU_DONG           = "menu-dong";
     public static final String MENU_DONG_EDIT      = "menu-dong-edit";
     public static final String MENU_DONG_THEM      = "menu-dong-them";
+    public static final String SETTING_EDIT        = "setting-edit";
     public static final String REDICRECT           = "redirect:";
 
     public static final String FOR_SL              = "/";
