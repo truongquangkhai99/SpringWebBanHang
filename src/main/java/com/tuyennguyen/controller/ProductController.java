@@ -44,10 +44,11 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product");
 
         try {
+            String TITLE = "Product";
             // backup db
             UtilCon.backUpDb();
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             //set list
             setListProduct(model, UtilCon.VISIBLE_ITEM);
@@ -66,8 +67,9 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/them");
 
         try {
+            String TITLE = "Thêm Product";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             model.addAttribute(UtilCon.OBJ, new Product());
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
@@ -119,8 +121,9 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/edit/" + id);
 
         try {
+            String TITLE = "Sửa Product";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
             setListMenuDongCha(model, UtilCon.PARENT);
 
             Product obj = productService.findById(id).get();
@@ -182,8 +185,9 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/filter/" + filterItem);
 
         try {
+            String TITLE = "Product";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             setListProduct(model, filterItem);
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);

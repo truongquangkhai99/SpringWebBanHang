@@ -37,9 +37,10 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user");
 
         try {
+            String TITLE = "User";
             // backup db
             UtilCon.backUpDb();
-            setCommon(model);
+            setCommon(model, TITLE);
 
             //set list
             List<User> listUser = userService.findAll();
@@ -59,8 +60,9 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user/them");
 
         try {
+            String TITLE = "Thêm User";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);
@@ -107,8 +109,9 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user/edit/" + id);
 
         try {
+            String TITLE = "Sửa User";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);

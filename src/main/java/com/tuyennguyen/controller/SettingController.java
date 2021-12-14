@@ -22,6 +22,8 @@ public class SettingController extends WebController {
 
     private static final String SETTING = "setting";
 
+    private static final String TITLE = "Setting";
+
     @Autowired
     private SettingService settingService;
 
@@ -32,7 +34,7 @@ public class SettingController extends WebController {
 
         try {
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             Setting obj = settingService.findById(id).get();
             model.addAttribute(SETTING, obj);

@@ -21,7 +21,8 @@ import java.util.List;
 public class ClientController extends WebController {
 
     Logger log = LoggerFactory.getLogger(ClientController.class);
-    private static final String mainObject = "client";
+    private static final String CLIENT = "client";
+    private static final String TITLE = CLIENT;
 
     @Autowired
     private MenuDongService mainService;
@@ -40,7 +41,7 @@ public class ClientController extends WebController {
         log.debug("Go to: /, /home");
         
         try {
-            setCommon(model);
+            setCommon(model, TITLE);
             setSetting(model);
 
             List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
@@ -56,7 +57,7 @@ public class ClientController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.toClient(mainObject);
+        return UtilCon.toClient(CLIENT);
     }
 
     @GetMapping(value = {"/san-pham/{menuLink}"})
@@ -65,7 +66,7 @@ public class ClientController extends WebController {
         log.debug("Go to: /san-pham/" + menuLink);
 
         try {
-            setCommon(model);
+            setCommon(model, TITLE);
             setSetting(model);
 
             // get listProduct mặc định (yêu thích)
@@ -80,7 +81,7 @@ public class ClientController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.toClient(mainObject);
+        return UtilCon.toClient(CLIENT);
     }
 
     @GetMapping(value = "/lien-he")
@@ -89,7 +90,7 @@ public class ClientController extends WebController {
         log.debug("Go to: /lien-he");
 
         try {
-            setCommon(model);
+            setCommon(model, TITLE);
 
             List<MenuDong> listMenuDong = mainService.findAll();
             model.addAttribute("listMenuDong", listMenuDong);

@@ -32,4 +32,64 @@ public class Setting {
     @Column(nullable = true)
     private String imageName;
 
+    @Column(nullable = true)
+    private String module1;
+
+    @Column(nullable = true)
+    private String link1;
+
+    @Column(nullable = true)
+    private String link2;
+
+    @Column(nullable = true)
+    private String link3;
+
+    @Column(nullable = true)
+    private String link4;
+
+    @Column(nullable = true)
+    private String module2;
+
+    @Column(nullable = true)
+    private String link5;
+
+    @Column(nullable = true)
+    private String link6;
+
+    @Column(nullable = true)
+    private String link7;
+
+    @Column(nullable = true)
+    private String link8;
+
+    @Column(nullable = true)
+    private String module3;
+
+    @Column(nullable = true)
+    private String link9;
+
+    @Column(nullable = true)
+    private String link10;
+
+    @Column(nullable = true)
+    private String link11;
+
+    @Column(nullable = true)
+    private String link12;
+
+    @Column(nullable = true)
+    private String module4;
+
+    @Column(nullable = true)
+    private String link13;
+
+    @Column(nullable = true)
+    private String link14;
+
+    @Column(nullable = true)
+    private String link15;
+
+    @Column(nullable = true)
+    private String link16;
+
 }

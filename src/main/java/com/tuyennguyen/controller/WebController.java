@@ -19,9 +19,7 @@ public class WebController {
     @Autowired
     private MenuDongService menuDongService;
 
-    public void setHost(Model model) {
-        model.addAttribute("host", UtilHost.LOCALHOST);
-    }
+
 
     public void setBootstrapAndJquery(Model model) {
         model.addAttribute("bootstrapCss", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_CSS);
@@ -29,8 +27,11 @@ public class WebController {
         model.addAttribute("jquery", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
     }
 
-    public void setCommon(Model model) {
-        setHost(model);
+    public void setCommon(Model model, String title) {
+        // set host
+        model.addAttribute("host", UtilHost.LOCALHOST);
+        // set title
+        model.addAttribute("title", title);
         setBootstrapAndJquery(model);
     }
 

@@ -24,7 +24,8 @@ public class AdminController extends WebController {
     private UserService userService;
 
     Logger log = LoggerFactory.getLogger(AdminController.class);
-    private static final String mainObject = "admin";
+    private static final String ADMIN = "admin";
+    private static final String TITLE = ADMIN;
 
     @GetMapping(value = "/admin-login")
     public String login(Model model) {
@@ -32,7 +33,7 @@ public class AdminController extends WebController {
         log.debug("Go to: /admin-login");
 
         try {
-            setCommon(model);
+            setCommon(model, TITLE);
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
@@ -46,7 +47,7 @@ public class AdminController extends WebController {
         log.debug("Go to: /admin");
 
         try {
-            setCommon(model);
+            setCommon(model, TITLE);
 
     //        List<Product> listProduct = productService.findAll();
             List<Product> listProduct = null;

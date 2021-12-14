@@ -38,10 +38,11 @@ public class MenuDongController extends WebController {
         log.debug("Go to: /admin/menu-dong");
 
         try {
+            String TITLE = "Menu Động";
             // backup db
             UtilCon.backUpDb();
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
             //set list
             setListMenuDong(model);
 
@@ -60,8 +61,9 @@ public class MenuDongController extends WebController {
         log.debug("Go to: /admin/menu-dong/them");
 
         try {
+            String TITLE = "Thêm Menu Động";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             model.addAttribute(UtilCon.OBJ, new MenuDong());
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
@@ -105,8 +107,9 @@ public class MenuDongController extends WebController {
         log.debug("Go to: /admin/menu-dong/edit/" + id);
 
         try {
+            String TITLE = "Sửa Menu Động";
             // set host, bootstrap
-            setCommon(model);
+            setCommon(model, TITLE);
 
             MenuDong obj = menuDongService.findById(id).get();
             model.addAttribute("menuDong", obj);
