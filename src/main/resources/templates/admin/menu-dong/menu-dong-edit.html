@@ -5,7 +5,7 @@
 
     <form th:action="@{/admin/menu-dong/update}" method="post">
         <!-- menu động id hidden -->
-        <input type="hidden" class="form-control form-control-sm" th:field="*{menuDong.menuDongId}">
+        <input type="hidden" th:field="*{menuDong.menuDongId}">
 
         <!-- Menu name -->
         <div class="form-group row">
@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Gửi</button>
+        <button type="submit" class="btn btn-primary">Lưu</button>
     </form>
 
 </div>

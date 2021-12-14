@@ -5,7 +5,7 @@
 
     <form th:action="@{/admin/user/update}" method="post">
         <!-- user id hidden -->
-        <input type="hidden" class="form-control form-control-sm" th:field="*{user.userId}">
+        <input type="hidden" th:field="*{user.userId}">
 
         <div class="form-group row">
             <label class="col-sm-4">Full Name</label>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Gửi</button>
+        <button type="submit" class="btn btn-primary">Lưu</button>
     </form>
 
 </div>

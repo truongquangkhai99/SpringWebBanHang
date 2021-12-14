@@ -5,7 +5,7 @@
     <h4>Sửa Sản Phẩm</h4>
 
     <form th:action="@{{host}/admin/product/update (host=${host})}" method="post" enctype="multipart/form-data">
-        <input type="hidden" class="form-control form-control-sm" th:field="*{product.productId}">
+        <input type="hidden" th:field="*{product.productId}">
 
         <div class="form-group row">
             <label class="col-sm-4">Product Name</label>
@@ -183,7 +183,7 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Gửi</button>
+        <button type="submit" class="btn btn-primary">Lưu</button>
     </form>
 
 </div>

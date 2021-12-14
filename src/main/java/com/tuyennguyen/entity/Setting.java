@@ -29,4 +29,7 @@ public class Setting {
     @Column(nullable = true)
     private String webName;
 
+    @Column(nullable = true)
+    private String imageName;
+
 }

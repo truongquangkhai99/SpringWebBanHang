@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.IOException;
-
 @Controller
 @RequestMapping("/admin")
 public class SettingController extends WebController {
@@ -26,28 +24,6 @@ public class SettingController extends WebController {
 
     @Autowired
     private SettingService settingService;
-
-    @GetMapping(value = "/" + SETTING)
-    public String showList(Model model) {
-        // log info
-        log.debug("Go to: /admin/product");
-
-        try {
-            // backup db
-            UtilCon.backUpDb();
-            // set host, bootstrap
-            setCommon(model);
-
-            //set list
-//            setListProduct(model, UtilCon.VISIBLE_ITEM);
-            //set page
-            model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
-        } catch (Exception e) {
-            UtilCon.logData(log, e);
-        }
-
-        return UtilCon.goAdmin();
-    }
 
     @GetMapping(value = "/" + SETTING + "/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
@@ -63,7 +39,6 @@ public class SettingController extends WebController {
             model.addAttribute(UtilCon.PAGE, UtilCon.SETTING_EDIT);
 
             setListMenuDong(model);
-
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
@@ -73,8 +48,7 @@ public class SettingController extends WebController {
 
     @PostMapping(value = "/" + SETTING + "/update")
     public ModelAndView update(@ModelAttribute(SETTING) Setting obj,
-                               @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
-
+                               @RequestParam("imageFile") MultipartFile imageFile) {
         // log info
         log.debug("Go to: /admin/product/update/" + obj.getSettingId());
 
@@ -84,7 +58,7 @@ public class SettingController extends WebController {
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
                 FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
-//                obj.setImageName(imageName);
+                obj.setImageName(imageName);
             }
 
             settingService.save(obj);
@@ -92,7 +66,7 @@ public class SettingController extends WebController {
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
+        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/setting/edit/" + obj.getSettingId());
     }
 	
 }

@@ -2,6 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
+import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.repository.MenuDongRepository;
 import com.tuyennguyen.repository.ProductRepository;
 import com.tuyennguyen.serivce.MenuDongService;
@@ -31,6 +32,8 @@ public class ClientController extends WebController {
     @Autowired
     private ProductRepository productRepo;
 
+    private Setting setting;
+
     @GetMapping(value = {"/", "/home"})
     public String goHome(Model model) {
         // log info
@@ -38,6 +41,7 @@ public class ClientController extends WebController {
         
         try {
             setCommon(model);
+            setSetting(model);
 
             List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
             model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
@@ -62,6 +66,7 @@ public class ClientController extends WebController {
 
         try {
             setCommon(model);
+            setSetting(model);
 
             // get listProduct mặc định (yêu thích)
             setListProductFavo(model);

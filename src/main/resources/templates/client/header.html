@@ -1,11 +1,5 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head th:fragment="headerfiles">
-    <meta charset="UTF-8" />
-</head>
-<body>
-    <div id="header">
-        <img th:src="@{/banner.jpg}" class="img-fluid" />
-    </div>
-</body>
-</html>
+
+<!-- header -->
+<div id="header">
+    <img th:src="@{${setting.imageName}}" class="img-fluid" />
+</div>

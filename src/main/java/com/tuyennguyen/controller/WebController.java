@@ -1,7 +1,9 @@
 package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.MenuDong;
+import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.serivce.MenuDongService;
+import com.tuyennguyen.serivce.SettingService;
 import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,9 @@ import org.springframework.ui.Model;
 import java.util.List;
 
 public class WebController {
+
+    @Autowired
+    private SettingService settingService;
 
     @Autowired
     private MenuDongService menuDongService;
@@ -32,6 +37,11 @@ public class WebController {
     public void setListMenuDong(Model model) {
         List<MenuDong> listMenuDong = menuDongService.findAll();
         model.addAttribute("listMenuDong", listMenuDong);
+    }
+
+    public void setSetting(Model model) {
+        Setting setting = settingService.findById(1).get();
+        model.addAttribute("setting", setting);
     }
 
     public void setListMenuDongCha(Model model, int isParent) {
