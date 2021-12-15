@@ -10,6 +10,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" th:href="@{{host}/home (host=${host})}">Trang Chủ</a>
+                    <span th:text="${message}"></span>
                 </li>
 
                 <li th:each="obj:${listMenuDongIsVisible}" class="nav-item" th:switch="${obj.isParent}">

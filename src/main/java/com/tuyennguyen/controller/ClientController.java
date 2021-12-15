@@ -54,7 +54,6 @@ public class ClientController extends WebController {
 
             List<MenuDong> listMenuDongIsVisible = mainService.findAllByIsVisible(UtilCon.VISIBLE);
             model.addAttribute("listMenuDongIsVisible", listMenuDongIsVisible);
-            System.out.println(listMenuDongIsVisible.size());
 
             // get listProduct mặc định (yêu thích)
             setListProductFavo(model);
