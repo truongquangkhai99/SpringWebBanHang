@@ -1,54 +1,47 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
 
-<head th:fragment="headerfiles">
-    <meta charset="UTF-8" />
-</head>
+<!-- menu -->
+<div id="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light maBo15">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>
-    <div id="menu">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light maBo15">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{{host}/home (host=${host})}">Trang Chủ</a>
+                </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" th:href="@{{host}/home (host=${host})}">Trang Chủ</a>
-                    </li>
+                <li th:each="obj:${listMenuDongIsVisible}" class="nav-item" th:switch="${obj.isParent}">
+                    <span th:case="0">
+                        <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/san-pham/{menuLink} (host=${host}, menuLink=${obj.menuLink})}">
+                            Menu Name
+                        </a>
 
-                    <li th:each="obj:${listMenuDongIsVisible}" class="nav-item" th:switch="${obj.isParent}">
-                        <span th:case="0">
-                            <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/san-pham/{menuLink} (host=${host}, menuLink=${obj.menuLink})}">
-                                Menu Name
-                            </a>
-                        </span>
+                    </span>
 
-                        <span th:case="1">
-                            <a class="nav-link dropdown-toggle" th:text="${obj.menuName}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu Name
-                            </a>
+                    <span th:case="1">
+                        <a class="nav-link dropdown-toggle" th:text="${obj.menuName}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu Name
+                        </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                            </div>
-                        </span>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </span>
 
-                    </li>
+                </li>
 
-                    <li class="nav-item active dropdown">
-                    </li>
+                <li class="nav-item active dropdown">
+                </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#lien-he">Liên Hệ</a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#lien-he">Liên Hệ</a>
+                </li>
 
-                </ul>
+            </ul>
 
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-    </div>
-</body>
-</html>
+</div>

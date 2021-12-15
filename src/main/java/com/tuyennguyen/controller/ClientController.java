@@ -10,10 +10,12 @@ import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +24,6 @@ public class ClientController extends WebController {
 
     Logger log = LoggerFactory.getLogger(ClientController.class);
     private static final String CLIENT = "client";
-    private static final String TITLE = CLIENT;
 
     @Autowired
     private MenuDongService mainService;
@@ -35,12 +36,19 @@ public class ClientController extends WebController {
 
     private Setting setting;
 
+    @Autowired
+    private MessageSource messageSource;
+
     @GetMapping(value = {"/", "/home"})
-    public String goHome(Model model) {
+    public String goHome(Model model, HttpServletRequest request) {
+        String message = messageSource.getMessage("hello", null, "default message", request.getLocale());
+        model.addAttribute("message", message);
+        System.out.println(message);
         // log info
         log.debug("Go to: /, /home");
         
         try {
+            String TITLE = "Trang Chủ";
             setCommon(model, TITLE);
             setSetting(model);
 
@@ -66,6 +74,7 @@ public class ClientController extends WebController {
         log.debug("Go to: /san-pham/" + menuLink);
 
         try {
+            String TITLE = menuLink;
             setCommon(model, TITLE);
             setSetting(model);
 
@@ -90,6 +99,7 @@ public class ClientController extends WebController {
         log.debug("Go to: /lien-he");
 
         try {
+            String TITLE = "Liên Hệ";
             setCommon(model, TITLE);
 
             List<MenuDong> listMenuDong = mainService.findAll();

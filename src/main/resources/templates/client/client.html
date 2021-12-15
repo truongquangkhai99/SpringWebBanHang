@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trang Chủ</title>
+    <title th:text="${title}"></title>
 
     <link rel="Shortcut icon" th:href="@{/logo.png}">
 
@@ -14,14 +14,6 @@
     <link th:href="@{/style/style.css}" rel="stylesheet" />
 
     <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
-
-    <script th:inline="javascript">
-        $(document).ready(function () {
-            let imageFolder = [[${T(com.tuyennguyen.util.UtilCon).IMAGE_FOLDER}]];
-            console.log(imageFolder);
-
-        });
-    </script>
 </head>
 <body>
 
