@@ -18,9 +18,6 @@ import java.util.List;
 public class AdminController extends WebController {
 
     @Autowired
-    private ProductService productService;
-
-    @Autowired
     private UserService userService;
 
     Logger log = LoggerFactory.getLogger(AdminController.class);
@@ -49,7 +46,6 @@ public class AdminController extends WebController {
         try {
             setCommon(model, TITLE);
 
-    //        List<Product> listProduct = productService.findAll();
             List<Product> listProduct = null;
             model.addAttribute("listProduct", listProduct);
             model.addAttribute("page", "product");

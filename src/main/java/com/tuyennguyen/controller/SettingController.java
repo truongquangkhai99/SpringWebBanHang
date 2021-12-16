@@ -55,8 +55,6 @@ public class SettingController extends WebController {
         log.debug("Go to: /admin/product/update/" + obj.getSettingId());
 
         try {
-//            obj = UtilCon.trimObject(obj);
-
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
                 FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
@@ -70,5 +68,5 @@ public class SettingController extends WebController {
         }
         return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/setting/edit/" + obj.getSettingId());
     }
-	
+
 }

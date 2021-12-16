@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 
-<div class="container" id="list-product">
+<div class="container maTo30" id="list-product">
 
     <!-- sản phẩm yêu thích -->
-    <div role="tablist" class="boWi0 boShNo maBo8">
-        <div class="card boWi0 boShNo maBo0 paTo12">
+    <div role="tablist" class="boWi0 boShNo">
+        <div class="card boWi0 boShNo maBo0 paTo12 maBo18">
             <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="heading-sp-y-t">
                 <h5 class="mb-0">
                     <a data-toggle="collapse" class="baCoTr" style="color: #0056b3;" href="#sp-yeu-thich" aria-expanded="true" aria-controls="sp-yeu-thich">
@@ -13,6 +13,7 @@
                     </a>
                 </h5>
             </div>
+
             <div id="sp-yeu-thich" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="heading-sp-y-t" data-parent="#accordion">
                 <div class="card-body paTo12 paBo0">
 
@@ -56,7 +57,7 @@
     </div>
 
     <!-- sản phẩm theo menu -->
-    <div role="tablist" class="boWi0 boShNo maBo8">
+    <div role="tablist" class="boWi0 boShNo maBo18">
         <div class="card boWi0 boShNo maBo0 paTo12">
             <div class="card-header baCoWh boWi0 paToBo0" role="tab" id="headingOne">
                 <h5 class="mb-0">
@@ -65,11 +66,18 @@
                     </a>
                 </h5>
             </div>
+
             <div id="sp-menu" class="collapse show boWi0 boShNo" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body paTo12 paBo0">
 
                     <div class="row clearfix">
 
+                        <div class="col-sm-12" th:if="${listProductMenu.size() == 0}">
+                            <p>
+                                Không có sản phẩm thuộc
+                                <span th:text="${menuName}"></span>
+                            </p>
+                        </div>
 
                         <div class="col-lg-3 col-md-4 col-sm-12" th:each="obj:${listProductMenu}">
                             <div class="card product_item">

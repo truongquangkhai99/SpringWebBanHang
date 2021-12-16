@@ -19,8 +19,6 @@ public class WebController {
     @Autowired
     private MenuDongService menuDongService;
 
-
-
     public void setBootstrapAndJquery(Model model) {
         model.addAttribute("bootstrapCss", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_CSS);
         model.addAttribute("bootstrapJs", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);

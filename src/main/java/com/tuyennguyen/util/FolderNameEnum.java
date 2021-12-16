@@ -5,6 +5,7 @@ public enum FolderNameEnum {
     folder2(2, "folder2");
 
     private final int key;
+
     private final String value;
 
     FolderNameEnum(int key, String value) {

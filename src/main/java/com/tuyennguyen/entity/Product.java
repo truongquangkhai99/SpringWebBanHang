@@ -4,7 +4,6 @@ import com.tuyennguyen.model.mapping.ProductMap;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
 

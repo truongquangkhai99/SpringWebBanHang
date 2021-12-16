@@ -3,10 +3,8 @@ package com.tuyennguyen.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -43,6 +41,4 @@ public class MenuDong {
     @Column(nullable = false)
     private String color = "#000000";
 
-//    @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="menuDong")
-//    private List<Product> products;
 }

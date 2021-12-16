@@ -15,9 +15,6 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
     @Query(value = "SELECT b.menu_name AS menuName FROM TBL_PRODUCT a JOIN TBL_MENU_DONG b ON a.menu_dong_id = b.menu_dong_id", nativeQuery = true)
     public List<ProductMap> getListProductShowProductList();
 
-//    @NamedNativeQuery(query = "SELECT b.menu_name AS menuName FROM TBL_PRODUCT a JOIN TBL_MENU_DONG b ON a.menu_dong_id = b.menu_dong_id")
-//    public List<ProductMap> getListProductShowProductList2();
-
     public List<Product> findProductsByMenuDongId(int menuDongId);
 
     public int countProductByProductName(String productName);

@@ -31,7 +31,7 @@
                 </ul>
             </li>
 
-            <!-- product -->
+            <!-- Product -->
             <li th:attr='class=${page == "product" || page == "product-them" || page == "product-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/product (host=${host})}">
                     <i class="fab fa-product-hunt"></i>
@@ -39,7 +39,7 @@
                 </a>
             </li>
 
-            <!-- user thêm, edit -->
+            <!-- User thêm, edit -->
             <li th:attr='class=${page == "user" || page == "user-them" || page == "user-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/user (host=${host})}">
                     <i class="fas fa-user"></i>
@@ -47,7 +47,7 @@
                 </a>
             </li>
 
-            <!-- menu động thêm, edit -->
+            <!-- Menu động thêm, edit -->
             <li th:attr='class=${page == "menu-dong" || page == "menu-dong-them" || page == "menu-dong-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/menu-dong (host=${host})}">
                     <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
@@ -55,22 +55,11 @@
                 </a>
             </li>
 
-            <!-- setting edit -->
+            <!-- Setting edit -->
             <li th:attr='class=${page == "setting-edit" ? "active" : ""}'>
                 <a th:href="@{{host}/admin/setting/edit/1 (host=${host})}">
-                    <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
-                    <span>Setting</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="#">
                     <i class="fas fa-cog"></i>
-                    <span>Contact</span>
+                    <span>Setting</span>
                 </a>
             </li>
         </ul>

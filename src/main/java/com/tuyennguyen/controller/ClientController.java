@@ -46,7 +46,7 @@ public class ClientController extends WebController {
         System.out.println(message);
         // log info
         log.debug("Go to: /, /home");
-        
+
         try {
             String TITLE = "Trang Chủ";
             setCommon(model, TITLE);
@@ -128,4 +128,5 @@ public class ClientController extends WebController {
         List<Product> listProductFavo = productRepo.findProductsByFavouriteAndIsVisible(1, 1);
         model.addAttribute("listProductFavo", listProductFavo);
     }
+
 }

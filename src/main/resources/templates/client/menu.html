@@ -8,11 +8,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+
+                <!-- Trang Chủ -->
                 <li class="nav-item active">
                     <a class="nav-link" th:href="@{{host}/home (host=${host})}">Trang Chủ</a>
-                    <span th:text="${message}"></span>
                 </li>
 
+                <!-- List Menu Động -->
                 <li th:each="obj:${listMenuDongIsVisible}" class="nav-item" th:switch="${obj.isParent}">
                     <span th:case="0">
                         <a class="nav-link" th:text="${obj.menuName}" th:href="@{{host}/san-pham/{menuLink} (host=${host}, menuLink=${obj.menuLink})}">
@@ -36,6 +38,7 @@
                 <li class="nav-item active dropdown">
                 </li>
 
+                <!-- Liên Hệ -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#lien-he">Liên Hệ</a>
                 </li>
