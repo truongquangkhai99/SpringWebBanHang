@@ -4,12 +4,22 @@ import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Component
 public class UtilCon {
+
+    private static String backup;
+
+    @Value("${backup:#{''}}")
+    public void setBackup(String backup) {
+        this.backup = backup;
+    }
 
     public static final String DB_NAME             = "Spring_Web_Ban_Hang";
     public static final String USERNAME            = "root";
@@ -149,10 +159,11 @@ public class UtilCon {
     }
 
     public static void backUpDb() {
+//        System.out.println(backup);
         Date currentDate = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
         String sdfDate = sdf.format(currentDate);
-        String FILE_NAME = BACKUP_FOLDER + "BACKUP_" + sdfDate + ".sql";
+        String FILE_NAME = BACKUP_FOLDER + backup + "_" + sdfDate + ".sql";
 
         String cmd = "";
         if (EMPTY.equals(PASS_WORD)) {
