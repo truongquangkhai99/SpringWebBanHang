@@ -4,7 +4,6 @@ import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.serivce.SettingService;
 import com.tuyennguyen.util.FileUploadUtil;
 import com.tuyennguyen.util.UtilCon;
-import com.tuyennguyen.util.UtilHost;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +21,6 @@ public class SettingController extends WebController {
 
     private static final String SETTING = "setting";
 
-    private static final String TITLE = "Setting";
-
     @Autowired
     private SettingService settingService;
 
@@ -33,8 +30,10 @@ public class SettingController extends WebController {
         log.debug("Go to: /admin/setting/edit/" + id);
 
         try {
+            // set title of html page
+            setTitle("setting");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             Setting obj = settingService.findById(id).get();
             model.addAttribute(SETTING, obj);
@@ -57,7 +56,7 @@ public class SettingController extends WebController {
         try {
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
-                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                 obj.setImageName(imageName);
             }
 
@@ -66,7 +65,7 @@ public class SettingController extends WebController {
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/setting/edit/" + obj.getSettingId());
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/setting/edit/" + obj.getSettingId());
     }
 
 }

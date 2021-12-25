@@ -12,29 +12,29 @@ import java.util.Optional;
 public class MenuDongService {
 
     @Autowired
-    private MenuDongRepository repository;
+    private MenuDongRepository menuDongRepo;
 
     public List<MenuDong> findAll() {
-        return repository.findAll();
+        return menuDongRepo.findAll();
     }
 
     public List<MenuDong> findAllByIsParent(int isParent) {
-        return repository.findAllByIsParent(isParent);
+        return menuDongRepo.findAllByIsParent(isParent);
     }
 
     public List<MenuDong> findAllByIsVisible(int isVisible) {
-        return repository.findAllByIsVisible(isVisible);
+        return menuDongRepo.findAllByIsVisible(isVisible);
     }
 
     public Optional<MenuDong> findById(int id) {
-        return repository.findById(id);
+        return menuDongRepo.findById(id);
     }
 
     public MenuDong save(MenuDong obj) {
-        return repository.save(obj);
+        return menuDongRepo.save(obj);
     }
     public void deleteById(int id) {
-        repository.deleteById(id);
+        menuDongRepo.deleteById(id);
     }
 
 }

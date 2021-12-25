@@ -4,14 +4,17 @@ import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.SettingService;
-import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 
 import java.util.List;
 
+@Data
 public class WebController {
+
+    private String title;
 
     @Autowired
     private SettingService settingService;
@@ -20,14 +23,14 @@ public class WebController {
     private MenuDongService menuDongService;
 
     public void setBootstrapAndJquery(Model model) {
-        model.addAttribute("bootstrapCss", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_CSS);
-        model.addAttribute("bootstrapJs", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
-        model.addAttribute("jquery", UtilHost.LOCALHOST + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
+        model.addAttribute("bootstrapCss", UtilCon.localhost + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_CSS);
+        model.addAttribute("bootstrapJs", UtilCon.localhost + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
+        model.addAttribute("jquery", UtilCon.localhost + UtilCon.FOR_SL + UtilCon.BOOTSTRAP_JS);
     }
 
     public void setCommon(Model model, String title) {
         // set host
-        model.addAttribute("host", UtilHost.LOCALHOST);
+        model.addAttribute("host", UtilCon.localhost);
         // set title
         model.addAttribute("title", title);
         setBootstrapAndJquery(model);

@@ -1,6 +1,6 @@
 -- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Win32 (AMD64)
 --
--- Host: localhost    Database: Spring_Web_Ban_Hang
+-- Host: localhost    Database: spring_web_ban_hang
 -- ------------------------------------------------------
 -- Server version	10.1.31-MariaDB
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `Spring_Web_Ban_Hang`
+-- Current Database: `spring_web_ban_hang`
 --
 
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `spring_web_ban_hang` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `Spring_Web_Ban_Hang`;
+USE `spring_web_ban_hang`;
 
 --
 -- Table structure for table `tbl_menu_dong`
@@ -176,4 +176,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-22 23:06:26
+-- Dump completed on 2021-12-25  0:00:59

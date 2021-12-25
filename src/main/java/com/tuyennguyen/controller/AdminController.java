@@ -30,7 +30,9 @@ public class AdminController extends WebController {
         log.debug("Go to: /admin-login");
 
         try {
-            setCommon(model, TITLE);
+            // set title of html page
+            setTitle("Admin");
+            setCommon(model, getTitle());
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
@@ -44,7 +46,9 @@ public class AdminController extends WebController {
         log.debug("Go to: /admin");
 
         try {
-            setCommon(model, TITLE);
+            // set title of html page
+            setTitle("Admin");
+            setCommon(model, getTitle());
 
             List<Product> listProduct = null;
             model.addAttribute("listProduct", listProduct);

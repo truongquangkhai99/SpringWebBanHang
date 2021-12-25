@@ -1,27 +1,27 @@
 
-<!-- Liên hệ -->
-<div id="lien-he" class="maTo20">
+<!-- Ý kiến -->
+<div id="y-kien" class="maTo20">
 
     <div class="container contact-form">
 
-        <form method="post">
-            <h5 class="maBo18">Liên hệ</h5>
+        <form method="post" th:action="@{admin/y-kien/save}">
+            <h5 class="maBo18">Gửi ý kiến góp ý</h5>
 
             <div class="row">
                 <div class="col-md-6">
                     <!-- Họ Tên -->
                     <div class="form-group">
-                        <input type="text" name="txtName" class="form-control" placeholder="Họ tên *" value="" />
+                        <input type="text" name="fullName" class="form-control" placeholder="Họ tên *" value="" />
                     </div>
 
                     <!-- Email -->
                     <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Email *" value="" />
+                        <input type="text" name="email" class="form-control" placeholder="Email *" value="" />
                     </div>
 
                     <!-- Phone -->
                     <div class="form-group">
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Phone *" value="" />
+                        <input type="text" name="phone" class="form-control" placeholder="Phone *" value="" />
                     </div>
 
                     <!-- Show Phone -->
@@ -40,7 +40,7 @@
                 <!-- Nội dung -->
                 <div class="col-md-6">
                     <div class="form-group">
-                        <textarea name="txtMsg" class="form-control" placeholder="Nội dung *" style="width: 100%; height: 150px;"></textarea>
+                        <textarea name="yKien" class="form-control" placeholder="Nội dung *" style="width: 100%; height: 150px;"></textarea>
                     </div>
                 </div>
             </div>

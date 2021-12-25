@@ -5,7 +5,6 @@ import com.tuyennguyen.entity.User;
 import com.tuyennguyen.repository.UserRepository;
 import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.EnumRole;
-import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,10 +36,11 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user");
 
         try {
-            String TITLE = "User";
+            // set title of html page
+            setTitle("User");
             // backup db
             UtilCon.backUpDb();
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             //set list
             List<User> listUser = userService.findAll();
@@ -60,9 +60,10 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user/them");
 
         try {
-            String TITLE = "Thêm User";
+            // set title of html page
+            setTitle("Thêm User");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);
@@ -100,7 +101,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + USER + "/edit/{id}")
@@ -109,9 +110,10 @@ public class UserController extends WebController {
         log.debug("Go to: /admin/user/edit/" + id);
 
         try {
-            String TITLE = "Sửa User";
+            // set title of html page
+            setTitle("Sửa User");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);
@@ -149,7 +151,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + USER + "/delete/{id}")
@@ -163,7 +165,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + USER);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + USER);
     }
 
     private List<Role> getListRole() {

@@ -1,6 +1,6 @@
 -- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Win32 (AMD64)
 --
--- Host: localhost    Database: Spring_Web_Ban_Hang
+-- Host: localhost    Database: spring_web_ban_hang
 -- ------------------------------------------------------
 -- Server version	10.1.31-MariaDB
 
@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `Spring_Web_Ban_Hang`
+-- Current Database: `spring_web_ban_hang`
 --
 
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `spring_web_ban_hang` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `Spring_Web_Ban_Hang`;
+USE `spring_web_ban_hang`;
 
 --
 -- Table structure for table `tbl_menu_dong`
@@ -166,6 +166,32 @@ LOCK TABLES `tbl_user` WRITE;
 INSERT INTO `tbl_user` VALUES (1,'nguyenvantuyen6789','123456','Phú Đô','nguyenvantuyen6789@gmail.com','Tuyên Nguyễn','Nam','Admin'),(2,'nguyenvantuyen67891','123456','Phú Đô','nguyenvantuyen67891@gmail.com','Tuyên Nguyễn 3','Nam','User'),(11,'nguyenvantuyen67892','123456','','nguyenvantuyen67892@gmail.com','Tuyên Nguyễn','Nam','Admin'),(12,'nguyenvantuyen67893','123456','','nguyenvantuyen67893@gmail.com','Tuyên Nguyễn','Nam','Admin');
 /*!40000 ALTER TABLE `tbl_user` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_y_kien`
+--
+
+DROP TABLE IF EXISTS `tbl_y_kien`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_y_kien` (
+  `y_kien_id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `full_name` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `y_kien` text,
+  PRIMARY KEY (`y_kien_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_y_kien`
+--
+
+LOCK TABLES `tbl_y_kien` WRITE;
+/*!40000 ALTER TABLE `tbl_y_kien` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_y_kien` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -176,4 +202,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-22 23:06:33
+-- Dump completed on 2021-12-25  0:27:37

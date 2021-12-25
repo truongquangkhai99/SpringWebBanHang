@@ -7,7 +7,6 @@ import com.tuyennguyen.repository.ProductRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.FileUploadUtil;
-import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,11 +43,12 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product");
 
         try {
-            String TITLE = "Product";
+            // set title of html page
+            setTitle("Product");
             // backup db
             UtilCon.backUpDb();
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             //set list
             setListProduct(model, UtilCon.VISIBLE_ITEM);
@@ -67,9 +67,10 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/them");
 
         try {
-            String TITLE = "Thêm Product";
+            // set title of html page
+            setTitle("Thêm Product");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             model.addAttribute(UtilCon.OBJ, new Product());
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
@@ -103,7 +104,7 @@ public class ProductController extends WebController {
 
                 String imageName = imageFile.getOriginalFilename();
                 if (!UtilCon.EMPTY.equals(imageName)) {
-                    FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                    FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                     obj.setImageName(imageName);
                 }
                 productService.save(obj);
@@ -112,7 +113,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
@@ -121,9 +122,10 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/edit/" + id);
 
         try {
-            String TITLE = "Sửa Product";
+            // set title of html page
+            setTitle("Sửa Product");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
             setListMenuDongCha(model, UtilCon.PARENT);
 
             Product obj = productService.findById(id).get();
@@ -152,7 +154,7 @@ public class ProductController extends WebController {
 
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
-                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.IMAGE_FOLDER, imageName, imageFile);
+                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                 obj.setImageName(imageName);
             }
 
@@ -161,7 +163,7 @@ public class ProductController extends WebController {
         } catch (Exception e) {
             UtilCon.logData(log, e);
         }
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/product");
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/product");
     }
 
     @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
@@ -176,7 +178,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PRODUCT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PRODUCT);
     }
 
     @GetMapping(value = "/" + PRODUCT + "/filter/{filterItem}")
@@ -185,9 +187,10 @@ public class ProductController extends WebController {
         log.debug("Go to: /admin/product/filter/" + filterItem);
 
         try {
-            String TITLE = "Product";
+            // set title of html page
+            setTitle("Product");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             setListProduct(model, filterItem);
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);

@@ -3,7 +3,6 @@ package com.tuyennguyen.controller;
 import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.repository.MenuDongRepository;
 import com.tuyennguyen.serivce.MenuDongService;
-import com.tuyennguyen.util.UtilHost;
 import com.tuyennguyen.util.UtilCon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -98,7 +97,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + PAGE);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
     @GetMapping(value = "/" + MENU_DONG + "/edit/{id}")
@@ -107,9 +106,10 @@ public class MenuDongController extends WebController {
         log.debug("Go to: /admin/menu-dong/edit/" + id);
 
         try {
-            String TITLE = "Sửa Menu Động";
+            // set title of html page
+            setTitle("Sửa Menu Động");
             // set host, bootstrap
-            setCommon(model, TITLE);
+            setCommon(model, getTitle());
 
             MenuDong obj = menuDongService.findById(id).get();
             model.addAttribute("menuDong", obj);
@@ -138,7 +138,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/menu-dong");
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/menu-dong");
     }
 
     @GetMapping(value = "/" + MENU_DONG + "/delete/{id}")
@@ -152,7 +152,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilHost.LOCALHOST + "/admin/" + MENU_DONG);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + MENU_DONG);
     }
 
 }
