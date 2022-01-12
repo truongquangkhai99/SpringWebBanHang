@@ -4,6 +4,7 @@ import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.serivce.SettingService;
 import com.tuyennguyen.util.FileUploadUtil;
 import com.tuyennguyen.util.UtilCon;
+import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,7 @@ public class SettingController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + SETTING + "/update")

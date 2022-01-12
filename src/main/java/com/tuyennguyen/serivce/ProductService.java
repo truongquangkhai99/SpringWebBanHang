@@ -26,38 +26,38 @@ public class ProductService {
     }
 
     public List<ProductMap> getListProductMap(int type) {
-        String sql = "";
-        sql += "SELECT";
-        sql += "    a.product_id            productId                       , ";
-        sql += "    a.is_visible            isVisible                       , ";
-        sql += "    a.product_name          productName                     , ";
-        sql += "    a.favourite             favourite                       , ";
-        sql += "    a.price                 price                           , ";
-        sql += "    a.quantity              quantity                        , ";
-        sql += "    a.sale                  sale                            , ";
-        sql += "    b.menu_name             menuName                        , ";
-        sql += "    a.image_name            imageName                       , ";
-        sql += "    a.gia_con_lai           giaConLai                         ";
-        sql += "FROM                                                          ";
-        sql += "    TBL_PRODUCT a JOIN      TBL_MENU_DONG b                   ";
-        sql += "                   ON       a.menu_dong_id = b.menu_dong_id   ";
+        StringBuilder sql = new StringBuilder();
+        sql.append("SELECT                                                          ");
+        sql.append("    a.product_id            productId                         , ");
+        sql.append("    a.is_visible            isVisible                         , ");
+        sql.append("    a.product_name          productName                       , ");
+        sql.append("    a.favourite             favourite                         , ");
+        sql.append("    a.price                 price                             , ");
+        sql.append("    a.quantity              quantity                          , ");
+        sql.append("    a.sale                  sale                              , ");
+        sql.append("    b.menu_name             menuName                          , ");
+        sql.append("    a.image_name            imageName                         , ");
+        sql.append("    a.gia_con_lai           giaConLai                           ");
+        sql.append("FROM                                                            ");
+        sql.append("    tbl_product a JOIN      tbl_menu_dong b                     ");
+        sql.append("                   ON       a.menu_dong_id = b.menu_dong_id     ");
 
         if (type == UtilCon.ALL_ITEM) {
             // do nothing
         } else if (type == UtilCon.FAVOURITE_ITEM) {
-            sql += "WHERE                                                     ";
-            sql += "    a.favourite     = 1                                   ";
+            sql.append("WHERE                                                       ");
+            sql.append("    a.favourite     = 1                                     ");
 
         } else if (type == UtilCon.INVISIBLE_ITEM) {
-            sql += "WHERE                                                     ";
-            sql += "    a.is_visible    = 0                                   ";
+            sql.append("WHERE                                                       ");
+            sql.append("    a.is_visible    = 0                                     ");
         } else if (type == UtilCon.VISIBLE_ITEM) {
-            sql += "WHERE                                                     ";
-            sql += "    a.is_visible    = 1                                   ";
+            sql.append("WHERE                                                       ");
+            sql.append("    a.is_visible    = 1                                     ");
         }
 
-        Query sqlQuery = entityManager.createNativeQuery(sql, "listProductWithMenuName");
-
+        System.out.println(sql.toString().replaceAll(" +", " "));
+        Query sqlQuery = entityManager.createNativeQuery(sql.toString(), "listProductMapName");
         List<ProductMap> listProductMap = sqlQuery.getResultList();
 
         return listProductMap;

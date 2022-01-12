@@ -5,14 +5,16 @@
 
     <form th:action="@{/admin/menu-dong/update}" method="post">
         <!-- menu động id hidden -->
-        <input type="hidden" th:field="*{menuDong.menuDongId}">
+        <input type="hidden" name="menuDongId" id="menuDongId"
+               th:value="${menuDong != null ? menuDong.getMenuDongId() : 0}">
 
         <!-- Menu name -->
         <div class="form-group row">
             <label class="col-sm-4">Menu Name</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuName}" required>
+                <input type="text" class="form-control form-control-sm" name="menuName" id="menuName"
+                       th:value="${menuDong != null ? menuDong.getMenuName() : ''}" required>
             </div>
         </div>
 
@@ -21,7 +23,8 @@
             <label class="col-sm-4">Menu Link</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuLink}">
+                <input type="text" class="form-control form-control-sm" name="menuLink" id="menuLink"
+                       th:value="${menuDong != null ? menuDong.getMenuLink() : ''}">
             </div>
         </div>
 
@@ -30,7 +33,8 @@
             <label class="col-sm-4">Thứ Tự</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.menuOrder}">
+                <input type="text" class="form-control form-control-sm" name="menuOrder" id="menuOrder"
+                       th:value="${menuDong != null ? menuDong.getMenuOrder() : 0}">
             </div>
         </div>
 
@@ -39,7 +43,8 @@
             <label class="col-sm-4">Is Parent</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isParent}">
+                <input type="text" class="form-control form-control-sm" name="isParent" id="isParent"
+                       th:value="${menuDong != null ? menuDong.getIsParent() : 0}">
             </div>
         </div>
 
@@ -48,7 +53,8 @@
             <label class="col-sm-4">Parent Id</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.parentId}">
+                <input type="text" class="form-control form-control-sm" name="parentId" id="parentId"
+                       th:value="${menuDong != null ? menuDong.getParentId() : 0}">
             </div>
         </div>
 
@@ -57,7 +63,8 @@
             <label class="col-sm-4">Description</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.description}">
+                <input type="text" class="form-control form-control-sm" name="description" id="description"
+                       th:value="${menuDong != null ? menuDong.getDescription() : ''}">
             </div>
         </div>
 
@@ -66,7 +73,8 @@
             <label class="col-sm-4">Is Visible</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.isVisible}">
+                <input type="text" class="form-control form-control-sm" name="isVisible" id="isVisible"
+                       th:value="${menuDong != null ? menuDong.getIsVisible() : 0}">
             </div>
         </div>
 
@@ -74,10 +82,11 @@
             <label class="col-sm-4">Màu Sắc</label>
 
             <div class="col-sm-1">
-                <span class="div-square wi10 he10 boRa8" th:style="'background-color:' + @{${menuDong.color}}"></span>
+                <span class="div-square wi10 he10 boRa8" th:if="${menuDong != null}" th:style="'background-color:' + @{${menuDong.color}}"></span>
             </div>
             <div class="col-sm-7">
-                <input type="text" class="form-control form-control-sm" th:field="*{menuDong.color}">
+                <input type="text" class="form-control form-control-sm" name="color" id="color"
+                       th:value="${menuDong != null ? menuDong.getColor() : ''}">
             </div>
         </div>
 

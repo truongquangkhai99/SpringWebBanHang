@@ -113,11 +113,11 @@
         <div th:switch="${page}" th:case="product">
             <div th:insert="admin/product/product.html::#product-list"></div>
         </div>
-
+        <!-- Product Thêm -->
         <div th:switch="${page}" th:case="product-them">
-            <div th:insert="admin/product/product-them.html::#product-them"></div>
+            <div th:insert="admin/product/product-edit.html::#product-edit"></div>
         </div>
-
+        <!-- Product Edit -->
         <div th:switch="${page}" th:case="product-edit">
             <div th:insert="admin/product/product-edit.html::#product-edit"></div>
         </div>
@@ -126,11 +126,11 @@
         <div th:switch="${page}" th:case="user">
             <div th:insert="admin/user/user.html::#user-list"></div>
         </div>
-
+        <!-- User Thêm -->
         <div th:switch="${page}" th:case="user-them">
-            <div th:insert="admin/user/user-them.html::#user-them"></div>
+            <div th:insert="admin/user/user-edit.html::#user-edit"></div>
         </div>
-
+        <!-- User Edit-->
         <div th:switch="${page}" th:case="user-edit">
             <div th:insert="admin/user/user-edit.html::#user-edit"></div>
         </div>
@@ -139,11 +139,11 @@
         <div th:switch="${page}" th:case="menu-dong">
             <div th:insert="admin/menu-dong/menu-dong.html::#menu-dong-list"></div>
         </div>
-
+        <!-- Menu Động Thêm -->
         <div th:switch="${page}" th:case="menu-dong-them">
-            <div th:insert="admin/menu-dong/menu-dong-them.html::#menu-dong-them"></div>
+            <div th:insert="admin/menu-dong/menu-dong-edit.html::#menu-dong-edit"></div>
         </div>
-
+        <!-- Menu Động Edit -->
         <div th:switch="${page}" th:case="menu-dong-edit">
             <div th:insert="admin/menu-dong/menu-dong-edit.html::#menu-dong-edit"></div>
         </div>

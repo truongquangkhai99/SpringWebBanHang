@@ -1,9 +1,0 @@
-2021-12-03 07:35:44,485 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
-2021-12-03 07:35:44,501 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
-2021-12-03 07:35:44,651 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
-2021-12-03 07:35:44,651 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
-2021-12-03 07:35:45,107 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.12 on Admin with PID 13352 (D:\Hoc Lap Trinh\Spring\SpringWebBanHang\target\classes started by HP in D:\Hoc Lap Trinh\Spring\SpringWebBanHang)
-2021-12-03 07:35:45,107 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
-2021-12-03 07:35:45,107 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-12-03 07:35:47,605 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.949 seconds (JVM running for 5.536)
-2021-12-03 07:36:10,501 DEBUG com.tuyennguyen.controller.ClientController [http-nio-8080-exec-1] Go to client/pathProduct

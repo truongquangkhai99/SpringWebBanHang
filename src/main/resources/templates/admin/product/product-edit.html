@@ -4,17 +4,19 @@
     <h4>Sửa Sản Phẩm</h4>
 
     <form th:action="@{{host}/admin/product/update (host=${host})}" method="post" enctype="multipart/form-data">
-        <input type="hidden" th:field="*{product.productId}">
+        <input type="hidden" name="productId" id="productId"
+                    th:value="${product != null ? product.getProductId() : 0}">
 
         <div class="form-group row">
             <label class="col-sm-4">Product Name</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm poAb wi91Pe" th:field="*{product.productName}"
-                       required>
+                <input type="text" class="form-control form-control-sm poAb wi91Pe" name="productName" id="productName"
+                            th:value="${product != null ? product.getProductName() : ''}" required>
 
-                <input type="hidden" th:field="*{product.favourite}">
-                <i th:class="${product.favourite == 0 ? 'coGr' : 'coRe'} + ' far fa-star cuPo poRe le260 to3'" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
+                <input type="hidden" name="favourite" id="favourite"
+                            th:value="${product != null ? product.getFavourite() : 0}">
+                <i th:class="${product != null && product.favourite == 0 ? 'coGr' : 'coRe'} + ' far fa-star cuPo poRe le260 to3'" onclick='updateFavourite(this, "favourite")' title="Sản phẩm yêu thích: no"></i>
                 <script th:inline="javascript">
                     function updateFavourite(e, data) {
                         let className = event.target.className;
@@ -39,7 +41,8 @@
             <label class="col-sm-4">Description</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" th:field="*{product.description}">
+                <input type="text" class="form-control form-control-sm" name="description" id="description"
+                        th:value="${product != null ? product.getDescription() : ''}">
             </div>
         </div>
 
@@ -47,8 +50,8 @@
             <label class="col-sm-4">Price</label>
 
             <div class="col-sm-8">
-                <input type="text" class="form-control form-control-sm text-right" th:field="${product.price}"
-                        onkeyup="calculateSale(this)" required>
+                <input type="text" class="form-control form-control-sm text-right" name="price" id="price"
+                        th:value="${product != null ? product.getPrice() : 0}" onkeyup="calculateSale(this)" required>
             </div>
         </div>
 
@@ -56,8 +59,9 @@
             <!-- sale -->
             <label class="col-sm-4">Sale</label>
             <div class="col-sm-1">
-                <input type="hidden" th:field="*{product.sale}">
-                <i th:class="${product.sale == 0 ? 'text-secondary' : 'text-primary'} + ' fas fa-dollar-sign cuPo foSi14'" onclick='toggleSale(this, "sale")' title="hiển thị: no"></i>
+                <input type="hidden" name="sale" id="sale" th:value="${product != null ? product.getSale() : 0}">
+
+                <i th:class="${product != null && product.sale == 0 ? 'text-secondary' : 'text-primary'} + ' fas fa-dollar-sign cuPo foSi14'" onclick='toggleSale(this, "sale")' title="hiển thị: no"></i>
                 <script th:inline="javascript">
                     function toggleSale(e, idData) {
 
@@ -94,14 +98,14 @@
 
             <div class="col-sm-2">
                 <!-- Sale percent -->
-                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm poAb wi75Pe'"
-                       onkeyup="calculateSale(this)" th:field="*{product.salePercent}" pattern="^([0-9]|\d\d|100)$">
+                <input type="text" th:class="${product != null && product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm poAb wi75Pe'"
+                       onkeyup="calculateSale(this)" name="salePercent" id="salePercent" pattern="^([0-9]|\d\d|100)$">
                 <!-- Symbol percent -->
-                <label th:class="${product.sale == 1 ? '' : 'diNo'} + ' symbol-percent text-secondary cuTe'" id="symbolPercent" for="salePercent">%</label>
+                <label th:class="${product != null && product.sale == 1 ? '' : 'diNo'} + ' symbol-percent text-secondary cuTe'" id="symbolPercent" for="salePercent">%</label>
             </div>
             <div class="col-sm-5">
                 <!-- Sale price -->
-                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-secondary foSi14 text-right'" th:field="${product.salePrice}" readonly style="text-decoration: line-through;">
+                <input type="text" th:class="${product != null && product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-secondary foSi14 text-right'" name="salePrice" id="salePrice" readonly style="text-decoration: line-through;">
             </div>
         </div>
 
@@ -109,7 +113,7 @@
             <label class="col-sm-4">Giá Còn Lại</label>
 
             <div class="col-sm-8">
-                <input type="text" th:class="${product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-right foWe500 text-primary'" readonly th:field="*{product.giaConLai}">
+                <input type="text" th:class="${product != null && product.sale == 1 ? '' : 'diNo'} + ' form-control form-control-sm text-right foWe500 text-primary'" name="giaConLai" id="giaConLai" readonly>
             </div>
         </div>
 
@@ -129,12 +133,12 @@
             <div class="col-sm-8">
                 <div class="form-group row">
                     <div class="col-sm-4 paRi0">
-                        <img th:src="@{'/image/' + ${product.imageName}}" th:if="${product.imageName != null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
-                        <img th:src="@{'/image/img_not_available.png'}" th:if="${product.imageName == null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
+                        <img th:src="@{'/image/' + ${product.imageName}}" th:if="${product != null && product.imageName != null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
+                        <img th:src="@{'/image/img_not_available.png'}" th:if="${product == null || product.imageName == null}" class="rounded wi100Pe" alt="Ảnh Sản Phẩm">
                     </div>
 
                     <div class="col-sm-8">
-                        <input type="hidden" th:field="*{product.imageName}">
+                        <input type="hidden" name="imageName" id="imageName" th:value="${product != null ? product.getImageName() : ''}">
                         <input type="file" name="imageFile" class="form-control-file">
                     </div>
                 </div>
@@ -145,7 +149,7 @@
             <label class="col-sm-4">Quantity</label>
 
             <div class="col-sm-8">
-                <input type="number" class="form-control form-control-sm" th:field="*{product.quantity}">
+                <input type="number" name="quantity" id="quantity" th:value="${product != null ? product.getQuantity() : 0}" class="form-control form-control-sm">
             </div>
         </div>
 
@@ -153,9 +157,9 @@
             <label class="col-sm-4">Visible</label>
 
             <div class="col-sm-8">
-                <input type="hidden" th:field="*{product.isVisible}">
+                <input type="hidden" name="isVisible" id="isVisible" th:value="${product != null ? product.getIsVisible() : 1}">
 
-                <i th:class="${product.isVisible == 0 ? 'fas fa-eye-slash text-secondary' : 'fas fa-eye text-success'} + ' cuPo foSi20'" class="fas fa-eye-slash text-secondary" onclick='updateIsVisible(this, "isVisible")' title="hiển thị: no"></i>
+                <i th:class="${product != null && product.isVisible == 0 ? 'fas fa-eye-slash text-secondary' : 'fas fa-eye text-success'} + ' cuPo foSi20'" class="fas fa-eye-slash text-secondary" onclick='updateIsVisible(this, "isVisible")' title="hiển thị: no"></i>
                 <script th:inline="javascript">
                     function updateIsVisible(e, idData) {
                         let className = event.target.className;

@@ -11,8 +11,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "TBL_Product")
-@SqlResultSetMapping(name = "listProductWithMenuName", classes = {
+@Table(name = "tbl_product")
+@SqlResultSetMapping(name = "listProductMapName", classes = {
     @ConstructorResult(targetClass = ProductMap.class, columns = {
         @ColumnResult(name = "productId", type = Integer.class),
         @ColumnResult(name = "isVisible", type = Integer.class),

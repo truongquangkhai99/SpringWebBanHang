@@ -6,6 +6,8 @@ import com.tuyennguyen.repository.UserRepository;
 import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.EnumRole;
 import com.tuyennguyen.util.UtilCon;
+import com.tuyennguyen.util.UtilDb;
+import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +41,7 @@ public class UserController extends WebController {
             // set title of html page
             setTitle("User");
             // backup db
-            UtilCon.backUpDb();
+            UtilDb.backUpDb();
             setCommon(model, getTitle());
 
             //set list
@@ -51,7 +53,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @GetMapping(value = "/" + USER + "/them")
@@ -75,7 +77,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + USER + "/save")
@@ -126,7 +128,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + USER + "/update")

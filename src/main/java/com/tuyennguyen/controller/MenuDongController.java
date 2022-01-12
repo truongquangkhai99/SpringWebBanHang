@@ -4,6 +4,8 @@ import com.tuyennguyen.entity.MenuDong;
 import com.tuyennguyen.repository.MenuDongRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.util.UtilCon;
+import com.tuyennguyen.util.UtilDb;
+import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +41,7 @@ public class MenuDongController extends WebController {
         try {
             String TITLE = "Menu Động";
             // backup db
-            UtilCon.backUpDb();
+            UtilDb.backUpDb();
             // set host, bootstrap
             setCommon(model, TITLE);
             //set list
@@ -51,7 +53,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @GetMapping(value = "/" + MENU_DONG + "/them")
@@ -70,7 +72,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + MENU_DONG + "/save")
@@ -119,7 +121,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + MENU_DONG + "/update")

@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ProductMap {
 
-    private int productId;
+    private Integer productId;
 
     private Integer isVisible;
 

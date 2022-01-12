@@ -7,77 +7,10 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
-import java.io.IOException;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 @Configuration
 public class UtilCon {
-
-    /**
-     * String backup
-     */
-    private static String backup;
-
-    @Value("${backup}")
-    public void setBackUp(String backup) {
-        this.backup = backup;
-    }
-
-    /**
-     * String dbName
-     */
-    public static String dbName;
-
-    @Value("${dbName}")
-    public void setDbName(String dbName) {
-        this.dbName = dbName;
-    }
-
-    /**
-     * String username
-     */
-    public static String username;
-
-    @Value("${user_name}")
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    /**
-     * String password
-     */
-    public static String password;
-
-    @Value("${password}")
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setBackupFolder(String backupFolder) {
-        this.backupFolder = backupFolder;
-    }
-
-    /**
-     * String admin
-     */
-    public static String admin;
-
-    @Value("${admin}")
-    public void setAdmin(String admin) {
-        this.admin = admin;
-    }
-
-    /**
-     * String client
-     */
-    public static String client;
-
-    @Value("${client}")
-    public void setClient(String client) {
-        this.client = client;
-    }
 
     /**
      * String imageFolder
@@ -95,8 +28,6 @@ public class UtilCon {
     public void setLocalhost(String localhost) {
         this.localhost = localhost;
     }
-
-    public static String backupFolder       = "\"D:\\Hoc Lap Trinh\\Spring\\SpringWebBanHang\\src\\main\\resources\\static\\backup_db\\\"";
 
     public static final String OBJ           = "obj";
     public static final String EMPTY         = "";
@@ -154,16 +85,6 @@ public class UtilCon {
     // invisible item of product
     public static int VISIBLE_ITEM           = 4;
 
-    public static String goAdmin() {
-        return UtilCon.FOR_SL + admin + UtilCon.FOR_SL + admin + ".html";
-    }
-
-    public static String toAdmin(String htmlFileName) {
-        String folder = htmlFileName;
-        String path = getPathHtmlFileName(folder, htmlFileName, true);
-
-        return path;
-    }
 
     public static String toAdmin(String folder, String htmlFileName) {
         String path = getPathHtmlFileName(folder, htmlFileName, true);
@@ -180,17 +101,16 @@ public class UtilCon {
         return UtilCon.REDICRECT + localhost + "/home";
     }
 
+    public static String toAdmin(String htmlFileName) {
+        String folder = htmlFileName;
+        String path = getPathHtmlFileName(folder, htmlFileName, true);
+
+        System.out.println("path");
+        System.out.println(path);
+        return path;
+    }
     private static String getPathHtmlFileName(String folder, String htmlFileName, boolean isAdmin) {
         String path = "";
-        if (isAdmin == true) {
-            path += admin;
-        } else {
-            path += client;
-        }
-
-        path += UtilCon.FOR_SL + folder;
-        path += UtilCon.FOR_SL + htmlFileName;
-
         return path;
     }
 
@@ -232,7 +152,7 @@ public class UtilCon {
     }
 
     public static void print(String sql) {
-        System.out.println(sql.replaceAll("\\s{2,}"," "));
+        System.out.println(sql.replaceAll(" +"," "));
     }
 
     public static void logData(Logger log, Exception e) {
@@ -243,27 +163,6 @@ public class UtilCon {
         System.out.println(e.getMessage());
         System.out.println("====");
         System.out.println("");
-    }
-
-    public static void backUpDb() {
-        Date currentDate = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        String sdfDate = sdf.format(currentDate);
-        String FILE_NAME = backupFolder + backup + "_" + sdfDate + ".sql";
-
-        String cmd = "";
-        if (EMPTY.equals(password)) {
-            cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " --databases " + dbName + " > " + FILE_NAME;
-        } else {
-            cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " -p" + password + " --databases " + dbName + " > " + FILE_NAME;
-        }
-
-        try {
-            String[] command = {"cmd", "/c", cmd};
-            Runtime.getRuntime().exec(command);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
     }
 
 }

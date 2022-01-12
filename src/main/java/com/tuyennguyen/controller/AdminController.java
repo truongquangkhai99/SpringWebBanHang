@@ -2,9 +2,9 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Product;
 import com.tuyennguyen.entity.User;
-import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.serivce.UserService;
 import com.tuyennguyen.util.UtilCon;
+import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,7 +60,7 @@ public class AdminController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
 }

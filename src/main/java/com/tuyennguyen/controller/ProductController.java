@@ -8,6 +8,8 @@ import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
 import com.tuyennguyen.util.FileUploadUtil;
 import com.tuyennguyen.util.UtilCon;
+import com.tuyennguyen.util.UtilDb;
+import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +48,7 @@ public class ProductController extends WebController {
             // set title of html page
             setTitle("Product");
             // backup db
-            UtilCon.backUpDb();
+            UtilDb.backUpDb();
             // set host, bootstrap
             setCommon(model, getTitle());
 
@@ -58,7 +60,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @GetMapping(value = "/" + PRODUCT + "/them")
@@ -80,7 +82,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + PRODUCT + "/save")
@@ -138,7 +140,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     @PostMapping(value = "/" + PRODUCT + "/update")
@@ -199,7 +201,7 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.goAdmin();
+        return UtilPath.toAdmin();
     }
 
     public void setListMenuDong(Model model) {
