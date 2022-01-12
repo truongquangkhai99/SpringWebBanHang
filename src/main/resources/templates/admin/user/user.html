@@ -50,7 +50,7 @@
                         <i class="fas fa-edit"></i>
                     </a>
 
-                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal(${obj.userId})|' title="delete">
+                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/user/delete/" + ${obj.userId})|' title="delete">
                         <i class="far fa-trash-alt"></i>
                     </a>
                 </td>
@@ -97,13 +97,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        $(document).ready(function() {
-
-        });
-        function showModal(id) {
-            $(".btn-delete").attr("href", "/admin/user/delete/" + id);
-        }
-    </script>
 </div>
