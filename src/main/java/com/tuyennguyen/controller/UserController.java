@@ -24,7 +24,6 @@ import java.util.List;
 public class UserController extends WebController {
 
     Logger log = LoggerFactory.getLogger(UserController.class);
-    private static final String USER = "user";
 
     @Autowired
     private UserService userService;
@@ -32,7 +31,7 @@ public class UserController extends WebController {
     @Autowired
     private UserRepository userRepo;
 
-    @GetMapping(value = "/" + USER)
+    @GetMapping("/user")
     public String showList(Model model) {
         // log info
         log.debug("Go to: /admin/user");
@@ -56,7 +55,7 @@ public class UserController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @GetMapping(value = "/" + USER + "/them")
+    @GetMapping("/user/them")
     public String them(Model model) {
         // log info
         log.debug("Go to: /admin/user/them");
@@ -80,7 +79,7 @@ public class UserController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + USER + "/save")
+    @PostMapping("/user/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) User obj) {
         // log info
         log.debug("Go to: /admin/user/save/" + obj.getUserId());
@@ -106,7 +105,7 @@ public class UserController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + USER + "/edit/{id}")
+    @GetMapping("/user/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
         // log info
         log.debug("Go to: /admin/user/edit/" + id);
@@ -121,7 +120,7 @@ public class UserController extends WebController {
             model.addAttribute("listRole", listRole);
 
             User obj = userService.findById(id).get();
-            model.addAttribute(USER, obj);
+            model.addAttribute("user", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.USER_EDIT);
 
         } catch (Exception e) {
@@ -131,7 +130,7 @@ public class UserController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + USER + "/update")
+    @PostMapping("/user/update")
     public ModelAndView update(@ModelAttribute(UtilCon.OBJ) User obj) {
         // log info
         log.debug("Go to: /admin/user/update/" + obj.getUserId());
@@ -156,7 +155,7 @@ public class UserController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + USER + "/delete/{id}")
+    @GetMapping("/user/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         // log info
         log.debug("Go to: /admin/user/delelte/" + id);
@@ -167,7 +166,7 @@ public class UserController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + USER);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/user");
     }
 
     private List<Role> getListRole() {

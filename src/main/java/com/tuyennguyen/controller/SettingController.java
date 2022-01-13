@@ -20,12 +20,10 @@ public class SettingController extends WebController {
 
     Logger log = LoggerFactory.getLogger(SettingController.class);
 
-    private static final String SETTING = "setting";
-
     @Autowired
     private SettingService settingService;
 
-    @GetMapping(value = "/" + SETTING + "/edit/{id}")
+    @GetMapping("/setting/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
         // log info
         log.debug("Go to: /admin/setting/edit/" + id);
@@ -37,7 +35,7 @@ public class SettingController extends WebController {
             setCommon(model, getTitle());
 
             Setting obj = settingService.findById(id).get();
-            model.addAttribute(SETTING, obj);
+            model.addAttribute("setting", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.SETTING_EDIT);
 
             setListMenuDong(model);
@@ -48,8 +46,8 @@ public class SettingController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + SETTING + "/update")
-    public ModelAndView update(@ModelAttribute(SETTING) Setting obj,
+    @PostMapping("/setting/update")
+    public ModelAndView update(@ModelAttribute("setting") Setting obj,
                                @RequestParam("imageFile") MultipartFile imageFile) {
         // log info
         log.debug("Go to: /admin/product/update/" + obj.getSettingId());

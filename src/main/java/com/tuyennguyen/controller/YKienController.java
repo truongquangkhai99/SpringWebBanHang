@@ -20,7 +20,7 @@ public class YKienController extends WebController {
     @Autowired
     private YKienService yKienService;
 
-    @PostMapping(value = "/" + Y_KIEN + "/save")
+    @PostMapping("/y-kien/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) YKien obj) {
         // log info
         log.debug("Go to: /admin/y-kien/save/");

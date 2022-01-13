@@ -21,10 +21,8 @@ public class AdminController extends WebController {
     private UserService userService;
 
     Logger log = LoggerFactory.getLogger(AdminController.class);
-    private static final String ADMIN = "admin";
-    private static final String TITLE = ADMIN;
 
-    @GetMapping(value = "/admin-login")
+    @GetMapping("/admin-login")
     public String login(Model model) {
         // log info
         log.debug("Go to: /admin-login");
@@ -40,7 +38,7 @@ public class AdminController extends WebController {
         return UtilCon.toAdmin("admin-login");
     }
 
-    @GetMapping(value = "/admin")
+    @GetMapping("/admin")
     public String admin(Model model) {
         // log info
         log.debug("Go to: /admin");

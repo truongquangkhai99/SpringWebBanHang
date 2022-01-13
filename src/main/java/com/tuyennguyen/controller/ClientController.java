@@ -23,7 +23,6 @@ import java.util.List;
 public class ClientController extends WebController {
 
     Logger log = LoggerFactory.getLogger(ClientController.class);
-    private static final String CLIENT = "client";
 
     @Autowired
     private MenuDongService mainService;
@@ -64,10 +63,10 @@ public class ClientController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.toClient(CLIENT);
+        return UtilCon.toClient("client");
     }
 
-    @GetMapping(value = {"/san-pham/{menuLink}"})
+    @GetMapping({"/san-pham/{menuLink}"})
     public String showProduct(@PathVariable("menuLink") String menuLink, Model model) {
         // log info
         log.debug("Go to: /san-pham/" + menuLink);
@@ -89,10 +88,10 @@ public class ClientController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return UtilCon.toClient(CLIENT);
+        return UtilCon.toClient("client");
     }
 
-    @GetMapping(value = "/lien-he")
+    @GetMapping("/lien-he")
     public String goLienHe(Model model) {
         // log info
         log.debug("Go to: /lien-he");

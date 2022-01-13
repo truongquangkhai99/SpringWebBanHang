@@ -28,8 +28,6 @@ public class ProductController extends WebController {
 
     Logger log = LoggerFactory.getLogger(ProductController.class);
 
-    private static final String PRODUCT = "product";
-
     @Autowired
     private ProductService productService;
 
@@ -39,7 +37,7 @@ public class ProductController extends WebController {
     @Autowired
     private MenuDongService menuDongService;
 
-    @GetMapping(value = "/" + PRODUCT)
+    @GetMapping("product")
     public String showList(Model model) {
         // log info
         log.debug("Go to: /admin/product");
@@ -63,7 +61,7 @@ public class ProductController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/them")
+    @GetMapping("/product/them")
     public String them(Model model) {
         // log info
         log.debug("Go to: /admin/product/them");
@@ -85,7 +83,7 @@ public class ProductController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + PRODUCT + "/save")
+    @PostMapping("/product/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) Product obj,
                              @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
         // log info
@@ -118,7 +116,7 @@ public class ProductController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/edit/{id}")
+    @GetMapping("/product/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
         // log info
         log.debug("Go to: /admin/product/edit/" + id);
@@ -131,7 +129,7 @@ public class ProductController extends WebController {
             setListMenuDongCha(model, UtilCon.PARENT);
 
             Product obj = productService.findById(id).get();
-            model.addAttribute(PRODUCT, obj);
+            model.addAttribute("product", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 
             setListMenuDong(model);
@@ -143,8 +141,8 @@ public class ProductController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + PRODUCT + "/update")
-    public ModelAndView update(@ModelAttribute(PRODUCT) Product obj,
+    @PostMapping("/product/update")
+    public ModelAndView update(@ModelAttribute("product") Product obj,
                                @RequestParam("imageFile") MultipartFile imageFile) throws IOException {
 
         // log info
@@ -168,7 +166,7 @@ public class ProductController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/product");
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/delete/{id}")
+    @GetMapping("/product/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         // log info
         log.debug("Go to: /admin/product/delete/" + id);
@@ -180,10 +178,10 @@ public class ProductController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PRODUCT);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/product");
     }
 
-    @GetMapping(value = "/" + PRODUCT + "/filter/{filterItem}")
+    @GetMapping("/product/filter/{filterItem}")
     public String filter(@PathVariable int filterItem, Model model) {
         // log info
         log.debug("Go to: /admin/product/filter/" + filterItem);

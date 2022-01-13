@@ -20,8 +20,6 @@ public class MenuDongController extends WebController {
 
     Logger log = LoggerFactory.getLogger(MenuDongController.class);
 
-    private static final String MENU_DONG = "menu-dong";
-
     @Autowired
     private MenuDongService menuDongService;
 
@@ -33,7 +31,7 @@ public class MenuDongController extends WebController {
         super.setListMenuDong(model);
     }
 
-    @GetMapping(value = "/" + MENU_DONG)
+    @GetMapping("/menu-dong")
     public String showList(Model model) {
         // log info
         log.debug("Go to: /admin/menu-dong");
@@ -56,7 +54,7 @@ public class MenuDongController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @GetMapping(value = "/" + MENU_DONG + "/them")
+    @GetMapping("/menu-dong/them")
     public String them(Model model) {
         // log info
         log.debug("Go to: /admin/menu-dong/them");
@@ -75,7 +73,7 @@ public class MenuDongController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + MENU_DONG + "/save")
+    @PostMapping("/menu-dong/save")
     public ModelAndView save(@ModelAttribute(UtilCon.OBJ) MenuDong obj) {
         // log info
         log.debug("Go to: /admin/menu-dong/save/" + obj.getMenuDongId());
@@ -102,7 +100,7 @@ public class MenuDongController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + PAGE);
     }
 
-    @GetMapping(value = "/" + MENU_DONG + "/edit/{id}")
+    @GetMapping("/menu-dong/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
         // log info
         log.debug("Go to: /admin/menu-dong/edit/" + id);
@@ -124,8 +122,8 @@ public class MenuDongController extends WebController {
         return UtilPath.toAdmin();
     }
 
-    @PostMapping(value = "/" + MENU_DONG + "/update")
-    public ModelAndView update(@ModelAttribute(MENU_DONG) MenuDong obj) {
+    @PostMapping("/menu-dong/update")
+    public ModelAndView update(@ModelAttribute("menu-dong") MenuDong obj) {
         // log info
         log.debug("Go to: /admin/menu-dong/update/" + obj.getMenuDongId());
 
@@ -143,7 +141,7 @@ public class MenuDongController extends WebController {
         return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/menu-dong");
     }
 
-    @GetMapping(value = "/" + MENU_DONG + "/delete/{id}")
+    @GetMapping("/menu-dong/delete/{id}")
     public ModelAndView delete(@PathVariable int id) {
         // log info
         log.debug("Go to: /admin/menu-dong/delete/" + id);
@@ -154,7 +152,7 @@ public class MenuDongController extends WebController {
             UtilCon.logData(log, e);
         }
 
-        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/" + MENU_DONG);
+        return new ModelAndView(UtilCon.REDICRECT + UtilCon.localhost + "/admin/menu-dong");
     }
 
 }
