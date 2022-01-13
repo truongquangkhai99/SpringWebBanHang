@@ -1,0 +1,432 @@
+2022-01-12 15:30:36,149 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product/update/0
+2022-01-12 15:30:36,155 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to: /admin/product
+2022-01-12 15:30:50,359 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to: /admin/product/filter/3
+2022-01-12 15:31:17,694 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 15:31:17,695 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 15:31:17,790 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 15:31:17,790 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 15:31:18,010 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 110198 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 15:31:18,010 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 15:31:18,010 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 15:31:19,828 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.033 seconds (JVM running for 2.534)
+2022-01-12 15:31:52,862 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-12 15:31:56,457 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to: /admin/product/them
+2022-01-12 15:31:59,347 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to: /admin/product/update/0
+2022-01-12 15:31:59,372 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to: /admin/product
+2022-01-12 15:32:11,885 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product/edit/46
+2022-01-12 15:32:17,968 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to: /admin/product/update/46
+2022-01-12 15:32:17,976 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-8] Go to: /admin/product
+2022-01-12 15:34:18,520 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-3] Go to: /admin/product/them
+2022-01-12 15:34:21,901 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to: /admin/product/update/0
+2022-01-12 15:34:21,908 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-12 15:42:41,655 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 15:42:41,656 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 15:42:41,748 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 15:42:41,749 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 15:42:41,983 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 113161 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 15:42:41,983 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 15:42:41,983 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 15:42:43,729 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.976 seconds (JVM running for 2.427)
+2022-01-12 15:42:53,248 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user
+2022-01-12 15:42:54,713 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to: /admin/user/them
+2022-01-12 15:42:59,063 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to: /admin/user
+2022-01-12 15:43:00,335 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user/edit/2
+2022-01-12 15:47:27,876 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 15:47:27,877 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 15:47:27,970 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 15:47:27,970 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 15:47:28,212 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 114458 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 15:47:28,212 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 15:47:28,212 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 15:47:30,008 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.033 seconds (JVM running for 2.479)
+2022-01-12 15:47:32,647 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to: /admin/menu-dong
+2022-01-12 15:47:34,455 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-7] Go to: /admin/menu-dong/them
+2022-01-12 15:50:06,019 DEBUG com.tuyennguyen.controller.SettingController [http-nio-8080-exec-1] Go to: /admin/setting/edit/1
+2022-01-12 15:50:16,691 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to: /admin/product
+2022-01-12 15:50:50,318 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 15:50:50,319 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 15:50:50,417 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 15:50:50,417 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 15:50:50,636 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 115475 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 15:50:50,636 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 15:50:50,636 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 15:50:52,394 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.973 seconds (JVM running for 2.447)
+2022-01-12 15:50:53,829 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-12 15:50:56,059 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to: /admin/user
+2022-01-12 15:50:57,290 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-1] Go to: /admin/menu-dong
+2022-01-12 15:50:58,357 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
+2022-01-12 15:50:59,594 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to: /admin/product/them
+2022-01-12 15:51:01,785 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to: /admin/user
+2022-01-12 15:51:03,382 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-6] Go to: /admin/user/them
+2022-01-12 15:51:10,661 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to: /admin/user/update/0
+2022-01-12 15:51:10,695 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to: /admin/user
+2022-01-12 15:51:15,930 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to: /admin/user/edit/13
+2022-01-12 15:51:18,676 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to: /admin/user/update/13
+2022-01-12 15:51:18,697 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-3] Go to: /admin/user
+2022-01-12 15:51:32,954 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to: /admin/user
+2022-01-12 15:53:45,100 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 15:53:45,101 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 15:53:45,200 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 15:53:45,200 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 15:53:45,429 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 116298 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 15:53:45,429 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 15:53:45,429 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 15:53:47,310 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.106 seconds (JVM running for 2.603)
+2022-01-12 16:06:26,677 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 16:06:26,678 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 16:06:26,790 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 16:06:26,790 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 16:06:27,032 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 4877 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 16:06:27,032 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 16:06:27,032 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 16:06:29,142 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 54 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 57 common frames omitted
+2022-01-12 16:06:30,421 ERROR com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:333)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 56 common frames omitted
+2022-01-12 16:06:30,422 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2022-01-12 16:06:30,426 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2022-01-12 16:06:30,445 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.tuyennguyen.SpringWebBanHangApplication.main(SpringWebBanHangApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:333)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 40 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:119)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 56 common frames omitted
+2022-01-12 16:24:22,869 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 16:24:22,871 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 16:24:23,004 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 16:24:23,005 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 16:24:23,282 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 7028 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 16:24:23,282 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 16:24:23,282 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 16:24:25,180 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.17 seconds (JVM running for 2.722)
+2022-01-12 16:24:40,252 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-5] Go to: /admin/user
+2022-01-12 16:24:47,548 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to: /admin/user
+2022-01-12 16:24:49,300 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to: /admin/user/them
+2022-01-12 16:24:51,648 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-10] Go to: /admin/user/update/0
+2022-01-12 16:24:51,682 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to: /admin/user
+2022-01-12 16:24:56,571 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to: /admin/user
+2022-01-12 16:25:40,967 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-7] Go to: /admin/user
+2022-01-12 16:32:20,521 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-9] Go to: /admin/user
+2022-01-12 16:32:25,697 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-4] Go to: /admin/user
+2022-01-12 16:32:31,195 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 16:32:31,197 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 16:32:31,309 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 16:32:31,309 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 16:32:31,573 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 8475 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 16:32:31,574 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 16:32:31,574 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 16:32:33,338 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 2.025 seconds (JVM running for 2.516)
+2022-01-12 16:32:37,202 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user
+2022-01-12 16:32:40,254 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-2] Go to: /admin/user/delelte/13
+2022-01-12 16:32:40,281 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-8] Go to: /admin/user
+2022-01-12 16:33:11,998 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to: /admin/product
+2022-01-12 16:33:15,948 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-9] Go to: /admin/product/delete/43
+2022-01-12 16:33:15,960 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product
+2022-01-12 16:33:44,200 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-5] Go to: /admin/menu-dong
+2022-01-12 16:33:44,946 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-12 16:33:55,948 DEBUG com.tuyennguyen.controller.SettingController [http-nio-8080-exec-1] Go to: /admin/setting/edit/1
+2022-01-12 16:33:59,414 DEBUG com.tuyennguyen.controller.MenuDongController [http-nio-8080-exec-6] Go to: /admin/menu-dong
+2022-01-12 16:34:00,093 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user
+2022-01-12 16:34:01,598 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to: /admin/product
+2022-01-12 17:06:09,229 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 17:06:09,230 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 17:06:09,341 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 17:06:09,341 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 17:06:09,561 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 14680 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 17:06:09,562 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 17:06:09,562 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 17:06:11,259 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.913 seconds (JVM running for 2.431)
+2022-01-12 17:06:17,074 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to: /admin/product
+2022-01-12 17:06:19,993 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
+2022-01-12 17:08:58,015 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 17:08:58,016 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 17:08:58,108 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 17:08:58,108 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 17:08:58,315 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 15262 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 17:08:58,315 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 17:08:58,315 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 17:09:00,034 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.922 seconds (JVM running for 2.392)
+2022-01-12 17:09:11,747 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 17:09:11,747 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 17:09:11,832 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 17:09:11,833 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 17:09:12,061 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 15403 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 17:09:12,061 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 17:09:12,061 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 17:09:13,739 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.902 seconds (JVM running for 2.334)
+2022-01-12 17:09:17,206 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user
+2022-01-12 17:09:18,359 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
+2022-01-12 17:27:07,982 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-12 17:27:07,983 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-12 17:27:08,068 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-12 17:27:08,068 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-12 17:27:08,287 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 19104 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-12 17:27:08,287 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-12 17:27:08,287 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-12 17:27:09,978 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.907 seconds (JVM running for 2.364)
+2022-01-12 17:27:17,378 DEBUG com.tuyennguyen.controller.UserController [http-nio-8080-exec-1] Go to: /admin/user
+2022-01-12 17:27:18,530 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
