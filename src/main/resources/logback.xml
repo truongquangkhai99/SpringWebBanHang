@@ -3,6 +3,15 @@
 
     <property name="HOME_LOG" value="logs/app.log"/>
 
+    <appender name="Console"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable
+            </Pattern>
+        </layout>
+    </appender>
+
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
 
@@ -24,10 +33,14 @@
 
     <logger name="com.tuyennguyen" level="debug" additivity="false">
         <appender-ref ref="FILE-ROLLING"/>
+        <appender-ref ref="Console" />
+
     </logger>
 
     <root level="error">
         <appender-ref ref="FILE-ROLLING"/>
+        <appender-ref ref="Console" />
+
     </root>
 
 </configuration>

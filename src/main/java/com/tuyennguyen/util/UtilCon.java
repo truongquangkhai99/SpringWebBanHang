@@ -157,12 +157,6 @@ public class UtilCon {
 
     public static void logData(Logger log, Exception e) {
         log.error("", e);
-        System.out.println("");
-        System.out.println("====");
-        System.out.println(e.getClass());
-        System.out.println(e.getMessage());
-        System.out.println("====");
-        System.out.println("");
     }
 
 }
