@@ -1,0 +1,59 @@
+2022-01-13 17:18:59,328 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-13 17:18:59,329 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-13 17:18:59,419 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-13 17:18:59,420 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-13 17:18:59,622 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 29040 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-13 17:18:59,622 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-13 17:18:59,623 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-13 17:19:01,396 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.973 seconds (JVM running for 2.406)
+2022-01-13 17:19:04,474 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-13 17:19:04,487 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-1] Back up database successful!
+2022-01-13 17:19:05,641 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
+2022-01-13 17:19:05,642 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-7] Back up database successful!
+2022-01-13 17:20:06,326 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-13 17:20:06,328 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-13 17:20:06,415 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-13 17:20:06,416 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-13 17:20:06,630 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 29327 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-13 17:20:06,631 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-13 17:20:06,631 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-13 17:20:08,383 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.964 seconds (JVM running for 2.41)
+2022-01-13 17:20:10,021 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-13 17:20:10,032 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-1] Back up database successful!
+2022-01-13 17:20:11,517 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product
+2022-01-13 17:20:11,518 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-7] Back up database successful!
+2022-01-13 17:20:15,870 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to: /admin/product/them
+2022-01-13 17:20:18,182 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product/update/0
+2022-01-13 17:20:18,206 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product
+2022-01-13 17:20:18,207 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-5] Back up database successful!
+2022-01-13 17:20:19,941 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product/edit/44
+2022-01-13 17:20:21,972 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to: /admin/product
+2022-01-13 17:20:21,974 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-4] Back up database successful!
+2022-01-13 17:20:24,002 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-2] Go to: /admin/product/edit/44
+2022-01-13 17:20:25,668 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product
+2022-01-13 17:20:25,669 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-5] Back up database successful!
+2022-01-13 17:20:29,514 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-5] Go to: /admin/product/edit/44
+2022-01-13 17:20:32,518 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-4] Go to: /admin/product/update/44
+2022-01-13 17:20:32,525 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-6] Go to: /admin/product
+2022-01-13 17:20:32,526 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-6] Back up database successful!
+2022-01-13 17:20:36,482 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-7] Go to: /admin/product/delete/44
+2022-01-13 17:20:36,495 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-13 17:20:36,496 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-1] Back up database successful!
+2022-01-13 17:27:26,520 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-13 17:27:26,522 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-13 17:27:26,613 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-13 17:27:26,613 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-13 17:27:26,849 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 30298 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-13 17:27:26,849 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-13 17:27:26,849 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-13 17:27:28,587 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.97 seconds (JVM running for 2.436)
+2022-01-13 17:31:10,478 INFO com.tuyennguyen.SpringWebBanHangApplication [main] ----
+2022-01-13 17:31:10,479 INFO com.tuyennguyen.SpringWebBanHangApplication [main] SpringApplication Started
+2022-01-13 17:31:10,562 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] ----
+2022-01-13 17:31:10,563 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] SpringApplication Started
+2022-01-13 17:31:10,780 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 11.0.13 on vhm with PID 31100 (/home/tuyennv/Desktop/SW/ss/SpringWebBanHang/target/classes started by tuyennv in /home/tuyennv/Desktop/SW/ss/SpringWebBanHang)
+2022-01-13 17:31:10,780 DEBUG com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.5.5, Spring v5.3.10
+2022-01-13 17:31:10,781 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] The following profiles are active: dev
+2022-01-13 17:31:12,533 INFO com.tuyennguyen.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 1.967 seconds (JVM running for 2.437)
+2022-01-13 17:31:15,624 DEBUG com.tuyennguyen.controller.ProductController [http-nio-8080-exec-1] Go to: /admin/product
+2022-01-13 17:31:15,635 DEBUG com.tuyennguyen.util.UtilDb [http-nio-8080-exec-1] Back up database successful!
