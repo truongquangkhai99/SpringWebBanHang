@@ -56,7 +56,6 @@ public class ProductService {
             sql.append("    a.is_visible    = 1                                     ");
         }
 
-        System.out.println(sql.toString().replaceAll(" +", " "));
         Query sqlQuery = entityManager.createNativeQuery(sql.toString(), "listProductMapName");
         List<ProductMap> listProductMap = sqlQuery.getResultList();
 

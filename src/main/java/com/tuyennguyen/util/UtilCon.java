@@ -88,7 +88,7 @@ public class UtilCon {
 
     public static String toAdmin(String folder, String htmlFileName) {
         String path = getPathHtmlFileName(folder, htmlFileName, true);
-        System.out.println(path);
+
         return path;
     }
 
@@ -105,8 +105,6 @@ public class UtilCon {
         String folder = htmlFileName;
         String path = getPathHtmlFileName(folder, htmlFileName, true);
 
-        System.out.println("path");
-        System.out.println(path);
         return path;
     }
     private static String getPathHtmlFileName(String folder, String htmlFileName, boolean isAdmin) {
@@ -116,9 +114,7 @@ public class UtilCon {
 
     public static String createLinkFromMenuName(String menuName) {
         String menuLink = "";
-        System.out.println(menuName);
         menuLink = menuName.toLowerCase().trim().replaceAll("\\s{1,}","-");
-        System.out.println(menuLink);
         return menuLink;
     }
 
@@ -149,10 +145,6 @@ public class UtilCon {
         DecimalFormat formatter = new DecimalFormat("#,###");
 
         return formatter.format(amount).replaceAll(",", ".");
-    }
-
-    public static void print(String sql) {
-        System.out.println(sql.replaceAll(" +"," "));
     }
 
     public static void logData(Logger log, Exception e) {

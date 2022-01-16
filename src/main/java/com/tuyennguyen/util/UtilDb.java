@@ -50,7 +50,7 @@ public class UtilDb {
         if ("Linux".equals(osName)) {
             // set path
             if (UtilCon.EMPTY.equals(password)) {
-                cmd = "/opt/lampp/bin/mysqldump " + " -u" + username + " --databases " + dbName + " > " + pathDb + folder + "/" + prefix + "_" + suffix + ".sql";
+                cmd = "/opt/lampp/bin/mysqldump " + " -u" + username + " --databases " + dbName + " > " + pathDb + folder + prefix + "_" + suffix + ".sql";
             } else {
                 cmd = "/opt/lampp/bin/mysqldump " + " -u" + username + " -p" + password + " --databases " + dbName + " > " + pathDb + folder + "/" + prefix + "_" + suffix + ".sql";
             }
@@ -59,23 +59,22 @@ public class UtilDb {
             command = new String[]{"/bin/sh", "-c", cmd};
         } else {
             // if Operation System is Window
-            // set path
-//            path = "\"D:\\Hoc Lap Trinh\\Spring\\SpringWebBanHang\\src\\main\\resources\\static\\backup_db\\\"";
-
             if (UtilCon.EMPTY.equals(password)) {
-                cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " --databases " + dbName + " > " + pathDb;
+                cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " --databases " + dbName + " > \"" + pathDb + "\\" + folder + "\\" + prefix + "_" + suffix + ".sql";
             } else {
-                cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " --databases " + dbName + " > " + pathDb;
+                System.out.println(2);
+                cmd ="\"" + "C:\\xampp\\mysql\\bin\\mysqldump.exe " + " \" -u" + username + " -p" + password + " --databases " + dbName + " > \"" + pathDb + "\\" + folder + "\\" + prefix + "_" + suffix + ".sql";
             }
+
+            // set command
             command = new String[]{"cmd", "/c", cmd};
         }
-        // set command
         return command;
     }
 
     public static void backUpDb() {
         String pathDb = UtilPath.getPathResource();
-        pathDb = pathDb.replaceAll("resources", "src/main/resources/static/");
+        pathDb = pathDb.replaceAll("resources", "src\\\\main\\\\resources\\\\static");
 
         dbName = "spring_web_ban_hang";
         username = "root";
@@ -85,10 +84,11 @@ public class UtilDb {
         try {
             Runtime.getRuntime().exec(command);
             // log success
-            log.debug("Back up database successful!");
+            log.debug("Back up database successful! Thông báo thành công thì có thể thành công thật hoặc không." +
+                      "Còn thông báo backup thất bại thì chắc chắn là thất bại");
         } catch (IOException e) {
-            System.out.println(e.getMessage());
             // log error
+            log.error(e.getMessage());
             log.error("Back up database error!");
         }
     }

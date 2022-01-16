@@ -42,7 +42,7 @@ public class ClientController extends WebController {
     public String goHome(Model model, HttpServletRequest request) {
         String message = messageSource.getMessage("hello", null, "default message", request.getLocale());
         model.addAttribute("message", message);
-        System.out.println(message);
+
         // log info
         log.debug("Go to: /, /home");
 
