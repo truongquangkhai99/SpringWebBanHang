@@ -1,0 +1,11 @@
+
+GET localhost:8080/admin/product
+Accept: application/json
+
+###
+GET localhost:8080/home
+Accept: application/json
+
+###
+GET http://localhost:8080/san-pham/mecerdes
+Accept: application/json

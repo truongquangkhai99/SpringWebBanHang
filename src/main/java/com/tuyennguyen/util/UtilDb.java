@@ -84,8 +84,9 @@ public class UtilDb {
         try {
             Runtime.getRuntime().exec(command);
             // log success
-            log.debug("Back up database successful! Thông báo thành công thì có thể thành công thật hoặc không." +
-                      "Còn thông báo backup thất bại thì chắc chắn là thất bại");
+            log.debug("Back up database successful!" +
+                      "\n\tThông báo thành công thì có thể thành công thật hoặc không" +
+                      "\n\tCòn thông báo backup thất bại thì chắc chắn là thất bại");
         } catch (IOException e) {
             // log error
             log.error(e.getMessage());
