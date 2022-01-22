@@ -38,7 +38,7 @@ public class ProductController extends WebController {
     private MenuDongService menuDongService;
 
     @GetMapping("product")
-    public String showList(Model model) {
+    public String showList(Model model, @RequestParam(required = false) String keyword) {
         // log info
         log.debug("Go to: /admin/product");
 
@@ -51,7 +51,7 @@ public class ProductController extends WebController {
             setCommon(model, getTitle());
 
             //set list
-            setListProduct(model, UtilCon.VISIBLE_ITEM);
+            setListProduct(model, UtilCon.VISIBLE_ITEM, keyword);
             //set page
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
         } catch (Exception e) {
@@ -182,7 +182,7 @@ public class ProductController extends WebController {
     }
 
     @GetMapping("/product/filter/{filterItem}")
-    public String filter(@PathVariable int filterItem, Model model) {
+    public String filter(@PathVariable int filterItem, Model model, @RequestParam(required = false) String keyword) {
         // log info
         log.debug("Go to: /admin/product/filter/" + filterItem);
 
@@ -192,7 +192,7 @@ public class ProductController extends WebController {
             // set host, bootstrap
             setCommon(model, getTitle());
 
-            setListProduct(model, filterItem);
+            setListProduct(model, filterItem, keyword);
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT);
 
         } catch (Exception e) {
@@ -207,22 +207,22 @@ public class ProductController extends WebController {
         model.addAttribute("listMenuDong", listMenuDong);
     }
 
-    private void setListProduct(Model model, final int FILTER_ITEM) {
+    private void setListProduct(Model model, final int FILTER_ITEM, String keyword) {
         List<ProductMap> listProductMap = null;
 
         // get listProductMap
         if (FILTER_ITEM == UtilCon.ALL_ITEM) {
             // all item
-            listProductMap = productService.getListProductMap(UtilCon.ALL_ITEM);
+            listProductMap = productService.getListProductMap(UtilCon.ALL_ITEM, keyword);
         } else if (FILTER_ITEM == UtilCon.FAVOURITE_ITEM) {
             // favourite item
-            listProductMap = productService.getListProductMap(UtilCon.FAVOURITE_ITEM);
+            listProductMap = productService.getListProductMap(UtilCon.FAVOURITE_ITEM, keyword);
         } else if (FILTER_ITEM == UtilCon.INVISIBLE_ITEM) {
             // invisible item
-            listProductMap = productService.getListProductMap(UtilCon.INVISIBLE_ITEM);
+            listProductMap = productService.getListProductMap(UtilCon.INVISIBLE_ITEM, keyword);
         } else if (FILTER_ITEM == UtilCon.VISIBLE_ITEM) {
             // invisible item
-            listProductMap = productService.getListProductMap(UtilCon.VISIBLE_ITEM);
+            listProductMap = productService.getListProductMap(UtilCon.VISIBLE_ITEM, keyword);
         }
 
         model.addAttribute("listProduct", listProductMap);

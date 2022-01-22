@@ -2,13 +2,26 @@
 <!-- list product -->
 <div class="" id="product-list">
     <div class="form-group row">
-        <h4 class="col-sm-9">
+        <h4 class="col-sm-6">
             <span class="maRi4">Sản Phẩm</span>
 
             <a th:href="@{{host}/admin/product/them (host=${host})}">
                 <i class="fas fa-plus-circle foSi16 text-primary"></i>
             </a>
+
         </h4>
+
+        <!-- keyword -->
+        <div class="col-sm-3">
+            <div class="input-group mb-3">
+                <form th:action="@{{host}/admin/product (host=${host})}" method="get">
+                    <input type="text" class="form-control" name="keyword">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Tìm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="col-sm-3">
             <select class="form-control form-control-sm" id="filter_item">

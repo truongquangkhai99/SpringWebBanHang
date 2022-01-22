@@ -3,9 +3,11 @@ package com.tuyennguyen.util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
 
+@Configuration
 public class UtilDb {
     private static Logger log = LoggerFactory.getLogger(UtilDb.class);
 
@@ -76,17 +78,15 @@ public class UtilDb {
         String pathDb = UtilPath.getPathResource();
         pathDb = pathDb.replaceAll("resources", "src\\\\main\\\\resources\\\\static");
 
-        dbName = "spring_web_ban_hang";
-        username = "root";
-        password = "";
         String[] command = createCommandBackup(pathDb, "backup_db", "BU" , UtilDate.getYYYYMMDD_HHMMSS());
 
         try {
             Runtime.getRuntime().exec(command);
             // log success
-            log.debug("Back up database successful!" +
-                      "\n\tThông báo thành công thì có thể thành công thật hoặc không" +
-                      "\n\tCòn thông báo backup thất bại thì chắc chắn là thất bại");
+            log.debug("Back up database successful!\n\t" +
+                      "Thông báo thành công thì có thể thành công thật hoặc không\n\t" +
+                      "Còn thông báo backup thất bại thì chắc chắn là thất bại\n\t" +
+                      "Check xem có thêm file Back up *.sql, nếu có thì mới chắc chắn là thành công");
         } catch (IOException e) {
             // log error
             log.error(e.getMessage());
