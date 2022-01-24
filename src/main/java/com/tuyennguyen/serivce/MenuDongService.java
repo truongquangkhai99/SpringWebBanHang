@@ -33,6 +33,7 @@ public class MenuDongService {
     public MenuDong save(MenuDong obj) {
         return menuDongRepo.save(obj);
     }
+
     public void deleteById(int id) {
         menuDongRepo.deleteById(id);
     }

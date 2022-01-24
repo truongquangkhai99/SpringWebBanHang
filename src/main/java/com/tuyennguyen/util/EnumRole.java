@@ -30,4 +30,5 @@ public enum EnumRole {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
+
 }

@@ -9,6 +9,7 @@ import java.io.IOException;
 
 @Configuration
 public class UtilDb {
+
     private static Logger log = LoggerFactory.getLogger(UtilDb.class);
 
     /**

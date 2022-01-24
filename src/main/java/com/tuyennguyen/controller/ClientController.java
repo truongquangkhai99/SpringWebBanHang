@@ -40,9 +40,6 @@ public class ClientController extends WebController {
 
     @GetMapping(value = {"/", "/home"})
     public String goHome(Model model, HttpServletRequest request) {
-        String message = messageSource.getMessage("hello", null, "default message", request.getLocale());
-        model.addAttribute("message", message);
-
         // log info
         log.debug("Go to: /, /home");
 
@@ -64,6 +61,16 @@ public class ClientController extends WebController {
         }
 
         return UtilCon.toClient("client");
+    }
+
+    @GetMapping(value = {"/index"})
+    public String goIndex(Model model, HttpServletRequest request) {
+        String message = messageSource.getMessage("hello", null, "default message", request.getLocale());
+        model.addAttribute("message", message);
+        System.out.println("message");
+        System.out.println(message);
+
+        return "index";
     }
 
     @GetMapping({"/san-pham/{menuLink}"})
