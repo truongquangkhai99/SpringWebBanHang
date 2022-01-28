@@ -128,7 +128,7 @@ public class UtilCon {
     public static User trimObject(User obj) {
         obj.setUsername(obj.getUsername().trim());
         obj.setFullName(obj.getFullName().trim());
-        obj.setRole(obj.getRole().trim());
+        obj.setRoles(obj.getRoles().trim());
 
         return obj;
     }

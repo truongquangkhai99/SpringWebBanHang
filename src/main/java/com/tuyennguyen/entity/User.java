@@ -36,6 +36,9 @@ public class User {
     private String address;
 
     @Column(nullable = true)
-    private String role;
+    private String roles;
+
+    @Column(nullable = true)
+    private Boolean active;
 
 }
