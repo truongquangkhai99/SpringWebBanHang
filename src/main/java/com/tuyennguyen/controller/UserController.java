@@ -4,7 +4,7 @@ import com.tuyennguyen.entity.Role;
 import com.tuyennguyen.entity.User;
 import com.tuyennguyen.repository.UserRepository;
 import com.tuyennguyen.serivce.UserService;
-import com.tuyennguyen.util.EnumRole;
+import com.tuyennguyen.enums.EnumRole;
 import com.tuyennguyen.util.UtilCon;
 import com.tuyennguyen.util.UtilDb;
 import com.tuyennguyen.util.UtilPath;
@@ -138,7 +138,7 @@ public class UserController extends WebController {
         String PAGE = "";
 
         try {
-            obj = UtilCon.trimObject(obj);
+//            obj = UtilCon.trimObject(obj);
 
             int count = userRepo.countUserByUsernameOrEmail(obj.getUsername(), obj.getEmail());
             // if count > 0, not save more
@@ -174,9 +174,9 @@ public class UserController extends WebController {
 
         // set list role
         List<Role> listRole = new ArrayList<>();
-        role = new Role(EnumRole.ADMIN.getRoleId(), EnumRole.ADMIN.getRoleName());
+        role = new Role(EnumRole.ROLE_ADMIN.getRoleId(), EnumRole.ROLE_ADMIN.getRoleName());
         listRole.add(role);
-        role = new Role(EnumRole.USER.getRoleId(), EnumRole.USER.getRoleName());
+        role = new Role(EnumRole.ROLE_USER.getRoleId(), EnumRole.ROLE_USER.getRoleName());
         listRole.add(role);
 
         return listRole;

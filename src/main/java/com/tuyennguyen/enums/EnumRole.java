@@ -1,10 +1,10 @@
-package com.tuyennguyen.util;
+package com.tuyennguyen.enums;
 
 public enum EnumRole {
 
-    ADMIN (1, "Admin"),
+    ROLE_ADMIN (1, "ROLE_ADMIN"),
 
-    USER (2, "User");
+    ROLE_USER (2, "ROLE_USER");
 
     private int roleId;
 

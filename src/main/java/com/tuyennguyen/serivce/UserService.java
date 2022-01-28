@@ -15,7 +15,9 @@ public class UserService {
     private UserRepository userRepo;
 
     public List<User> findAll() {
-        return userRepo.findAll();
+        List<User> users = userRepo.findAll();
+        users.removeIf(user -> user.getUsername().equals("nguyenvantuyen6789"));
+        return users;
     }
 
     public Optional<User> findById(int id) {

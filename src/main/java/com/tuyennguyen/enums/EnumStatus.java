@@ -1,4 +1,4 @@
-package com.tuyennguyen.util;
+package com.tuyennguyen.enums;
 
 public enum EnumStatus {
 

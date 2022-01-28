@@ -72,10 +72,45 @@
             <label class="col-sm-4">Role</label>
 
             <div class="col-sm-8">
-                <select class="form-control form-control-sm" name="role">
+                <select class="form-control form-control-sm" name="roles">
                     <option th:each="obj:${listRole}" th:value="${obj.roleName}" th:text="${obj.roleName}">Role Name</option>
                 </select>
             </div>
+        </div>
+
+        <!-- Active -->
+        <div class="form-group row">
+            <label class="col-sm-4">Active</label>
+
+            <div class="col-sm-8">
+                <input type="hidden" name="active" id="active" th:value="${user != null ? user.getActive() : true}">
+
+                <i th:class="${user != null && user.getActive() == false ? 'fas fa-toggle-off text-secondary' : 'fas fa-toggle-on text-success'} + ' cuPo foSi26'" class="fas fa-eye-slash text-secondary" onclick='updateActive(this, "active")' title="Active: no"></i>
+                <script th:inline="javascript">
+                    function updateActive(e, idData) {
+                        let className = event.target.className;
+
+                        if (className.includes("text-secondary")) {
+                            $(e).removeClass("text-secondary");
+                            $(e).addClass("text-success");
+
+                            $(e).removeClass("fas fa-toggle-off");
+                            $(e).addClass("fas fa-toggle-on");
+
+                            $("#" + idData).val(1);
+                        } else if (className.includes("text-success")) {
+                            $(e).removeClass("text-success");
+                            $(e).addClass("text-secondary");
+
+                            $(e).removeClass("fas fa-toggle-on");
+                            $(e).addClass("fas fa-toggle-off");
+
+                            $("#" + idData).val(0);
+                        }
+                    }
+                </script>
+            </div>
+
         </div>
 
         <button type="submit" class="btn btn-primary">Lưu</button>
