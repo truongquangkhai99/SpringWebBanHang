@@ -1,7 +1,8 @@
 
 <!-- menu động edit -->
 <div id="menu-dong-edit" class="col-md-6">
-    <h4>Sửa Menu Động</h4>
+    <h4 th:if="${menuDong == null}">Thêm Menu Động</h4>
+    <h4 th:if="${menuDong != null}">Sửa Menu Động</h4>
 
     <form th:action="@{/admin/menu-dong/update}" method="post">
         <!-- menu động id hidden -->

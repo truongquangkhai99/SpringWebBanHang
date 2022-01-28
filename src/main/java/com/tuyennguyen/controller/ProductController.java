@@ -6,7 +6,7 @@ import com.tuyennguyen.model.mapping.ProductMap;
 import com.tuyennguyen.repository.ProductRepository;
 import com.tuyennguyen.serivce.MenuDongService;
 import com.tuyennguyen.serivce.ProductService;
-import com.tuyennguyen.util.FileUploadUtil;
+import com.tuyennguyen.util.UtilFileUpload;
 import com.tuyennguyen.util.UtilCon;
 import com.tuyennguyen.util.UtilDb;
 import com.tuyennguyen.util.UtilPath;
@@ -72,7 +72,6 @@ public class ProductController extends WebController {
             // set host, bootstrap
             setCommon(model, getTitle());
 
-            model.addAttribute(UtilCon.OBJ, new Product());
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_THEM);
 
             setListMenuDong(model);
@@ -104,7 +103,7 @@ public class ProductController extends WebController {
 
                 String imageName = imageFile.getOriginalFilename();
                 if (!UtilCon.EMPTY.equals(imageName)) {
-                    FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
+                    UtilFileUpload.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                     obj.setImageName(imageName);
                 }
                 productService.save(obj);
@@ -154,7 +153,7 @@ public class ProductController extends WebController {
 
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
-                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
+                UtilFileUpload.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                 obj.setImageName(imageName);
             }
 

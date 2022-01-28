@@ -1,7 +1,8 @@
 
 <!-- User edit -->
 <div id="user-edit" class="col-md-6">
-    <h4>Sửa Người Dùng</h4>
+    <h4 th:if="${user == null}">Thêm Người Dùng</h4>
+    <h4 th:if="${user != null}">Sửa Người Dùng</h4>
 
     <form th:action="@{/admin/user/update}" method="post">
         <!-- User id hidden -->

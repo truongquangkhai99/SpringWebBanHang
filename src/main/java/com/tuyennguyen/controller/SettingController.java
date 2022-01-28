@@ -2,7 +2,7 @@ package com.tuyennguyen.controller;
 
 import com.tuyennguyen.entity.Setting;
 import com.tuyennguyen.serivce.SettingService;
-import com.tuyennguyen.util.FileUploadUtil;
+import com.tuyennguyen.util.UtilFileUpload;
 import com.tuyennguyen.util.UtilCon;
 import com.tuyennguyen.util.UtilPath;
 import org.slf4j.Logger;
@@ -55,7 +55,7 @@ public class SettingController extends WebController {
         try {
             String imageName = imageFile.getOriginalFilename();
             if (!UtilCon.EMPTY.equals(imageName)) {
-                FileUploadUtil.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
+                UtilFileUpload.saveFile(UtilCon.PATH_TO_STATIC + "/" + UtilCon.imageFolder, imageName, imageFile);
                 obj.setImageName(imageName);
             }
 

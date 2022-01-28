@@ -1,0 +1,59 @@
+
+<!-- Article edit -->
+<div id="article-edit" class="col-md-6">
+    <h4 th:if="${article == null}">Thêm Bài Viết</h4>
+    <h4 th:if="${article != null}">Sửa Bài Viết</h4>
+
+    <form th:action="@{{host}/admin/article/update (host=${host})}" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="articleId" id="articleId"
+                    th:value="${article != null ? article.getArticleId() : 0}">
+
+        <div class="form-group row">
+            <label class="col-sm-4">Tiêu Đề</label>
+
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" name="title" id="title"
+                        th:value="${article != null ? article.getTitle() : ''}">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4">Ảnh Bài Viết</label>
+
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" name="imageStandFor" id="imageStandFor"
+                        th:value="${article != null ? article.getImgStandFor() : ''}">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4">Nội Dung</label>
+
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" name="articleContent" id="articleContent"
+                        th:value="${article != null ? article.getArticleContent() : ''}">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4">Thể Loại</label>
+
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" name="category" id="category"
+                        th:value="${article != null ? article.getCategoryId() : ''}">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-4">Tác Giả</label>
+
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-sm" name="userId" id="userId"
+                        th:value="${article != null ? article.getUserId() : ''}">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Lưu</button>
+    </form>
+
+</div>

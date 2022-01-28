@@ -51,6 +51,12 @@ public class UtilCon {
     public static String MENU_DONG_EDIT      = "menu-dong-edit";
     public static String MENU_DONG_THEM      = "menu-dong-them";
     /**
+     * Article constant
+     */
+    public static String ARTICLE             = "article";
+    public static String ARTICLE_EDIT        = "article-edit";
+    public static String ARTICLE_THEM        = "article-them";
+    /**
      * Ý kiến constant
      */
     public static String Y_KIEN              = "y-kien";

@@ -1,7 +1,8 @@
 
 <!-- product edit -->
 <div id="product-edit" class="col-md-6">
-    <h4>Sửa Sản Phẩm</h4>
+    <h4 th:if="${product == null}">Thêm Sản Phẩm</h4>
+    <h4 th:if="${product != null}">Sửa Sản Phẩm</h4>
 
     <form th:action="@{{host}/admin/product/update (host=${host})}" method="post" enctype="multipart/form-data">
         <input type="hidden" name="productId" id="productId"

@@ -64,7 +64,6 @@ public class MenuDongController extends WebController {
             // set host, bootstrap
             setCommon(model, TITLE);
 
-            model.addAttribute(UtilCon.OBJ, new MenuDong());
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_THEM);
         } catch (Exception e) {
             UtilCon.logData(log, e);

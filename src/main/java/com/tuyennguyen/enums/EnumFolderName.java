@@ -1,6 +1,6 @@
-package com.tuyennguyen.util;
+package com.tuyennguyen.enums;
 
-public enum FolderNameEnum {
+public enum EnumFolderName {
     folder1(1, "folder1"),
     folder2(2, "folder2");
 
@@ -8,7 +8,7 @@ public enum FolderNameEnum {
 
     private final String value;
 
-    FolderNameEnum(int key, String value) {
+    EnumFolderName(int key, String value) {
         this.key = key;
         this.value = value;
     }

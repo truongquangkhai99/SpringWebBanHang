@@ -63,7 +63,7 @@
 
         <tbody>
             <tr th:if="${listProduct.empty}" scope="row">
-                <td colspan="6">No Books Available</td>
+                <td colspan="6" class="text-center">No Records Available</td>
             </tr>
 
             <tr th:each="obj:${listProduct}" th:class="${obj.isVisible == 1} ? 'visible' : 'in-visible' ">

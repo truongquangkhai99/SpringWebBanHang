@@ -69,7 +69,6 @@ public class UserController extends WebController {
             List<Role> listRole = getListRole();
             model.addAttribute("listRole", listRole);
 
-            model.addAttribute(UtilCon.OBJ, new User());
             model.addAttribute(UtilCon.PAGE, UtilCon.USER_THEM);
 
         } catch (Exception e) {

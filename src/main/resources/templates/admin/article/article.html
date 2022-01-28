@@ -1,0 +1,80 @@
+
+<!-- list product -->
+<div class="" id="article-list">
+
+    <div class="form-group row">
+        <h4 class="col-sm-6">
+            <span class="maRi4">Bài Viết</span>
+
+            <a th:href="@{{host}/admin/article/them (host=${host})}">
+                <i class="fas fa-plus-circle foSi16 text-primary"></i>
+            </a>
+
+        </h4>
+
+        <!-- keyword -->
+        <div class="col-sm-3">
+            <form th:action="@{{host}/admin/article (host=${host})}" method="get">
+                <div class="input-group input-group-sm mb-3">
+
+                    <input type="text" class="form-control" required name="keyword" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit">Tìm</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Tiêu Đề</th>
+                <th scope="col" class="text-center">Image</th>
+                <th scope="col">Thể Loại</th>
+                <th scope="col">Tác Giả</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:if="${listArticle.empty}" scope="row">
+                <td colspan="6" class="text-center">No Records Available</td>
+            </tr>
+
+            <tr th:each="obj:${listArticle}">
+                <td class="paTo9 paBo9 foSi13" scope="row">
+                    <a th:href="@{/admin/article/edit/{articleId}(articleId=${obj.articleId})}" class="foWe500">
+                        <span th:text="${obj.title}">Tiêu Đề</span>
+                    </a>
+                </td>
+
+                <td class="pa4 foSi13">
+                    <span th:text="${obj.imgStandFor}">Ảnh Bài Viết</span>
+                </td>
+
+                <td class="pa4 foSi13 text-center">
+                    <span th:text="${obj.categoryId}">Thể Loại</span>
+                </td>
+
+                <td class="pa4 foSi13 text-center">
+                    <span th:text="${obj.userId}">Tác Giả</span>
+                </td>
+
+                <td class="pa4 foSi13">
+                    <a class="icon-action maRi10" th:href="@{/admin/article/edit/{articleId}(articleId=${obj.articleId})}" title="edit">
+                        <i class="fas fa-edit"></i>
+                    </a>
+
+                    <a class="icon-action cuPo" data-toggle="modal" data-target="#delete-data-modal" th:attr='onclick=|showModal("/admin/article/delete/" + ${obj.articleId})|' title="delete">
+                        <i class="far fa-trash-alt"></i>
+                    </a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
