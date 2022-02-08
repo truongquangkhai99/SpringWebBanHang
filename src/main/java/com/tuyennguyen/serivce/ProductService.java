@@ -78,10 +78,6 @@ public class ProductService {
         return listProductMap;
     }
 
-    public Optional<Product> findById(int id) {
-        return productRepo.findById(id);
-    }
-
     public Product save(Product obj) {
         return productRepo.save(obj);
     }

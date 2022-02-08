@@ -26,10 +26,6 @@ public class MenuDongService {
         return menuDongRepo.findAllByIsVisible(isVisible);
     }
 
-    public Optional<MenuDong> findById(int id) {
-        return menuDongRepo.findById(id);
-    }
-
     public MenuDong save(MenuDong obj) {
         return menuDongRepo.save(obj);
     }

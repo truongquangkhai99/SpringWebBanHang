@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -36,6 +37,9 @@ public class ProductController extends WebController {
 
     @Autowired
     private MenuDongService menuDongService;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @GetMapping("product")
     public String showList(Model model, @RequestParam(required = false) String keyword) {
@@ -127,7 +131,7 @@ public class ProductController extends WebController {
             setCommon(model, getTitle());
             setListMenuDongCha(model, UtilCon.PARENT);
 
-            Product obj = productService.findById(id).get();
+            Product obj = restTemplate.getForObject("http://localhost:8002/admin/product/edit/api/" + id, Product.class);
             model.addAttribute("product", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.PRODUCT_EDIT);
 

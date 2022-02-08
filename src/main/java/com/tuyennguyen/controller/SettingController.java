@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,6 +24,9 @@ public class SettingController extends WebController {
     @Autowired
     private SettingService settingService;
 
+    @Autowired
+    private RestTemplate restTemplate;
+
     @GetMapping("/setting/edit/{id}")
     public String edit(@PathVariable int id, Model model) {
         // log info
@@ -34,7 +38,8 @@ public class SettingController extends WebController {
             // set host, bootstrap
             setCommon(model, getTitle());
 
-            Setting obj = settingService.findById(id).get();
+            Setting obj = restTemplate.getForObject("http://localhost:8003/admin/setting/edit/api/" + id, Setting.class);
+
             model.addAttribute("setting", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.SETTING_EDIT);
 

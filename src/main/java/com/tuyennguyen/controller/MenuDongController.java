@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -25,6 +26,9 @@ public class MenuDongController extends WebController {
 
     @Autowired
     private MenuDongRepository menuDongRepo;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Override
     public void setListMenuDong(Model model) {
@@ -110,7 +114,8 @@ public class MenuDongController extends WebController {
             // set host, bootstrap
             setCommon(model, getTitle());
 
-            MenuDong obj = menuDongService.findById(id).get();
+            MenuDong obj = restTemplate.getForObject("http://localhost:8004/admin/menu-dong/edit/api/" + id, MenuDong.class);
+
             model.addAttribute("menuDong", obj);
             model.addAttribute(UtilCon.PAGE, UtilCon.MENU_DONG_EDIT);
 
